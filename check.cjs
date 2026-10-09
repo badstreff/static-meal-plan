@@ -21,7 +21,20 @@ const http = require('node:http');
     await page.goto(`http://127.0.0.1:${server.address().port}/`);
     assert.equal(await page.locator('.day-card').count(), 4, 'All four days are visible');
     assert.equal(await page.locator('details.recipe').count(), 8, 'All eight meal recipes are present');
-    const anchors = await page.locator('a[href^="#"]').evaluateAll(items => items.map(a => a.getAttribute('href').slice(1)));
+    const palette = page.getByLabel('Palette', {exact: true});
+    assert.equal(await palette.locator('option').count(), 12, 'All twelve palettes are available');
+    assert.equal(await palette.inputValue(), 'ds-7', 'Palette 7 is the default');
+    const defaultBackground = await page.locator('body').evaluate(body => getComputedStyle(body).backgroundColor);
+    await palette.selectOption('ch-lavender');
+    assert.notEqual(await page.locator('body').evaluate(body => getComputedStyle(body).backgroundColor), defaultBackground, 'Switching changes the page colors');
+    await page.reload();
+    assert.equal(await palette.inputValue(), 'ch-lavender', 'Palette choice persists after reload');
+    for (const id of await palette.locator('option').evaluateAll(options => options.map(option => option.value))) {
+      await palette.selectOption(id);
+      assert.equal(await page.locator('html').getAttribute('data-palette'), id, `Palette applies: ${id}`);
+    }
+    await palette.selectOption('ds-7');
+    const anchors = await page.locator('a[href^="#"]').evaluateAll(items => items.map(a => a.getAttribute('href').slice(1)).filter(Boolean));
     for (const id of anchors) assert.equal(await page.locator(`[id="${id}"]`).count(), 1, `Anchor target exists: ${id}`);
     await page.locator('#oats summary').click();
     assert.equal(await page.locator('#oats').getAttribute('open'), '', 'Recipe opens without navigating away');
@@ -45,7 +58,7 @@ const http = require('node:http');
     assert.equal(await noJs.locator('.day-card').count(), 4, 'Plan works without JavaScript');
     await noJs.locator('#ham summary').click();
     assert.equal(await noJs.locator('#ham').getAttribute('open'), '', 'Recipe works without JavaScript');
-    console.log('PASS: four-day content, recipe anchors, grocery persistence/reset, mobile/desktop layout, print, and no-JS access.');
+    console.log('PASS: palette switching/persistence, four-day content, recipe anchors, grocery persistence/reset, mobile/desktop layout, print, and no-JS access.');
   } finally {
     await browser.close();
     await new Promise(resolve => server.close(resolve));
