@@ -87,14 +87,14 @@
       "servings": 1,
       "prepTime": "Cook to package",
       "nutrition": {
-        "calories": 630,
-        "proteinGrams": 45
+        "calories": 710,
+        "proteinGrams": 48
       },
       "description": "Warm oats, a chopped apple, and a little richness, with your two morning lattes. Your smaller protein shake stays on the side.",
       "ingredients": [
         {
           "itemId": "oats",
-          "quantity": 40,
+          "quantity": 60,
           "unit": "g",
           "label": "dry steel-cut oats + water per package"
         },
@@ -150,7 +150,7 @@
         "Shake the powder with water separately. Use its label to measure the listed protein amount; this is protein content, not powder weight.",
         "Make two lattes per person, dividing the listed milk equally between them. Add your coffee or espresso; no syrup or sugar is included."
       ],
-      "note": "Measure oats dry; use your powder and dairy labels for tracking. Nutrition includes both lattes, estimated with Fairlife 2% at 120 calories and 13 g protein per 8 fl oz. Use your MooTopia carton label if it differs.",
+      "note": "Measure oats dry; use your powder and dairy labels for tracking. Nutrition includes both lattes, estimated with Fairlife 2% at 120 calories and 13 g protein per 8 fl oz. Use your MooTopia carton label if it differs. The latte milk replaces about 20 g protein from the original 40 g protein shake; the remaining shake provides 20 g protein. The food portion stays at 60 g dry oats.",
       "source": null
     },
     "ham": {
