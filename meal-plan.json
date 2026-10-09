@@ -80,21 +80,21 @@
   },
   "recipes": {
     "oats": {
-      "title": "Apple & brown sugar steel-cut oats",
-      "shortTitle": "Oats & apple",
+      "title": "Apple & brown sugar steel-cut oats + two lattes",
+      "shortTitle": "Oats & apple + 2 lattes",
       "kind": "breakfast",
       "preparation": "fresh",
       "servings": 1,
       "prepTime": "Cook to package",
       "nutrition": {
         "calories": 630,
-        "proteinGrams": 48
+        "proteinGrams": 45
       },
-      "description": "Warm oats, a chopped apple, and a little richness. Your protein shake stays on the side.",
+      "description": "Warm oats, a chopped apple, and a little richness, with your two morning lattes. Your smaller protein shake stays on the side.",
       "ingredients": [
         {
           "itemId": "oats",
-          "quantity": 60,
+          "quantity": 40,
           "unit": "g",
           "label": "dry steel-cut oats + water per package"
         },
@@ -117,7 +117,7 @@
         },
         {
           "itemId": "protein-powder",
-          "quantity": 40,
+          "quantity": 20,
           "unit": "g-protein",
           "format": "Protein powder providing {amount} + water"
         },
@@ -128,32 +128,47 @@
           "asNeeded": true,
           "label": "Cinnamon, optional",
           "format": "{label}"
+        },
+        {
+          "itemId": "latte-milk",
+          "quantity": 12,
+          "unit": "fl oz",
+          "label": "plain Fairlife or MooTopia 2% milk for two lattes per person"
+        },
+        {
+          "itemId": "coffee",
+          "quantity": null,
+          "unit": "portion",
+          "asNeeded": true,
+          "label": "Coffee or espresso, as you prefer",
+          "format": "{label}"
         }
       ],
       "steps": [
         "Simmer the oats in water for the time on your package, stirring occasionally.",
         "Stir in the apple near the end for softer fruit, or add it fresh. Finish with brown sugar and butter or half-and-half.",
-        "Shake the powder with water separately. Use its label to measure the listed protein amount; this is protein content, not powder weight."
+        "Shake the powder with water separately. Use its label to measure the listed protein amount; this is protein content, not powder weight.",
+        "Make two lattes per person, dividing the listed milk equally between them. Add your coffee or espresso; no syrup or sugar is included."
       ],
-      "note": "Measure oats dry; use your powder and dairy labels for tracking.",
+      "note": "Measure oats dry; use your powder and dairy labels for tracking. Nutrition includes both lattes, estimated with Fairlife 2% at 120 calories and 13 g protein per 8 fl oz. Use your MooTopia carton label if it differs.",
       "source": null
     },
     "ham": {
-      "title": "Ham & spinach frittata with toast",
-      "shortTitle": "Ham frittata & toast",
+      "title": "Ham frittata, toast + two lattes",
+      "shortTitle": "Ham frittata & toast + 2 lattes",
       "kind": "breakfast",
       "preparation": "fresh",
       "servings": 1,
       "prepTime": "About 25 min",
       "nutrition": {
-        "calories": 650,
-        "proteinGrams": 50
+        "calories": 625,
+        "proteinGrams": 54
       },
-      "description": "Eggs, diced ham, cottage cheese and Parmesan, with toast on the side.",
+      "description": "A smaller ham frittata and a slice of toast, with your two morning lattes included in the breakfast estimate.",
       "ingredients": [
         {
           "itemId": "eggs",
-          "quantity": 4,
+          "quantity": 3,
           "unit": "count",
           "label": "large eggs"
         },
@@ -171,7 +186,7 @@
         },
         {
           "itemId": "parmesan",
-          "quantity": "1/4",
+          "quantity": "1/8",
           "unit": "cup",
           "label": "grated Parmesan or Pecorino"
         },
@@ -183,7 +198,7 @@
         },
         {
           "itemId": "bread",
-          "quantity": 2,
+          "quantity": 1,
           "unit": "slice",
           "label": "whole-grain bread (~80 calories per slice)"
         },
@@ -202,14 +217,29 @@
           "asNeeded": true,
           "label": "Black pepper, to taste",
           "format": "{label}"
+        },
+        {
+          "itemId": "latte-milk",
+          "quantity": 12,
+          "unit": "fl oz",
+          "label": "plain Fairlife or MooTopia 2% milk for two lattes per person"
+        },
+        {
+          "itemId": "coffee",
+          "quantity": null,
+          "unit": "portion",
+          "asNeeded": true,
+          "label": "Coffee or espresso, as you prefer",
+          "format": "{label}"
         }
       ],
       "steps": [
         "Heat the oven to 350°F / 175°C. Coat a small oven-safe skillet with cooking spray; warm the ham.",
         "Whisk eggs, cottage cheese, Parmesan and spinach. Pour into the skillet, cook briefly to set the base, then bake until fully set (about 16–18 minutes; 160°F / 71°C in the center).",
-        "Toast the bread and serve with the whole frittata. Ham and Parmesan add salt; season to taste."
+        "Slice the frittata into {portionsWord} equal portions and serve with the toast. Ham and Parmesan add salt; season to taste.",
+        "Make two lattes per person, dividing the listed milk equally between them. Add your coffee or espresso; no syrup or sugar is included."
       ],
-      "note": "Ham replaces the Italian chicken sausage; its label determines the final calories.",
+      "note": "Ham replaces the Italian chicken sausage; its label determines the final calories. Nutrition includes both lattes, estimated with Fairlife 2% at 120 calories and 13 g protein per 8 fl oz. Use your MooTopia carton label if it differs.",
       "source": {
         "label": "Adapted from Skinnytaste",
         "url": "https://www.skinnytaste.com/cottage-cheese-egg-and-sausage-frittata/"
@@ -1318,12 +1348,38 @@
         "mode": "pantry",
         "asNeeded": "To taste"
       }
+    },
+    "latte-milk": {
+      "label": "Fairlife OR MooTopia plain 2% milk",
+      "group": "Protein & dairy",
+      "unit": "fl oz",
+      "units": {
+        "fl oz": 1,
+        "cup": 8
+      },
+      "shopping": {
+        "format": "{quantity} fl oz total",
+        "suffix": "for morning lattes; buy cartons covering this amount"
+      }
+    },
+    "coffee": {
+      "label": "Coffee / espresso",
+      "group": "Pantry check",
+      "unit": "portion",
+      "units": {
+        "portion": 1
+      },
+      "shopping": {
+        "mode": "pantry",
+        "asNeeded": "For your two morning lattes per person"
+      }
     }
   },
   "measurementNotes": [
     "Recipe quantities describe the base number of servings. Fresh preparations keep that portion size; batch recipes scale to the selected plan.",
     "Rice shopping assumes 180 g dry per cup and a 3:1 cooked-to-dry volume yield; follow your package for actual yields.",
     "Berries use about 150 g per cup. Garlic uses about 1 clove per teaspoon minced and 10 cloves per head. Lemons assume 2 tablespoons juice each, plus the measured lemon for wedges.",
-    "Shopping amounts round up to the configured increment or package size. Fraction strings such as \"2/3\" keep quantity calculations exact."
+    "Shopping amounts round up to the configured increment or package size. Fraction strings such as \"2/3\" keep quantity calculations exact.",
+    "Breakfast assumes two lattes per person daily, each using 6 fl oz plain 2% ultra-filtered milk. Nutrition estimates use Fairlife: 120 calories and 13 g protein per 8 fl oz. MooTopia labels may differ; no syrup or added sugar is included. Fairlife milk label: https://fairlife.com/ultra-filtered-milk/reduced-fat-2-percent-milk/"
   ]
 }
