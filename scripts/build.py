@@ -20,7 +20,7 @@ FRACTIONS = {Fraction(1, 2): '½', Fraction(1, 3): '⅓', Fraction(2, 3): '⅔',
 WORDS = ('zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten')
 UNIT_LABELS = {'count': '', 'portion': '', 'g-protein': 'g protein', 'cup-cooked': 'cup cooked', 'cup-dry': 'cup dry', 'tsp-dry': 'tsp dry'}
 PLAN_COPY_FIELDS = {'heroDescription', 'planAside', 'recipeIntro', 'targetNote', 'workoutNote', 'nutritionNote', 'shoppingNote', 'storageNote', 'footer'}
-RESERVED_RECIPE_IDS = {'main', 'plan', 'guides', 'groceries', 'palette-select', 'palette-note', 'list-progress'}
+RESERVED_RECIPE_IDS = {'main', 'plan', 'guides', 'groceries', 'palette-select', 'palette-note', 'plan-select', 'plan-note', 'list-progress'}
 
 
 def fail(path, message):
@@ -361,9 +361,12 @@ def recipe_html(data, plan, recipe_id, uses, positions):
     return f'<details class="recipe" id="{recipe_id}"><summary><span class="recipe-kind">{escape(recipe["kind"].title())}</span><span class="recipe-title">{escape(recipe["title"])}</span><span class="recipe-meta">{escape(metadata)}</span><span class="plus" aria-hidden="true">+</span></summary><div class="recipe-body"><p>{escape(recipe["description"])}</p><div class="nutrition"><span>~{pretty(quantity(nutrition["calories"]))} kcal <small>per meal</small></span><span>~{pretty(quantity(nutrition["proteinGrams"]))} g protein</span></div><div class="recipe-columns"><div><h4>What you need</h4><ul>{ingredients}</ul></div><div><h4>How to make it</h4><ol>{steps}</ol></div></div><p class="recipe-note">{escape(calendar)} {rich_text(recipe["note"])}</p>{source_html}</div></details>'
 
 
-def render_page(data):
+def render_page(data, plan_id=None, root_prefix='.'):
     validate_data(data)
-    plan = data['plans'][data['activePlanId']]
+    plan_id = data['activePlanId'] if plan_id is None else plan_id
+    if plan_id not in data['plans']:
+        fail('planId', f'unknown plan {plan_id!r}')
+    plan = data['plans'][plan_id]
     site = dict(data['site'], **plan.get('copy', {}))
     count = len(plan['days'])
     day_title = f'{word(count).capitalize()} ' + ('day' if count == 1 else 'days')
@@ -436,11 +439,23 @@ def render_page(data):
         rice_parts.append(f'The quick-cooking rice recipes separately use <strong>{escape(dry_amount)} dry rice</strong>.')
     rice_note = '<aside class="rice-note"><strong>A note on rice</strong><p>' + ' '.join(rice_parts) + ' Follow package yields; shopping quantities include the configured bag size.</p></aside>' if rice_parts else ''
     cooking_text = ('Cook batches on ' + day_phrase(cooking) + '. ') if cooking else ''
+    options, plan_links = [], []
+    for other_id, other in data['plans'].items():
+        url = f'{root_prefix}/plans/{other_id}/'
+        label = f'{other["title"]} · {float(quantity(other["targets"]["calories"])):,.0f} kcal'
+        if other_id == data['activePlanId']:
+            label += ' (default)'
+        selected = ' selected' if other_id == plan_id else ''
+        current = ' aria-current="page"' if other_id == plan_id else ''
+        options.append(f'<option value="{escape(url, quote=True)}"{selected} data-plan-id="{other_id}">{escape(label)}</option>')
+        plan_links.append(f'<a href="{escape(url, quote=True)}"{current}>{escape(label)}</a>')
+    switcher = '<div class="plan-toolbar"><div class="plan-picker" data-plan-picker hidden><label for="plan-select">Meal plan</label><select id="plan-select" aria-describedby="plan-note" data-plan-select>' + ''.join(options) + '</select><span class="sr-only" id="plan-note">Switch plans to view their meals, recipes and separate grocery checklists.</span></div><nav class="plan-links" aria-label="Meal plans" data-plan-links>' + ''.join(plan_links) + '</nav></div>'
     values = {
         'PAGE_TITLE': escape(site['brand'].title() + ' — ' + plan['title']),
         'DESCRIPTION': escape(f'{plan["title"]} with daily recipe guides and a grocery checklist.',quote=True),
         'BREAKFAST_MODE': 'Made fresh' if all(data['recipes'][data['days'][day_id]['meals']['breakfast']]['preparation'] == 'fresh' for day_id in plan['days']) else 'Follow daily guide',
-        'PLAN_ID':data['activePlanId'], 'GROCERY_KEY':f'daily-plate-groceries-v2:{data["activePlanId"]}:{fingerprint}',
+        'PLAN_ID':plan_id, 'GROCERY_KEY':f'daily-plate-groceries-v2:{plan_id}:{fingerprint}',
+        'PLAN_SWITCHER':switcher, 'ROOT_PREFIX':root_prefix, 'DAY_COLUMNS':str(min(count,4)),
         'BRAND':escape(site['brand']), 'DAY_TITLE':escape(day_title), 'HERO_HEADING':escape(site['heroHeading']),
         'HERO_DESCRIPTION':escape(site['heroDescription']),
         'EYEBROW':escape(f'{day_title.upper()} · {word(plan["people"]).upper()} {"PERSON" if plan["people"]==1 else "PEOPLE"} · {word(len(cooking)).upper()} COOKING {"SESSION" if len(cooking)==1 else "SESSIONS"}'),
@@ -476,6 +491,7 @@ def load_data(path):
 def build_site(data_path, output_dir):
     data = load_data(data_path)
     rendered = render_page(data)
+    plan_pages = {plan_id:render_page(data, plan_id, '../..') for plan_id in data['plans']}
     assets = [ROOT/name for name in ('styles.css','app.js','themes.js')]
     for asset in assets:
         if not asset.is_file():
@@ -487,6 +503,13 @@ def build_site(data_path, output_dir):
     for asset in assets:
         shutil.copyfile(asset, output/asset.name)
     (output/'index.html').write_text(rendered)
+    plans_dir = output/'plans'
+    if plans_dir.exists():
+        shutil.rmtree(plans_dir)
+    for plan_id, page in plan_pages.items():
+        destination = plans_dir/plan_id
+        destination.mkdir(parents=True)
+        (destination/'index.html').write_text(page)
     return rendered
 
 

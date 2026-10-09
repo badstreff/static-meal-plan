@@ -1,4 +1,12 @@
 (() => {
+  const planPicker = document.querySelector('[data-plan-picker]');
+  const planSelect = document.querySelector('[data-plan-select]');
+  const planLinks = document.querySelector('[data-plan-links]');
+  if (planPicker && planSelect && planLinks) {
+    planPicker.hidden = false;
+    planLinks.hidden = true;
+    planSelect.addEventListener('change', () => { window.location.assign(planSelect.value); });
+  }
   const groceries = [...document.querySelectorAll('#groceries input[type="checkbox"]')];
   const key = document.body.dataset.groceryKey || 'daily-plate-groceries-v1';
   const progress = document.querySelector('#list-progress');

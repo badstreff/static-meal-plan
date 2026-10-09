@@ -4,7 +4,7 @@ A static meal plan with daily recipe guides, a calculated grocery checklist, pri
 
 **Live page:** https://badstreff.github.io/static-meal-plan/
 
-## Change the active plan
+## Choose the default or browse another plan
 
 All meal content lives in [`meal-plan.json`](meal-plan.json). Set its top-level `activePlanId` to a key in `plans`, then push to `main`.
 
@@ -12,11 +12,15 @@ All meal content lives in [`meal-plan.json`](meal-plan.json). Set its top-level 
 "activePlanId": "four-day-cut"
 ```
 
-GitHub Actions validates the document, runs tests, generates `_site/index.html`, and publishes `_site`. Invalid content stops deployment. Displaying the meal plan does not require JavaScript or a JSON request.
+`activePlanId` chooses the plan shown on the homepage. The meal-plan selector lets visitors browse every plan in the JSON. With JavaScript disabled, ordinary plan links appear instead. Each plan has a stable URL at `plans/<plan-id>/` and its own saved grocery checklist; palette preferences carry across plans. The default plan's checklist is shared between its homepage and its dedicated URL.
+
+GitHub Actions validates the document, runs tests, generates the homepage and every plan page, and publishes `_site`. Invalid content stops deployment. Displaying meals and recipes does not require JavaScript or a JSON request.
+
+The catalog includes the original `four-day-cut` plan and `three-day-1800`, a three-day sample around 1,800 calories with a 160 g protein target. The sample's rest-day estimates are 1,773, 1,796 and 1,786 calories. Both breakfasts include two lattes, and its workout snack notes account for the 30 g / 150 calorie Fairlife shake. Nutrition estimates are per serving and depend on actual brands and ingredients.
 
 ## Add or reorder plans and days
 
-Add this entry alongside `four-day-cut`, then set `activePlanId` to `two-day-cut`:
+Add this entry alongside the existing plans. It appears in the selector after the next build. Set `activePlanId` to `two-day-cut` if it should become the homepage default:
 
 ```json
 "two-day-cut": {
@@ -41,7 +45,7 @@ The `days` array controls order and may repeat IDs. Replace an ID to swap a day.
 }
 ```
 
-Duplicate a day under another ID to make a variation, then change its recipe references. A recipe's `kind` must match its meal slot. Only selected recipes appear. Guides follow the selected order; groceries cover all meals and the plan's `people` count.
+Duplicate a day under another ID to make a variation, then change its recipe references. A recipe's `kind` must match its meal slot. Each page displays only that plan's recipes. Guides follow its day order; groceries cover its meals and `people` count. Smaller portions use separate recipe IDs so the original plan stays unchanged.
 
 Batch recipes are prepared on their first selected day. For plans beyond the 3–4 day refrigeration window, plan separate batches or freezing; the generator is not a food-storage scheduler.
 
@@ -107,7 +111,8 @@ Regression tests use a fixed catalog in `scripts/fixtures/meal-plan.json`; leave
 | `styles.css` | Responsive and print styles |
 | `app.js` | Grocery persistence, recipe navigation and printing |
 | `themes.js` | Palette catalog and saved selection |
-| `_site/` | Generated output, ignored by git |
+| `_site/index.html` | Generated default homepage, ignored by git |
+| `_site/plans/<plan-id>/index.html` | Generated pages for every plan, ignored by git |
 
 Schema version is `1`. Validation rejects unsupported versions, duplicate JSON keys, missing slots/references, invalid units/quantities, mismatched recipe kinds, unsafe source URLs, and conflicting recipe IDs. Inactive plans are also validated.
 

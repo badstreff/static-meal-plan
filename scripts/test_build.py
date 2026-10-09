@@ -60,7 +60,7 @@ class MealPlanTests(unittest.TestCase):
     def test_repeated_days_have_unique_guides_and_scaled_groceries(self):
         plan = self.alternate(['day-01', 'day-01'])
         html = builder.render_page(self.data)
-        ids = re.findall(r'\bid="([^"]+)"', html)
+        ids = re.findall(r'(?<![\w-])id="([^"]+)"', html)
         self.assertEqual(len(ids), len(set(ids)))
         self.assertIn('id="guide-01"', html)
         self.assertIn('id="guide-02"', html)
@@ -238,12 +238,91 @@ class MealPlanTests(unittest.TestCase):
         self.assertIn('from the prepared batch', later)
         self.assertNotIn('<dd>Made fresh</dd>', html)
 
-    def test_build_publishes_only_generated_page_and_runtime_assets(self):
+    def test_build_publishes_generated_pages_and_runtime_assets(self):
         with tempfile.TemporaryDirectory() as directory:
             output = Path(directory) / '_site'
             builder.build_site(FIXTURE, output)
-            self.assertEqual({p.name for p in output.iterdir()}, {'index.html', 'styles.css', 'app.js', 'themes.js'})
+            self.assertEqual({p.name for p in output.iterdir()}, {'index.html', 'styles.css', 'app.js', 'themes.js', 'plans'})
             self.assertIn('data-plan-id="four-day-cut"', (output / 'index.html').read_text())
+
+    def build_alternate(self, directory):
+        plan = self.alternate(['day-01','day-01','day-01'])
+        plan['targets'] = {'calories':1800,'proteinGrams':160}
+        self.data['activePlanId'] = 'four-day-cut'
+        source = Path(directory) / 'content.json'
+        source.write_text(json.dumps(self.data))
+        output = Path(directory) / '_site'
+        builder.build_site(source, output)
+        return source, output
+
+    def test_every_plan_has_a_static_page_and_root_keeps_the_default(self):
+        with tempfile.TemporaryDirectory() as directory:
+            source, output = self.build_alternate(directory)
+            self.assertTrue((output / 'plans/alternate/index.html').is_file())
+            root = (output / 'index.html').read_text()
+            default = (output / 'plans/four-day-cut/index.html').read_text()
+            alternate = (output / 'plans/alternate/index.html').read_text()
+            self.assertEqual(root.count('class="day-card"'), 4)
+            self.assertEqual(alternate.count('class="day-card"'), 3)
+            self.assertIn('data-plan-id="alternate"', alternate)
+            self.assertIn('1,800', alternate)
+            self.assertNotIn('id="ham"', alternate)
+            self.assertEqual(re.search(r'data-grocery-key="([^"]+)"', root)[1], re.search(r'data-grocery-key="([^"]+)"', default)[1])
+            self.assertNotEqual(re.search(r'data-grocery-key="([^"]+)"', root)[1], re.search(r'data-grocery-key="([^"]+)"', alternate)[1])
+            self.assertEqual(builder.load_data(source)['activePlanId'], 'four-day-cut')
+
+    def test_selector_has_all_plans_and_selects_the_displayed_plan(self):
+        with tempfile.TemporaryDirectory() as directory:
+            _, output = self.build_alternate(directory)
+            self.assertTrue((output / 'plans/alternate/index.html').is_file())
+            html = (output / 'plans/alternate/index.html').read_text()
+            picker = re.search(r'<select[^>]*id="plan-select"[^>]*>(.*?)</select>', html)
+            self.assertIsNotNone(picker)
+            self.assertIn('value="../../plans/alternate/" selected', picker[1])
+            self.assertIn('value="../../plans/four-day-cut/"', picker[1])
+            self.assertIn('Alternate plan · 1,800 kcal', picker[1])
+
+    def test_plan_links_work_without_javascript(self):
+        self.alternate(['day-01'])
+        html = builder.render_page(self.data)
+        fallback = re.search(r'<nav[^>]*data-plan-links[^>]*>(.*?)</nav>', html)
+        self.assertIsNotNone(fallback)
+        self.assertNotIn('hidden', fallback[0])
+        self.assertIn('href="./plans/four-day-cut/"', fallback[1])
+        self.assertIn('href="./plans/alternate/"', fallback[1])
+
+    def test_nested_pages_reference_shared_assets_at_site_root(self):
+        with tempfile.TemporaryDirectory() as directory:
+            _, output = self.build_alternate(directory)
+            self.assertTrue((output / 'plans/alternate/index.html').is_file())
+            html = (output / 'plans/alternate/index.html').read_text()
+            for name in ['styles.css','app.js','themes.js']:
+                self.assertIn(f'../../{name}', html)
+                self.assertTrue((output / 'plans/alternate' / '../../' / name).resolve().is_file())
+
+    def test_changing_default_preserves_other_plan_urls(self):
+        with tempfile.TemporaryDirectory() as directory:
+            source, output = self.build_alternate(directory)
+            self.data['activePlanId'] = 'alternate'
+            source.write_text(json.dumps(self.data))
+            builder.build_site(source, output)
+            self.assertEqual((output / 'index.html').read_text().count('class="day-card"'), 3)
+            self.assertTrue((output / 'plans/four-day-cut/index.html').is_file())
+
+    def test_rebuild_removes_pages_for_deleted_plans(self):
+        with tempfile.TemporaryDirectory() as directory:
+            source, output = self.build_alternate(directory)
+            self.assertTrue((output / 'plans/alternate/index.html').is_file())
+            del self.data['plans']['alternate']
+            source.write_text(json.dumps(self.data))
+            builder.build_site(source, output)
+            self.assertFalse((output / 'plans/alternate').exists())
+
+    def test_plan_titles_are_escaped_in_selector_and_fallback_links(self):
+        self.alternate(['day-01'])['title'] = '<img src=x onerror=alert(1)>'
+        html = builder.render_page(self.data)
+        self.assertNotIn('<img src=x', html)
+        self.assertIn('&lt;img src=x onerror=alert(1)&gt;', html)
 
     def test_invalid_build_does_not_overwrite_previous_output(self):
         with tempfile.TemporaryDirectory() as directory:

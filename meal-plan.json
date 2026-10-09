@@ -36,6 +36,30 @@
       "extraItems": [
         "fairlife"
       ]
+    },
+    "three-day-1800": {
+      "title": "Three-day sample",
+      "people": 1,
+      "targets": {
+        "calories": 1800,
+        "proteinGrams": 160
+      },
+      "days": [
+        "sample-day-01",
+        "sample-day-02",
+        "sample-day-03"
+      ],
+      "extraItems": [
+        "fairlife"
+      ],
+      "copy": {
+        "heroDescription": "A three-day sample around 1,800 calories, with smaller chicken bowls, fresh breakfasts and your two morning lattes.",
+        "planAside": "Smaller portions. The same simple rhythm.",
+        "targetNote": "Sample targets. Includes latte milk; actual brands and portions matter.",
+        "workoutNote": "Include your **Fairlife shake — 30 g protein, 150 calories** in the snack. With yogurt, use 100 g yogurt + berries and skip the honey and walnuts; with cottage cheese, use half the snack portion. Keep the smaller breakfast powder shake separate.",
+        "nutritionNote": "This sample uses approximate recipe estimates. Rest-day totals are about 1,770–1,800 calories, with roughly 155–175 g protein. Breakfast includes two lattes using 12 fl oz plain Fairlife 2% milk. Check your actual milk, powder and other ingredient labels.",
+        "shoppingNote": "Calculated for three days and one person. Full rest-day snacks are included; workout swaps may leave extras. The latte milk is included."
+      }
     }
   },
   "groceryGroups": [
@@ -75,6 +99,30 @@
         "lunch": "greek",
         "dinner": "honey",
         "snack": "cottage"
+      }
+    },
+    "sample-day-01": {
+      "meals": {
+        "breakfast": "oats-1800",
+        "lunch": "buffalo-1800",
+        "dinner": "honey-1800",
+        "snack": "yogurt-1800"
+      }
+    },
+    "sample-day-02": {
+      "meals": {
+        "breakfast": "ham-1800",
+        "lunch": "greek-1800",
+        "dinner": "chile-1800",
+        "snack": "cottage"
+      }
+    },
+    "sample-day-03": {
+      "meals": {
+        "breakfast": "oats-1800",
+        "lunch": "buffalo-1800",
+        "dinner": "chile-1800",
+        "snack": "yogurt-1800"
       }
     }
   },
@@ -767,6 +815,629 @@
       "source": {
         "label": "Adapted from Skinnytaste",
         "url": "https://www.skinnytaste.com/high-protein-whipped-cottage-cheese-bowls/"
+      }
+    },
+    "buffalo-1800": {
+      "title": "Buffalo chicken rice bowls — smaller portions",
+      "shortTitle": "Buffalo chicken",
+      "kind": "lunch",
+      "preparation": "batch",
+      "servings": 2,
+      "prepTime": "About 30 min",
+      "nutrition": {
+        "calories": 485,
+        "proteinGrams": 44
+      },
+      "description": "A smaller portion of buffalo chicken, adapted for the three-day 1,800-calorie sample.",
+      "ingredients": [
+        {
+          "itemId": "chicken-breast",
+          "quantity": "2/3",
+          "unit": "lb",
+          "label": "raw chicken breast, diced"
+        },
+        {
+          "itemId": "brown-rice",
+          "quantity": "4/3",
+          "unit": "cup-cooked",
+          "label": "brown rice"
+        },
+        {
+          "itemId": "beans",
+          "quantity": "4/9",
+          "unit": "cup",
+          "label": "drained black beans"
+        },
+        {
+          "itemId": "onions",
+          "quantity": "2/9",
+          "unit": "cup",
+          "label": "diced red onion",
+          "variant": "red"
+        },
+        {
+          "itemId": "buffalo-sauce",
+          "quantity": "2/9",
+          "unit": "cup"
+        },
+        {
+          "itemId": "cheddar",
+          "quantity": "2/9",
+          "unit": "cup",
+          "label": "shredded part-skim cheddar"
+        },
+        {
+          "itemId": "olive-oil",
+          "quantity": "4/9",
+          "unit": "tsp",
+          "label": "olive oil for cooking"
+        },
+        {
+          "itemId": "olive-oil",
+          "quantity": "8/3",
+          "unit": "tsp",
+          "label": "olive oil for portions"
+        },
+        {
+          "itemId": "spices",
+          "quantity": "2/9",
+          "unit": "tsp",
+          "label": "each paprika and cumin"
+        },
+        {
+          "itemId": "scallions",
+          "quantity": null,
+          "unit": "count",
+          "asNeeded": true,
+          "label": "Scallions, to finish",
+          "format": "{label}"
+        },
+        {
+          "itemId": "salt-pepper",
+          "quantity": null,
+          "unit": "tsp",
+          "asNeeded": true,
+          "format": "{label}, to taste"
+        }
+      ],
+      "steps": [
+        "Cook the onion in the listed cooking oil until softened. Stir in beans, paprika and cumin.",
+        "In a sprayed skillet, cook chicken to 165°F / 74°C. Toss with buffalo sauce.",
+        "Split rice, beans, chicken and cheddar between {portionsWord} containers. Divide the oil for portions equally between the rice/bean portions; finish with scallions."
+      ],
+      "note": "Smaller portions for the 1,800-calorie sample. Estimates scale the original recipe to two-thirds of its portion size; track actual ingredients and brands.",
+      "source": {
+        "label": "Adapted from Skinnytaste",
+        "url": "https://www.skinnytaste.com/buffalo-chicken-rice-bowls/"
+      }
+    },
+    "greek-1800": {
+      "title": "Greek chicken rice bowls — smaller portions",
+      "shortTitle": "Greek chicken",
+      "kind": "lunch",
+      "preparation": "batch",
+      "servings": 2,
+      "prepTime": "About 1 hr incl. marinade",
+      "nutrition": {
+        "calories": 465,
+        "proteinGrams": 49
+      },
+      "description": "A smaller portion of greek chicken, adapted for the three-day 1,800-calorie sample.",
+      "ingredients": [
+        {
+          "itemId": "chicken-breast",
+          "quantity": "5/6",
+          "unit": "lb",
+          "label": "raw chicken breast"
+        },
+        {
+          "itemId": "brown-rice",
+          "quantity": "2/3",
+          "unit": "cup-dry",
+          "label": "quick-cooking brown rice"
+        },
+        {
+          "itemId": "brown-rice",
+          "quantity": "4/3",
+          "unit": "tsp-dry",
+          "label": "additional quick-cooking brown rice"
+        },
+        {
+          "itemId": "broth",
+          "quantity": "10/9",
+          "unit": "cup",
+          "label": "low-sodium chicken broth"
+        },
+        {
+          "itemId": "lemons",
+          "quantity": "10/9",
+          "unit": "tbsp",
+          "label": "lemon juice"
+        },
+        {
+          "itemId": "vinegar",
+          "quantity": "10/9",
+          "unit": "tbsp",
+          "label": "red wine vinegar"
+        },
+        {
+          "itemId": "olive-oil",
+          "quantity": "5/3",
+          "unit": "tsp",
+          "label": "olive oil for marinade"
+        },
+        {
+          "itemId": "olive-oil",
+          "quantity": "20/9",
+          "unit": "tsp",
+          "label": "olive oil for serving"
+        },
+        {
+          "itemId": "garlic",
+          "quantity": "5/3",
+          "unit": "clove",
+          "label": "garlic, minced"
+        },
+        {
+          "itemId": "spices",
+          "quantity": "10/9",
+          "unit": "tsp",
+          "label": "dried oregano"
+        },
+        {
+          "itemId": "tomatoes",
+          "quantity": "5/9",
+          "unit": "pint",
+          "label": "cherry tomatoes"
+        },
+        {
+          "itemId": "cucumber",
+          "quantity": "5/9",
+          "unit": "count",
+          "label": "cucumber"
+        },
+        {
+          "itemId": "bell-peppers",
+          "quantity": "5/9",
+          "unit": "count",
+          "label": "bell pepper"
+        },
+        {
+          "itemId": "olives",
+          "quantity": "34/3",
+          "unit": "count",
+          "label": "Kalamata olives"
+        },
+        {
+          "itemId": "feta",
+          "quantity": "2",
+          "unit": "tbsp"
+        },
+        {
+          "itemId": "feta",
+          "quantity": "2/3",
+          "unit": "tsp",
+          "label": "additional feta"
+        },
+        {
+          "itemId": "lemons",
+          "quantity": "2/3",
+          "unit": "lemon",
+          "label": "for wedges"
+        }
+      ],
+      "steps": [
+        "Flatten chicken to an even thickness. Marinate in lemon juice, vinegar, marinade oil, garlic and oregano for 30 minutes in the fridge.",
+        "Cook rice with broth according to its package. Grill or pan-cook chicken to 165°F / 74°C; rest and slice.",
+        "Split chicken and rice between {portionsWord} portions. Pack chopped vegetables, olives and feta separately. At serving, add the toppings, remaining oil and lemon."
+      ],
+      "note": "Smaller portions for the 1,800-calorie sample. Estimates scale the original recipe to two-thirds of its portion size; track actual ingredients and brands.",
+      "source": {
+        "label": "Adapted from Skinnytaste",
+        "url": "https://www.skinnytaste.com/greek-chicken-meal-prep-rice-bowls/"
+      }
+    },
+    "honey-1800": {
+      "title": "Honey garlic chicken thighs — smaller portions",
+      "shortTitle": "Honey garlic thighs",
+      "kind": "dinner",
+      "preparation": "batch",
+      "servings": 2,
+      "prepTime": "About 1 hr incl. marinade",
+      "nutrition": {
+        "calories": 513,
+        "proteinGrams": 48
+      },
+      "description": "A smaller portion of honey garlic thighs, adapted for the three-day 1,800-calorie sample.",
+      "ingredients": [
+        {
+          "itemId": "chicken-thighs",
+          "quantity": "10/9",
+          "unit": "lb",
+          "label": "raw boneless, skinless chicken thighs"
+        },
+        {
+          "itemId": "brown-rice",
+          "quantity": "5/3",
+          "unit": "cup-cooked",
+          "label": "brown rice"
+        },
+        {
+          "itemId": "mixed-vegetables",
+          "quantity": "202",
+          "unit": "g",
+          "label": "frozen mixed vegetables"
+        },
+        {
+          "itemId": "onions",
+          "quantity": "4/9",
+          "unit": "count",
+          "label": "medium sweet onion, sliced",
+          "variant": "sweet"
+        },
+        {
+          "itemId": "oyster-sauce",
+          "quantity": "2/3",
+          "unit": "tbsp"
+        },
+        {
+          "itemId": "honey",
+          "quantity": "10/9",
+          "unit": "tbsp"
+        },
+        {
+          "itemId": "soy-sauce",
+          "quantity": "16/9",
+          "unit": "tsp"
+        },
+        {
+          "itemId": "sesame-oil",
+          "quantity": "4/9",
+          "unit": "tsp"
+        },
+        {
+          "itemId": "sriracha",
+          "quantity": "4/9",
+          "unit": "tsp"
+        },
+        {
+          "itemId": "garlic",
+          "quantity": "1",
+          "unit": "clove",
+          "label": "garlic, minced"
+        }
+      ],
+      "steps": [
+        "Mix sauces, honey, sesame oil and garlic. Coat chicken and refrigerate for 30 minutes.",
+        "Roast at 425°F / 220°C on a lined tray; add onion and finish under the broiler for color. Check chicken reaches 165°F / 74°C; watch the broiler closely.",
+        "Heat vegetables and rice. Divide all food equally into {portionsWord} dinner containers."
+      ],
+      "note": "Smaller portions for the 1,800-calorie sample. Estimates scale the original recipe to two-thirds of its portion size; track actual ingredients and brands.",
+      "source": {
+        "label": "Adapted from The Meal Prep Manual",
+        "url": "https://mealprepmanual.com/honey-garlic-chicken/"
+      }
+    },
+    "chile-1800": {
+      "title": "Chile lemon chicken rice bowls — smaller portions",
+      "shortTitle": "Chile lemon chicken",
+      "kind": "dinner",
+      "preparation": "batch",
+      "servings": 2,
+      "prepTime": "About 1 hr",
+      "nutrition": {
+        "calories": 526,
+        "proteinGrams": 49
+      },
+      "description": "A smaller portion of chile lemon chicken, adapted for the three-day 1,800-calorie sample.",
+      "ingredients": [
+        {
+          "itemId": "chicken-thighs",
+          "quantity": "8/9",
+          "unit": "lb",
+          "label": "raw boneless, skinless chicken thighs"
+        },
+        {
+          "itemId": "brown-rice",
+          "quantity": "4/3",
+          "unit": "cup-cooked",
+          "label": "brown rice"
+        },
+        {
+          "itemId": "yogurt",
+          "quantity": "200/3",
+          "unit": "g"
+        },
+        {
+          "itemId": "chicken-spices",
+          "quantity": "4/3",
+          "unit": "tsp",
+          "label": "each chili powder, onion powder and garlic powder for chicken"
+        },
+        {
+          "itemId": "lemons",
+          "quantity": "4/3",
+          "unit": "tsp",
+          "label": "lemon juice for chicken"
+        },
+        {
+          "itemId": "lemons",
+          "quantity": "4/3",
+          "unit": "tsp",
+          "label": "lemon juice for vegetables"
+        },
+        {
+          "itemId": "bell-peppers",
+          "quantity": "8/9",
+          "unit": "count",
+          "label": "bell peppers"
+        },
+        {
+          "itemId": "onions",
+          "quantity": "4/9",
+          "unit": "count",
+          "label": "small yellow onion",
+          "variant": "yellow"
+        },
+        {
+          "itemId": "cabbage",
+          "quantity": "16/3",
+          "unit": "oz",
+          "label": "shredded cabbage"
+        },
+        {
+          "itemId": "tomato-sauce",
+          "quantity": "32/9",
+          "unit": "oz"
+        },
+        {
+          "itemId": "olive-oil",
+          "quantity": "8/9",
+          "unit": "tbsp"
+        },
+        {
+          "itemId": "garlic",
+          "quantity": "4/3",
+          "unit": "tsp",
+          "label": "minced garlic"
+        },
+        {
+          "itemId": "chicken-spices",
+          "quantity": "4/9",
+          "unit": "tsp",
+          "label": "each chili and onion powder for vegetables"
+        },
+        {
+          "itemId": "salt-pepper",
+          "quantity": null,
+          "unit": "tsp",
+          "asNeeded": true,
+          "label": "Salt, to taste",
+          "format": "{label}"
+        },
+        {
+          "itemId": "cilantro",
+          "quantity": null,
+          "unit": "count",
+          "asNeeded": true,
+          "label": "Optional cilantro and fresh chile",
+          "format": "{label}"
+        }
+      ],
+      "steps": [
+        "Coat thighs with yogurt, chicken spices and lemon juice. Roast at 425°F / 220°C; broil briefly for browning. Check 165°F / 74°C before slicing.",
+        "Heat oil, garlic and vegetable spices in a skillet. Add diced peppers and onion; soften, then add cabbage and tomato sauce.",
+        "Stir in rice, sliced chicken and remaining lemon juice. Divide evenly into {portionsWord} containers."
+      ],
+      "note": "Smaller portions for the 1,800-calorie sample. Estimates scale the original recipe to two-thirds of its portion size; track actual ingredients and brands.",
+      "source": {
+        "label": "Adapted from The Meal Prep Manual",
+        "url": "https://mealprepmanual.com/chile-lemon-rice-bowls/"
+      }
+    },
+    "oats-1800": {
+      "title": "Smaller apple & brown sugar oats + two lattes",
+      "shortTitle": "Oats & apple + 2 lattes",
+      "kind": "breakfast",
+      "preparation": "fresh",
+      "servings": 1,
+      "prepTime": "Cook to package",
+      "nutrition": {
+        "calories": 530,
+        "proteinGrams": 35
+      },
+      "description": "A smaller bowl of warm oats, an apple, and a little brown sugar. Keep the 10 g protein shake separate and enjoy your two morning lattes.",
+      "ingredients": [
+        {
+          "itemId": "oats",
+          "quantity": 40,
+          "unit": "g",
+          "label": "dry steel-cut oats + water per package"
+        },
+        {
+          "itemId": "apples",
+          "quantity": 1,
+          "unit": "count",
+          "label": "medium apple, chopped"
+        },
+        {
+          "itemId": "brown-sugar",
+          "quantity": 1,
+          "unit": "tsp"
+        },
+        {
+          "itemId": "breakfast-fat",
+          "quantity": "1/2",
+          "unit": "portion",
+          "format": "{alternatives}"
+        },
+        {
+          "itemId": "protein-powder",
+          "quantity": 10,
+          "unit": "g-protein",
+          "format": "Protein powder providing {amount} + water"
+        },
+        {
+          "itemId": "spices",
+          "quantity": null,
+          "unit": "tsp",
+          "asNeeded": true,
+          "label": "Cinnamon, optional",
+          "format": "{label}"
+        },
+        {
+          "itemId": "latte-milk",
+          "quantity": 12,
+          "unit": "fl oz",
+          "label": "plain Fairlife or MooTopia 2% milk for two lattes per person"
+        },
+        {
+          "itemId": "coffee",
+          "quantity": null,
+          "unit": "portion",
+          "asNeeded": true,
+          "label": "Coffee or espresso, as you prefer",
+          "format": "{label}"
+        }
+      ],
+      "steps": [
+        "Simmer the oats in water for the time on your package, stirring occasionally.",
+        "Stir in the apple near the end for softer fruit, or add it fresh. Finish with brown sugar and butter or half-and-half.",
+        "Shake the powder with water separately. Use its label to measure the listed protein amount; this is protein content, not powder weight.",
+        "Make two lattes per person, dividing the listed milk equally between them. Add your coffee or espresso; no syrup or sugar is included."
+      ],
+      "note": "Sample portion: 40 g dry oats and powder providing 10 g protein. Both lattes are included, using 12 fl oz plain Fairlife 2% milk. Use your powder and dairy labels for tracking; MooTopia may differ.",
+      "source": null
+    },
+    "ham-1800": {
+      "title": "Small ham frittata + two lattes",
+      "shortTitle": "Ham frittata + 2 lattes",
+      "kind": "breakfast",
+      "preparation": "fresh",
+      "servings": 1,
+      "prepTime": "About 25 min",
+      "nutrition": {
+        "calories": 475,
+        "proteinGrams": 44
+      },
+      "description": "A two-egg ham frittata with cottage cheese, spinach and Parmesan, served with your two lattes.",
+      "ingredients": [
+        {
+          "itemId": "eggs",
+          "quantity": 2,
+          "unit": "count",
+          "label": "large eggs"
+        },
+        {
+          "itemId": "ham",
+          "quantity": 2,
+          "unit": "oz",
+          "label": "diced cooked ham"
+        },
+        {
+          "itemId": "cottage-cheese",
+          "quantity": "1/4",
+          "unit": "cup",
+          "label": "low-fat cottage cheese"
+        },
+        {
+          "itemId": "parmesan",
+          "quantity": "1/8",
+          "unit": "cup",
+          "label": "grated Parmesan or Pecorino"
+        },
+        {
+          "itemId": "spinach",
+          "quantity": "1/2",
+          "unit": "cup",
+          "label": "chopped baby spinach"
+        },
+        {
+          "itemId": "olive-oil",
+          "quantity": null,
+          "unit": "tbsp",
+          "asNeeded": true,
+          "label": "Cooking spray",
+          "format": "{label}"
+        },
+        {
+          "itemId": "salt-pepper",
+          "quantity": null,
+          "unit": "tsp",
+          "asNeeded": true,
+          "label": "Black pepper, to taste",
+          "format": "{label}"
+        },
+        {
+          "itemId": "latte-milk",
+          "quantity": 12,
+          "unit": "fl oz",
+          "label": "plain Fairlife or MooTopia 2% milk for two lattes per person"
+        },
+        {
+          "itemId": "coffee",
+          "quantity": null,
+          "unit": "portion",
+          "asNeeded": true,
+          "label": "Coffee or espresso, as you prefer",
+          "format": "{label}"
+        }
+      ],
+      "steps": [
+        "Heat the oven to 350°F / 175°C. Coat a small oven-safe skillet with cooking spray; warm the ham.",
+        "Whisk eggs, cottage cheese, Parmesan and spinach. Pour into the skillet, cook briefly to set the base, then bake until fully set (about 16–18 minutes; 160°F / 71°C in the center).",
+        "Slice the frittata into {portionsWord} equal portions. Ham and Parmesan add salt; season to taste.",
+        "Make two lattes per person, dividing the listed milk equally between them. Add your coffee or espresso; no syrup or sugar is included."
+      ],
+      "note": "Sample portion: two eggs per person, without toast. The two lattes are included, estimated using plain Fairlife 2% milk; MooTopia may differ.",
+      "source": {
+        "label": "Adapted from Skinnytaste",
+        "url": "https://www.skinnytaste.com/cottage-cheese-egg-and-sausage-frittata/"
+      }
+    },
+    "yogurt-1800": {
+      "title": "Greek yogurt, berries & a little crunch",
+      "shortTitle": "Yogurt & berries",
+      "kind": "snack",
+      "preparation": "fresh",
+      "servings": 1,
+      "prepTime": "2 min",
+      "nutrition": {
+        "calories": 245,
+        "proteinGrams": 30
+      },
+      "description": "A quick yogurt bowl with fruit, honey and a little crunch.",
+      "ingredients": [
+        {
+          "itemId": "yogurt",
+          "quantity": 270,
+          "unit": "g"
+        },
+        {
+          "itemId": "berries",
+          "quantity": "1/2",
+          "unit": "cup",
+          "label": "berries"
+        },
+        {
+          "itemId": "walnuts",
+          "quantity": "1/2",
+          "unit": "tbsp",
+          "label": "chopped walnuts"
+        },
+        {
+          "itemId": "honey",
+          "quantity": 1,
+          "unit": "tsp"
+        }
+      ],
+      "steps": [
+        "Spoon yogurt into a bowl. Add berries, honey and walnuts just before eating."
+      ],
+      "note": "Rest-day snack. For a workout, use 100 g yogurt and the listed berries with a 30 g / 150 calorie Fairlife shake; skip the walnuts and honey. The workout version is about 250 calories.",
+      "source": {
+        "label": "Adapted from Skinnytaste",
+        "url": "https://www.skinnytaste.com/greek-yogurt-with-berries-nuts-and/"
       }
     }
   },
