@@ -1,6 +1,6 @@
 (() => {
   const groceries = [...document.querySelectorAll('#groceries input[type="checkbox"]')];
-  const key = 'daily-plate-groceries-v1';
+  const key = document.body.dataset.groceryKey || 'daily-plate-groceries-v1';
   const progress = document.querySelector('#list-progress');
   let saved = [];
   try {

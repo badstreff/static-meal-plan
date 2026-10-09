@@ -1,0 +1,1329 @@
+{
+  "schemaVersion": 1,
+  "activePlanId": "four-day-cut",
+  "site": {
+    "brand": "THE DAILY PLATE",
+    "heroHeading": "Food sorted.",
+    "heroDescription": "Fresh breakfasts. Good leftovers. A little less thinking about what to eat.",
+    "planAside": "A little variety. A simple rhythm.",
+    "guideHeading": "A guide for each day",
+    "recipeHeading": "The recipe notebook",
+    "recipeIntro": "Fresh recipes are portioned per person; batch recipes are scaled to the meals in this plan.",
+    "targetNote": "Targets, not exact totals. Portions and brands matter.",
+    "workoutNote": "Include your **Fairlife shake — 30 g protein, 150 calories** in the snack. Use 170 g yogurt + berries, or half a cottage cheese snack. Keep the breakfast shake separate.",
+    "nutritionNote": "Nutrition is approximate, based on source recipe cards and typical ingredient labels. Ham, mixed vegetables, dairy and powder change the totals. Log your actual brands if precision matters.",
+    "shoppingNote": "Shopping quantities are calculated from this plan. Full-size rest-day snacks are included; workout swaps may leave extras.",
+    "storageNote": "Keep cold toppings and crunchy snack toppings separate.",
+    "storageSafety": "Refrigerate cooked food within 2 hours at 40°F / 4°C or below. Use leftovers within 3–4 days; reheat to 165°F / 74°C.",
+    "storageUrl": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/leftovers-and-food-safety",
+    "footer": "Made manageable.",
+    "repoUrl": "https://github.com/badstreff/static-meal-plan"
+  },
+  "plans": {
+    "four-day-cut": {
+      "title": "Four-day meal plan",
+      "people": 1,
+      "targets": {
+        "calories": 2400,
+        "proteinGrams": 200
+      },
+      "days": [
+        "day-01",
+        "day-02",
+        "day-03",
+        "day-04"
+      ],
+      "extraItems": [
+        "fairlife"
+      ]
+    }
+  },
+  "groceryGroups": [
+    "Protein & dairy",
+    "Produce & frozen",
+    "Grains, cans & nuts",
+    "Pantry check"
+  ],
+  "days": {
+    "day-01": {
+      "meals": {
+        "breakfast": "oats",
+        "lunch": "buffalo",
+        "dinner": "honey",
+        "snack": "yogurt"
+      }
+    },
+    "day-02": {
+      "meals": {
+        "breakfast": "ham",
+        "lunch": "greek",
+        "dinner": "chile",
+        "snack": "cottage"
+      }
+    },
+    "day-03": {
+      "meals": {
+        "breakfast": "oats",
+        "lunch": "buffalo",
+        "dinner": "chile",
+        "snack": "yogurt"
+      }
+    },
+    "day-04": {
+      "meals": {
+        "breakfast": "ham",
+        "lunch": "greek",
+        "dinner": "honey",
+        "snack": "cottage"
+      }
+    }
+  },
+  "recipes": {
+    "oats": {
+      "title": "Apple & brown sugar steel-cut oats",
+      "shortTitle": "Oats & apple",
+      "kind": "breakfast",
+      "preparation": "fresh",
+      "servings": 1,
+      "prepTime": "Cook to package",
+      "nutrition": {
+        "calories": 630,
+        "proteinGrams": 48
+      },
+      "description": "Warm oats, a chopped apple, and a little richness. Your protein shake stays on the side.",
+      "ingredients": [
+        {
+          "itemId": "oats",
+          "quantity": 60,
+          "unit": "g",
+          "label": "dry steel-cut oats + water per package"
+        },
+        {
+          "itemId": "apples",
+          "quantity": 1,
+          "unit": "count",
+          "label": "medium apple, chopped"
+        },
+        {
+          "itemId": "brown-sugar",
+          "quantity": 2,
+          "unit": "tsp"
+        },
+        {
+          "itemId": "breakfast-fat",
+          "quantity": 1,
+          "unit": "portion",
+          "format": "{alternatives}"
+        },
+        {
+          "itemId": "protein-powder",
+          "quantity": 40,
+          "unit": "g-protein",
+          "format": "Protein powder providing {amount} + water"
+        },
+        {
+          "itemId": "spices",
+          "quantity": null,
+          "unit": "tsp",
+          "asNeeded": true,
+          "label": "Cinnamon, optional",
+          "format": "{label}"
+        }
+      ],
+      "steps": [
+        "Simmer the oats in water for the time on your package, stirring occasionally.",
+        "Stir in the apple near the end for softer fruit, or add it fresh. Finish with brown sugar and butter or half-and-half.",
+        "Shake the powder with water separately. Use its label to measure the listed protein amount; this is protein content, not powder weight."
+      ],
+      "note": "Measure oats dry; use your powder and dairy labels for tracking.",
+      "source": null
+    },
+    "ham": {
+      "title": "Ham & spinach frittata with toast",
+      "shortTitle": "Ham frittata & toast",
+      "kind": "breakfast",
+      "preparation": "fresh",
+      "servings": 1,
+      "prepTime": "About 25 min",
+      "nutrition": {
+        "calories": 650,
+        "proteinGrams": 50
+      },
+      "description": "Eggs, diced ham, cottage cheese and Parmesan, with toast on the side.",
+      "ingredients": [
+        {
+          "itemId": "eggs",
+          "quantity": 4,
+          "unit": "count",
+          "label": "large eggs"
+        },
+        {
+          "itemId": "ham",
+          "quantity": 2,
+          "unit": "oz",
+          "label": "diced cooked ham"
+        },
+        {
+          "itemId": "cottage-cheese",
+          "quantity": "1/4",
+          "unit": "cup",
+          "label": "low-fat cottage cheese"
+        },
+        {
+          "itemId": "parmesan",
+          "quantity": "1/4",
+          "unit": "cup",
+          "label": "grated Parmesan or Pecorino"
+        },
+        {
+          "itemId": "spinach",
+          "quantity": "1/2",
+          "unit": "cup",
+          "label": "chopped baby spinach"
+        },
+        {
+          "itemId": "bread",
+          "quantity": 2,
+          "unit": "slice",
+          "label": "whole-grain bread (~80 calories per slice)"
+        },
+        {
+          "itemId": "olive-oil",
+          "quantity": null,
+          "unit": "tbsp",
+          "asNeeded": true,
+          "label": "Cooking spray",
+          "format": "{label}"
+        },
+        {
+          "itemId": "salt-pepper",
+          "quantity": null,
+          "unit": "tsp",
+          "asNeeded": true,
+          "label": "Black pepper, to taste",
+          "format": "{label}"
+        }
+      ],
+      "steps": [
+        "Heat the oven to 350°F / 175°C. Coat a small oven-safe skillet with cooking spray; warm the ham.",
+        "Whisk eggs, cottage cheese, Parmesan and spinach. Pour into the skillet, cook briefly to set the base, then bake until fully set (about 16–18 minutes; 160°F / 71°C in the center).",
+        "Toast the bread and serve with the whole frittata. Ham and Parmesan add salt; season to taste."
+      ],
+      "note": "Ham replaces the Italian chicken sausage; its label determines the final calories.",
+      "source": {
+        "label": "Adapted from Skinnytaste",
+        "url": "https://www.skinnytaste.com/cottage-cheese-egg-and-sausage-frittata/"
+      }
+    },
+    "buffalo": {
+      "title": "Buffalo chicken rice bowls",
+      "shortTitle": "Buffalo chicken",
+      "kind": "lunch",
+      "preparation": "batch",
+      "servings": 2,
+      "prepTime": "About 30 min",
+      "nutrition": {
+        "calories": 727,
+        "proteinGrams": 66
+      },
+      "description": "Chicken, black beans and brown rice with buffalo sauce and melted cheddar.",
+      "ingredients": [
+        {
+          "itemId": "chicken-breast",
+          "quantity": 1,
+          "unit": "lb",
+          "label": "raw chicken breast, diced"
+        },
+        {
+          "itemId": "brown-rice",
+          "quantity": 2,
+          "unit": "cup-cooked",
+          "label": "brown rice"
+        },
+        {
+          "itemId": "beans",
+          "quantity": "2/3",
+          "unit": "cup",
+          "label": "drained black beans"
+        },
+        {
+          "itemId": "onions",
+          "quantity": "1/3",
+          "unit": "cup",
+          "label": "diced red onion",
+          "variant": "red"
+        },
+        {
+          "itemId": "buffalo-sauce",
+          "quantity": "1/3",
+          "unit": "cup"
+        },
+        {
+          "itemId": "cheddar",
+          "quantity": "1/3",
+          "unit": "cup",
+          "label": "shredded part-skim cheddar"
+        },
+        {
+          "itemId": "olive-oil",
+          "quantity": "2/3",
+          "unit": "tsp",
+          "label": "olive oil for cooking"
+        },
+        {
+          "itemId": "olive-oil",
+          "quantity": 4,
+          "unit": "tsp",
+          "label": "olive oil for portions"
+        },
+        {
+          "itemId": "spices",
+          "quantity": "1/3",
+          "unit": "tsp",
+          "label": "each paprika and cumin"
+        },
+        {
+          "itemId": "scallions",
+          "quantity": null,
+          "unit": "count",
+          "asNeeded": true,
+          "label": "Scallions, to finish",
+          "format": "{label}"
+        },
+        {
+          "itemId": "salt-pepper",
+          "quantity": null,
+          "unit": "tsp",
+          "asNeeded": true,
+          "format": "{label}, to taste"
+        }
+      ],
+      "steps": [
+        "Cook the onion in the listed cooking oil until softened. Stir in beans, paprika and cumin.",
+        "In a sprayed skillet, cook chicken to 165°F / 74°C. Toss with buffalo sauce.",
+        "Split rice, beans, chicken and cheddar between {portionsWord} containers. Divide the oil for portions equally between the rice/bean portions; finish with scallions."
+      ],
+      "note": "The extra olive oil is included in the calorie estimate.",
+      "source": {
+        "label": "Adapted from Skinnytaste",
+        "url": "https://www.skinnytaste.com/buffalo-chicken-rice-bowls/"
+      }
+    },
+    "greek": {
+      "title": "Greek chicken rice bowls",
+      "shortTitle": "Greek chicken",
+      "kind": "lunch",
+      "preparation": "batch",
+      "servings": 2,
+      "prepTime": "About 1 hr incl. marinade",
+      "nutrition": {
+        "calories": 697,
+        "proteinGrams": 73
+      },
+      "description": "Lemon-oregano chicken with rice, crunchy vegetables, olives and feta.",
+      "ingredients": [
+        {
+          "itemId": "chicken-breast",
+          "quantity": "5/4",
+          "unit": "lb",
+          "label": "raw chicken breast"
+        },
+        {
+          "itemId": "brown-rice",
+          "quantity": 1,
+          "unit": "cup-dry",
+          "label": "quick-cooking brown rice"
+        },
+        {
+          "itemId": "brown-rice",
+          "quantity": 2,
+          "unit": "tsp-dry",
+          "label": "additional quick-cooking brown rice"
+        },
+        {
+          "itemId": "broth",
+          "quantity": "5/3",
+          "unit": "cup",
+          "label": "low-sodium chicken broth"
+        },
+        {
+          "itemId": "lemons",
+          "quantity": "5/3",
+          "unit": "tbsp",
+          "label": "lemon juice"
+        },
+        {
+          "itemId": "vinegar",
+          "quantity": "5/3",
+          "unit": "tbsp",
+          "label": "red wine vinegar"
+        },
+        {
+          "itemId": "olive-oil",
+          "quantity": "5/2",
+          "unit": "tsp",
+          "label": "olive oil for marinade"
+        },
+        {
+          "itemId": "olive-oil",
+          "quantity": "10/3",
+          "unit": "tsp",
+          "label": "olive oil for serving"
+        },
+        {
+          "itemId": "garlic",
+          "quantity": "5/2",
+          "unit": "clove",
+          "label": "garlic, minced"
+        },
+        {
+          "itemId": "spices",
+          "quantity": "5/3",
+          "unit": "tsp",
+          "label": "dried oregano"
+        },
+        {
+          "itemId": "tomatoes",
+          "quantity": "5/6",
+          "unit": "pint",
+          "label": "cherry tomatoes"
+        },
+        {
+          "itemId": "cucumber",
+          "quantity": "5/6",
+          "unit": "count",
+          "label": "cucumber"
+        },
+        {
+          "itemId": "bell-peppers",
+          "quantity": "5/6",
+          "unit": "count",
+          "label": "bell pepper"
+        },
+        {
+          "itemId": "olives",
+          "quantity": 17,
+          "unit": "count",
+          "label": "Kalamata olives"
+        },
+        {
+          "itemId": "feta",
+          "quantity": 3,
+          "unit": "tbsp"
+        },
+        {
+          "itemId": "feta",
+          "quantity": 1,
+          "unit": "tsp",
+          "label": "additional feta"
+        },
+        {
+          "itemId": "lemons",
+          "quantity": 1,
+          "unit": "lemon",
+          "label": "for wedges"
+        }
+      ],
+      "steps": [
+        "Flatten chicken to an even thickness. Marinate in lemon juice, vinegar, marinade oil, garlic and oregano for 30 minutes in the fridge.",
+        "Cook rice with broth according to its package. Grill or pan-cook chicken to 165°F / 74°C; rest and slice.",
+        "Split chicken and rice between {portionsWord} portions. Pack chopped vegetables, olives and feta separately. At serving, add the toppings, remaining oil and lemon."
+      ],
+      "note": "Reheat only chicken and rice; add the cold toppings afterward.",
+      "source": {
+        "label": "Adapted from Skinnytaste",
+        "url": "https://www.skinnytaste.com/greek-chicken-meal-prep-rice-bowls/"
+      }
+    },
+    "honey": {
+      "title": "Honey garlic chicken thighs",
+      "shortTitle": "Honey garlic thighs",
+      "kind": "dinner",
+      "preparation": "batch",
+      "servings": 2,
+      "prepTime": "About 1 hr incl. marinade",
+      "nutrition": {
+        "calories": 770,
+        "proteinGrams": 72
+      },
+      "description": "Glazed chicken thighs, rice and easy frozen mixed vegetables.",
+      "ingredients": [
+        {
+          "itemId": "chicken-thighs",
+          "quantity": "5/3",
+          "unit": "lb",
+          "label": "raw boneless, skinless chicken thighs"
+        },
+        {
+          "itemId": "brown-rice",
+          "quantity": "5/2",
+          "unit": "cup-cooked",
+          "label": "brown rice"
+        },
+        {
+          "itemId": "mixed-vegetables",
+          "quantity": 303,
+          "unit": "g",
+          "label": "frozen mixed vegetables"
+        },
+        {
+          "itemId": "onions",
+          "quantity": "2/3",
+          "unit": "count",
+          "label": "medium sweet onion, sliced",
+          "variant": "sweet"
+        },
+        {
+          "itemId": "oyster-sauce",
+          "quantity": 1,
+          "unit": "tbsp"
+        },
+        {
+          "itemId": "honey",
+          "quantity": "5/3",
+          "unit": "tbsp"
+        },
+        {
+          "itemId": "soy-sauce",
+          "quantity": "8/3",
+          "unit": "tsp"
+        },
+        {
+          "itemId": "sesame-oil",
+          "quantity": "2/3",
+          "unit": "tsp"
+        },
+        {
+          "itemId": "sriracha",
+          "quantity": "2/3",
+          "unit": "tsp"
+        },
+        {
+          "itemId": "garlic",
+          "quantity": "3/2",
+          "unit": "clove",
+          "label": "garlic, minced"
+        }
+      ],
+      "steps": [
+        "Mix sauces, honey, sesame oil and garlic. Coat chicken and refrigerate for 30 minutes.",
+        "Roast at 425°F / 220°C on a lined tray; add onion and finish under the broiler for color. Check chicken reaches 165°F / 74°C; watch the broiler closely.",
+        "Heat vegetables and rice. Divide all food equally into {portionsWord} dinner containers."
+      ],
+      "note": "Mixed vegetables replace broccoli, so actual nutrition varies slightly.",
+      "source": {
+        "label": "Adapted from The Meal Prep Manual",
+        "url": "https://mealprepmanual.com/honey-garlic-chicken/"
+      }
+    },
+    "chile": {
+      "title": "Chile lemon chicken rice bowls",
+      "shortTitle": "Chile lemon chicken",
+      "kind": "dinner",
+      "preparation": "batch",
+      "servings": 2,
+      "prepTime": "About 1 hr",
+      "nutrition": {
+        "calories": 789,
+        "proteinGrams": 73
+      },
+      "description": "Yogurt-seasoned thighs with peppers, cabbage, tomato and rice.",
+      "ingredients": [
+        {
+          "itemId": "chicken-thighs",
+          "quantity": "4/3",
+          "unit": "lb",
+          "label": "raw boneless, skinless chicken thighs"
+        },
+        {
+          "itemId": "brown-rice",
+          "quantity": 2,
+          "unit": "cup-cooked",
+          "label": "brown rice"
+        },
+        {
+          "itemId": "yogurt",
+          "quantity": 100,
+          "unit": "g"
+        },
+        {
+          "itemId": "chicken-spices",
+          "quantity": 2,
+          "unit": "tsp",
+          "label": "each chili powder, onion powder and garlic powder for chicken"
+        },
+        {
+          "itemId": "lemons",
+          "quantity": 2,
+          "unit": "tsp",
+          "label": "lemon juice for chicken"
+        },
+        {
+          "itemId": "lemons",
+          "quantity": 2,
+          "unit": "tsp",
+          "label": "lemon juice for vegetables"
+        },
+        {
+          "itemId": "bell-peppers",
+          "quantity": "4/3",
+          "unit": "count",
+          "label": "bell peppers"
+        },
+        {
+          "itemId": "onions",
+          "quantity": "2/3",
+          "unit": "count",
+          "label": "small yellow onion",
+          "variant": "yellow"
+        },
+        {
+          "itemId": "cabbage",
+          "quantity": 8,
+          "unit": "oz",
+          "label": "shredded cabbage"
+        },
+        {
+          "itemId": "tomato-sauce",
+          "quantity": "16/3",
+          "unit": "oz"
+        },
+        {
+          "itemId": "olive-oil",
+          "quantity": "4/3",
+          "unit": "tbsp"
+        },
+        {
+          "itemId": "garlic",
+          "quantity": 2,
+          "unit": "tsp",
+          "label": "minced garlic"
+        },
+        {
+          "itemId": "chicken-spices",
+          "quantity": "2/3",
+          "unit": "tsp",
+          "label": "each chili and onion powder for vegetables"
+        },
+        {
+          "itemId": "salt-pepper",
+          "quantity": null,
+          "unit": "tsp",
+          "asNeeded": true,
+          "label": "Salt, to taste",
+          "format": "{label}"
+        },
+        {
+          "itemId": "cilantro",
+          "quantity": null,
+          "unit": "count",
+          "asNeeded": true,
+          "label": "Optional cilantro and fresh chile",
+          "format": "{label}"
+        }
+      ],
+      "steps": [
+        "Coat thighs with yogurt, chicken spices and lemon juice. Roast at 425°F / 220°C; broil briefly for browning. Check 165°F / 74°C before slicing.",
+        "Heat oil, garlic and vegetable spices in a skillet. Add diced peppers and onion; soften, then add cabbage and tomato sauce.",
+        "Stir in rice, sliced chicken and remaining lemon juice. Divide evenly into {portionsWord} containers."
+      ],
+      "note": "Bagged shredded cabbage keeps preparation simple.",
+      "source": {
+        "label": "Adapted from The Meal Prep Manual",
+        "url": "https://mealprepmanual.com/chile-lemon-rice-bowls/"
+      }
+    },
+    "yogurt": {
+      "title": "Greek yogurt, berries & walnuts",
+      "shortTitle": "Yogurt & berries",
+      "kind": "snack",
+      "preparation": "fresh",
+      "servings": 1,
+      "prepTime": "2 min",
+      "nutrition": {
+        "calories": 310,
+        "proteinGrams": 30
+      },
+      "description": "A quick yogurt bowl with fruit, honey and a little crunch.",
+      "ingredients": [
+        {
+          "itemId": "yogurt",
+          "quantity": 270,
+          "unit": "g"
+        },
+        {
+          "itemId": "berries",
+          "quantity": "1/2",
+          "unit": "cup",
+          "label": "berries"
+        },
+        {
+          "itemId": "walnuts",
+          "quantity": 1,
+          "unit": "tbsp",
+          "label": "chopped walnuts"
+        },
+        {
+          "itemId": "honey",
+          "quantity": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        "Spoon yogurt into a bowl. Add berries, honey and walnuts just before eating."
+      ],
+      "note": "Workout version: 170 g yogurt + ½ cup berries + one Fairlife shake (30 g protein / 150 calories). Skip honey and walnuts. About 290–310 calories total.",
+      "source": {
+        "label": "Adapted from Skinnytaste",
+        "url": "https://www.skinnytaste.com/greek-yogurt-with-berries-nuts-and/"
+      }
+    },
+    "cottage": {
+      "title": "Whipped cottage cheese & berries",
+      "shortTitle": "Cottage cheese bowl",
+      "kind": "snack",
+      "preparation": "batch",
+      "servings": 2,
+      "prepTime": "10 min",
+      "nutrition": {
+        "calories": 330,
+        "proteinGrams": 33
+      },
+      "description": "Smooth cottage cheese topped with berries and slivered almonds.",
+      "ingredients": [
+        {
+          "itemId": "cottage-cheese",
+          "quantity": 454,
+          "unit": "g",
+          "label": "low-fat cottage cheese"
+        },
+        {
+          "itemId": "vanilla",
+          "quantity": "1/2",
+          "unit": "tsp"
+        },
+        {
+          "itemId": "sweetener",
+          "quantity": null,
+          "unit": "tsp",
+          "asNeeded": true,
+          "label": "Zero-calorie sweetener, to taste",
+          "format": "{label}"
+        },
+        {
+          "itemId": "berries",
+          "quantity": 1,
+          "unit": "cup",
+          "label": "strawberries"
+        },
+        {
+          "itemId": "berries",
+          "quantity": 1,
+          "unit": "cup",
+          "label": "other berries"
+        },
+        {
+          "itemId": "almonds",
+          "quantity": 3,
+          "unit": "tbsp",
+          "label": "slivered almonds"
+        }
+      ],
+      "steps": [
+        "Blend cottage cheese, vanilla and sweetener until smooth.",
+        "Divide into {portionsWord} bowls; top each with an equal share of the berries and almonds."
+      ],
+      "note": "Workout version: half of one full-size snack + one Fairlife shake (30 g protein / 150 calories), about 315 calories. The grocery list covers full-size snacks.",
+      "source": {
+        "label": "Adapted from Skinnytaste",
+        "url": "https://www.skinnytaste.com/high-protein-whipped-cottage-cheese-bowls/"
+      }
+    }
+  },
+  "items": {
+    "chicken-breast": {
+      "label": "Chicken breast",
+      "group": "Protein & dairy",
+      "unit": "lb",
+      "units": {
+        "lb": 1
+      },
+      "shopping": {
+        "roundTo": "1/4",
+        "suffix": "raw, boneless, skinless"
+      }
+    },
+    "chicken-thighs": {
+      "label": "Chicken thighs",
+      "group": "Protein & dairy",
+      "unit": "lb",
+      "units": {
+        "lb": 1
+      },
+      "shopping": {
+        "roundTo": "1/4",
+        "suffix": "raw, boneless, skinless"
+      }
+    },
+    "ham": {
+      "label": "Diced cooked ham",
+      "group": "Protein & dairy",
+      "unit": "oz",
+      "units": {
+        "oz": 1
+      },
+      "shopping": {}
+    },
+    "eggs": {
+      "label": "Large eggs",
+      "group": "Protein & dairy",
+      "unit": "count",
+      "units": {
+        "count": 1
+      },
+      "shopping": {}
+    },
+    "yogurt": {
+      "label": "Nonfat Greek yogurt",
+      "group": "Protein & dairy",
+      "unit": "g",
+      "units": {
+        "g": 1
+      },
+      "shopping": {
+        "roundTo": 50
+      }
+    },
+    "cottage-cheese": {
+      "label": "Low-fat cottage cheese",
+      "group": "Protein & dairy",
+      "unit": "oz",
+      "units": {
+        "oz": 1,
+        "g": "8/227",
+        "cup": 8
+      },
+      "shopping": {
+        "roundTo": 8
+      }
+    },
+    "parmesan": {
+      "label": "Grated Parmesan",
+      "group": "Protein & dairy",
+      "unit": "cup",
+      "units": {
+        "cup": 1,
+        "tbsp": "1/16",
+        "tsp": "1/48"
+      },
+      "shopping": {}
+    },
+    "cheddar": {
+      "label": "Part-skim cheddar",
+      "group": "Protein & dairy",
+      "unit": "cup",
+      "units": {
+        "cup": 1,
+        "tbsp": "1/16",
+        "tsp": "1/48"
+      },
+      "shopping": {}
+    },
+    "feta": {
+      "label": "Feta",
+      "group": "Protein & dairy",
+      "unit": "cup",
+      "units": {
+        "cup": 1,
+        "tbsp": "1/16",
+        "tsp": "1/48"
+      },
+      "shopping": {
+        "roundTo": "1/4"
+      }
+    },
+    "breakfast-fat": {
+      "label": "Butter OR half-and-half",
+      "group": "Protein & dairy",
+      "unit": "portion",
+      "units": {
+        "portion": 1
+      },
+      "shopping": {},
+      "alternatives": [
+        {
+          "quantity": 10,
+          "unit": "g",
+          "label": "butter"
+        },
+        {
+          "quantity": "1/4",
+          "unit": "cup",
+          "label": "half-and-half"
+        }
+      ]
+    },
+    "protein-powder": {
+      "label": "Protein powder",
+      "group": "Protein & dairy",
+      "unit": "g-protein",
+      "units": {
+        "g-protein": 1
+      },
+      "shopping": {
+        "format": "Enough for {quantity} g total protein"
+      }
+    },
+    "fairlife": {
+      "label": "Fairlife protein shakes",
+      "group": "Protein & dairy",
+      "unit": "count",
+      "units": {
+        "count": 1
+      },
+      "shopping": {
+        "asNeeded": "1 per workout day · 30 g / 150 cal"
+      }
+    },
+    "apples": {
+      "label": "Apples",
+      "group": "Produce & frozen",
+      "unit": "count",
+      "units": {
+        "count": 1
+      },
+      "shopping": {
+        "suffix": "medium"
+      }
+    },
+    "berries": {
+      "label": "Mixed berries",
+      "group": "Produce & frozen",
+      "unit": "cup",
+      "units": {
+        "cup": 1,
+        "tbsp": "1/16",
+        "tsp": "1/48"
+      },
+      "shopping": {
+        "approximateGramsPerUnit": 150,
+        "suffix": "about {quantity} cups"
+      }
+    },
+    "mixed-vegetables": {
+      "label": "Frozen mixed vegetables",
+      "group": "Produce & frozen",
+      "unit": "g",
+      "units": {
+        "g": 1
+      },
+      "shopping": {
+        "packSize": 454,
+        "packLabel": "1 lb bag",
+        "showRequired": true
+      }
+    },
+    "bell-peppers": {
+      "label": "Bell peppers",
+      "group": "Produce & frozen",
+      "unit": "count",
+      "units": {
+        "count": 1
+      },
+      "shopping": {
+        "roundTo": 1
+      }
+    },
+    "cucumber": {
+      "label": "Cucumber",
+      "group": "Produce & frozen",
+      "unit": "count",
+      "units": {
+        "count": 1
+      },
+      "shopping": {
+        "roundTo": 1
+      }
+    },
+    "tomatoes": {
+      "label": "Cherry tomatoes",
+      "group": "Produce & frozen",
+      "unit": "pint",
+      "units": {
+        "pint": 1
+      },
+      "shopping": {
+        "roundTo": 1
+      }
+    },
+    "cabbage": {
+      "label": "Shredded cabbage",
+      "group": "Produce & frozen",
+      "unit": "oz",
+      "units": {
+        "oz": 1
+      },
+      "shopping": {}
+    },
+    "spinach": {
+      "label": "Baby spinach",
+      "group": "Produce & frozen",
+      "unit": "cup",
+      "units": {
+        "cup": 1,
+        "tbsp": "1/16",
+        "tsp": "1/48"
+      },
+      "shopping": {
+        "suffix": "chopped"
+      }
+    },
+    "onions": {
+      "label": "Onions",
+      "group": "Produce & frozen",
+      "unit": "count",
+      "units": {
+        "count": 1,
+        "cup": "1/2"
+      },
+      "shopping": {
+        "roundTo": 1
+      },
+      "variants": {
+        "sweet": "small sweet",
+        "yellow": "yellow",
+        "red": "red"
+      }
+    },
+    "scallions": {
+      "label": "Scallions",
+      "group": "Produce & frozen",
+      "unit": "count",
+      "units": {
+        "count": 1
+      },
+      "shopping": {
+        "asNeeded": "1 bunch"
+      }
+    },
+    "lemons": {
+      "label": "Lemons",
+      "group": "Produce & frozen",
+      "unit": "lemon",
+      "units": {
+        "lemon": 1,
+        "tsp": "1/6",
+        "tbsp": "1/2"
+      },
+      "shopping": {
+        "roundTo": 1,
+        "suffix": "medium"
+      }
+    },
+    "garlic": {
+      "label": "Garlic",
+      "group": "Produce & frozen",
+      "unit": "clove",
+      "units": {
+        "clove": 1,
+        "tsp": 1
+      },
+      "shopping": {
+        "packSize": 10,
+        "packLabel": "large head"
+      }
+    },
+    "cilantro": {
+      "label": "Cilantro / fresh chile",
+      "group": "Produce & frozen",
+      "unit": "count",
+      "units": {
+        "count": 1
+      },
+      "shopping": {
+        "asNeeded": "Optional"
+      }
+    },
+    "oats": {
+      "label": "Steel-cut oats",
+      "group": "Grains, cans & nuts",
+      "unit": "g",
+      "units": {
+        "g": 1
+      },
+      "shopping": {
+        "suffix": "dry"
+      }
+    },
+    "brown-rice": {
+      "label": "Brown rice",
+      "group": "Grains, cans & nuts",
+      "unit": "g",
+      "units": {
+        "g": 1,
+        "cup-cooked": 60,
+        "cup-dry": 180,
+        "tsp-dry": "15/4"
+      },
+      "shopping": {
+        "packSize": 907,
+        "packLabel": "2 lb bag",
+        "suffix": "includes quick-cooking rice"
+      }
+    },
+    "bread": {
+      "label": "Whole-grain bread",
+      "group": "Grains, cans & nuts",
+      "unit": "slice",
+      "units": {
+        "slice": 1
+      },
+      "shopping": {
+        "suffix": "~80 cal each"
+      }
+    },
+    "beans": {
+      "label": "Black beans",
+      "group": "Grains, cans & nuts",
+      "unit": "cup",
+      "units": {
+        "cup": 1,
+        "tbsp": "1/16",
+        "tsp": "1/48"
+      },
+      "shopping": {
+        "packSize": "3/2",
+        "packLabel": "can",
+        "showRequired": true,
+        "suffix": "drained"
+      }
+    },
+    "tomato-sauce": {
+      "label": "Tomato sauce",
+      "group": "Grains, cans & nuts",
+      "unit": "oz",
+      "units": {
+        "oz": 1
+      },
+      "shopping": {
+        "packSize": 8,
+        "packLabel": "8 oz can",
+        "showRequired": true
+      }
+    },
+    "olives": {
+      "label": "Kalamata olives",
+      "group": "Grains, cans & nuts",
+      "unit": "count",
+      "units": {
+        "count": 1
+      },
+      "shopping": {}
+    },
+    "walnuts": {
+      "label": "Chopped walnuts",
+      "group": "Grains, cans & nuts",
+      "unit": "tbsp",
+      "units": {
+        "tbsp": 1,
+        "tsp": "1/3",
+        "cup": 16
+      },
+      "shopping": {}
+    },
+    "almonds": {
+      "label": "Slivered almonds",
+      "group": "Grains, cans & nuts",
+      "unit": "tbsp",
+      "units": {
+        "tbsp": 1,
+        "tsp": "1/3",
+        "cup": 16
+      },
+      "shopping": {}
+    },
+    "brown-sugar": {
+      "label": "Brown sugar",
+      "group": "Pantry check",
+      "unit": "tsp",
+      "units": {
+        "tsp": 1,
+        "tbsp": 3,
+        "cup": 48
+      },
+      "shopping": {}
+    },
+    "honey": {
+      "label": "Honey",
+      "group": "Pantry check",
+      "unit": "tbsp",
+      "units": {
+        "tbsp": 1,
+        "tsp": "1/3",
+        "cup": 16
+      },
+      "shopping": {}
+    },
+    "buffalo-sauce": {
+      "label": "Buffalo sauce",
+      "group": "Pantry check",
+      "unit": "cup",
+      "units": {
+        "cup": 1,
+        "tbsp": "1/16",
+        "tsp": "1/48"
+      },
+      "shopping": {}
+    },
+    "oyster-sauce": {
+      "label": "Oyster sauce",
+      "group": "Pantry check",
+      "unit": "tbsp",
+      "units": {
+        "tbsp": 1,
+        "tsp": "1/3",
+        "cup": 16
+      },
+      "shopping": {}
+    },
+    "soy-sauce": {
+      "label": "Soy sauce",
+      "group": "Pantry check",
+      "unit": "tsp",
+      "units": {
+        "tsp": 1,
+        "tbsp": 3,
+        "cup": 48
+      },
+      "shopping": {}
+    },
+    "sriracha": {
+      "label": "Sriracha",
+      "group": "Pantry check",
+      "unit": "tsp",
+      "units": {
+        "tsp": 1,
+        "tbsp": 3,
+        "cup": 48
+      },
+      "shopping": {}
+    },
+    "vinegar": {
+      "label": "Red wine vinegar",
+      "group": "Pantry check",
+      "unit": "tbsp",
+      "units": {
+        "tbsp": 1,
+        "tsp": "1/3",
+        "cup": 16
+      },
+      "shopping": {}
+    },
+    "broth": {
+      "label": "Chicken broth",
+      "group": "Pantry check",
+      "unit": "cup",
+      "units": {
+        "cup": 1,
+        "tbsp": "1/16",
+        "tsp": "1/48"
+      },
+      "shopping": {}
+    },
+    "olive-oil": {
+      "label": "Olive oil",
+      "group": "Pantry check",
+      "unit": "tbsp",
+      "units": {
+        "tbsp": 1,
+        "tsp": "1/3",
+        "cup": 16
+      },
+      "shopping": {
+        "roundTo": "1/3",
+        "suffix": "+ cooking spray",
+        "asNeeded": "Cooking spray · check pantry"
+      }
+    },
+    "sesame-oil": {
+      "label": "Sesame oil",
+      "group": "Pantry check",
+      "unit": "tsp",
+      "units": {
+        "tsp": 1,
+        "tbsp": 3,
+        "cup": 48
+      },
+      "shopping": {}
+    },
+    "vanilla": {
+      "label": "Vanilla extract",
+      "group": "Pantry check",
+      "unit": "tsp",
+      "units": {
+        "tsp": 1,
+        "tbsp": 3,
+        "cup": 48
+      },
+      "shopping": {}
+    },
+    "sweetener": {
+      "label": "Zero-calorie sweetener",
+      "group": "Pantry check",
+      "unit": "tsp",
+      "units": {
+        "tsp": 1,
+        "tbsp": 3
+      },
+      "shopping": {
+        "mode": "pantry",
+        "asNeeded": "To taste"
+      }
+    },
+    "spices": {
+      "label": "Cinnamon, oregano, paprika, cumin",
+      "group": "Pantry check",
+      "unit": "tsp",
+      "units": {
+        "tsp": 1,
+        "tbsp": 3
+      },
+      "shopping": {
+        "mode": "pantry",
+        "asNeeded": "Check pantry"
+      }
+    },
+    "chicken-spices": {
+      "label": "Chili, onion & garlic powder",
+      "group": "Pantry check",
+      "unit": "tsp",
+      "units": {
+        "tsp": 1,
+        "tbsp": 3
+      },
+      "shopping": {
+        "mode": "pantry",
+        "asNeeded": "Check pantry"
+      }
+    },
+    "salt-pepper": {
+      "label": "Salt & pepper",
+      "group": "Pantry check",
+      "unit": "tsp",
+      "units": {
+        "tsp": 1,
+        "tbsp": 3
+      },
+      "shopping": {
+        "mode": "pantry",
+        "asNeeded": "To taste"
+      }
+    }
+  },
+  "measurementNotes": [
+    "Recipe quantities describe the base number of servings. Fresh preparations keep that portion size; batch recipes scale to the selected plan.",
+    "Rice shopping assumes 180 g dry per cup and a 3:1 cooked-to-dry volume yield; follow your package for actual yields.",
+    "Berries use about 150 g per cup. Garlic uses about 1 clove per teaspoon minced and 10 cloves per head. Lemons assume 2 tablespoons juice each, plus the measured lemon for wedges.",
+    "Shopping amounts round up to the configured increment or package size. Fraction strings such as \"2/3\" keep quantity calculations exact."
+  ]
+}
