@@ -2,6 +2,8 @@
 
 A static meal plan with daily recipe guides, a calculated grocery checklist, print styles, and 12 saved color palettes.
 
+Vibe coded with chatgpt, if it turns out to be useful I will put some more work into it.
+
 **Live page:** https://badstreff.github.io/static-meal-plan/
 
 ## Choose the default or browse another plan
