@@ -60,6 +60,58 @@
         "nutritionNote": "This sample uses approximate recipe estimates. Rest-day totals are about 1,770–1,800 calories, with roughly 155–175 g protein. Breakfast includes two lattes using 12 fl oz plain Fairlife 2% milk. Check your actual milk, powder and other ingredient labels.",
         "shoppingNote": "Calculated for three days and one person. Full rest-day snacks are included; workout swaps may leave extras. The latte milk is included."
       }
+    },
+    "four-day-2000": {
+      "title": "Chicken, beef & pork variety",
+      "people": 1,
+      "targets": {
+        "calories": 2000,
+        "proteinGrams": 170
+      },
+      "days": [
+        "four-day-2000-day-01",
+        "four-day-2000-day-02",
+        "four-day-2000-day-03",
+        "four-day-2000-day-04"
+      ],
+      "extraItems": [
+        "fairlife"
+      ],
+      "copy": {
+        "heroDescription": "Four days around 2,000 calories, with new chicken bowls, teriyaki beef, cherry-balsamic pork and your two morning lattes.",
+        "planAside": "New flavors. Two batch days.",
+        "targetNote": "Approximate daily target. Both lattes and full rest-day snacks are included.",
+        "workoutNote": "Include your **Fairlife shake — 30 g protein, 150 calories** in the snack. With yogurt, use 100 g yogurt + berries and skip the honey and walnuts; with cottage cheese, use half the snack portion. Keep the smaller breakfast powder shake separate.",
+        "nutritionNote": "Estimated rest-day totals: 1,990, 2,000, 1,970 and 2,020 calories, with about 152–183 g protein (168 g daily average). New recipe portions are adapted from source nutrition cards; frozen mixed vegetables replace broccoli. Both morning lattes are included. Use your ingredient labels for tracking.",
+        "shoppingNote": "Calculated for four days and one person. Includes 48 fl oz latte milk and full rest-day snacks; workout swaps may leave extras.",
+        "storageNote": "Keep cilantro lime sauce separate. Cook pork and cilantro lime chicken on day 1; teriyaki beef and sriracha chicken on day 2. Reheat pork gently with its glaze."
+      }
+    },
+    "four-day-2200": {
+      "title": "Taco Mac & chicken bowl rotation",
+      "people": 1,
+      "targets": {
+        "calories": 2200,
+        "proteinGrams": 185
+      },
+      "days": [
+        "four-day-2200-day-01",
+        "four-day-2200-day-02",
+        "four-day-2200-day-03",
+        "four-day-2200-day-04"
+      ],
+      "extraItems": [
+        "fairlife"
+      ],
+      "copy": {
+        "heroDescription": "A four-day variation around 2,200 calories: Taco Mac, creamy cilantro lime bowls, sriracha chicken and cherry-balsamic pork.",
+        "planAside": "Comfort food. Fresh sauce. Easy repeats.",
+        "targetNote": "Approximate daily target. Both lattes and full rest-day snacks are included.",
+        "workoutNote": "Include your **Fairlife shake — 30 g protein, 150 calories** in the snack. Use 170 g yogurt + berries, or half a cottage cheese snack. Keep the breakfast shake separate.",
+        "nutritionNote": "Estimated rest-day totals alternate between 2,191 and 2,195 calories, with about 185–190 g protein. New recipe portions are adapted from source nutrition cards; frozen mixed vegetables replace broccoli. Both morning lattes are included. Ingredient brands and rounded amounts affect totals.",
+        "shoppingNote": "Calculated for four days and one person. Includes 48 fl oz latte milk; Taco Mac milk is listed separately. Full rest-day snacks are included; workout swaps may leave extras.",
+        "storageNote": "Keep cilantro lime sauce separate. Cook Taco Mac and pork on day 1; cilantro lime chicken and larger sriracha bowls on day 2. Add a splash of water when reheating pasta."
+      }
     }
   },
   "groceryGroups": [
@@ -123,6 +175,70 @@
         "lunch": "buffalo-1800",
         "dinner": "chile-1800",
         "snack": "yogurt-1800"
+      }
+    },
+    "four-day-2000-day-01": {
+      "meals": {
+        "breakfast": "oats-1800",
+        "lunch": "cilantro-lime",
+        "dinner": "cherry-pork",
+        "snack": "yogurt-1800"
+      }
+    },
+    "four-day-2000-day-02": {
+      "meals": {
+        "breakfast": "ham-1800",
+        "lunch": "teriyaki-beef",
+        "dinner": "sriracha-lime",
+        "snack": "cottage"
+      }
+    },
+    "four-day-2000-day-03": {
+      "meals": {
+        "breakfast": "oats-1800",
+        "lunch": "teriyaki-beef",
+        "dinner": "sriracha-lime",
+        "snack": "yogurt-1800"
+      }
+    },
+    "four-day-2000-day-04": {
+      "meals": {
+        "breakfast": "ham-1800",
+        "lunch": "cilantro-lime",
+        "dinner": "cherry-pork",
+        "snack": "cottage"
+      }
+    },
+    "four-day-2200-day-01": {
+      "meals": {
+        "breakfast": "oats",
+        "lunch": "taco-mac",
+        "dinner": "cherry-pork-small-sides",
+        "snack": "yogurt"
+      }
+    },
+    "four-day-2200-day-02": {
+      "meals": {
+        "breakfast": "ham",
+        "lunch": "cilantro-lime",
+        "dinner": "sriracha-lime-large",
+        "snack": "cottage"
+      }
+    },
+    "four-day-2200-day-03": {
+      "meals": {
+        "breakfast": "oats",
+        "lunch": "taco-mac",
+        "dinner": "cherry-pork-small-sides",
+        "snack": "yogurt"
+      }
+    },
+    "four-day-2200-day-04": {
+      "meals": {
+        "breakfast": "ham",
+        "lunch": "cilantro-lime",
+        "dinner": "sriracha-lime-large",
+        "snack": "cottage"
       }
     }
   },
@@ -1439,6 +1555,626 @@
         "label": "Adapted from Skinnytaste",
         "url": "https://www.skinnytaste.com/greek-yogurt-with-berries-nuts-and/"
       }
+    },
+    "taco-mac": {
+      "title": "One-pot Taco Mac",
+      "shortTitle": "Taco Mac",
+      "kind": "lunch",
+      "preparation": "batch",
+      "servings": 2,
+      "prepTime": "About 35 min",
+      "nutrition": {
+        "calories": 674,
+        "proteinGrams": 54
+      },
+      "description": "A new batch recipe for this meal-plan variation.",
+      "ingredients": [
+        {
+          "itemId": "lean-beef",
+          "quantity": "4/5",
+          "unit": "lb"
+        },
+        {
+          "itemId": "olive-oil",
+          "quantity": "2/5",
+          "unit": "tbsp"
+        },
+        {
+          "itemId": "macaroni",
+          "quantity": 4,
+          "unit": "oz"
+        },
+        {
+          "itemId": "bell-peppers",
+          "quantity": "4/5",
+          "unit": "count",
+          "label": "bell pepper, any color, diced"
+        },
+        {
+          "itemId": "green-onions",
+          "quantity": 40,
+          "unit": "g"
+        },
+        {
+          "itemId": "crushed-tomatoes",
+          "quantity": 168,
+          "unit": "g"
+        },
+        {
+          "itemId": "beef-broth",
+          "quantity": "4/5",
+          "unit": "cup"
+        },
+        {
+          "itemId": "cooking-milk",
+          "quantity": "2/5",
+          "unit": "cup"
+        },
+        {
+          "itemId": "chicken-spices",
+          "quantity": "12/5",
+          "unit": "tsp",
+          "label": "chili powder"
+        },
+        {
+          "itemId": "spices",
+          "quantity": "4/5",
+          "unit": "tsp",
+          "label": "each cumin and paprika"
+        },
+        {
+          "itemId": "chicken-spices",
+          "quantity": "4/5",
+          "unit": "tsp",
+          "label": "garlic powder"
+        },
+        {
+          "itemId": "chicken-spices",
+          "quantity": "2/5",
+          "unit": "tsp",
+          "label": "onion powder"
+        },
+        {
+          "itemId": "sharp-cheddar",
+          "quantity": "168/5",
+          "unit": "g"
+        },
+        {
+          "itemId": "salt-pepper",
+          "quantity": null,
+          "unit": "tsp",
+          "label": "Salt and pepper",
+          "asNeeded": true,
+          "format": "{label}"
+        }
+      ],
+      "steps": [
+        "Brown beef in oil, breaking it up; add peppers and green onion whites. Cook beef through, then stir in the seasonings.",
+        "Add tomatoes, broth and dry macaroni. Cover and simmer 10–12 minutes, stirring midway, until pasta is tender; add water if needed.",
+        "Stir in milk off the heat. Divide into {portionsWord} portions and top with cheddar and green onion tops."
+      ],
+      "note": "Source portion size retained. Estimate uses 93/7 beef and regular cheese; your milk and cheese labels may change it.",
+      "source": {
+        "label": "Adapted from The Meal Prep Manual",
+        "url": "https://mealprepmanual.com/taco-mac/"
+      }
+    },
+    "teriyaki-beef": {
+      "title": "Teriyaki beef & vegetable rice bowls",
+      "shortTitle": "Teriyaki beef",
+      "kind": "lunch",
+      "preparation": "batch",
+      "servings": 2,
+      "prepTime": "About 35 min",
+      "nutrition": {
+        "calories": 652,
+        "proteinGrams": 44
+      },
+      "description": "A new batch recipe for this meal-plan variation.",
+      "ingredients": [
+        {
+          "itemId": "ground-beef",
+          "quantity": "4/5",
+          "unit": "lb"
+        },
+        {
+          "itemId": "white-rice",
+          "quantity": 2,
+          "unit": "cup-cooked"
+        },
+        {
+          "itemId": "zucchini",
+          "quantity": 100,
+          "unit": "g"
+        },
+        {
+          "itemId": "carrots",
+          "quantity": "454/5",
+          "unit": "g"
+        },
+        {
+          "itemId": "celery",
+          "quantity": "454/5",
+          "unit": "g"
+        },
+        {
+          "itemId": "onions",
+          "quantity": "2/5",
+          "unit": "count",
+          "label": "small yellow onion",
+          "variant": "yellow"
+        },
+        {
+          "itemId": "garlic",
+          "quantity": "6/5",
+          "unit": "tsp",
+          "label": "minced garlic"
+        },
+        {
+          "itemId": "olive-oil",
+          "quantity": "4/5",
+          "unit": "tbsp"
+        },
+        {
+          "itemId": "teriyaki-sauce",
+          "quantity": "16/5",
+          "unit": "tbsp"
+        },
+        {
+          "itemId": "salt-pepper",
+          "quantity": null,
+          "unit": "tsp",
+          "label": "Salt and pepper",
+          "asNeeded": true,
+          "format": "{label}"
+        }
+      ],
+      "steps": [
+        "Cook the listed rice amount. Dice vegetables; slice the onion.",
+        "Brown beef with a little of the oil until cooked through; set aside. Use remaining oil to sauté vegetables and garlic until just tender.",
+        "Return beef, add teriyaki sauce and heat through. Divide rice and beef mixture into {portionsWord} portions."
+      ],
+      "note": "Source portion size retained. Estimate uses 90/10 beef; bottled sauce brands vary.",
+      "source": {
+        "label": "Adapted from The Meal Prep Manual",
+        "url": "https://mealprepmanual.com/teriyaki-ground-beef-bowls/"
+      }
+    },
+    "cilantro-lime": {
+      "title": "Creamy cilantro lime chicken bowls",
+      "shortTitle": "Cilantro lime chicken",
+      "kind": "lunch",
+      "preparation": "batch",
+      "servings": 2,
+      "prepTime": "About 1 hr",
+      "nutrition": {
+        "calories": 570,
+        "proteinGrams": 49
+      },
+      "description": "A new batch recipe for this meal-plan variation.",
+      "ingredients": [
+        {
+          "itemId": "chicken-thighs",
+          "quantity": 420,
+          "unit": "g"
+        },
+        {
+          "itemId": "white-rice",
+          "quantity": "7/5",
+          "unit": "cup-cooked"
+        },
+        {
+          "itemId": "sweet-potatoes",
+          "quantity": 160,
+          "unit": "g"
+        },
+        {
+          "itemId": "mixed-vegetables",
+          "quantity": 110,
+          "unit": "g"
+        },
+        {
+          "itemId": "olive-oil",
+          "quantity": "7/5",
+          "unit": "tbsp"
+        },
+        {
+          "itemId": "plain-yogurt",
+          "quantity": 55,
+          "unit": "g"
+        },
+        {
+          "itemId": "lime-juice",
+          "quantity": "7/5",
+          "unit": "tbsp"
+        },
+        {
+          "itemId": "fresh-cilantro",
+          "quantity": 10,
+          "unit": "g"
+        },
+        {
+          "itemId": "green-onions",
+          "quantity": 10,
+          "unit": "g"
+        },
+        {
+          "itemId": "jalapeno",
+          "quantity": 10,
+          "unit": "g"
+        },
+        {
+          "itemId": "spices",
+          "quantity": 1,
+          "unit": "tsp",
+          "label": "smoked paprika"
+        },
+        {
+          "itemId": "chicken-spices",
+          "quantity": "3/2",
+          "unit": "tsp",
+          "label": "garlic powder; reserve one-third for sauce"
+        },
+        {
+          "itemId": "chicken-spices",
+          "quantity": "1/2",
+          "unit": "tsp",
+          "label": "each onion powder and chili powder"
+        },
+        {
+          "itemId": "spices",
+          "quantity": "1/8",
+          "unit": "tsp",
+          "label": "cumin for sauce"
+        },
+        {
+          "itemId": "salt-pepper",
+          "quantity": null,
+          "unit": "tsp",
+          "label": "Salt and pepper",
+          "asNeeded": true,
+          "format": "{label}"
+        }
+      ],
+      "steps": [
+        "Heat oven to 400°F. Coat thighs with paprika, chicken spices, a little lime and one-third of the oil. Roast until 165°F, about 25–35 minutes.",
+        "Roast diced sweet potato with another third of the oil until tender. Cook mixed vegetables per package; prepare the rice.",
+        "Blend yogurt, cilantro, green onion, jalapeño, cumin, reserved garlic, remaining lime and oil; thin with water.",
+        "Divide chicken, vegetables and rice into {portionsWord} portions; store sauce separately."
+      ],
+      "note": "Larger source portion with rounded amounts; mixed vegetables replace broccoli. Calories are an adapted estimate.",
+      "source": {
+        "label": "Adapted from The Meal Prep Manual",
+        "url": "https://mealprepmanual.com/creamy-cilantro-lime-chicken-bowls/"
+      }
+    },
+    "sriracha-lime": {
+      "title": "Sriracha lime chicken & sweet potato bowls",
+      "shortTitle": "Sriracha lime chicken",
+      "kind": "dinner",
+      "preparation": "batch",
+      "servings": 2,
+      "prepTime": "About 1 hr",
+      "nutrition": {
+        "calories": 543,
+        "proteinGrams": 43
+      },
+      "description": "A new batch recipe for this meal-plan variation.",
+      "ingredients": [
+        {
+          "itemId": "chicken-thighs",
+          "quantity": 385,
+          "unit": "g"
+        },
+        {
+          "itemId": "mixed-vegetables",
+          "quantity": 190,
+          "unit": "g"
+        },
+        {
+          "itemId": "sweet-potatoes",
+          "quantity": 170,
+          "unit": "g"
+        },
+        {
+          "itemId": "green-onions",
+          "quantity": 30,
+          "unit": "g"
+        },
+        {
+          "itemId": "white-rice",
+          "quantity": "5/6",
+          "unit": "cup-cooked"
+        },
+        {
+          "itemId": "olive-oil",
+          "quantity": "5/6",
+          "unit": "tbsp"
+        },
+        {
+          "itemId": "sriracha",
+          "quantity": "15/4",
+          "unit": "tsp"
+        },
+        {
+          "itemId": "lime-juice",
+          "quantity": "5/4",
+          "unit": "tbsp"
+        },
+        {
+          "itemId": "honey",
+          "quantity": 1,
+          "unit": "tbsp"
+        },
+        {
+          "itemId": "chicken-spices",
+          "quantity": "5/6",
+          "unit": "tsp",
+          "label": "each onion powder and garlic powder"
+        },
+        {
+          "itemId": "salt-pepper",
+          "quantity": null,
+          "unit": "tsp",
+          "label": "Salt and pepper",
+          "asNeeded": true,
+          "format": "{label}"
+        }
+      ],
+      "steps": [
+        "Heat oven to 400°F. Mix sriracha, lime, honey and seasonings. Reserve half separately; coat thighs with the rest.",
+        "Roast chicken until 165°F, about 25–35 minutes. Roast diced sweet potatoes with half the oil until tender; prepare rice.",
+        "Cook mixed vegetables per package, then sauté briefly with green onion whites and remaining oil. Add reserved sauce, diced chicken, potatoes and rice.",
+        "Divide into {portionsWord} portions; top with green onion greens."
+      ],
+      "note": "Rounded source quantities with mixed vegetables replacing broccoli. Use a mild sauce or reduce sriracha for less heat.",
+      "source": {
+        "label": "Adapted from The Meal Prep Manual",
+        "url": "https://mealprepmanual.com/sriracha-lime-chicken-bowls/"
+      }
+    },
+    "sriracha-lime-large": {
+      "title": "Sriracha lime chicken bowls — larger portions",
+      "shortTitle": "Sriracha lime chicken",
+      "kind": "dinner",
+      "preparation": "batch",
+      "servings": 2,
+      "prepTime": "About 1 hr",
+      "nutrition": {
+        "calories": 670,
+        "proteinGrams": 54
+      },
+      "description": "A new batch recipe for this meal-plan variation.",
+      "ingredients": [
+        {
+          "itemId": "chicken-thighs",
+          "quantity": 480,
+          "unit": "g"
+        },
+        {
+          "itemId": "mixed-vegetables",
+          "quantity": 240,
+          "unit": "g"
+        },
+        {
+          "itemId": "sweet-potatoes",
+          "quantity": 210,
+          "unit": "g"
+        },
+        {
+          "itemId": "green-onions",
+          "quantity": 40,
+          "unit": "g"
+        },
+        {
+          "itemId": "white-rice",
+          "quantity": 1,
+          "unit": "cup-cooked"
+        },
+        {
+          "itemId": "olive-oil",
+          "quantity": 1,
+          "unit": "tbsp"
+        },
+        {
+          "itemId": "sriracha",
+          "quantity": "19/4",
+          "unit": "tsp"
+        },
+        {
+          "itemId": "lime-juice",
+          "quantity": "19/12",
+          "unit": "tbsp"
+        },
+        {
+          "itemId": "honey",
+          "quantity": "4/3",
+          "unit": "tbsp"
+        },
+        {
+          "itemId": "chicken-spices",
+          "quantity": 1,
+          "unit": "tsp",
+          "label": "each onion powder and garlic powder"
+        },
+        {
+          "itemId": "salt-pepper",
+          "quantity": null,
+          "unit": "tsp",
+          "label": "Salt and pepper",
+          "asNeeded": true,
+          "format": "{label}"
+        }
+      ],
+      "steps": [
+        "Heat oven to 400°F. Mix sriracha, lime, honey and seasonings. Reserve half separately; coat thighs with the rest.",
+        "Roast chicken until 165°F, about 25–35 minutes. Roast diced sweet potatoes with half the oil until tender; prepare rice.",
+        "Cook mixed vegetables per package, then sauté briefly with green onion whites and remaining oil. Add reserved sauce, diced chicken, potatoes and rice.",
+        "Divide into {portionsWord} portions; top with green onion greens."
+      ],
+      "note": "Larger portions for the 2,200-calorie variation. Estimates include rounded quantities and the mixed vegetable swap.",
+      "source": {
+        "label": "Adapted from The Meal Prep Manual",
+        "url": "https://mealprepmanual.com/sriracha-lime-chicken-bowls/"
+      }
+    },
+    "cherry-pork": {
+      "title": "Cherry-balsamic pork, rice & vegetables",
+      "shortTitle": "Cherry-balsamic pork",
+      "kind": "dinner",
+      "preparation": "batch",
+      "servings": 2,
+      "prepTime": "About 40 min",
+      "nutrition": {
+        "calories": 645,
+        "proteinGrams": 57
+      },
+      "description": "A new batch recipe for this meal-plan variation.",
+      "ingredients": [
+        {
+          "itemId": "pork-tenderloin",
+          "quantity": 1,
+          "unit": "lb"
+        },
+        {
+          "itemId": "balsamic-vinegar",
+          "quantity": 4,
+          "unit": "tbsp"
+        },
+        {
+          "itemId": "cherry-preserves",
+          "quantity": 4,
+          "unit": "tbsp"
+        },
+        {
+          "itemId": "thyme",
+          "quantity": "3/4",
+          "unit": "tsp",
+          "label": "fresh thyme, or less dried thyme"
+        },
+        {
+          "itemId": "chicken-spices",
+          "quantity": "3/4",
+          "unit": "tsp",
+          "label": "garlic powder"
+        },
+        {
+          "itemId": "white-rice",
+          "quantity": 2,
+          "unit": "cup-cooked"
+        },
+        {
+          "itemId": "mixed-vegetables",
+          "quantity": 400,
+          "unit": "g"
+        },
+        {
+          "itemId": "olive-oil",
+          "quantity": null,
+          "unit": "tbsp",
+          "label": "Cooking spray",
+          "asNeeded": true,
+          "format": "{label}"
+        },
+        {
+          "itemId": "salt-pepper",
+          "quantity": null,
+          "unit": "tsp",
+          "label": "Salt and pepper",
+          "asNeeded": true,
+          "format": "{label}"
+        }
+      ],
+      "steps": [
+        "Heat oven to 400°F. Simmer balsamic until reduced, then stir in preserves and thyme.",
+        "Season trimmed pork with garlic, salt and pepper. Sear in an oven-safe skillet with cooking spray; add half the glaze.",
+        "Roast until 145°F, then rest 10 minutes before slicing. Cook rice and mixed vegetables separately.",
+        "Divide pork, rice, vegetables and remaining glaze into {portionsWord} portions."
+      ],
+      "note": "Each meal uses 1½ source pork portions, plus rice and mixed vegetables. Side estimates assume 195 calories per cooked rice cup and 50 per 100 g vegetables.",
+      "source": {
+        "label": "Adapted from Skinnytaste",
+        "url": "https://www.skinnytaste.com/pork-tenderloin-with-cherry-sauce/"
+      }
+    },
+    "cherry-pork-small-sides": {
+      "title": "Cherry-balsamic pork with smaller rice sides",
+      "shortTitle": "Cherry-balsamic pork",
+      "kind": "dinner",
+      "preparation": "batch",
+      "servings": 2,
+      "prepTime": "About 40 min",
+      "nutrition": {
+        "calories": 497,
+        "proteinGrams": 53
+      },
+      "description": "A new batch recipe for this meal-plan variation.",
+      "ingredients": [
+        {
+          "itemId": "pork-tenderloin",
+          "quantity": 1,
+          "unit": "lb"
+        },
+        {
+          "itemId": "balsamic-vinegar",
+          "quantity": 4,
+          "unit": "tbsp"
+        },
+        {
+          "itemId": "cherry-preserves",
+          "quantity": 4,
+          "unit": "tbsp"
+        },
+        {
+          "itemId": "thyme",
+          "quantity": "3/4",
+          "unit": "tsp",
+          "label": "fresh thyme, or less dried thyme"
+        },
+        {
+          "itemId": "chicken-spices",
+          "quantity": "3/4",
+          "unit": "tsp",
+          "label": "garlic powder"
+        },
+        {
+          "itemId": "white-rice",
+          "quantity": 1,
+          "unit": "cup-cooked"
+        },
+        {
+          "itemId": "mixed-vegetables",
+          "quantity": 200,
+          "unit": "g"
+        },
+        {
+          "itemId": "olive-oil",
+          "quantity": null,
+          "unit": "tbsp",
+          "label": "Cooking spray",
+          "asNeeded": true,
+          "format": "{label}"
+        },
+        {
+          "itemId": "salt-pepper",
+          "quantity": null,
+          "unit": "tsp",
+          "label": "Salt and pepper",
+          "asNeeded": true,
+          "format": "{label}"
+        }
+      ],
+      "steps": [
+        "Heat oven to 400°F. Simmer balsamic until reduced, then stir in preserves and thyme.",
+        "Season trimmed pork with garlic, salt and pepper. Sear in an oven-safe skillet with cooking spray; add half the glaze.",
+        "Roast until 145°F, then rest 10 minutes before slicing. Cook rice and mixed vegetables separately.",
+        "Divide pork, rice, vegetables and remaining glaze into {portionsWord} portions."
+      ],
+      "note": "Same pork portion, smaller rice and vegetable sides to balance the larger breakfast. Nutrition includes both sides.",
+      "source": {
+        "label": "Adapted from Skinnytaste",
+        "url": "https://www.skinnytaste.com/pork-tenderloin-with-cherry-sauce/"
+      }
     }
   },
   "items": {
@@ -1459,7 +2195,8 @@
       "group": "Protein & dairy",
       "unit": "lb",
       "units": {
-        "lb": 1
+        "lb": 1,
+        "g": "1/454"
       },
       "shopping": {
         "roundTo": "1/4",
@@ -2044,6 +2781,270 @@
         "mode": "pantry",
         "asNeeded": "For your two morning lattes per person"
       }
+    },
+    "lean-beef": {
+      "label": "93/7 ground beef",
+      "group": "Protein & dairy",
+      "unit": "lb",
+      "units": {
+        "lb": 1,
+        "g": "1/454"
+      },
+      "shopping": {
+        "roundTo": "1/4",
+        "suffix": "raw"
+      }
+    },
+    "ground-beef": {
+      "label": "90/10 ground beef",
+      "group": "Protein & dairy",
+      "unit": "lb",
+      "units": {
+        "lb": 1,
+        "g": "1/454"
+      },
+      "shopping": {
+        "roundTo": "1/4",
+        "suffix": "raw"
+      }
+    },
+    "pork-tenderloin": {
+      "label": "Pork tenderloin",
+      "group": "Protein & dairy",
+      "unit": "lb",
+      "units": {
+        "lb": 1
+      },
+      "shopping": {
+        "roundTo": "1/4",
+        "suffix": "raw; trim silver skin"
+      }
+    },
+    "cooking-milk": {
+      "label": "2% milk for cooking",
+      "group": "Protein & dairy",
+      "unit": "cup",
+      "units": {
+        "cup": 1,
+        "fl oz": "1/8"
+      },
+      "shopping": {
+        "suffix": "additional to latte milk"
+      }
+    },
+    "plain-yogurt": {
+      "label": "Plain 2% Greek yogurt",
+      "group": "Protein & dairy",
+      "unit": "g",
+      "units": {
+        "g": 1
+      },
+      "shopping": {
+        "roundTo": 50
+      }
+    },
+    "sharp-cheddar": {
+      "label": "Shredded cheddar",
+      "group": "Protein & dairy",
+      "unit": "g",
+      "units": {
+        "g": 1
+      },
+      "shopping": {
+        "packSize": 227,
+        "packLabel": "8 oz bag",
+        "showRequired": true
+      }
+    },
+    "green-onions": {
+      "label": "Green onions",
+      "group": "Produce & frozen",
+      "unit": "g",
+      "units": {
+        "g": 1
+      },
+      "shopping": {
+        "packSize": 100,
+        "packLabel": "bunch",
+        "showRequired": true
+      }
+    },
+    "sweet-potatoes": {
+      "label": "Sweet potatoes",
+      "group": "Produce & frozen",
+      "unit": "g",
+      "units": {
+        "g": 1
+      },
+      "shopping": {
+        "roundTo": 100
+      }
+    },
+    "carrots": {
+      "label": "Carrots",
+      "group": "Produce & frozen",
+      "unit": "g",
+      "units": {
+        "g": 1
+      },
+      "shopping": {
+        "roundTo": 100
+      }
+    },
+    "celery": {
+      "label": "Celery",
+      "group": "Produce & frozen",
+      "unit": "g",
+      "units": {
+        "g": 1
+      },
+      "shopping": {
+        "roundTo": 100
+      }
+    },
+    "zucchini": {
+      "label": "Zucchini",
+      "group": "Produce & frozen",
+      "unit": "g",
+      "units": {
+        "g": 1
+      },
+      "shopping": {
+        "roundTo": 100
+      }
+    },
+    "lime-juice": {
+      "label": "Lime juice",
+      "group": "Produce & frozen",
+      "unit": "tbsp",
+      "units": {
+        "tbsp": 1,
+        "tsp": "1/3"
+      },
+      "shopping": {
+        "suffix": "fresh or bottled"
+      }
+    },
+    "fresh-cilantro": {
+      "label": "Fresh cilantro",
+      "group": "Produce & frozen",
+      "unit": "g",
+      "units": {
+        "g": 1
+      },
+      "shopping": {
+        "asNeeded": "1 small bunch"
+      }
+    },
+    "jalapeno": {
+      "label": "Jalapeño",
+      "group": "Produce & frozen",
+      "unit": "g",
+      "units": {
+        "g": 1
+      },
+      "shopping": {
+        "asNeeded": "1 small pepper; remove seeds for less heat"
+      }
+    },
+    "white-rice": {
+      "label": "Basmati or long-grain white rice",
+      "group": "Grains, cans & nuts",
+      "unit": "g",
+      "units": {
+        "g": 1,
+        "cup-cooked": 60,
+        "cup-dry": 180
+      },
+      "shopping": {
+        "packSize": 454,
+        "packLabel": "1 lb bag",
+        "suffix": "dry; follow package yields"
+      }
+    },
+    "macaroni": {
+      "label": "Macaroni",
+      "group": "Grains, cans & nuts",
+      "unit": "oz",
+      "units": {
+        "oz": 1,
+        "g": "20/567"
+      },
+      "shopping": {
+        "packSize": 16,
+        "packLabel": "1 lb box",
+        "showRequired": true,
+        "suffix": "dry"
+      }
+    },
+    "crushed-tomatoes": {
+      "label": "Crushed tomatoes",
+      "group": "Grains, cans & nuts",
+      "unit": "g",
+      "units": {
+        "g": 1
+      },
+      "shopping": {
+        "packSize": 411,
+        "packLabel": "14.5 oz can",
+        "showRequired": true
+      }
+    },
+    "beef-broth": {
+      "label": "Beef broth",
+      "group": "Pantry check",
+      "unit": "cup",
+      "units": {
+        "cup": 1
+      },
+      "shopping": {
+        "roundTo": 1
+      }
+    },
+    "teriyaki-sauce": {
+      "label": "Bottled teriyaki sauce",
+      "group": "Pantry check",
+      "unit": "tbsp",
+      "units": {
+        "tbsp": 1,
+        "cup": 16,
+        "tsp": "1/3"
+      },
+      "shopping": {}
+    },
+    "balsamic-vinegar": {
+      "label": "Balsamic vinegar",
+      "group": "Pantry check",
+      "unit": "tbsp",
+      "units": {
+        "tbsp": 1,
+        "cup": 16,
+        "tsp": "1/3"
+      },
+      "shopping": {}
+    },
+    "cherry-preserves": {
+      "label": "Lower-sugar cherry preserves",
+      "group": "Pantry check",
+      "unit": "tbsp",
+      "units": {
+        "tbsp": 1,
+        "cup": 16,
+        "tsp": "1/3"
+      },
+      "shopping": {}
+    },
+    "thyme": {
+      "label": "Thyme",
+      "group": "Pantry check",
+      "unit": "tsp",
+      "units": {
+        "tsp": 1
+      },
+      "shopping": {
+        "mode": "pantry",
+        "asNeeded": "Fresh or dried; use less if dried"
+      }
     }
   },
   "measurementNotes": [
@@ -2051,6 +3052,7 @@
     "Rice shopping assumes 180 g dry per cup and a 3:1 cooked-to-dry volume yield; follow your package for actual yields.",
     "Berries use about 150 g per cup. Garlic uses about 1 clove per teaspoon minced and 10 cloves per head. Lemons assume 2 tablespoons juice each, plus the measured lemon for wedges.",
     "Shopping amounts round up to the configured increment or package size. Fraction strings such as \"2/3\" keep quantity calculations exact.",
-    "Breakfast assumes two lattes per person daily, each using 6 fl oz plain 2% ultra-filtered milk. Nutrition estimates use Fairlife: 120 calories and 13 g protein per 8 fl oz. MooTopia labels may differ; no syrup or added sugar is included. Fairlife milk label: https://fairlife.com/ultra-filtered-milk/reduced-fat-2-percent-milk/"
+    "Breakfast assumes two lattes per person daily, each using 6 fl oz plain 2% ultra-filtered milk. Nutrition estimates use Fairlife: 120 calories and 13 g protein per 8 fl oz. MooTopia labels may differ; no syrup or added sugar is included. Fairlife milk label: https://fairlife.com/ultra-filtered-milk/reduced-fat-2-percent-milk/",
+    "New variation nutrition uses source recipe cards with rounded portions. Mixed vegetables are estimated at 50 calories per 100 g instead of broccoli at about 34. White rice shopping uses the same 180 g dry per cup and 3:1 volume yield assumption; follow your package. Meat gram conversion uses 454 g per pound."
   ]
 }

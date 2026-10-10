@@ -16,7 +16,16 @@ All meal content lives in [`meal-plan.json`](meal-plan.json). Set its top-level 
 
 GitHub Actions validates the document, runs tests, generates the homepage and every plan page, and publishes `_site`. Invalid content stops deployment. Displaying meals and recipes does not require JavaScript or a JSON request.
 
-The catalog includes the original `four-day-cut` plan and `three-day-1800`, a three-day sample around 1,800 calories with a 160 g protein target. The sample's rest-day estimates are 1,773, 1,796 and 1,786 calories. Both breakfasts include two lattes, and its workout snack notes account for the 30 g / 150 calorie Fairlife shake. Nutrition estimates are per serving and depend on actual brands and ingredients.
+The catalog includes four plans. The original four-day plan remains the default:
+
+| Plan ID | Days | Calorie target | Estimated rest-day calories | Protein target |
+| --- | --- | --- | --- | --- |
+| `four-day-cut` | 4 | 2,400 | Original plan | 200 g |
+| `three-day-1800` | 3 | 1,800 | 1,773–1,796 | 160 g |
+| `four-day-2000` | 4 | 2,000 | 1,970–2,020 | 170 g |
+| `four-day-2200` | 4 | 2,200 | 2,191–2,195 | 185 g |
+
+The new variations add Taco Mac, teriyaki beef bowls, cilantro lime chicken bowls and sriracha lime chicken bowls from The Meal Prep Manual, plus cherry-balsamic pork adapted from Skinnytaste. Each has two batch days and its own calculated groceries. Frozen mixed vegetables replace broccoli in the chicken bowls; portions and side dishes are adjusted for the plan. Every breakfast includes two lattes, and workout snack notes account for the 30 g / 150 calorie Fairlife shake. Nutrition estimates are per serving and depend on actual brands and ingredients.
 
 ## Add or reorder plans and days
 
