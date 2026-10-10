@@ -57,7 +57,7 @@
         "planAside": "Smaller portions. The same simple rhythm.",
         "targetNote": "Sample targets. Includes latte milk; actual brands and portions matter.",
         "workoutNote": "Include your **Fairlife shake — 30 g protein, 150 calories** in the snack. With yogurt, use 100 g yogurt + berries and skip the honey and walnuts; with cottage cheese, use half the snack portion. Keep the smaller breakfast powder shake separate.",
-        "nutritionNote": "This sample uses approximate recipe estimates. Rest-day totals are about 1,770–1,800 calories, with roughly 155–175 g protein. Breakfast includes two lattes using 12 fl oz plain Fairlife 2% milk. Check your actual milk, powder and other ingredient labels.",
+        "nutritionNote": "Estimated rest-day calories by day: 1,773, 1,796, 1,776. Protein ranges from 157–175 g (about 167 g daily average). Every breakfast includes two lattes with 12 fl oz total plain Fairlife 2% milk (about 180 calories and 19.5 g protein). Adapted portions use approximate ingredient-label estimates; use your actual brands, including your MooTopia label if different. Any breakfast protein powder is a separate shake, never mixed into the recipes.",
         "shoppingNote": "Calculated for three days and one person. Full rest-day snacks are included; workout swaps may leave extras. The latte milk is included."
       }
     },
@@ -82,7 +82,7 @@
         "planAside": "New flavors. Two batch days.",
         "targetNote": "Approximate daily target. Both lattes and full rest-day snacks are included.",
         "workoutNote": "Include your **Fairlife shake — 30 g protein, 150 calories** in the snack. With yogurt, use 100 g yogurt + berries and skip the honey and walnuts; with cottage cheese, use half the snack portion. Keep the smaller breakfast powder shake separate.",
-        "nutritionNote": "Estimated rest-day totals: 1,990, 2,000, 1,970 and 2,020 calories, with about 152–183 g protein (168 g daily average). New recipe portions are adapted from source nutrition cards; frozen mixed vegetables replace broccoli. Both morning lattes are included. Use your ingredient labels for tracking.",
+        "nutritionNote": "Estimated rest-day calories by day: 1,990, 2,000, 1,960, 2,020. Protein ranges from 162–182 g (about 170 g daily average). Every breakfast includes two lattes with 12 fl oz total plain Fairlife 2% milk (about 180 calories and 19.5 g protein). Adapted portions use approximate ingredient-label estimates; use your actual brands, including your MooTopia label if different. Any breakfast protein powder is a separate shake, never mixed into the recipes.",
         "shoppingNote": "Calculated for four days and one person. Includes 48 fl oz latte milk and full rest-day snacks; workout swaps may leave extras.",
         "storageNote": "Keep cilantro lime sauce separate. Cook pork and cilantro lime chicken on day 1; teriyaki beef and sriracha chicken on day 2. Reheat pork gently with its glaze."
       }
@@ -108,7 +108,7 @@
         "planAside": "Comfort food. Fresh sauce. Easy repeats.",
         "targetNote": "Approximate daily target. Both lattes and full rest-day snacks are included.",
         "workoutNote": "Include your **Fairlife shake — 30 g protein, 150 calories** in the snack. Use 170 g yogurt + berries, or half a cottage cheese snack. Keep the breakfast shake separate.",
-        "nutritionNote": "Estimated rest-day totals alternate between 2,191 and 2,195 calories, with about 185–190 g protein. New recipe portions are adapted from source nutrition cards; frozen mixed vegetables replace broccoli. Both morning lattes are included. Ingredient brands and rounded amounts affect totals.",
+        "nutritionNote": "Estimated rest-day calories by day: 2,191, 2,195, 2,196, 2,200. Protein ranges from 185–196 g (about 189 g daily average). Every breakfast includes two lattes with 12 fl oz total plain Fairlife 2% milk (about 180 calories and 19.5 g protein). Adapted portions use approximate ingredient-label estimates; use your actual brands, including your MooTopia label if different. Any breakfast protein powder is a separate shake, never mixed into the recipes.",
         "shoppingNote": "Calculated for four days and one person. Includes 48 fl oz latte milk; Taco Mac milk is listed separately. Full rest-day snacks are included; workout swaps may leave extras.",
         "storageNote": "Keep cilantro lime sauce separate. Cook Taco Mac and pork on day 1; cilantro lime chicken and larger sriracha bowls on day 2. Add a splash of water when reheating pasta."
       }
@@ -171,7 +171,7 @@
     },
     "sample-day-03": {
       "meals": {
-        "breakfast": "oats-1800",
+        "breakfast": "cottage-pancakes-small",
         "lunch": "buffalo-1800",
         "dinner": "chile-1800",
         "snack": "yogurt-1800"
@@ -195,7 +195,7 @@
     },
     "four-day-2000-day-03": {
       "meals": {
-        "breakfast": "oats-1800",
+        "breakfast": "cottage-pancakes-small",
         "lunch": "teriyaki-beef",
         "dinner": "sriracha-lime",
         "snack": "yogurt-1800"
@@ -203,7 +203,7 @@
     },
     "four-day-2000-day-04": {
       "meals": {
-        "breakfast": "ham-1800",
+        "breakfast": "ham-egg-muffin-small",
         "lunch": "cilantro-lime",
         "dinner": "cherry-pork",
         "snack": "cottage"
@@ -227,7 +227,7 @@
     },
     "four-day-2200-day-03": {
       "meals": {
-        "breakfast": "oats",
+        "breakfast": "cottage-pancakes",
         "lunch": "taco-mac",
         "dinner": "cherry-pork-small-sides",
         "snack": "yogurt"
@@ -235,7 +235,7 @@
     },
     "four-day-2200-day-04": {
       "meals": {
-        "breakfast": "ham",
+        "breakfast": "ham-potato-taquitos",
         "lunch": "cilantro-lime",
         "dinner": "sriracha-lime-large",
         "snack": "cottage"
@@ -2175,6 +2175,363 @@
         "label": "Adapted from Skinnytaste",
         "url": "https://www.skinnytaste.com/pork-tenderloin-with-cherry-sauce/"
       }
+    },
+    "cottage-pancakes": {
+      "title": "Cottage cheese pancakes + two lattes",
+      "shortTitle": "Cottage cheese pancakes + 2 lattes",
+      "kind": "breakfast",
+      "preparation": "fresh",
+      "servings": 1,
+      "prepTime": "About 15–20 min",
+      "nutrition": {
+        "calories": 715,
+        "proteinGrams": 59
+      },
+      "description": "Blend, cook and top with yogurt and berries. No protein powder in the batter.",
+      "ingredients": [
+        {
+          "itemId": "rolled-oats",
+          "quantity": 40,
+          "unit": "g",
+          "label": "dry rolled oats; not steel-cut oats"
+        },
+        {
+          "itemId": "cottage-cheese",
+          "quantity": "1/2",
+          "unit": "cup",
+          "label": "low-fat cottage cheese"
+        },
+        {
+          "itemId": "eggs",
+          "quantity": 2,
+          "unit": "count",
+          "label": "large eggs"
+        },
+        {
+          "itemId": "yogurt",
+          "quantity": 100,
+          "unit": "g",
+          "label": "nonfat Greek yogurt, for serving"
+        },
+        {
+          "itemId": "berries",
+          "quantity": "1/2",
+          "unit": "cup",
+          "label": "mixed berries, for serving"
+        },
+        {
+          "itemId": "honey",
+          "quantity": 1,
+          "unit": "tsp",
+          "label": "honey, for serving"
+        },
+        {
+          "itemId": "breakfast-butter",
+          "quantity": 1,
+          "unit": "tsp",
+          "label": "butter for the skillet"
+        },
+        {
+          "itemId": "spices",
+          "quantity": null,
+          "unit": "tsp",
+          "asNeeded": true,
+          "label": "Cinnamon, optional",
+          "format": "{label}"
+        },
+        {
+          "itemId": "latte-milk",
+          "quantity": 12,
+          "unit": "fl oz",
+          "label": "plain Fairlife or MooTopia 2% milk for two lattes per person"
+        },
+        {
+          "itemId": "coffee",
+          "quantity": null,
+          "unit": "portion",
+          "asNeeded": true,
+          "label": "Coffee or espresso, as you prefer",
+          "format": "{label}"
+        }
+      ],
+      "steps": [
+        "Blend the rolled oats, cottage cheese, eggs and optional cinnamon into a thick batter. Let it stand briefly while the pan warms.",
+        "Heat a nonstick skillet over medium-low heat. Use the measured butter across all pancakes; cook small rounds until set and golden on both sides.",
+        "Serve all the pancakes with the measured yogurt, berries and honey.",
+        "Make two lattes per person, dividing the listed milk equally between them. Add your coffee or espresso; no syrup or sugar is included."
+      ],
+      "note": "Both lattes are included: 12 fl oz total plain Fairlife 2% milk adds about 180 calories and 19.5 g protein. Each latte uses 6 fl oz; coffee, syrup and added sugar are not counted. Use your MooTopia carton label if it differs. Food and toppings contribute about 534 calories and 40 g protein. The adapted estimate uses ingredient labels, not the source card: rolled oats 150 calories/5 g protein per 40 g; cottage cheese 90/12 per half cup; egg 72/6 each; yogurt 59/10 per 100 g. Berries, honey and butter are included.",
+      "source": {
+        "label": "Adapted from The Kitchn",
+        "url": "https://www.thekitchn.com/cottage-cheese-pancakes-263223"
+      }
+    },
+    "cottage-pancakes-small": {
+      "title": "Cottage cheese pancakes (smaller portion) + two lattes",
+      "shortTitle": "Cottage cheese pancakes + 2 lattes",
+      "kind": "breakfast",
+      "preparation": "fresh",
+      "servings": 1,
+      "prepTime": "About 15–20 min",
+      "nutrition": {
+        "calories": 520,
+        "proteinGrams": 45
+      },
+      "description": "Blend, cook and top with yogurt and berries. No protein powder in the batter.",
+      "ingredients": [
+        {
+          "itemId": "rolled-oats",
+          "quantity": 20,
+          "unit": "g",
+          "label": "dry rolled oats; not steel-cut oats"
+        },
+        {
+          "itemId": "cottage-cheese",
+          "quantity": "1/4",
+          "unit": "cup",
+          "label": "low-fat cottage cheese"
+        },
+        {
+          "itemId": "eggs",
+          "quantity": 1,
+          "unit": "count",
+          "label": "large eggs"
+        },
+        {
+          "itemId": "yogurt",
+          "quantity": 100,
+          "unit": "g",
+          "label": "nonfat Greek yogurt, for serving"
+        },
+        {
+          "itemId": "berries",
+          "quantity": "1/2",
+          "unit": "cup",
+          "label": "mixed berries, for serving"
+        },
+        {
+          "itemId": "honey",
+          "quantity": 1,
+          "unit": "tsp",
+          "label": "honey, for serving"
+        },
+        {
+          "itemId": "breakfast-butter",
+          "quantity": 1,
+          "unit": "tsp",
+          "label": "butter for the skillet"
+        },
+        {
+          "itemId": "spices",
+          "quantity": null,
+          "unit": "tsp",
+          "asNeeded": true,
+          "label": "Cinnamon, optional",
+          "format": "{label}"
+        },
+        {
+          "itemId": "latte-milk",
+          "quantity": 12,
+          "unit": "fl oz",
+          "label": "plain Fairlife or MooTopia 2% milk for two lattes per person"
+        },
+        {
+          "itemId": "coffee",
+          "quantity": null,
+          "unit": "portion",
+          "asNeeded": true,
+          "label": "Coffee or espresso, as you prefer",
+          "format": "{label}"
+        }
+      ],
+      "steps": [
+        "Blend the rolled oats, cottage cheese, eggs and optional cinnamon into a thick batter. Let it stand briefly while the pan warms.",
+        "Heat a nonstick skillet over medium-low heat. Use the measured butter across all pancakes; cook small rounds until set and golden on both sides.",
+        "Serve all the pancakes with the measured yogurt, berries and honey.",
+        "Make two lattes per person, dividing the listed milk equally between them. Add your coffee or espresso; no syrup or sugar is included."
+      ],
+      "note": "Both lattes are included: 12 fl oz total plain Fairlife 2% milk adds about 180 calories and 19.5 g protein. Each latte uses 6 fl oz; coffee, syrup and added sugar are not counted. Use your MooTopia carton label if it differs. Smaller portion for the 1,800 and 2,000 plans. Food and toppings contribute about 341 calories and 25 g protein. The adapted estimate uses ingredient labels, not the source card: rolled oats 150 calories/5 g protein per 40 g; cottage cheese 90/12 per half cup; egg 72/6 each; yogurt 59/10 per 100 g. Berries, honey and butter are included.",
+      "source": {
+        "label": "Adapted from The Kitchn",
+        "url": "https://www.thekitchn.com/cottage-cheese-pancakes-263223"
+      }
+    },
+    "ham-egg-muffin-small": {
+      "title": "Ham & egg English muffin (smaller portion) + two lattes",
+      "shortTitle": "Ham & egg muffin + 2 lattes",
+      "kind": "breakfast",
+      "preparation": "fresh",
+      "servings": 1,
+      "prepTime": "About 10–15 min",
+      "nutrition": {
+        "calories": 475,
+        "proteinGrams": 43
+      },
+      "description": "A warm ham, spinach and egg sandwich with melted cheddar.",
+      "ingredients": [
+        {
+          "itemId": "english-muffins",
+          "quantity": 1,
+          "unit": "count",
+          "label": "whole-grain English muffin (~130 calories)"
+        },
+        {
+          "itemId": "eggs",
+          "quantity": 1,
+          "unit": "count",
+          "label": "large eggs"
+        },
+        {
+          "itemId": "ham",
+          "quantity": 2,
+          "unit": "oz",
+          "label": "diced cooked ham"
+        },
+        {
+          "itemId": "sharp-cheddar",
+          "quantity": "1/4",
+          "unit": "oz",
+          "label": "sharp cheddar"
+        },
+        {
+          "itemId": "spinach",
+          "quantity": "1/2",
+          "unit": "cup",
+          "label": "chopped baby spinach"
+        },
+        {
+          "itemId": "salt-pepper",
+          "quantity": null,
+          "unit": "tsp",
+          "asNeeded": true,
+          "label": "Black pepper, to taste",
+          "format": "{label}"
+        },
+        {
+          "itemId": "olive-oil",
+          "quantity": null,
+          "unit": "tbsp",
+          "asNeeded": true,
+          "label": "Cooking spray",
+          "format": "{label}"
+        },
+        {
+          "itemId": "latte-milk",
+          "quantity": 12,
+          "unit": "fl oz",
+          "label": "plain Fairlife or MooTopia 2% milk for two lattes per person"
+        },
+        {
+          "itemId": "coffee",
+          "quantity": null,
+          "unit": "portion",
+          "asNeeded": true,
+          "label": "Coffee or espresso, as you prefer",
+          "format": "{label}"
+        }
+      ],
+      "steps": [
+        "Split and toast the English muffin. Warm the ham and spinach in a nonstick skillet with the listed oil or cooking spray.",
+        "Beat the eggs with pepper and scramble with the ham and spinach until fully set. Divide between the muffins if cooking for more than one person.",
+        "Add the cheddar and sandwich the filling between the toasted halves; warm briefly to melt the cheese.",
+        "Make two lattes per person, dividing the listed milk equally between them. Add your coffee or espresso; no syrup or sugar is included."
+      ],
+      "note": "Both lattes are included: 12 fl oz total plain Fairlife 2% milk adds about 180 calories and 19.5 g protein. Each latte uses 6 fl oz; coffee, syrup and added sugar are not counted. Use your MooTopia carton label if it differs. Smaller portion for the 2,000 plan. Food contributes about 293 calories and 23 g protein. The estimate assumes a 130-calorie/5 g protein muffin, ham at 30 calories/5 g protein per oz, cheddar at 112/7 per oz and eggs at 72/6 each. Ham replaces the source turkey bacon; the source card is not used unchanged.",
+      "source": {
+        "label": "Adapted from Skinnytaste",
+        "url": "https://www.skinnytaste.com/english-muffin-breakfast-sandwich/"
+      }
+    },
+    "ham-potato-taquitos": {
+      "title": "Ham & potato breakfast taquitos + two lattes",
+      "shortTitle": "Ham & potato taquitos + 2 lattes",
+      "kind": "breakfast",
+      "preparation": "fresh",
+      "servings": 1,
+      "prepTime": "About 25–30 min",
+      "nutrition": {
+        "calories": 630,
+        "proteinGrams": 49
+      },
+      "description": "Small crisp tortilla rolls with ham, egg, potato and two kinds of cheese.",
+      "ingredients": [
+        {
+          "itemId": "corn-tortillas",
+          "quantity": 3,
+          "unit": "count",
+          "label": "small corn tortillas (~50 calories each)"
+        },
+        {
+          "itemId": "potatoes",
+          "quantity": 60,
+          "unit": "g",
+          "label": "raw russet potato, finely diced"
+        },
+        {
+          "itemId": "eggs",
+          "quantity": 1,
+          "unit": "count",
+          "label": "large egg"
+        },
+        {
+          "itemId": "ham",
+          "quantity": 2,
+          "unit": "oz",
+          "label": "diced cooked ham"
+        },
+        {
+          "itemId": "cottage-cheese",
+          "quantity": "1/4",
+          "unit": "cup",
+          "label": "low-fat cottage cheese"
+        },
+        {
+          "itemId": "sharp-cheddar",
+          "quantity": "1/2",
+          "unit": "oz",
+          "label": "shredded sharp cheddar"
+        },
+        {
+          "itemId": "olive-oil",
+          "quantity": "1/2",
+          "unit": "tsp",
+          "label": "olive oil for cooking and brushing"
+        },
+        {
+          "itemId": "salt-pepper",
+          "quantity": null,
+          "unit": "tsp",
+          "asNeeded": true,
+          "label": "Black pepper, to taste",
+          "format": "{label}"
+        },
+        {
+          "itemId": "latte-milk",
+          "quantity": 12,
+          "unit": "fl oz",
+          "label": "plain Fairlife or MooTopia 2% milk for two lattes per person"
+        },
+        {
+          "itemId": "coffee",
+          "quantity": null,
+          "unit": "portion",
+          "asNeeded": true,
+          "label": "Coffee or espresso, as you prefer",
+          "format": "{label}"
+        }
+      ],
+      "steps": [
+        "Heat the oven to 425°F / 220°C. Microwave the finely diced potato with a splash of water in a covered, vented bowl until tender; drain and mash roughly.",
+        "Use part of the measured oil in a nonstick skillet. Warm the ham, then scramble in the egg until set. Stir in the potato, cottage cheese, cheddar and pepper.",
+        "Warm the tortillas until flexible. Divide the filling among them, roll gently and place seam-side down on a tray. Serve any filling that will not fit alongside.",
+        "Brush with the remaining measured oil. Bake until crisp and hot, about 10–15 minutes, watching the edges.",
+        "Make two lattes per person, dividing the listed milk equally between them. Add your coffee or espresso; no syrup or sugar is included."
+      ],
+      "note": "Both lattes are included: 12 fl oz total plain Fairlife 2% milk adds about 180 calories and 19.5 g protein. Each latte uses 6 fl oz; coffee, syrup and added sugar are not counted. Use your MooTopia carton label if it differs. Adapted for one fresh breakfast with cooked ham instead of sausage. Food contributes about 449 calories and 30 g protein. Assumptions: tortillas 50/1 each, egg 72/6, ham 30/5 per oz, cottage cheese 90/12 per half cup and cheddar 112/7 per oz; potato and oil are included. This is a new estimate for the adapted portion, not the source taquito nutrition card.",
+      "source": {
+        "label": "Inspired by The Meal Prep Manual",
+        "url": "https://mealprepmanual.com/cheesy-potato-and-sausage-breakfast-taquitos/"
+      }
     }
   },
   "items": {
@@ -2848,7 +3205,8 @@
       "group": "Protein & dairy",
       "unit": "g",
       "units": {
-        "g": 1
+        "g": 1,
+        "oz": "567/20"
       },
       "shopping": {
         "packSize": 227,
@@ -3045,6 +3403,60 @@
         "mode": "pantry",
         "asNeeded": "Fresh or dried; use less if dried"
       }
+    },
+    "rolled-oats": {
+      "label": "Old-fashioned rolled oats",
+      "group": "Grains, cans & nuts",
+      "unit": "g",
+      "units": {
+        "g": 1
+      },
+      "shopping": {
+        "suffix": "dry; for pancakes, separate from steel-cut oats"
+      }
+    },
+    "breakfast-butter": {
+      "label": "Butter for pancakes",
+      "group": "Protein & dairy",
+      "unit": "tsp",
+      "units": {
+        "tsp": 1,
+        "tbsp": 3
+      },
+      "shopping": {}
+    },
+    "english-muffins": {
+      "label": "Whole-grain English muffins",
+      "group": "Grains, cans & nuts",
+      "unit": "count",
+      "units": {
+        "count": 1
+      },
+      "shopping": {
+        "suffix": "~130 calories each"
+      }
+    },
+    "corn-tortillas": {
+      "label": "Small corn tortillas",
+      "group": "Grains, cans & nuts",
+      "unit": "count",
+      "units": {
+        "count": 1
+      },
+      "shopping": {
+        "suffix": "about 6 inches; ~50 calories each"
+      }
+    },
+    "potatoes": {
+      "label": "Russet potatoes",
+      "group": "Produce & frozen",
+      "unit": "g",
+      "units": {
+        "g": 1
+      },
+      "shopping": {
+        "suffix": "raw weight"
+      }
     }
   },
   "measurementNotes": [
@@ -3053,6 +3465,7 @@
     "Berries use about 150 g per cup. Garlic uses about 1 clove per teaspoon minced and 10 cloves per head. Lemons assume 2 tablespoons juice each, plus the measured lemon for wedges.",
     "Shopping amounts round up to the configured increment or package size. Fraction strings such as \"2/3\" keep quantity calculations exact.",
     "Breakfast assumes two lattes per person daily, each using 6 fl oz plain 2% ultra-filtered milk. Nutrition estimates use Fairlife: 120 calories and 13 g protein per 8 fl oz. MooTopia labels may differ; no syrup or added sugar is included. Fairlife milk label: https://fairlife.com/ultra-filtered-milk/reduced-fat-2-percent-milk/",
-    "New variation nutrition uses source recipe cards with rounded portions. Mixed vegetables are estimated at 50 calories per 100 g instead of broccoli at about 34. White rice shopping uses the same 180 g dry per cup and 3:1 volume yield assumption; follow your package. Meat gram conversion uses 454 g per pound."
+    "New variation nutrition uses source recipe cards with rounded portions. Mixed vegetables are estimated at 50 calories per 100 g instead of broccoli at about 34. White rice shopping uses the same 180 g dry per cup and 3:1 volume yield assumption; follow your package. Meat gram conversion uses 454 g per pound.",
+    "New breakfast estimates count both lattes plus every measured food, topping and cooking fat. Rolled oats for pancakes are separate from steel-cut oats for porridge. English muffins assume about 130 calories each and corn tortillas about 50 each; check labels. New breakfasts contain no protein powder. Cooking spray is treated as negligible; count it if using a measurable amount."
   ]
 }

@@ -22,10 +22,25 @@ The catalog includes four plans. The original four-day plan remains the default:
 | --- | --- | --- | --- | --- |
 | `four-day-cut` | 4 | 2,400 | Original plan | 200 g |
 | `three-day-1800` | 3 | 1,800 | 1,773–1,796 | 160 g |
-| `four-day-2000` | 4 | 2,000 | 1,970–2,020 | 170 g |
-| `four-day-2200` | 4 | 2,200 | 2,191–2,195 | 185 g |
+| `four-day-2000` | 4 | 2,000 | 1,960–2,020 | 170 g |
+| `four-day-2200` | 4 | 2,200 | 2,191–2,200 | 185 g |
 
 The new variations add Taco Mac, teriyaki beef bowls, cilantro lime chicken bowls and sriracha lime chicken bowls from The Meal Prep Manual, plus cherry-balsamic pork adapted from Skinnytaste. Each has two batch days and its own calculated groceries. Frozen mixed vegetables replace broccoli in the chicken bowls; portions and side dishes are adjusted for the plan. Every breakfast includes two lattes, and workout snack notes account for the 30 g / 150 calorie Fairlife shake. Nutrition estimates are per serving and depend on actual brands and ingredients.
+
+## Breakfast variety
+
+The 2,400-calorie default keeps its original oats and ham-frittata breakfasts, portions, and day order. New fresh breakfasts appear in the lower-calorie plans:
+
+| Breakfast | Used in | Calories including two lattes | Protein including two lattes |
+| --- | --- | --- | --- |
+| Cottage cheese pancakes, yogurt and berries — smaller portion | 1,800 and 2,000, day 3 | ~520 | ~45 g |
+| Ham and egg English muffin — smaller portion | 2,000, day 4 | ~475 | ~43 g |
+| Cottage cheese pancakes, yogurt and berries | 2,200, day 3 | ~715 | ~59 g |
+| Ham and potato breakfast taquitos | 2,200, day 4 | ~630 | ~49 g |
+
+Pancakes are adapted from The Kitchn; the English muffin is adapted from Skinnytaste; the ham taquitos are inspired by The Meal Prep Manual's potato and sausage taquitos. Each recipe links to its source. Ham replaces sausage or turkey bacon. None of the new recipes uses protein powder. Pancakes use rolled oats, which are listed separately from steel-cut oats.
+
+All breakfast estimates include 12 fl oz total plain Fairlife 2% milk, split into two 6 fl oz lattes: about 180 calories and 19.5 g protein from milk alone. Check your MooTopia label if using that milk. New recipe notes distinguish the food estimate from the latte contribution; adapted totals are calculated from typical ingredient labels rather than copying unchanged source nutrition cards. The grocery lists include 36 fl oz latte milk for three days or 48 fl oz for four days.
 
 ## Add or reorder plans and days
 
