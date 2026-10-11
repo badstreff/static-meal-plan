@@ -225,7 +225,7 @@
         "targetNote": "Approximate daily targets, including both lattes. C/P/F percentages use estimated macro energy (4/4/9); package calories may differ due to fiber and rounding.",
         "workoutNote": "Use the linked workout snack guide in place of the regular snack. Each includes one **Fairlife Nutrition Plan shake — 30 g protein, 150 calories**. Keep the breakfast PBfit shake separate.",
         "shoppingNote": "Buy only the home-meal, breakfast and snack ingredients. The restaurant order is shown in its own “Dining out · order separately” group. Groceries cover regular snacks; check the linked workout replacement if training.",
-        "storageNote": "Use fully cooked canned chicken and microwave rice for the home meal. Refrigerate leftovers from opened cans and rice pouches promptly; cold dairy stays chilled. There is no batch cooking to do.",
+        "storageNote": "Use fully cooked canned chicken for the home meal; microwave rice or vegetables only where listed. Refrigerate unused food from opened cans and rice pouches promptly; keep dairy chilled. No batch cooking is required.",
         "nutritionNote": "Estimated regular day: 1,831 calories, 164.0 g protein, 173.7 g carbs and 56.8 g fat. Workout version: 1,821 calories. Both lattes are included. Restaurant estimates sum official standard portions checked October 11, 2026; actual scoops vary. All daily totals use the same 35/35/30 tolerance as the other plans.",
         "footer": "A little less effort. Still a plan."
       }
@@ -255,7 +255,7 @@
         "targetNote": "Approximate daily targets, including both lattes. C/P/F percentages use estimated macro energy (4/4/9); package calories may differ due to fiber and rounding.",
         "workoutNote": "Use the linked workout snack guide in place of the regular snack. Each includes one **Fairlife Nutrition Plan shake — 30 g protein, 150 calories**. Keep the breakfast PBfit shake separate.",
         "shoppingNote": "Buy only the home-meal, breakfast and snack ingredients. The restaurant order is shown in its own “Dining out · order separately” group. Groceries cover regular snacks; check the linked workout replacement if training.",
-        "storageNote": "Use fully cooked canned chicken and microwave rice for the home meal. Refrigerate leftovers from opened cans and rice pouches promptly; cold dairy stays chilled. There is no batch cooking to do.",
+        "storageNote": "Use fully cooked canned chicken for the home meal; microwave rice or vegetables only where listed. Refrigerate unused food from opened cans and rice pouches promptly; keep dairy chilled. No batch cooking is required.",
         "nutritionNote": "Estimated regular day: 2,018 calories, 187.6 g protein, 173.9 g carbs and 68.4 g fat. Workout version: 2,008 calories. Both lattes are included. Restaurant estimates sum official standard portions checked October 11, 2026; actual scoops vary. All daily totals use the same 35/35/30 tolerance as the other plans.",
         "footer": "A little less effort. Still a plan."
       }
@@ -285,7 +285,7 @@
         "targetNote": "Approximate daily targets, including both lattes. C/P/F percentages use estimated macro energy (4/4/9); package calories may differ due to fiber and rounding.",
         "workoutNote": "Use the linked workout snack guide in place of the regular snack. Each includes one **Fairlife Nutrition Plan shake — 30 g protein, 150 calories**. Keep the breakfast PBfit shake separate.",
         "shoppingNote": "Buy only the home-meal, breakfast and snack ingredients. The restaurant order is shown in its own “Dining out · order separately” group. Groceries cover regular snacks; check the linked workout replacement if training.",
-        "storageNote": "Use fully cooked canned chicken and microwave rice for the home meal. Refrigerate leftovers from opened cans and rice pouches promptly; cold dairy stays chilled. There is no batch cooking to do.",
+        "storageNote": "Use fully cooked canned chicken for the home meal; microwave rice or vegetables only where listed. Refrigerate unused food from opened cans and rice pouches promptly; keep dairy chilled. No batch cooking is required.",
         "nutritionNote": "Estimated regular day: 2,179 calories, 203.6 g protein, 197.9 g carbs and 68.0 g fat. Workout version: 2,169 calories. Both lattes are included. Restaurant estimates sum official standard portions checked October 11, 2026; actual scoops vary. All daily totals use the same 35/35/30 tolerance as the other plans.",
         "footer": "A little less effort. Still a plan."
       }
@@ -315,7 +315,7 @@
         "targetNote": "Approximate daily targets, including both lattes. C/P/F percentages use estimated macro energy (4/4/9); package calories may differ due to fiber and rounding.",
         "workoutNote": "Use the linked workout snack guide in place of the regular snack. Each includes one **Fairlife Nutrition Plan shake — 30 g protein, 150 calories**. Keep the breakfast PBfit shake separate.",
         "shoppingNote": "Buy only the home-meal, breakfast and snack ingredients. The restaurant order is shown in its own “Dining out · order separately” group. Groceries cover regular snacks; check the linked workout replacement if training.",
-        "storageNote": "Use fully cooked canned chicken and microwave rice for the home meal. Refrigerate leftovers from opened cans and rice pouches promptly; cold dairy stays chilled. There is no batch cooking to do.",
+        "storageNote": "Use fully cooked canned chicken for the home meal; microwave rice or vegetables only where listed. Refrigerate unused food from opened cans and rice pouches promptly; keep dairy chilled. No batch cooking is required.",
         "nutritionNote": "Estimated regular day: 2,387 calories, 207.6 g protein, 223.2 g carbs and 77.7 g fat. Workout version: 2,377 calories. Both lattes are included. Restaurant estimates sum official standard portions checked October 11, 2026; actual scoops vary. All daily totals use the same 35/35/30 tolerance as the other plans.",
         "footer": "A little less effort. Still a plan."
       }
@@ -6313,7 +6313,7 @@
         "Stir yogurt, olive oil and vinegar together as a creamy dressing. Toss with chicken and beans.",
         "Serve over spinach and tomatoes; add the almonds just before eating. No stove or microwave is needed."
       ],
-      "note": "Canned chicken is already fully cooked: drain and weigh the edible chicken, not the liquid. Rice quantities are cooked, ready-to-heat weight. Use the listed portions and count all measured dressing. Refrigerate unused canned chicken, beans and rice promptly in closed containers.",
+      "note": "Canned chicken is already fully cooked: drain and weigh the edible chicken, not the liquid. Where listed, microwave rice is measured cooked. Use the listed portions, including dressing. Refrigerate unused perishable ingredients promptly in closed containers.",
       "source": {
         "label": "Canned chicken label reference",
         "url": "https://www.campbells.com/swanson/products/premium-poultry/white-premium-chunk-chicken-breast-with-rib-meat-in-water/"
@@ -6374,7 +6374,7 @@
         "Drain the fully cooked canned chicken and any listed beans; measure the amounts. Warm them briefly in a covered microwave-safe bowl if desired.",
         "Combine the rice, chicken, vegetables and any beans. Stir in all the measured olive oil and salsa. Refrigerate the unused pouch and canned-food portions."
       ],
-      "note": "Canned chicken is already fully cooked: drain and weigh the edible chicken, not the liquid. Rice quantities are cooked, ready-to-heat weight. Use the listed portions and count all measured dressing. Refrigerate unused canned chicken, beans and rice promptly in closed containers.",
+      "note": "Canned chicken is already fully cooked: drain and weigh the edible chicken, not the liquid. Where listed, microwave rice is measured cooked. Use the listed portions, including dressing. Refrigerate unused perishable ingredients promptly in closed containers.",
       "source": {
         "label": "Canned chicken label reference",
         "url": "https://www.campbells.com/swanson/products/premium-poultry/white-premium-chunk-chicken-breast-with-rib-meat-in-water/"
@@ -6429,7 +6429,7 @@
         "Drain the fully cooked canned chicken and any listed beans; measure the amounts. Warm them briefly in a covered microwave-safe bowl if desired.",
         "Combine the rice, chicken, vegetables and any beans. Stir in all the measured olive oil and salsa. Refrigerate the unused pouch and canned-food portions."
       ],
-      "note": "Canned chicken is already fully cooked: drain and weigh the edible chicken, not the liquid. Rice quantities are cooked, ready-to-heat weight. Use the listed portions and count all measured dressing. Refrigerate unused canned chicken, beans and rice promptly in closed containers.",
+      "note": "Canned chicken is already fully cooked: drain and weigh the edible chicken, not the liquid. Where listed, microwave rice is measured cooked. Use the listed portions, including dressing. Refrigerate unused perishable ingredients promptly in closed containers.",
       "source": {
         "label": "Canned chicken label reference",
         "url": "https://www.campbells.com/swanson/products/premium-poultry/white-premium-chunk-chicken-breast-with-rib-meat-in-water/"
@@ -6483,7 +6483,7 @@
         "Fill the two bread slices with the chicken and spinach. Eat cold, or toast the bread if you feel like it.",
         "Microwave the frozen vegetables according to the package; serve alongside. Refrigerate unused chicken promptly."
       ],
-      "note": "Canned chicken is already fully cooked: drain and weigh the edible chicken, not the liquid. Rice quantities are cooked, ready-to-heat weight. Use the listed portions and count all measured dressing. Refrigerate unused canned chicken, beans and rice promptly in closed containers.",
+      "note": "Canned chicken is already fully cooked: drain and weigh the edible chicken, not the liquid. Where listed, microwave rice is measured cooked. Use the listed portions, including dressing. Refrigerate unused perishable ingredients promptly in closed containers.",
       "source": {
         "label": "Canned chicken label reference",
         "url": "https://www.campbells.com/swanson/products/premium-poultry/white-premium-chunk-chicken-breast-with-rib-meat-in-water/"
