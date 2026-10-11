@@ -18,7 +18,7 @@ All meal content lives in [`meal-plan.json`](meal-plan.json). Set its top-level 
 
 GitHub Actions validates the document, runs tests, generates the homepage and every plan page, and publishes `_site`. Invalid content stops deployment. Displaying meals and recipes does not require JavaScript or a JSON request.
 
-The catalog includes six plans. The original four-day plan remains the default:
+The catalog includes ten plans. The original four-day plan remains the default:
 
 | Plan ID | Days | Calorie target | Estimated regular-day calories | Protein target |
 | --- | --- | --- | --- | --- |
@@ -28,6 +28,10 @@ The catalog includes six plans. The original four-day plan remains the default:
 | `four-day-2200` | 4 | 2,200 | 2,243–2,251 | 192 g |
 | `four-day-1800` | 4 | 1,800 | 1,798–1,842 | 158 g |
 | `three-day-2400` | 3 | 2,400 | 2,393–2,457 | 210 g |
+| `fatigue-day-1800` | 1 | 1,800 | 1,831 | 158 g |
+| `fatigue-day-2000` | 1 | 2,000 | 2,018 | 175 g |
+| `fatigue-day-2200` | 1 | 2,200 | 2,179 | 192 g |
+| `fatigue-day-2400` | 1 | 2,400 | 2,387 | 210 g |
 
 Every day targets **35% carbohydrate / 35% protein / 30% fat by calories**. Both regular and workout snack versions stay within three percentage points per macro and 5% of the calorie target. Cards show daily grams and the estimated energy split. Percentages normalize 4/4/9 macro energy; label calories are summed separately and can differ due to fiber and rounding.
 
@@ -40,6 +44,22 @@ Cottage-cheese bowls use one whole **Dole 4 oz pineapple-in-juice cup**, includi
 **Breakfast side shakes use PBfit Classic + Fairlife fat-free (0%) milk.** The default oat breakfast retains 16 g PBfit + 8 fl oz skim milk, along with its original oats, apple, brown sugar and breakfast fat portions. Smaller plans adjust food portions to balance the day. All breakfasts retain two lattes, each with 6 fl oz 2% milk. Shake milk is additional and appears separately in groceries. PBfit assumes 60 calories / 8 g protein / 4 g carbs / 2 g fat per 16 g; jars can differ, so use your label. [PBfit](https://www.pbfit.com/products/pbfit-classic) · [Fairlife skim](https://fairlife.com/ultra-filtered-milk/fat-free-skim-milk/).
 
 Packaged snack calculations use current manufacturer pages: [KIND Dark Chocolate Nuts & Sea Salt, 40 g](https://www.kindsnacks.com/products/nut-bar/dark-chocolate-nuts-sea-salt) = 190 calories / 6 g protein; [Oikos Triple Zero vanilla, 150 g](https://www.oikos.com/all-products/triple-zero/product/vanilla-multipack/) = 80 / 15; [Mini Babybel Original, 20 g](https://babybel.com/product/babybel-original-cheese/) = 70 / 4. Check the package you buy: sizes, flavors and formulations vary.
+
+
+## Fatigue days
+
+Four one-day plans reduce cooking to breakfast and a five-minute home meal. Each includes both lattes, exactly one restaurant meal and a ready-to-eat snack; lunch and dinner can trade places. They use the same macro and workout-snack checks as the longer plans.
+
+| Target | Breakfast | Dining-out lunch | Simple home dinner | Estimated calories |
+| --- | --- | --- | --- | --- |
+| 1,800 | Apple steel-cut oats + PBfit side shake + two lattes | Chipotle chicken, brown rice and black-bean bowl | No-cook chicken, bean and almond salad | 1,831 |
+| 2,000 | Ham and egg English muffin + two lattes | Panda Plate: double Grilled Teriyaki Chicken, all Super Greens | Microwave chicken, rice, beans and vegetables | 2,018 |
+| 2,200 | Cottage cheese pancakes + two lattes | Chipotle double-chicken bowl with brown rice, beans and corn salsa | Canned-chicken sandwich and microwave vegetables | 2,179 |
+| 2,400 | Original ham frittata and toast + two lattes | Panda Plate: double Grilled Teriyaki Chicken, half white rice / half Super Greens | Microwave chicken, rice and vegetables | 2,387 |
+
+Restaurant guides specify the full order, toppings and drink assumptions. Their estimates sum standard portions from [Chipotle’s official U.S. chart](https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf) and [Panda Express’s current official nutrition table](https://www.pandaexpress.com/nutritioninformation), checked October 11, 2026. Actual scoops and half-side splits vary; extra sauce, chips and caloric drinks change the totals.
+
+Restaurant order items appear in a separate **Dining out · order separately** shopping group. Their ingredients are already included in the restaurant order and do not inflate home groceries. Pantry dinners use fully cooked canned chicken (weighed drained), ready-to-heat jasmine rice (weighed cooked), canned beans and frozen vegetables. Rice pouches are separate from the dry-rice items used in batch plans. Package labels and edible can yields vary; the grocery list rounds required drained chicken upward. Refrigerate unused opened food promptly.
 
 ## Breakfast variety
 
@@ -78,7 +98,7 @@ The `days` array controls order and may repeat IDs. Replace an ID to swap a day.
 
 Duplicate a day under another ID to make a variation, then change its recipe references. A recipe's `kind` must match its meal slot. Each page displays only that plan's recipes. Guides follow its day order; groceries cover its meals and `people` count. Smaller portions use separate recipe IDs so the original plan stays unchanged.
 
-Batch recipes are prepared on their first selected day. For plans beyond the 3–4 day refrigeration window, plan separate batches or freezing; the generator is not a food-storage scheduler.
+Batch recipes are prepared on their first selected day. Assembled meals and restaurant orders stay outside that cooking schedule. For plans beyond the 3–4 day refrigeration window, plan separate batches or freezing; the generator is not a food-storage scheduler.
 
 Global wording lives in `site`. A plan may include a `copy` object overriding `heroDescription`, `planAside`, `recipeIntro`, `targetNote`, `workoutNote`, `nutritionNote`, `shoppingNote`, `storageNote`, or `footer`. For example:
 
@@ -93,7 +113,7 @@ Global wording lives in `site`. A plan may include a `copy` object overriding `h
 
 Recipes have `title`, `shortTitle`, `kind`, `preparation`, `servings`, `prepTime`, `nutrition`, `description`, `ingredients`, `steps`, `note`, and an optional `source` containing `label` and an HTTPS `url`.
 
-`servings` describes the base quantities. `preparation: "fresh"` scales the recipe guide to one preparation for the plan's people. `preparation: "batch"` scales its guide to all selected portions. Groceries always cover the entire plan. Nutrition is an approximate estimate **per serving**. After changing ingredients or item reference values, run `python3 scripts/nutrition.py --write` to recalculate it. `python3 scripts/nutrition.py` checks that stored recipe estimates match their ingredients. Deployment tests also check for drift.
+`servings` describes the base quantities. `preparation: "fresh"` scales the recipe guide to one preparation for the plan's people. `preparation: "batch"` scales its guide to all selected portions. `"assemble"` describes a no-cook or quick microwave meal; `"dining-out"` describes a restaurant order. Both scale to one meal per person and never create a batch-cooking session. Groceries always cover the entire plan. Nutrition is an approximate estimate **per serving**. After changing ingredients or item reference values, run `python3 scripts/nutrition.py --write` to recalculate it. `python3 scripts/nutrition.py` checks that stored recipe estimates match their ingredients. Deployment tests also check for drift.
 
 ```json
 {

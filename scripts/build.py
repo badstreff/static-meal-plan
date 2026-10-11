@@ -228,8 +228,8 @@ def validate_data(data):
             text(recipe.get(field), f'{path}.{field}')
         if recipe.get('kind') not in MEALS:
             fail(path, f'kind must be one of {MEALS}')
-        if recipe.get('preparation') not in ('fresh', 'batch'):
-            fail(path, 'preparation must be fresh or batch')
+        if recipe.get('preparation') not in ('fresh', 'batch', 'assemble', 'dining-out'):
+            fail(path, 'preparation must be fresh, batch, assemble or dining-out')
         integer(recipe.get('servings'), f'{path}.servings')
         nutrition = mapping(recipe.get('nutrition'), f'{path}.nutrition')
         for field in ('calories', 'proteinGrams'):
@@ -474,6 +474,10 @@ def recipe_html(data, plan, recipe_id, uses, positions, workout=False):
     metadata = f'{recipe["prepTime"]} · {servings} {serving_label}'
     if workout:
         calendar = 'Make fresh on training days, in place of the rest-day snack.'
+    elif recipe['preparation'] == 'dining-out':
+        calendar = f'Order on {day_phrase(positions[recipe_id])}.'
+    elif recipe['preparation'] == 'assemble':
+        calendar = f'Assemble on {day_phrase(positions[recipe_id])}.'
     else:
         when = positions[recipe_id]
         calendar = (f'Cook on day {when[0]}; eat on {day_phrase(when)}.' if recipe['preparation'] == 'batch' else f'Make fresh on {day_phrase(when)}.')
@@ -532,17 +536,23 @@ def render_page(data, plan_id=None, root_prefix='.'):
                     statements.append(f'Save the remaining portions for {day_phrase(later)}.')
             note = ' '.join(statements)
         else:
-            fresh = [data['recipes'][meals[slot]] for slot in MEALS if data['recipes'][meals[slot]]['preparation'] == 'fresh']
+            fresh = [data['recipes'][meals[slot]] for slot in MEALS if data['recipes'][meals[slot]]['preparation'] != 'batch']
             prepared = len(fresh) < len(MEALS)
             title = 'Fresh meals and prepared portions' if fresh and prepared else 'Serve prepared portions' if prepared else 'Make today’s meals fresh'
-            note = ' '.join(f'Make {recipe["shortTitle"]} fresh.' for recipe in fresh)
+            note = ' '.join(f'Order {recipe["shortTitle"]}.' if recipe['preparation'] == 'dining-out' else f'Assemble {recipe["shortTitle"]}.' if recipe['preparation'] == 'assemble' else f'Make {recipe["shortTitle"]} fresh.' for recipe in fresh)
+            if any(recipe['preparation'] == 'dining-out' for recipe in fresh):
+                title = 'Breakfast, one order, one simple meal'
             if prepared:
                 note += ' Serve prepared portions. Reheat cooked meals until hot throughout (165°F / 74°C); add cold toppings afterward.'
         guide_rows = []
         for slot in MEALS:
             rid = meals[slot]
             recipe = data['recipes'][rid]
-            if recipe['preparation'] == 'fresh':
+            if recipe['preparation'] == 'dining-out':
+                instruction = 'Order this meal from the restaurant.'
+            elif recipe['preparation'] == 'assemble':
+                instruction = 'Assemble this meal; follow the quick heating steps if listed.'
+            elif recipe['preparation'] == 'fresh':
                 instruction = 'Cook fresh this morning.' if slot == 'breakfast' else 'Make fresh for this snack.' if slot == 'snack' else 'Cook fresh for this meal.'
             elif positions[rid][0] == number:
                 instruction = 'Prepare the batch today; serve one portion per person.'
@@ -607,12 +617,12 @@ def render_page(data, plan_id=None, root_prefix='.'):
         'PLAN_SWITCHER':switcher, 'ROOT_PREFIX':root_prefix, 'DAY_COLUMNS':str(min(count,4)),
         'BRAND':escape(site['brand']), 'DAY_TITLE':escape(day_title), 'HERO_HEADING':escape(site['heroHeading']),
         'HERO_DESCRIPTION':escape(site['heroDescription']),
-        'EYEBROW':escape(f'{day_title.upper()} · {word(plan["people"]).upper()} {"PERSON" if plan["people"]==1 else "PEOPLE"} · {word(len(cooking)).upper()} COOKING {"SESSION" if len(cooking)==1 else "SESSIONS"}'),
+        'EYEBROW':escape(f'{day_title.upper()} · {word(plan["people"]).upper()} {"PERSON" if plan["people"]==1 else "PEOPLE"} · ' + (f'{word(len(cooking)).upper()} COOKING {"SESSION" if len(cooking)==1 else "SESSIONS"}' if cooking else 'NO BATCH COOKING')),
         'CALORIES':f'{float(quantity(plan["targets"]["calories"])):,.0f}', 'PROTEIN':pretty(quantity(plan['targets']['proteinGrams'])),
         'MACRO_TARGET':macro_target,
-        'TARGET_NOTE':escape(site['targetNote']), 'PLAN_HEADING':escape(f'Your next {day_title.lower()}'),
+        'TARGET_NOTE':escape(site['targetNote']), 'PLAN_HEADING':escape('Your next day' if count == 1 else f'Your next {day_title.lower()}'),
         'PLAN_ASIDE':escape(site['planAside']), 'CARDS':''.join(cards), 'WORKOUT_NOTE':rich_text(site['workoutNote']),
-        'GUIDE_HEADING':escape(site['guideHeading']), 'GUIDE_ASIDE':escape(f'Cook {len(cooking)} batch {"day" if len(cooking)==1 else "days"}. Breakfast each morning.'),
+        'GUIDE_HEADING':escape(site['guideHeading']), 'GUIDE_ASIDE':escape(f'Cook {len(cooking)} batch {"day" if len(cooking)==1 else "days"}. Breakfast each morning.' if cooking else 'Breakfast fresh. No batch cooking.'),
         'GUIDES':''.join(guides), 'RECIPE_HEADING':escape(site['recipeHeading']), 'RECIPE_INTRO':escape(site['recipeIntro']),
         'RECIPES':notebook, 'NUTRITION_NOTE':rich_text(site['nutritionNote']), 'SHOPPING_HEADING':escape(f'One trip. {day_title}.'),
         'SHOPPING_NOTE':escape(site['shoppingNote']), 'SHOPPING_GROUPS':''.join(groups), 'RICE_NOTE':rice_note,

@@ -199,13 +199,134 @@
         "storageNote": "On day 1, start the slow cooker early for two dinners and make Taco Mac for lunches on days 1 and 3. Cook Greek chicken on day 2 and pork on day 3. Keep cold toppings separate and reheat individual portions.",
         "nutritionNote": "Estimated regular-day calories: 2,450, 2,457, 2,393. Protein: 210–214 g daily. Regular and workout versions are within three percentage points of 35% carbs / 35% protein / 30% fat and within 5% of the calorie target. Both lattes and any breakfast side shake are included. Percentages normalize 4/4/9 macro energy; fiber and label rounding can make package calories differ."
       }
+    },
+    "fatigue-day-1800": {
+      "title": "Fatigue day · Chipotle",
+      "people": 1,
+      "targets": {
+        "calories": 1800,
+        "proteinGrams": 158,
+        "macroPercent": {
+          "carbs": 35,
+          "protein": 35,
+          "fat": 30
+        }
+      },
+      "days": [
+        "fatigue-day-1800-day-01"
+      ],
+      "extraItems": [
+        "fairlife"
+      ],
+      "copy": {
+        "heroDescription": "A one-day plan for when cooking feels like too much: a normal breakfast with both lattes, one Chipotle order, one simple pantry meal and a ready-to-eat snack.",
+        "planAside": "One restaurant meal. No batch cooking.",
+        "recipeIntro": "Breakfast as usual. Follow the exact restaurant order, then assemble the home meal in about five minutes. Lunch and dinner can trade places.",
+        "targetNote": "Approximate daily targets, including both lattes. C/P/F percentages use estimated macro energy (4/4/9); package calories may differ due to fiber and rounding.",
+        "workoutNote": "Use the linked workout snack guide in place of the regular snack. Each includes one **Fairlife Nutrition Plan shake — 30 g protein, 150 calories**. Keep the breakfast PBfit shake separate.",
+        "shoppingNote": "Buy only the home-meal, breakfast and snack ingredients. The restaurant order is shown in its own “Dining out · order separately” group. Groceries cover regular snacks; check the linked workout replacement if training.",
+        "storageNote": "Use fully cooked canned chicken and microwave rice for the home meal. Refrigerate leftovers from opened cans and rice pouches promptly; cold dairy stays chilled. There is no batch cooking to do.",
+        "nutritionNote": "Estimated regular day: 1,831 calories, 164.0 g protein, 173.7 g carbs and 56.8 g fat. Workout version: 1,821 calories. Both lattes are included. Restaurant estimates sum official standard portions checked October 11, 2026; actual scoops vary. All daily totals use the same 35/35/30 tolerance as the other plans.",
+        "footer": "A little less effort. Still a plan."
+      }
+    },
+    "fatigue-day-2000": {
+      "title": "Fatigue day · Panda Express",
+      "people": 1,
+      "targets": {
+        "calories": 2000,
+        "proteinGrams": 175,
+        "macroPercent": {
+          "carbs": 35,
+          "protein": 35,
+          "fat": 30
+        }
+      },
+      "days": [
+        "fatigue-day-2000-day-01"
+      ],
+      "extraItems": [
+        "fairlife"
+      ],
+      "copy": {
+        "heroDescription": "A one-day plan for when cooking feels like too much: a normal breakfast with both lattes, one Panda Express order, one simple pantry meal and a ready-to-eat snack.",
+        "planAside": "One restaurant meal. No batch cooking.",
+        "recipeIntro": "Breakfast as usual. Follow the exact restaurant order, then assemble the home meal in about five minutes. Lunch and dinner can trade places.",
+        "targetNote": "Approximate daily targets, including both lattes. C/P/F percentages use estimated macro energy (4/4/9); package calories may differ due to fiber and rounding.",
+        "workoutNote": "Use the linked workout snack guide in place of the regular snack. Each includes one **Fairlife Nutrition Plan shake — 30 g protein, 150 calories**. Keep the breakfast PBfit shake separate.",
+        "shoppingNote": "Buy only the home-meal, breakfast and snack ingredients. The restaurant order is shown in its own “Dining out · order separately” group. Groceries cover regular snacks; check the linked workout replacement if training.",
+        "storageNote": "Use fully cooked canned chicken and microwave rice for the home meal. Refrigerate leftovers from opened cans and rice pouches promptly; cold dairy stays chilled. There is no batch cooking to do.",
+        "nutritionNote": "Estimated regular day: 2,018 calories, 187.6 g protein, 173.9 g carbs and 68.4 g fat. Workout version: 2,008 calories. Both lattes are included. Restaurant estimates sum official standard portions checked October 11, 2026; actual scoops vary. All daily totals use the same 35/35/30 tolerance as the other plans.",
+        "footer": "A little less effort. Still a plan."
+      }
+    },
+    "fatigue-day-2200": {
+      "title": "Fatigue day · Chipotle",
+      "people": 1,
+      "targets": {
+        "calories": 2200,
+        "proteinGrams": 192,
+        "macroPercent": {
+          "carbs": 35,
+          "protein": 35,
+          "fat": 30
+        }
+      },
+      "days": [
+        "fatigue-day-2200-day-01"
+      ],
+      "extraItems": [
+        "fairlife"
+      ],
+      "copy": {
+        "heroDescription": "A one-day plan for when cooking feels like too much: a normal breakfast with both lattes, one Chipotle order, one simple pantry meal and a ready-to-eat snack.",
+        "planAside": "One restaurant meal. No batch cooking.",
+        "recipeIntro": "Breakfast as usual. Follow the exact restaurant order, then assemble the home meal in about five minutes. Lunch and dinner can trade places.",
+        "targetNote": "Approximate daily targets, including both lattes. C/P/F percentages use estimated macro energy (4/4/9); package calories may differ due to fiber and rounding.",
+        "workoutNote": "Use the linked workout snack guide in place of the regular snack. Each includes one **Fairlife Nutrition Plan shake — 30 g protein, 150 calories**. Keep the breakfast PBfit shake separate.",
+        "shoppingNote": "Buy only the home-meal, breakfast and snack ingredients. The restaurant order is shown in its own “Dining out · order separately” group. Groceries cover regular snacks; check the linked workout replacement if training.",
+        "storageNote": "Use fully cooked canned chicken and microwave rice for the home meal. Refrigerate leftovers from opened cans and rice pouches promptly; cold dairy stays chilled. There is no batch cooking to do.",
+        "nutritionNote": "Estimated regular day: 2,179 calories, 203.6 g protein, 197.9 g carbs and 68.0 g fat. Workout version: 2,169 calories. Both lattes are included. Restaurant estimates sum official standard portions checked October 11, 2026; actual scoops vary. All daily totals use the same 35/35/30 tolerance as the other plans.",
+        "footer": "A little less effort. Still a plan."
+      }
+    },
+    "fatigue-day-2400": {
+      "title": "Fatigue day · Panda Express",
+      "people": 1,
+      "targets": {
+        "calories": 2400,
+        "proteinGrams": 210,
+        "macroPercent": {
+          "carbs": 35,
+          "protein": 35,
+          "fat": 30
+        }
+      },
+      "days": [
+        "fatigue-day-2400-day-01"
+      ],
+      "extraItems": [
+        "fairlife"
+      ],
+      "copy": {
+        "heroDescription": "A one-day plan for when cooking feels like too much: a normal breakfast with both lattes, one Panda Express order, one simple pantry meal and a ready-to-eat snack.",
+        "planAside": "One restaurant meal. No batch cooking.",
+        "recipeIntro": "Breakfast as usual. Follow the exact restaurant order, then assemble the home meal in about five minutes. Lunch and dinner can trade places.",
+        "targetNote": "Approximate daily targets, including both lattes. C/P/F percentages use estimated macro energy (4/4/9); package calories may differ due to fiber and rounding.",
+        "workoutNote": "Use the linked workout snack guide in place of the regular snack. Each includes one **Fairlife Nutrition Plan shake — 30 g protein, 150 calories**. Keep the breakfast PBfit shake separate.",
+        "shoppingNote": "Buy only the home-meal, breakfast and snack ingredients. The restaurant order is shown in its own “Dining out · order separately” group. Groceries cover regular snacks; check the linked workout replacement if training.",
+        "storageNote": "Use fully cooked canned chicken and microwave rice for the home meal. Refrigerate leftovers from opened cans and rice pouches promptly; cold dairy stays chilled. There is no batch cooking to do.",
+        "nutritionNote": "Estimated regular day: 2,387 calories, 207.6 g protein, 223.2 g carbs and 77.7 g fat. Workout version: 2,377 calories. Both lattes are included. Restaurant estimates sum official standard portions checked October 11, 2026; actual scoops vary. All daily totals use the same 35/35/30 tolerance as the other plans.",
+        "footer": "A little less effort. Still a plan."
+      }
     }
   },
   "groceryGroups": [
     "Protein & dairy",
     "Produce & frozen",
     "Grains, cans & nuts",
-    "Pantry check"
+    "Pantry check",
+    "Dining out · order separately"
   ],
   "days": {
     "day-01": {
@@ -382,6 +503,38 @@
         "lunch": "three-day-2400-taco-mac",
         "dinner": "three-day-2400-cherry-pork",
         "snack": "three-day-2400-kind-yogurt-apple"
+      }
+    },
+    "fatigue-day-1800-day-01": {
+      "meals": {
+        "breakfast": "three-day-1800-oats-1800",
+        "lunch": "fatigue-chipotle-1800",
+        "dinner": "fatigue-pantry-salad",
+        "snack": "three-day-2400-double-yogurt-cheese"
+      }
+    },
+    "fatigue-day-2000-day-01": {
+      "meals": {
+        "breakfast": "four-day-2000-ham-egg-muffin-small",
+        "lunch": "fatigue-panda-2000",
+        "dinner": "fatigue-pantry-rice-2000",
+        "snack": "four-day-1800-kind-yogurt"
+      }
+    },
+    "fatigue-day-2200-day-01": {
+      "meals": {
+        "breakfast": "three-day-2400-cottage-pancakes",
+        "lunch": "fatigue-chipotle-2200",
+        "dinner": "fatigue-pantry-sandwich",
+        "snack": "three-day-2400-double-yogurt-cheese"
+      }
+    },
+    "fatigue-day-2400-day-01": {
+      "meals": {
+        "breakfast": "ham",
+        "lunch": "fatigue-panda-2400",
+        "dinner": "fatigue-pantry-rice-2400",
+        "snack": "four-day-1800-kind-yogurt"
       }
     }
   },
@@ -4292,7 +4445,7 @@
       "family": "slow-chili"
     },
     "four-day-1800-kind-yogurt": {
-      "title": "KIND bar & a vanilla yogurt cup",
+      "title": "KIND bar & two vanilla yogurt cups",
       "shortTitle": "KIND bar & yogurt",
       "kind": "snack",
       "preparation": "fresh",
@@ -5958,6 +6111,383 @@
       "note": "Per person: one 30 g protein / 150 calorie Fairlife shake plus the listed foods. Workout portions are shown separately; groceries cover the regular snack.",
       "source": null,
       "family": "kind-yogurt-apple"
+    },
+    "fatigue-chipotle-1800": {
+      "title": "Chipotle · chicken, brown rice & bean bowl",
+      "shortTitle": "Chipotle chicken bowl",
+      "kind": "lunch",
+      "preparation": "dining-out",
+      "servings": 1,
+      "prepTime": "Order ahead",
+      "nutrition": {
+        "calories": 570,
+        "carbsGrams": 68.0,
+        "proteinGrams": 45.0,
+        "fatGrams": 14.5
+      },
+      "family": "chipotle-chicken-bowl",
+      "description": "One complete dining-out meal. The ordering guide below matches the nutrition estimate.",
+      "ingredients": [
+        {
+          "itemId": "fatigue-chipotle-1800",
+          "quantity": 1,
+          "unit": "count",
+          "label": "complete restaurant order below"
+        }
+      ],
+      "steps": [
+        "Order a burrito bowl with one standard serving of adobo chicken, brown rice and black beans.",
+        "Add fajita vegetables, fresh tomato salsa and romaine lettuce.",
+        "Keep this order to those ingredients; choose water or a zero-calorie drink. Guacamole, cheese, sour cream, chips and a tortilla would change the estimate."
+      ],
+      "note": "Menu nutrition uses standard servings, so actual restaurant portions can vary. Choose water or a zero-calorie drink. Chips, tortillas, desserts and extra sauces are not in the estimate. Use the listed order for this day; the other restaurant guide has a different portion size.",
+      "source": {
+        "label": "Chipotle official nutrition",
+        "url": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf"
+      }
+    },
+    "fatigue-chipotle-2200": {
+      "title": "Chipotle · double-chicken, brown rice & corn bowl",
+      "shortTitle": "Chipotle double-chicken bowl",
+      "kind": "lunch",
+      "preparation": "dining-out",
+      "servings": 1,
+      "prepTime": "Order ahead",
+      "nutrition": {
+        "calories": 830,
+        "carbsGrams": 84.0,
+        "proteinGrams": 80.0,
+        "fatGrams": 23.0
+      },
+      "family": "chipotle-chicken-bowl",
+      "description": "One complete dining-out meal. The ordering guide below matches the nutrition estimate.",
+      "ingredients": [
+        {
+          "itemId": "fatigue-chipotle-2200",
+          "quantity": 1,
+          "unit": "count",
+          "label": "complete restaurant order below"
+        }
+      ],
+      "steps": [
+        "Order a burrito bowl with double adobo chicken, one standard serving of brown rice, and black beans.",
+        "Add fajita vegetables, fresh tomato salsa, roasted chili-corn salsa and romaine lettuce.",
+        "Choose water or a zero-calorie drink. The estimate covers this bowl without guacamole, cheese, sour cream, chips or a tortilla."
+      ],
+      "note": "Menu nutrition uses standard servings, so actual restaurant portions can vary. Choose water or a zero-calorie drink. Chips, tortillas, desserts and extra sauces are not in the estimate. Use the listed order for this day; the other restaurant guide has a different portion size.",
+      "source": {
+        "label": "Chipotle official nutrition",
+        "url": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf"
+      }
+    },
+    "fatigue-panda-2000": {
+      "title": "Panda Express · double teriyaki chicken & Super Greens",
+      "shortTitle": "Panda double chicken & greens",
+      "kind": "lunch",
+      "preparation": "dining-out",
+      "servings": 1,
+      "prepTime": "Order ahead",
+      "nutrition": {
+        "calories": 740,
+        "carbsGrams": 43.0,
+        "proteinGrams": 84.0,
+        "fatGrams": 27.0
+      },
+      "family": "panda-express-chicken-bowl",
+      "description": "One complete dining-out meal. The ordering guide below matches the nutrition estimate.",
+      "ingredients": [
+        {
+          "itemId": "fatigue-panda-2000",
+          "quantity": 1,
+          "unit": "count",
+          "label": "complete restaurant order below"
+        }
+      ],
+      "steps": [
+        "Order a Plate with two entrées, choosing Grilled Teriyaki Chicken for both.",
+        "Choose all Super Greens as the side. This order has no rice; the home meal provides rice and beans.",
+        "Use the chicken as served without an extra teriyaki sauce packet. Choose water or a zero-calorie drink. The estimate includes two standard chicken entrées and one full Super Greens side."
+      ],
+      "note": "Menu nutrition uses standard servings, so actual restaurant portions can vary. Choose water or a zero-calorie drink. Chips, tortillas, desserts and extra sauces are not in the estimate. Use the listed order for this day; the other restaurant guide has a different portion size.",
+      "source": {
+        "label": "Panda-Express official nutrition",
+        "url": "https://www.pandaexpress.com/nutritioninformation"
+      }
+    },
+    "fatigue-panda-2400": {
+      "title": "Panda Express · double teriyaki chicken, rice & greens",
+      "shortTitle": "Panda double chicken, rice & greens",
+      "kind": "lunch",
+      "preparation": "dining-out",
+      "servings": 1,
+      "prepTime": "Order ahead",
+      "nutrition": {
+        "calories": 935,
+        "carbsGrams": 99.0,
+        "proteinGrams": 85.5,
+        "fatGrams": 22.5
+      },
+      "family": "panda-express-chicken-bowl",
+      "description": "One complete dining-out meal. The ordering guide below matches the nutrition estimate.",
+      "ingredients": [
+        {
+          "itemId": "fatigue-panda-2400",
+          "quantity": 1,
+          "unit": "count",
+          "label": "complete restaurant order below"
+        }
+      ],
+      "steps": [
+        "Order a Plate with two entrées, choosing Grilled Teriyaki Chicken for both.",
+        "For the side, ask for half white steamed rice and half Super Greens.",
+        "Use the chicken as served without an extra teriyaki sauce packet; choose water or a zero-calorie drink. Nutrition models half of each standard side; the actual split and scoops may vary."
+      ],
+      "note": "Menu nutrition uses standard servings, so actual restaurant portions can vary. Choose water or a zero-calorie drink. Chips, tortillas, desserts and extra sauces are not in the estimate. Use the listed order for this day; the other restaurant guide has a different portion size.",
+      "source": {
+        "label": "Panda-Express official nutrition",
+        "url": "https://www.pandaexpress.com/nutritioninformation"
+      }
+    },
+    "fatigue-pantry-salad": {
+      "title": "No-cook chicken, bean & almond salad",
+      "shortTitle": "No-cook chicken salad",
+      "kind": "dinner",
+      "preparation": "assemble",
+      "servings": 1,
+      "prepTime": "5 min · no stove",
+      "nutrition": {
+        "calories": 477,
+        "carbsGrams": 22.9,
+        "proteinGrams": 48.5,
+        "fatGrams": 22.0
+      },
+      "family": "pantry-chicken-salad",
+      "description": "An open-and-assemble meal with ready-to-eat chicken and pantry beans.",
+      "ingredients": [
+        {
+          "itemId": "canned-chicken",
+          "quantity": 170,
+          "unit": "g",
+          "label": "fully cooked canned chicken, drained"
+        },
+        {
+          "itemId": "beans",
+          "quantity": "1/4",
+          "unit": "cup",
+          "label": "canned black beans, drained and rinsed"
+        },
+        {
+          "itemId": "yogurt",
+          "quantity": 100,
+          "unit": "g",
+          "label": "nonfat Greek yogurt for the dressing"
+        },
+        {
+          "itemId": "spinach",
+          "quantity": 2,
+          "unit": "cup"
+        },
+        {
+          "itemId": "tomatoes",
+          "quantity": "1/4",
+          "unit": "pint"
+        },
+        {
+          "itemId": "almonds",
+          "quantity": 1,
+          "unit": "tbsp"
+        },
+        {
+          "itemId": "olive-oil",
+          "quantity": 1,
+          "unit": "tbsp"
+        },
+        {
+          "itemId": "vinegar",
+          "quantity": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        "Open and drain the fully cooked canned chicken. Rinse and drain the beans; measure the listed amounts.",
+        "Stir yogurt, olive oil and vinegar together as a creamy dressing. Toss with chicken and beans.",
+        "Serve over spinach and tomatoes; add the almonds just before eating. No stove or microwave is needed."
+      ],
+      "note": "Canned chicken is already fully cooked: drain and weigh the edible chicken, not the liquid. Rice quantities are cooked, ready-to-heat weight. Use the listed portions and count all measured dressing. Refrigerate unused canned chicken, beans and rice promptly in closed containers.",
+      "source": {
+        "label": "Canned chicken label reference",
+        "url": "https://www.campbells.com/swanson/products/premium-poultry/white-premium-chunk-chicken-breast-with-rib-meat-in-water/"
+      }
+    },
+    "fatigue-pantry-rice-2000": {
+      "title": "Microwave chicken, rice & vegetables with beans",
+      "shortTitle": "Microwave chicken & rice",
+      "kind": "dinner",
+      "preparation": "assemble",
+      "servings": 1,
+      "prepTime": "5 min · no stove",
+      "nutrition": {
+        "calories": 445,
+        "carbsGrams": 65.7,
+        "proteinGrams": 24.6,
+        "fatGrams": 9.1
+      },
+      "family": "pantry-chicken-bowl",
+      "description": "A pantry bowl made with fully cooked chicken, ready-to-heat rice and frozen vegetables. Only the microwave does the cooking.",
+      "ingredients": [
+        {
+          "itemId": "microwave-rice",
+          "quantity": 120,
+          "unit": "g",
+          "label": "cooked ready-to-heat jasmine rice"
+        },
+        {
+          "itemId": "canned-chicken",
+          "quantity": 85,
+          "unit": "g",
+          "label": "fully cooked canned chicken, drained"
+        },
+        {
+          "itemId": "beans",
+          "quantity": "1/4",
+          "unit": "cup",
+          "label": "canned black beans, drained and rinsed"
+        },
+        {
+          "itemId": "mixed-vegetables",
+          "quantity": 75,
+          "unit": "g"
+        },
+        {
+          "itemId": "olive-oil",
+          "quantity": 1,
+          "unit": "tsp"
+        },
+        {
+          "itemId": "jar-salsa",
+          "quantity": 2,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        "Heat the rice pouch to its label directions, then measure the listed cooked rice. Microwave the frozen vegetables separately according to the bag.",
+        "Drain the fully cooked canned chicken and any listed beans; measure the amounts. Warm them briefly in a covered microwave-safe bowl if desired.",
+        "Combine the rice, chicken, vegetables and any beans. Stir in all the measured olive oil and salsa. Refrigerate the unused pouch and canned-food portions."
+      ],
+      "note": "Canned chicken is already fully cooked: drain and weigh the edible chicken, not the liquid. Rice quantities are cooked, ready-to-heat weight. Use the listed portions and count all measured dressing. Refrigerate unused canned chicken, beans and rice promptly in closed containers.",
+      "source": {
+        "label": "Canned chicken label reference",
+        "url": "https://www.campbells.com/swanson/products/premium-poultry/white-premium-chunk-chicken-breast-with-rib-meat-in-water/"
+      }
+    },
+    "fatigue-pantry-rice-2400": {
+      "title": "Microwave chicken, rice & vegetables",
+      "shortTitle": "Microwave chicken & rice",
+      "kind": "dinner",
+      "preparation": "assemble",
+      "servings": 1,
+      "prepTime": "5 min · no stove",
+      "nutrition": {
+        "calories": 464,
+        "carbsGrams": 67.0,
+        "proteinGrams": 22.2,
+        "fatGrams": 11.8
+      },
+      "family": "pantry-chicken-bowl",
+      "description": "A pantry bowl made with fully cooked chicken, ready-to-heat rice and frozen vegetables. Only the microwave does the cooking.",
+      "ingredients": [
+        {
+          "itemId": "microwave-rice",
+          "quantity": 143,
+          "unit": "g",
+          "label": "cooked ready-to-heat jasmine rice"
+        },
+        {
+          "itemId": "canned-chicken",
+          "quantity": 85,
+          "unit": "g",
+          "label": "fully cooked canned chicken, drained"
+        },
+        {
+          "itemId": "mixed-vegetables",
+          "quantity": 100,
+          "unit": "g"
+        },
+        {
+          "itemId": "olive-oil",
+          "quantity": 1.5,
+          "unit": "tsp"
+        },
+        {
+          "itemId": "jar-salsa",
+          "quantity": 2,
+          "unit": "tbsp"
+        }
+      ],
+      "steps": [
+        "Heat the rice pouch to its label directions, then measure the listed cooked rice. Microwave the frozen vegetables separately according to the bag.",
+        "Drain the fully cooked canned chicken and any listed beans; measure the amounts. Warm them briefly in a covered microwave-safe bowl if desired.",
+        "Combine the rice, chicken, vegetables and any beans. Stir in all the measured olive oil and salsa. Refrigerate the unused pouch and canned-food portions."
+      ],
+      "note": "Canned chicken is already fully cooked: drain and weigh the edible chicken, not the liquid. Rice quantities are cooked, ready-to-heat weight. Use the listed portions and count all measured dressing. Refrigerate unused canned chicken, beans and rice promptly in closed containers.",
+      "source": {
+        "label": "Canned chicken label reference",
+        "url": "https://www.campbells.com/swanson/products/premium-poultry/white-premium-chunk-chicken-breast-with-rib-meat-in-water/"
+      }
+    },
+    "fatigue-pantry-sandwich": {
+      "title": "Canned-chicken sandwich & microwave vegetables",
+      "shortTitle": "Chicken sandwich & vegetables",
+      "kind": "dinner",
+      "preparation": "assemble",
+      "servings": 1,
+      "prepTime": "5 min · no stove",
+      "nutrition": {
+        "calories": 402,
+        "carbsGrams": 43.1,
+        "proteinGrams": 27.1,
+        "fatGrams": 14.1
+      },
+      "family": "pantry-chicken-sandwich",
+      "description": "An easy cold sandwich with a warm vegetable side. No raw meat or stovetop cooking.",
+      "ingredients": [
+        {
+          "itemId": "canned-chicken",
+          "quantity": 85,
+          "unit": "g",
+          "label": "fully cooked canned chicken, drained"
+        },
+        {
+          "itemId": "bread",
+          "quantity": 2,
+          "unit": "slice"
+        },
+        {
+          "itemId": "mayonnaise",
+          "quantity": 1,
+          "unit": "tbsp"
+        },
+        {
+          "itemId": "spinach",
+          "quantity": 1,
+          "unit": "cup"
+        },
+        {
+          "itemId": "mixed-vegetables",
+          "quantity": 100,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        "Drain the fully cooked canned chicken and measure the listed amount. Mix it with the mayonnaise.",
+        "Fill the two bread slices with the chicken and spinach. Eat cold, or toast the bread if you feel like it.",
+        "Microwave the frozen vegetables according to the package; serve alongside. Refrigerate unused chicken promptly."
+      ],
+      "note": "Canned chicken is already fully cooked: drain and weigh the edible chicken, not the liquid. Rice quantities are cooked, ready-to-heat weight. Use the listed portions and count all measured dressing. Refrigerate unused canned chicken, beans and rice promptly in closed containers.",
+      "source": {
+        "label": "Canned chicken label reference",
+        "url": "https://www.campbells.com/swanson/products/premium-poultry/white-premium-chunk-chicken-breast-with-rib-meat-in-water/"
+      }
     }
   },
   "items": {
@@ -7863,13 +8393,356 @@
         "fatGrams": 0,
         "basis": "Approximate ingredient reference; use actual brand label."
       }
+    },
+    "canned-chicken": {
+      "label": "Fully cooked canned chicken breast in water",
+      "group": "Protein & dairy",
+      "unit": "g",
+      "units": {
+        "g": 1,
+        "oz": "85/3"
+      },
+      "shopping": {
+        "roundTo": 85,
+        "format": "Buy cans totaling at least {quantity} g drained"
+      },
+      "nutrition": {
+        "quantity": 85,
+        "unit": "g",
+        "calories": 80,
+        "proteinGrams": 15,
+        "carbsGrams": 1,
+        "fatGrams": 1.5,
+        "basis": "Swanson white premium chunk chicken: per 85 g drained. Can yields vary; drain first, then weigh the edible chicken. Ready to eat.",
+        "source": {
+          "label": "Official nutrition reference",
+          "url": "https://www.campbells.com/swanson/products/premium-poultry/white-premium-chunk-chicken-breast-with-rib-meat-in-water/"
+        }
+      }
+    },
+    "microwave-rice": {
+      "label": "Ben’s Original Ready Rice · plain jasmine",
+      "group": "Grains, cans & nuts",
+      "unit": "g",
+      "units": {
+        "g": 1,
+        "cup-cooked": 143
+      },
+      "shopping": {
+        "packSize": 240,
+        "packLabel": "240 g microwave pouch",
+        "showRequired": true
+      },
+      "nutrition": {
+        "quantity": 143,
+        "unit": "g",
+        "calories": 250,
+        "proteinGrams": 4,
+        "carbsGrams": 51,
+        "fatGrams": 3,
+        "basis": "Official reference per 1 cup (143 g) cooked, ready-to-heat jasmine rice. This is cooked weight, separate from the dry rice used in other plans; use your pouch label.",
+        "source": {
+          "label": "Official nutrition reference",
+          "url": "https://www.bensoriginal.com/products/ready-rice/bens-original-ready-rice-jasmine-rice"
+        }
+      }
+    },
+    "mayonnaise": {
+      "label": "Hellmann’s Real Mayonnaise",
+      "group": "Pantry check",
+      "unit": "tbsp",
+      "units": {
+        "tbsp": 1,
+        "tsp": "1/3"
+      },
+      "shopping": {},
+      "nutrition": {
+        "quantity": 1,
+        "unit": "tbsp",
+        "calories": 90,
+        "proteinGrams": 0,
+        "carbsGrams": 0,
+        "fatGrams": 10,
+        "basis": "U.S. label per tablespoon; use actual package.",
+        "source": {
+          "label": "Official nutrition reference",
+          "url": "https://www.hellmanns.com/us/en/p/real-mayonnaise.html/00048001213487"
+        }
+      }
+    },
+    "jar-salsa": {
+      "label": "Jarred tomato salsa",
+      "group": "Pantry check",
+      "unit": "tbsp",
+      "units": {
+        "tbsp": 1,
+        "tsp": "1/3"
+      },
+      "shopping": {},
+      "nutrition": {
+        "quantity": 2,
+        "unit": "tbsp",
+        "calories": 10,
+        "proteinGrams": 0,
+        "carbsGrams": 2,
+        "fatGrams": 0,
+        "basis": "Approximate plain tomato salsa, 10 calories per 2 tbsp; brands vary."
+      }
+    },
+    "fatigue-chipotle-1800": {
+      "label": "Chipotle · chicken, brown rice & bean bowl",
+      "group": "Dining out · order separately",
+      "unit": "count",
+      "units": {
+        "count": 1
+      },
+      "shopping": {
+        "format": "{quantity} × the order in the meal guide"
+      },
+      "nutrition": {
+        "quantity": 1,
+        "unit": "count",
+        "calories": 570,
+        "proteinGrams": 45,
+        "carbsGrams": 68,
+        "fatGrams": 14.5,
+        "basis": "Sum of the official standard portions listed in components. Checked 2026-10-11. Actual scoops vary; water/zero-calorie drink assumed; extras are excluded.",
+        "source": {
+          "label": "Official nutrition reference",
+          "url": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf"
+        },
+        "components": [
+          {
+            "label": "adobo chicken, 4 oz",
+            "servings": 1,
+            "calories": 180,
+            "proteinGrams": 32,
+            "carbsGrams": 0,
+            "fatGrams": 7
+          },
+          {
+            "label": "brown rice, 4 oz",
+            "servings": 1,
+            "calories": 210,
+            "proteinGrams": 4,
+            "carbsGrams": 36,
+            "fatGrams": 6
+          },
+          {
+            "label": "black beans, 4 oz",
+            "servings": 1,
+            "calories": 130,
+            "proteinGrams": 8,
+            "carbsGrams": 22,
+            "fatGrams": 1.5
+          },
+          {
+            "label": "fajita vegetables, 2 oz",
+            "servings": 1,
+            "calories": 20,
+            "proteinGrams": 1,
+            "carbsGrams": 5,
+            "fatGrams": 0
+          },
+          {
+            "label": "fresh tomato salsa, 4 oz",
+            "servings": 1,
+            "calories": 25,
+            "proteinGrams": 0,
+            "carbsGrams": 4,
+            "fatGrams": 0
+          },
+          {
+            "label": "romaine lettuce, 1 oz",
+            "servings": 1,
+            "calories": 5,
+            "proteinGrams": 0,
+            "carbsGrams": 1,
+            "fatGrams": 0
+          }
+        ]
+      }
+    },
+    "fatigue-chipotle-2200": {
+      "label": "Chipotle · double-chicken, brown rice & corn bowl",
+      "group": "Dining out · order separately",
+      "unit": "count",
+      "units": {
+        "count": 1
+      },
+      "shopping": {
+        "format": "{quantity} × the order in the meal guide"
+      },
+      "nutrition": {
+        "quantity": 1,
+        "unit": "count",
+        "calories": 830,
+        "proteinGrams": 80,
+        "carbsGrams": 84,
+        "fatGrams": 23.0,
+        "basis": "Sum of the official standard portions listed in components. Checked 2026-10-11. Actual scoops vary; water/zero-calorie drink assumed; extras are excluded.",
+        "source": {
+          "label": "Official nutrition reference",
+          "url": "https://www.chipotle.com/content/dam/chipotle/menu/nutrition/US-Nutrition-Facts-Paper-Menu-3-2025.pdf"
+        },
+        "components": [
+          {
+            "label": "adobo chicken, 4 oz",
+            "servings": 2,
+            "calories": 180,
+            "proteinGrams": 32,
+            "carbsGrams": 0,
+            "fatGrams": 7
+          },
+          {
+            "label": "brown rice, 4 oz",
+            "servings": 1,
+            "calories": 210,
+            "proteinGrams": 4,
+            "carbsGrams": 36,
+            "fatGrams": 6
+          },
+          {
+            "label": "black beans, 4 oz",
+            "servings": 1,
+            "calories": 130,
+            "proteinGrams": 8,
+            "carbsGrams": 22,
+            "fatGrams": 1.5
+          },
+          {
+            "label": "fajita vegetables, 2 oz",
+            "servings": 1,
+            "calories": 20,
+            "proteinGrams": 1,
+            "carbsGrams": 5,
+            "fatGrams": 0
+          },
+          {
+            "label": "fresh tomato salsa, 4 oz",
+            "servings": 1,
+            "calories": 25,
+            "proteinGrams": 0,
+            "carbsGrams": 4,
+            "fatGrams": 0
+          },
+          {
+            "label": "romaine lettuce, 1 oz",
+            "servings": 1,
+            "calories": 5,
+            "proteinGrams": 0,
+            "carbsGrams": 1,
+            "fatGrams": 0
+          },
+          {
+            "label": "roasted chili-corn salsa, 4 oz",
+            "servings": 1,
+            "calories": 80,
+            "proteinGrams": 3,
+            "carbsGrams": 16,
+            "fatGrams": 1.5
+          }
+        ]
+      }
+    },
+    "fatigue-panda-2000": {
+      "label": "Panda Express · double teriyaki chicken & Super Greens",
+      "group": "Dining out · order separately",
+      "unit": "count",
+      "units": {
+        "count": 1
+      },
+      "shopping": {
+        "format": "{quantity} × the order in the meal guide"
+      },
+      "nutrition": {
+        "quantity": 1,
+        "unit": "count",
+        "calories": 740,
+        "proteinGrams": 84,
+        "carbsGrams": 43,
+        "fatGrams": 27,
+        "basis": "Sum of the official standard portions listed in components. Checked 2026-10-11. Actual scoops vary; water/zero-calorie drink assumed; extras are excluded.",
+        "source": {
+          "label": "Official nutrition reference",
+          "url": "https://www.pandaexpress.com/nutritioninformation"
+        },
+        "components": [
+          {
+            "label": "grilled teriyaki chicken, 6.1 oz",
+            "servings": 2,
+            "calories": 280,
+            "proteinGrams": 38,
+            "carbsGrams": 13,
+            "fatGrams": 9
+          },
+          {
+            "label": "Super Greens side, 10 oz",
+            "servings": 1,
+            "calories": 180,
+            "proteinGrams": 8,
+            "carbsGrams": 17,
+            "fatGrams": 9
+          }
+        ]
+      }
+    },
+    "fatigue-panda-2400": {
+      "label": "Panda Express · double teriyaki chicken, rice & greens",
+      "group": "Dining out · order separately",
+      "unit": "count",
+      "units": {
+        "count": 1
+      },
+      "shopping": {
+        "format": "{quantity} × the order in the meal guide"
+      },
+      "nutrition": {
+        "quantity": 1,
+        "unit": "count",
+        "calories": 935.0,
+        "proteinGrams": 85.5,
+        "carbsGrams": 99.0,
+        "fatGrams": 22.5,
+        "basis": "Sum of the official standard portions listed in components. Checked 2026-10-11. Actual scoops vary; water/zero-calorie drink assumed; extras are excluded.",
+        "source": {
+          "label": "Official nutrition reference",
+          "url": "https://www.pandaexpress.com/nutritioninformation"
+        },
+        "components": [
+          {
+            "label": "grilled teriyaki chicken, 6.1 oz",
+            "servings": 2,
+            "calories": 280,
+            "proteinGrams": 38,
+            "carbsGrams": 13,
+            "fatGrams": 9
+          },
+          {
+            "label": "Super Greens side, 10 oz",
+            "servings": 0.5,
+            "calories": 180,
+            "proteinGrams": 8,
+            "carbsGrams": 17,
+            "fatGrams": 9
+          },
+          {
+            "label": "white steamed rice side, 12 oz",
+            "servings": 0.5,
+            "calories": 570,
+            "proteinGrams": 11,
+            "carbsGrams": 129,
+            "fatGrams": 0
+          }
+        ]
+      }
     }
   },
   "measurementNotes": [
     "Recipe quantities describe the base number of servings. Fresh preparations keep their portion size; batch recipes scale to the selected plan. Follow the displayed ingredient amounts when adapting a linked source recipe.",
-    "Macros sum each measured ingredient’s nutrition reference, divided by servings. Raw meat and dry rice/pasta weights are used. Unmeasured optional garnishes and cooking spray are excluded. Ingredient references in meal-plan.json are editable: branded labels have links; generic foods use approximate assumptions.",
+    "Macros sum each measured ingredient’s nutrition reference, divided by servings. Meat and rice/pasta weights are raw/dry unless an ingredient explicitly says cooked or drained. Canned chicken uses drained weight; microwave rice uses cooked weight. Unmeasured optional garnishes and cooking spray are excluded. Ingredient references in meal-plan.json are editable: branded labels have links; generic foods use approximate assumptions.",
     "Daily macro percentages use 4 calories per gram carbohydrate/protein and 9 per gram fat, normalized to 100%. Listed calories are summed separately from labels; fiber, alcohol and rounding can cause differences. Targets are 35% carbs / 35% protein / 30% fat, with a 3 percentage point tolerance; daily calorie totals allow 5%. Both regular and workout versions are checked.",
-    "Rice is listed dry in these plans. A cooked cup is modeled as about 60 g dry rice; cup-dry is 180 g. Follow the package for actual water needs and yields. Meat conversion uses 454 g per pound.",
+    "Regular rice is measured dry: a cooked cup is modeled as about 60 g dry rice; cup-dry is 180 g. Ready-to-heat microwave rice is measured cooked and listed separately. Follow the package for actual water needs and yields. Meat conversion uses 454 g per pound.",
     "Breakfast includes two lattes per person daily, each with 6 fl oz plain 2% ultra-filtered milk. Fairlife 2% reference per 8 fl oz: 120 calories, 13 g protein, 6 g carbohydrate, 4.5 g fat. MooTopia labels may differ; no syrup or added sugar is included.",
     "PBfit Classic assumption per 16 g: 60 calories, 8 g protein, 4 g carbohydrate, 2 g fat. Some jars list different calories or carbohydrate; check yours. Fairlife fat-free milk per 8 fl oz: 80 calories, 13 g protein, 6 g carbohydrate, 0 g fat. This side shake is separate from latte milk.",
     "Oat breakfast fat assumes butter: each full portion is 10 g butter, or the listed alternative of ¼ cup half-and-half. Alternate labels can change nutrition slightly. Steel-cut and rolled oats are separate shopping items.",
@@ -7878,7 +8751,10 @@
     "Generic food assumptions include nonfat Greek yogurt, 93% lean beef, boneless skinless chicken thighs, lean pork tenderloin and mixed vegetables at 65 calories per 100 g. These are estimates; specific brands and vegetable blends can differ.",
     "Slow-cooker chili uses whole cans at the selected plan size, drained beans and measured raw chicken. Divide the entire cooked batch equally; keep dairy toppings separate. The three-day 2,400-calorie plan has chili on days 1 and 2, then pork on day 3.",
     "No meal family is scheduled more than two days in a row. Portion variants count as the same family. Fish, seafood and turkey are excluded; honey-garlic chicken uses vegetarian mushroom sauce in place of oyster sauce.",
-    "Shopping amounts round up to the configured increment or package size. Berries use about 150 g per cup. Garlic assumes about 10 cloves per head. Lemon juice assumes 2 tablespoons per lemon. Fraction strings keep recipe quantity calculations exact."
+    "Shopping amounts round up to the configured increment or package size. Berries use about 150 g per cup. Garlic assumes about 10 cloves per head. Lemon juice assumes 2 tablespoons per lemon. Fraction strings keep recipe quantity calculations exact.",
+    "Fatigue plans are single days with one dining-out lunch and an assembled dinner; you can swap those time slots. The dining-out purchase is listed separately from grocery ingredients. Breakfast still includes both 6 fl oz milk lattes.",
+    "Chipotle order estimates sum standard ingredients from its official U.S. nutrition chart. Panda Express orders sum its current official table: Grilled Teriyaki Chicken 280 calories / 38 g protein per 6.1 oz entrée; Super Greens side 180 calories per 10 oz; white steamed rice 570 calories per 12 oz. Half-and-half sides use half each standard side. Checked 2026-10-11; portions can vary and extra sauce/drinks are excluded.",
+    "Fatigue pantry meals use Swanson fully cooked canned chicken at 80 calories / 15 g protein / 1 g carbs / 1.5 g fat per 85 g drained. Shopping rounds the required drained weight upward; check your cans’ edible yield. BEN’S ORIGINAL Ready Rice jasmine uses the official per-cup (143 g cooked) reference, 250 calories / 4 g protein / 51 g carbs / 3 g fat. Microwave rice is separate from dry rice; refrigerate unused cooked portions. Use actual labels if different."
   ],
   "nutritionPolicy": {
     "macroTolerancePercentagePoints": 3,
