@@ -26,10 +26,10 @@ The catalog includes six plans. The original four-day plan remains the default:
 | `three-day-1800` | 3 | 1,800 | 1,776–1,793 | 160 g |
 | `four-day-2000` | 4 | 2,000 | 1,960–2,010 | 170 g |
 | `four-day-2200` | 4 | 2,200 | 2,185–2,231 | 185 g |
-| `four-day-1800` | 4 | 1,800 | 1,775–1,805 | 160 g |
+| `four-day-1800` | 4 | 1,800 | 1,775–1,835 | 160 g |
 | `three-day-2400` | 3 | 2,400 | 2,412–2,424 | 200 g |
 
-The new four-day 1,800 and three-day 2,400 plans each have two cooking days. Both include slow-cooker chicken taco chili adapted from [Skinnytaste](https://www.skinnytaste.com/crock-pot-chicken-taco-chili-4-pts/): a smaller yogurt-topped bowl or a larger bowl with rice. The 2,400 plan uses one chili batch for all three dinners. Start the slow cooker early; recipes show cook times, safe chicken temperature, portions, and topping storage.
+The new four-day 1,800 and three-day 2,400 plans each have two cooking days. Both include slow-cooker chicken taco chili adapted from [Skinnytaste](https://www.skinnytaste.com/crock-pot-chicken-taco-chili-4-pts/): a smaller yogurt-topped bowl or a larger cheese-topped bowl. Both recipes use whole cans to simplify prep; the smaller batch has a shorter ingredient list. The 2,400 plan uses one chili batch for all three dinners. Start the slow cooker early; recipes show cook times, safe chicken temperature, portions, and topping storage.
 
 Snacks rotate among KIND bars with yogurt, individually wrapped cheese with yogurt and fruit, and pineapple cottage-cheese bowls. Groceries identify product flavors, package sizes and counts. Recipe notes give specific workout swaps for the 30 g / 150 calorie Fairlife shake, which is conditional in the grocery list. All plans avoid fish and seafood; vegetarian mushroom sauce also replaces oyster sauce in the older honey-garlic chicken.
 

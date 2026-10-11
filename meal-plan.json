@@ -139,7 +139,7 @@
         "workoutNote": "Include your **Fairlife shake \u2014 30 g protein, 150 calories** in the snack using its recipe\u2019s swap. Packaged snack combinations have their own swaps; don\u2019t add the shake on top. The PBfit breakfast shake stays separate.",
         "shoppingNote": "Calculated for 4 days and one person. Includes 48 fl oz 2% latte milk, separate skim shake milk, and the listed rest-day snacks. Workout swaps may leave extras.",
         "storageNote": "On day 1, start the slow cooker early for dinner and prepare buffalo bowls for lunch. On day 2, cook the Greek chicken and pork. Keep yogurt toppings and almonds separate; eat the second pork portion on day 4.",
-        "nutritionNote": "Estimated rest-day calories by day: 1,805, 1,775, 1,775, 1,780. Protein ranges from 153\u2013172 g (about 164 g daily average). Every breakfast includes two lattes with 12 fl oz total plain Fairlife 2% milk, about 180 calories / 19.5 g protein. Oat breakfasts also include the separate PBfit + Fairlife 0% shake. Pineapple bowls include an entire 4 oz cup with its juice. Estimates use adapted source recipes and the stated package labels; log your actual brands. Workout versions use the snack-specific swaps."
+        "nutritionNote": "Estimated rest-day calories by day: 1,835, 1,775, 1,805, 1,780. Protein ranges from 155\u2013172 g (about 165 g daily average). Every breakfast includes two lattes with 12 fl oz total plain Fairlife 2% milk, about 180 calories / 19.5 g protein. Oat breakfasts also include the separate PBfit + Fairlife 0% shake. Pineapple bowls include an entire 4 oz cup with its juice. Estimates use adapted source recipes and the stated package labels; log your actual brands. Workout versions use the snack-specific swaps."
       }
     },
     "three-day-2400": {
@@ -164,7 +164,7 @@
         "workoutNote": "Include your **Fairlife shake \u2014 30 g protein, 150 calories** in the snack using its recipe\u2019s swap. Packaged snack combinations have their own swaps; don\u2019t add the shake on top. The PBfit breakfast shake stays separate.",
         "shoppingNote": "Calculated for 3 days and one person. Includes 36 fl oz 2% latte milk, separate skim shake milk, and the listed rest-day snacks. Workout swaps may leave extras.",
         "storageNote": "On day 1, start the slow cooker early for dinner and make Taco Mac for lunches on days 1 and 3. Cook Greek chicken on day 2. The chili covers all three dinners; store its rice separately and reheat individual portions.",
-        "nutritionNote": "Estimated rest-day calories by day: 2,414, 2,412, 2,424. Protein ranges from 195\u2013220 g (about 206 g daily average). Every breakfast includes two lattes with 12 fl oz total plain Fairlife 2% milk, about 180 calories / 19.5 g protein. Oat breakfasts also include the separate PBfit + Fairlife 0% shake. Pineapple bowls include an entire 4 oz cup with its juice. Estimates use adapted source recipes and the stated package labels; log your actual brands. Workout versions use the snack-specific swaps."
+        "nutritionNote": "Estimated rest-day calories by day: 2,414, 2,412, 2,424. Protein ranges from 202\u2013227 g (about 213 g daily average). Every breakfast includes two lattes with 12 fl oz total plain Fairlife 2% milk, about 180 calories / 19.5 g protein. Oat breakfasts also include the separate PBfit + Fairlife 0% shake. Pineapple bowls include an entire 4 oz cup with its juice. Estimates use adapted source recipes and the stated package labels; log your actual brands. Workout versions use the snack-specific swaps."
       }
     }
   },
@@ -2851,34 +2851,23 @@
       "servings": 2,
       "prepTime": "10 min prep \u00b7 4\u20136 hr high / 8\u201310 hr low",
       "nutrition": {
-        "calories": 500,
-        "proteinGrams": 52
+        "calories": 530,
+        "proteinGrams": 54
       },
-      "description": "Chicken, beans, corn and tomatoes simmer together while you get on with your day.",
+      "description": "An easier small batch: chicken, a whole can of black beans, a whole can of tomatoes and frozen corn.",
       "ingredients": [
         {
           "itemId": "onions",
-          "quantity": "2/5",
+          "quantity": "1/2",
           "unit": "count",
           "label": "small yellow onion, chopped",
           "variant": "yellow"
         },
         {
           "itemId": "chili-black-beans",
-          "quantity": "2/5",
+          "quantity": 1,
           "unit": "can",
-          "label": "black beans from a 15.5 oz can; measure before draining"
-        },
-        {
-          "itemId": "kidney-beans",
-          "quantity": "2/5",
-          "unit": "can",
-          "label": "kidney beans from a 15.5 oz can; measure before draining"
-        },
-        {
-          "itemId": "tomato-sauce",
-          "quantity": "16/5",
-          "unit": "oz"
+          "label": "black beans, 15.5 oz can, drained and rinsed"
         },
         {
           "itemId": "frozen-corn",
@@ -2887,35 +2876,30 @@
         },
         {
           "itemId": "chili-tomatoes",
-          "quantity": 8,
-          "unit": "oz"
-        },
-        {
-          "itemId": "green-chiles",
-          "quantity": "8/5",
+          "quantity": 10,
           "unit": "oz"
         },
         {
           "itemId": "taco-seasoning",
-          "quantity": "2/5",
+          "quantity": "1/2",
           "unit": "packet"
         },
         {
           "itemId": "spices",
-          "quantity": "2/5",
-          "unit": "tbsp",
+          "quantity": 1,
+          "unit": "tsp",
           "label": "ground cumin"
         },
         {
           "itemId": "chicken-spices",
-          "quantity": "2/5",
-          "unit": "tbsp",
+          "quantity": 1,
+          "unit": "tsp",
           "label": "chili powder"
         },
         {
           "itemId": "chicken-breast",
-          "quantity": "3/5",
-          "unit": "lb",
+          "quantity": 275,
+          "unit": "g",
           "label": "raw, thawed boneless skinless chicken breasts"
         },
         {
@@ -2926,106 +2910,106 @@
         }
       ],
       "steps": [
-        "Stir beans, onion, corn, tomatoes, chiles, tomato sauce and seasonings together in a slow cooker sized for the listed batch. Nestle thawed chicken into the mixture.",
+        "Stir beans, onion, corn, tomatoes and seasonings together in a small slow cooker suitable for this batch. Nestle thawed chicken into the mixture.",
         "Cover and cook on HIGH for 4\u20136 hours or LOW for 8\u201310 hours, until chicken reaches 165\u00b0F / 74\u00b0C and shreds easily; check the smaller batch earlier.",
         "Shred the chicken, stir it back in, and divide the entire chili batch equally into {portionsWord} containers.",
         "Keep yogurt cold and separate. Add an equal share after reheating each bowl."
       ],
-      "note": "Estimated from two 220-calorie / 21 g protein source chili portions per meal, plus 100 g nonfat Greek yogurt: about 500 calories / 52 g protein. Source portions are small; divide the finished batch evenly rather than relying on cup volume. Use a smaller cooker for a small batch and follow its fill guidance; if doubling, buy twice the chili ingredients and freeze the extra portions. Freeze unused beans, corn and canned vegetables for a future batch.",
+      "note": "Adapted from Skinnytaste taco chili with more black beans and a shorter ingredient list. Per meal, the chili is about 470 calories / 44 g protein, plus 100 g nonfat Greek yogurt for about 530 calories / 54 g total. Divide the finished batch equally rather than measuring by cup volume. Use a small cooker and follow its fill guidance; if doubling, buy twice the chili ingredients and freeze the extra portions. Keep the yogurt separate until serving.",
       "source": {
         "label": "Adapted from Skinnytaste",
         "url": "https://www.skinnytaste.com/crock-pot-chicken-taco-chili-4-pts/"
       }
     },
     "slow-chili-2400": {
-      "title": "Slow-cooker chicken taco chili & rice",
+      "title": "Slow-cooker chicken taco chili & cheddar",
       "shortTitle": "Slow-cooker taco chili",
       "kind": "dinner",
       "preparation": "batch",
-      "servings": 2,
+      "servings": 3,
       "prepTime": "10 min prep \u00b7 4\u20136 hr high / 8\u201310 hr low",
       "nutrition": {
         "calories": 760,
-        "proteinGrams": 65
+        "proteinGrams": 72
       },
-      "description": "Chicken, beans, corn and tomatoes simmer together while you get on with your day.",
+      "description": "One full batch with whole cans, divided into three hearty cheese-topped dinners.",
       "ingredients": [
         {
           "itemId": "onions",
-          "quantity": "3/5",
+          "quantity": 1,
           "unit": "count",
           "label": "small yellow onion, chopped",
           "variant": "yellow"
         },
         {
           "itemId": "chili-black-beans",
-          "quantity": "3/5",
+          "quantity": 1,
           "unit": "can",
-          "label": "black beans from a 15.5 oz can; measure before draining"
+          "label": "black beans, 15.5 oz can, drained and rinsed"
         },
         {
           "itemId": "kidney-beans",
-          "quantity": "3/5",
+          "quantity": 1,
           "unit": "can",
-          "label": "kidney beans from a 15.5 oz can; measure before draining"
+          "label": "kidney beans, 15.5 oz can, drained and rinsed"
         },
         {
           "itemId": "tomato-sauce",
-          "quantity": "24/5",
+          "quantity": 8,
           "unit": "oz"
         },
         {
           "itemId": "frozen-corn",
-          "quantity": 6,
+          "quantity": 10,
           "unit": "oz"
         },
         {
           "itemId": "chili-tomatoes",
-          "quantity": 12,
+          "quantity": 20,
           "unit": "oz"
         },
         {
           "itemId": "green-chiles",
-          "quantity": "12/5",
+          "quantity": 4,
           "unit": "oz"
         },
         {
           "itemId": "taco-seasoning",
-          "quantity": "3/5",
+          "quantity": 1,
           "unit": "packet"
         },
         {
           "itemId": "spices",
-          "quantity": "3/5",
+          "quantity": 1,
           "unit": "tbsp",
           "label": "ground cumin"
         },
         {
           "itemId": "chicken-spices",
-          "quantity": "3/5",
+          "quantity": 1,
           "unit": "tbsp",
           "label": "chili powder"
         },
         {
           "itemId": "chicken-breast",
-          "quantity": "9/10",
+          "quantity": "3/2",
           "unit": "lb",
           "label": "raw, thawed boneless skinless chicken breasts"
         },
         {
-          "itemId": "white-rice",
-          "quantity": 1,
-          "unit": "cup-cooked",
-          "label": "cooked white rice, \u00bd cup per meal"
+          "itemId": "cheddar",
+          "quantity": 3,
+          "unit": "tbsp",
+          "label": "shredded part-skim cheddar, 1 tbsp per meal"
         }
       ],
       "steps": [
         "Stir beans, onion, corn, tomatoes, chiles, tomato sauce and seasonings together in a slow cooker sized for the listed batch. Nestle thawed chicken into the mixture.",
         "Cover and cook on HIGH for 4\u20136 hours or LOW for 8\u201310 hours, until chicken reaches 165\u00b0F / 74\u00b0C and shreds easily; check the smaller batch earlier.",
         "Shred the chicken, stir it back in, and divide the entire chili batch equally into {portionsWord} containers.",
-        "Cook the listed rice separately and divide between the meals."
+        "Keep the cheddar separate. Add an equal share after reheating each bowl."
       ],
-      "note": "Estimated from three 220-calorie / 21 g protein source chili portions per meal, plus \u00bd cup rice: about 760 calories / 65 g protein. Source portions are small; divide the finished batch evenly rather than relying on cup volume. Use a smaller cooker for a small batch and follow its fill guidance; if doubling, buy twice the chili ingredients and freeze the extra portions. Freeze unused beans, corn and canned vegetables for a future batch.",
+      "note": "The source batch makes ten small portions at 220 calories / 21 g protein each. Here, the whole chili batch becomes three large dinners, about 735 calories / 70 g protein per dinner, plus 1 tbsp part-skim cheddar for about 760 calories / 72 g total. Divide the finished batch evenly; expect a hearty bowl. Use a cooker sized for the full batch and follow its fill guidance. Refrigerate portions promptly; keep cheese separate until serving.",
       "source": {
         "label": "Adapted from Skinnytaste",
         "url": "https://www.skinnytaste.com/crock-pot-chicken-taco-chili-4-pts/"
@@ -3117,7 +3101,9 @@
       "group": "Protein & dairy",
       "unit": "lb",
       "units": {
-        "lb": 1
+        "lb": 1,
+        "g": "1/454",
+        "oz": "1/16"
       },
       "shopping": {
         "roundTo": "1/4",
@@ -4098,7 +4084,7 @@
         "packSize": 1,
         "packLabel": "15.5 oz can",
         "showRequired": true,
-        "suffix": "measure the listed fraction, then drain"
+        "suffix": "drain and rinse"
       }
     },
     "kidney-beans": {
@@ -4112,7 +4098,7 @@
         "packSize": 1,
         "packLabel": "15.5 oz can",
         "showRequired": true,
-        "suffix": "measure the listed fraction, then drain"
+        "suffix": "drain and rinse"
       }
     },
     "frozen-corn": {
@@ -4192,8 +4178,8 @@
     "PBfit shake estimates: PBfit Classic 60 calories / 8 g protein per 2 tbsp (16 g), https://www.pbfit.com/products/pbfit-classic ; Fairlife fat-free 80 calories / 13 g per 8 fl oz, https://fairlife.com/ultra-filtered-milk/fat-free-skim-milk/ . Some PBfit jars show 70 calories: add 10 calories per 16 g serving if yours does. Skim milk for shakes is additional to 2% latte milk.",
     "Pineapple bowls use one entire 4 oz (113 g) Dole pineapple-in-juice cup per serving, counted at 60 calories / less than 1 g protein including juice, https://www.dolesunshine.com/us/en/products/pineapple-paradise-in-100-pineapple-juice-16oz/ . Cottage cheese assumes about 90 calories / 14 g protein per 110 g. Do not substitute syrup-packed fruit without recalculating.",
     "Packaged snack assumptions: KIND Dark Chocolate Nuts & Sea Salt 40 g bar = 190 calories / 6 g protein, https://www.kindsnacks.com/products/nut-bar/dark-chocolate-nuts-sea-salt ; Oikos Triple Zero vanilla 150 g cup = 80 calories / 15 g protein, https://www.oikos.com/all-products/triple-zero/product/vanilla-multipack/ ; Mini Babybel Original 20 g piece = 70 calories / 4 g protein, https://babybel.com/product/babybel-original-cheese/ . Labels and sizes change; use the actual package.",
-    "Slow-cooker chili scales the linked Skinnytaste recipe (220 calories / 21 g protein per small source portion): two source portions plus 100 g Greek yogurt for the smaller dinner; three source portions plus half a cup of cooked rice for the larger dinner. Bean can fractions refer to contents before draining; finished batches are divided evenly. Shopping covers selected portions, not a doubled freezer batch.",
     "No fish or seafood dishes are included. Vegetarian mushroom stir-fry sauce replaces oyster sauce in the existing honey-garlic chicken; check its label and adjust nutrition if your sauce differs.",
-    "Cottage-cheese bowl label reference: Good Culture Simply 2% low-fat classic, 90 calories / 14 g protein per 110 g, https://goodculture.com/product/simply-cottage-cheese-24-oz-lowfat-classic/ . Other tubs may differ; bowls retain the label-based estimates stated in their notes."
+    "Cottage-cheese bowl label reference: Good Culture Simply 2% low-fat classic, 90 calories / 14 g protein per 110 g, https://goodculture.com/product/simply-cottage-cheese-24-oz-lowfat-classic/ . Other tubs may differ; bowls retain the label-based estimates stated in their notes.",
+    "Slow-cooker chili uses whole cans for easier prep. The smaller two-dinner batch is a simplified black-bean adaptation, estimated at 470 calories / 44 g protein for the chili plus 100 g Greek yogurt (60 / 10). The larger three-dinner batch uses the whole source chili batch (10 small portions at 220 / 21), divided into three dinners plus 1 tbsp part-skim cheddar per dinner. Quantities and nutrition are adapted estimates; divide finished batches evenly."
   ]
 }
