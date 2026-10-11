@@ -11,7 +11,7 @@
     "recipeIntro": "Fresh recipes are portioned per person; batch recipes are scaled to the meals in this plan.",
     "targetNote": "Approximate daily targets, including both lattes. C/P/F percentages use estimated macro energy (4/4/9); package calories may differ due to fiber and rounding.",
     "workoutNote": "Use the linked workout snack guide in place of the regular snack. Each includes one **Fairlife Nutrition Plan shake — 30 g protein, 150 calories**. Keep the breakfast PBfit shake separate.",
-    "nutritionNote": "Daily targets are about 35% carbs, 35% protein and 30% fat by calories. Each regular and workout day stays within three percentage points per macro. Ingredient estimates use stated label values and typical unbranded-food assumptions; log your actual brands.",
+    "nutritionNote": "Daily targets are about 35% carbs, 35% protein and 30% fat by calories. Cards show estimated daily grams and energy splits. The Fairlife shake & almonds workout snack has fewer calories and carbs after pineapple removal. Ingredient estimates use stated label values and typical unbranded-food assumptions; log your actual brands.",
     "shoppingNote": "Groceries cover the regular snacks. For workout days, use the linked replacement guide and check its topping quantities; Fairlife shakes are listed separately.",
     "storageNote": "Keep cold toppings and crunchy snack toppings separate.",
     "storageSafety": "Refrigerate cooked food within 2 hours at 40°F / 4°C or below. Use leftovers within 3–4 days; reheat to 165°F / 74°C.",
@@ -42,7 +42,7 @@
         "fairlife"
       ],
       "copy": {
-        "nutritionNote": "Estimated regular-day calories: 2,458, 2,463, 2,461, 2,460. Protein: 206–210 g daily. Regular and workout versions are within three percentage points of 35% carbs / 35% protein / 30% fat and within 5% of the calorie target. Both lattes and any breakfast side shake are included. Percentages normalize 4/4/9 macro energy; fiber and label rounding can make package calories differ.",
+        "nutritionNote": "Estimated regular-day calories: 2,458, 2,463, 2,461, 2,460. Protein: 206–210 g daily. Regular days are within three percentage points of 35% carbs / 35% protein / 30% fat. Removing pineapple from the Fairlife shake & almonds snack lowers workout calories and carbs; these days may differ from the macro target. Other meals are unchanged. All versions remain within 5% of the calorie target. Both lattes and any breakfast side shake are included. Percentages normalize 4/4/9 macro energy; fiber and label rounding can make package calories differ.",
         "targetNote": "Approximate daily targets, including both lattes. C/P/F percentages use estimated macro energy (4/4/9); package calories may differ due to fiber and rounding.",
         "workoutNote": "Use the linked workout snack guide in place of the regular snack. Each includes one **Fairlife Nutrition Plan shake — 30 g protein, 150 calories**. Keep the breakfast PBfit shake separate.",
         "shoppingNote": "Calculated for 4 days and one person. Includes 48 fl oz 2% latte milk and any separate skim shake milk. Groceries cover regular snacks; check the linked workout guide for replacement food quantities."
@@ -73,7 +73,7 @@
         "planAside": "Smaller portions. The same simple rhythm.",
         "targetNote": "Approximate daily targets, including both lattes. C/P/F percentages use estimated macro energy (4/4/9); package calories may differ due to fiber and rounding.",
         "workoutNote": "Use the linked workout snack guide in place of the regular snack. Each includes one **Fairlife Nutrition Plan shake — 30 g protein, 150 calories**. Keep the breakfast PBfit shake separate.",
-        "nutritionNote": "Estimated regular-day calories: 1,859, 1,848, 1,771. Protein: 159–162 g daily. Regular and workout versions are within three percentage points of 35% carbs / 35% protein / 30% fat and within 5% of the calorie target. Both lattes and any breakfast side shake are included. Percentages normalize 4/4/9 macro energy; fiber and label rounding can make package calories differ.",
+        "nutritionNote": "Estimated regular-day calories: 1,859, 1,848, 1,771. Protein: 159–162 g daily. Regular days are within three percentage points of 35% carbs / 35% protein / 30% fat. Removing pineapple from the Fairlife shake & almonds snack lowers workout calories and carbs; these days may differ from the macro target. Other meals are unchanged. All versions remain within 5% of the calorie target. Both lattes and any breakfast side shake are included. Percentages normalize 4/4/9 macro energy; fiber and label rounding can make package calories differ.",
         "shoppingNote": "Calculated for 3 days and one person. Includes 36 fl oz 2% latte milk and any separate skim shake milk. Groceries cover regular snacks; check the linked workout guide for replacement food quantities."
       }
     },
@@ -103,7 +103,7 @@
         "planAside": "New flavors. Two batch days.",
         "targetNote": "Approximate daily targets, including both lattes. C/P/F percentages use estimated macro energy (4/4/9); package calories may differ due to fiber and rounding.",
         "workoutNote": "Use the linked workout snack guide in place of the regular snack. Each includes one **Fairlife Nutrition Plan shake — 30 g protein, 150 calories**. Keep the breakfast PBfit shake separate.",
-        "nutritionNote": "Estimated regular-day calories: 2,054, 2,020, 2,047, 2,049. Protein: 170–181 g daily. Regular and workout versions are within three percentage points of 35% carbs / 35% protein / 30% fat and within 5% of the calorie target. Both lattes and any breakfast side shake are included. Percentages normalize 4/4/9 macro energy; fiber and label rounding can make package calories differ.",
+        "nutritionNote": "Estimated regular-day calories: 2,054, 2,020, 2,047, 2,049. Protein: 170–181 g daily. Regular days are within three percentage points of 35% carbs / 35% protein / 30% fat. Removing pineapple from the Fairlife shake & almonds snack lowers workout calories and carbs; these days may differ from the macro target. Other meals are unchanged. All versions remain within 5% of the calorie target. Both lattes and any breakfast side shake are included. Percentages normalize 4/4/9 macro energy; fiber and label rounding can make package calories differ.",
         "shoppingNote": "Calculated for 4 days and one person. Includes 48 fl oz 2% latte milk and any separate skim shake milk. Groceries cover regular snacks; check the linked workout guide for replacement food quantities.",
         "storageNote": "Keep cilantro lime sauce separate. Cook pork and cilantro lime chicken on day 1; teriyaki beef and sriracha chicken on day 2. Reheat pork gently with its glaze."
       }
@@ -134,7 +134,7 @@
         "planAside": "Comfort food. Fresh sauce. Easy repeats.",
         "targetNote": "Approximate daily targets, including both lattes. C/P/F percentages use estimated macro energy (4/4/9); package calories may differ due to fiber and rounding.",
         "workoutNote": "Use the linked workout snack guide in place of the regular snack. Each includes one **Fairlife Nutrition Plan shake — 30 g protein, 150 calories**. Keep the breakfast PBfit shake separate.",
-        "nutritionNote": "Estimated regular-day calories: 2,251, 2,250, 2,243, 2,251. Protein: 182–207 g daily. Regular and workout versions are within three percentage points of 35% carbs / 35% protein / 30% fat and within 5% of the calorie target. Both lattes and any breakfast side shake are included. Percentages normalize 4/4/9 macro energy; fiber and label rounding can make package calories differ.",
+        "nutritionNote": "Estimated regular-day calories: 2,251, 2,250, 2,243, 2,251. Protein: 182–207 g daily. Regular days are within three percentage points of 35% carbs / 35% protein / 30% fat. Removing pineapple from the Fairlife shake & almonds snack lowers workout calories and carbs; these days may differ from the macro target. Other meals are unchanged. All versions remain within 5% of the calorie target. Both lattes and any breakfast side shake are included. Percentages normalize 4/4/9 macro energy; fiber and label rounding can make package calories differ.",
         "shoppingNote": "Calculated for 4 days and one person. Includes 48 fl oz 2% latte milk and any separate skim shake milk. Groceries cover regular snacks; check the linked workout guide for replacement food quantities.",
         "storageNote": "Keep cilantro lime sauce separate. Cook Taco Mac and pork on day 1; cilantro lime chicken and larger sriracha bowls on day 2. Add a splash of water when reheating pasta."
       }
@@ -167,7 +167,7 @@
         "workoutNote": "Use the linked workout snack guide in place of the regular snack. Each includes one **Fairlife Nutrition Plan shake — 30 g protein, 150 calories**. Keep the breakfast PBfit shake separate.",
         "shoppingNote": "Calculated for 4 days and one person. Includes 48 fl oz 2% latte milk and any separate skim shake milk. Groceries cover regular snacks; check the linked workout guide for replacement food quantities.",
         "storageNote": "On day 1, start the slow cooker early for dinner and prepare buffalo bowls for lunch. On day 2, cook the Greek chicken and pork. Keep yogurt toppings and almonds separate; eat the second pork portion on day 4.",
-        "nutritionNote": "Estimated regular-day calories: 1,798, 1,836, 1,839, 1,842. Protein: 161–174 g daily. Regular and workout versions are within three percentage points of 35% carbs / 35% protein / 30% fat and within 5% of the calorie target. Both lattes and any breakfast side shake are included. Percentages normalize 4/4/9 macro energy; fiber and label rounding can make package calories differ."
+        "nutritionNote": "Estimated regular-day calories: 1,798, 1,836, 1,839, 1,842. Protein: 161–174 g daily. Regular days are within three percentage points of 35% carbs / 35% protein / 30% fat. Removing pineapple from the Fairlife shake & almonds snack lowers workout calories and carbs; these days may differ from the macro target. Other meals are unchanged. All versions remain within 5% of the calorie target. Both lattes and any breakfast side shake are included. Percentages normalize 4/4/9 macro energy; fiber and label rounding can make package calories differ."
       }
     },
     "three-day-2400": {
@@ -197,7 +197,7 @@
         "workoutNote": "Use the linked workout snack guide in place of the regular snack. Each includes one **Fairlife Nutrition Plan shake — 30 g protein, 150 calories**. Keep the breakfast PBfit shake separate.",
         "shoppingNote": "Calculated for 3 days and one person. Includes 36 fl oz 2% latte milk and any separate skim shake milk. Groceries cover regular snacks; check the linked workout guide for replacement food quantities.",
         "storageNote": "On day 1, start the slow cooker early for two dinners and make Taco Mac for lunches on days 1 and 3. Cook Greek chicken on day 2 and pork on day 3. Keep cold toppings separate and reheat individual portions.",
-        "nutritionNote": "Estimated regular-day calories: 2,450, 2,457, 2,393. Protein: 210–214 g daily. Regular and workout versions are within three percentage points of 35% carbs / 35% protein / 30% fat and within 5% of the calorie target. Both lattes and any breakfast side shake are included. Percentages normalize 4/4/9 macro energy; fiber and label rounding can make package calories differ."
+        "nutritionNote": "Estimated regular-day calories: 2,450, 2,457, 2,393. Protein: 210–214 g daily. Regular days are within three percentage points of 35% carbs / 35% protein / 30% fat. Removing pineapple from the Fairlife shake & almonds snack lowers workout calories and carbs; these days may differ from the macro target. Other meals are unchanged. All versions remain within 5% of the calorie target. Both lattes and any breakfast side shake are included. Percentages normalize 4/4/9 macro energy; fiber and label rounding can make package calories differ."
       }
     },
     "fatigue-day-1800": {
@@ -1301,39 +1301,20 @@
       "family": "yogurt"
     },
     "cottage-workout": {
-      "title": "Fairlife shake, pineapple & almonds",
+      "title": "Fairlife shake & almonds",
       "shortTitle": "Fairlife workout snack",
       "kind": "snack",
       "preparation": "fresh",
       "servings": 1,
-      "prepTime": "5 min",
+      "prepTime": "Ready to eat",
       "nutrition": {
-        "calories": 291,
-        "carbsGrams": 22.0,
+        "calories": 228,
+        "carbsGrams": 6.8,
         "proteinGrams": 32.9,
         "fatGrams": 9.2
       },
-      "description": "Drink the ready-made Fairlife shake alongside the listed snack foods.",
+      "description": "Drink the ready-made Fairlife shake alongside the measured almonds.",
       "ingredients": [
-        {
-          "itemId": "vanilla",
-          "quantity": 0.25,
-          "unit": "tsp"
-        },
-        {
-          "itemId": "sweetener",
-          "quantity": null,
-          "unit": "tsp",
-          "asNeeded": true,
-          "label": "Zero-calorie sweetener, to taste",
-          "format": "{label}"
-        },
-        {
-          "itemId": "pineapple-cups",
-          "quantity": 1.0,
-          "unit": "count",
-          "label": "4 oz (113 g) pineapple-in-juice cups, one per bowl"
-        },
         {
           "itemId": "almonds",
           "quantity": 1.5,
@@ -1348,12 +1329,16 @@
         }
       ],
       "steps": [
-        "Serve the listed fruit and toppings alongside the shake; add vanilla to fruit if listed. Keep nuts crunchy until eating, and keep any cheese chilled.",
-        "Drink one Fairlife Nutrition Plan shake alongside the snack. This replaces the regular snack; keep the breakfast PBfit shake separate."
+        "Serve the listed almonds alongside one chilled Fairlife Nutrition Plan shake.",
+        "This replaces the regular snack; keep the breakfast PBfit shake separate."
       ],
-      "note": "Per person: one 30 g protein / 150 calorie Fairlife shake plus the listed foods. Workout portions are shown separately; groceries cover the regular snack.",
+      "note": "Pineapple omitted by preference; this workout day has fewer calories and carbs. Other meals are unchanged. Groceries cover the regular snack; use this guide for workout snack quantities.",
       "source": null,
-      "family": "cottage"
+      "family": "cottage",
+      "workoutMacroTolerance": {
+        "percentagePoints": 6,
+        "reason": "Pineapple omitted by preference; this workout day has fewer calories and carbs. Other meals are unchanged."
+      }
     },
     "three-day-1800-oats-1800": {
       "title": "Smaller apple & brown sugar oats + two lattes",
@@ -2210,39 +2195,20 @@
       "family": "yogurt"
     },
     "three-day-1800-cottage-workout": {
-      "title": "Fairlife shake, pineapple & almonds",
+      "title": "Fairlife shake & almonds",
       "shortTitle": "Fairlife workout snack",
       "kind": "snack",
       "preparation": "fresh",
       "servings": 1,
-      "prepTime": "5 min",
+      "prepTime": "Ready to eat",
       "nutrition": {
-        "calories": 291,
-        "carbsGrams": 22.0,
+        "calories": 228,
+        "carbsGrams": 6.8,
         "proteinGrams": 32.9,
         "fatGrams": 9.2
       },
-      "description": "Drink the ready-made Fairlife shake alongside the listed snack foods.",
+      "description": "Drink the ready-made Fairlife shake alongside the measured almonds.",
       "ingredients": [
-        {
-          "itemId": "vanilla",
-          "quantity": 0.25,
-          "unit": "tsp"
-        },
-        {
-          "itemId": "sweetener",
-          "quantity": null,
-          "unit": "tsp",
-          "asNeeded": true,
-          "label": "Zero-calorie sweetener, to taste",
-          "format": "{label}"
-        },
-        {
-          "itemId": "pineapple-cups",
-          "quantity": 1.0,
-          "unit": "count",
-          "label": "4 oz (113 g) pineapple-in-juice cups, one per bowl"
-        },
         {
           "itemId": "almonds",
           "quantity": 1.5,
@@ -2257,12 +2223,16 @@
         }
       ],
       "steps": [
-        "Serve the listed fruit and toppings alongside the shake; add vanilla to fruit if listed. Keep nuts crunchy until eating, and keep any cheese chilled.",
-        "Drink one Fairlife Nutrition Plan shake alongside the snack. This replaces the regular snack; keep the breakfast PBfit shake separate."
+        "Serve the listed almonds alongside one chilled Fairlife Nutrition Plan shake.",
+        "This replaces the regular snack; keep the breakfast PBfit shake separate."
       ],
-      "note": "Per person: one 30 g protein / 150 calorie Fairlife shake plus the listed foods. Workout portions are shown separately; groceries cover the regular snack.",
+      "note": "Pineapple omitted by preference; this workout day has fewer calories and carbs. Other meals are unchanged. Groceries cover the regular snack; use this guide for workout snack quantities.",
       "source": null,
-      "family": "cottage"
+      "family": "cottage",
+      "workoutMacroTolerance": {
+        "percentagePoints": 6,
+        "reason": "Pineapple omitted by preference; this workout day has fewer calories and carbs. Other meals are unchanged."
+      }
     },
     "four-day-2000-oats-1800": {
       "title": "Smaller apple & brown sugar oats + two lattes",
@@ -3150,39 +3120,20 @@
       "family": "yogurt"
     },
     "four-day-2000-cottage-workout": {
-      "title": "Fairlife shake, pineapple & almonds",
+      "title": "Fairlife shake & almonds",
       "shortTitle": "Fairlife workout snack",
       "kind": "snack",
       "preparation": "fresh",
       "servings": 1,
-      "prepTime": "5 min",
+      "prepTime": "Ready to eat",
       "nutrition": {
-        "calories": 278,
-        "carbsGrams": 21.5,
+        "calories": 215,
+        "carbsGrams": 6.4,
         "proteinGrams": 32.4,
         "fatGrams": 8.1
       },
-      "description": "Drink the ready-made Fairlife shake alongside the listed snack foods.",
+      "description": "Drink the ready-made Fairlife shake alongside the measured almonds.",
       "ingredients": [
-        {
-          "itemId": "vanilla",
-          "quantity": 0.25,
-          "unit": "tsp"
-        },
-        {
-          "itemId": "sweetener",
-          "quantity": null,
-          "unit": "tsp",
-          "asNeeded": true,
-          "label": "Zero-calorie sweetener, to taste",
-          "format": "{label}"
-        },
-        {
-          "itemId": "pineapple-cups",
-          "quantity": 1.0,
-          "unit": "count",
-          "label": "4 oz (113 g) pineapple-in-juice cups, one per bowl"
-        },
         {
           "itemId": "almonds",
           "quantity": 1.25,
@@ -3197,12 +3148,16 @@
         }
       ],
       "steps": [
-        "Serve the listed fruit and toppings alongside the shake; add vanilla to fruit if listed. Keep nuts crunchy until eating, and keep any cheese chilled.",
-        "Drink one Fairlife Nutrition Plan shake alongside the snack. This replaces the regular snack; keep the breakfast PBfit shake separate."
+        "Serve the listed almonds alongside one chilled Fairlife Nutrition Plan shake.",
+        "This replaces the regular snack; keep the breakfast PBfit shake separate."
       ],
-      "note": "Per person: one 30 g protein / 150 calorie Fairlife shake plus the listed foods. Workout portions are shown separately; groceries cover the regular snack.",
+      "note": "Pineapple omitted by preference; this workout day has fewer calories and carbs. Other meals are unchanged. Groceries cover the regular snack; use this guide for workout snack quantities.",
       "source": null,
-      "family": "cottage"
+      "family": "cottage",
+      "workoutMacroTolerance": {
+        "percentagePoints": 6,
+        "reason": "Pineapple omitted by preference; this workout day has fewer calories and carbs. Other meals are unchanged."
+      }
     },
     "four-day-2200-oats": {
       "title": "Apple & brown sugar steel-cut oats + two lattes",
@@ -4121,39 +4076,20 @@
       "family": "yogurt"
     },
     "four-day-2200-cottage-workout": {
-      "title": "Fairlife shake, pineapple & almonds",
+      "title": "Fairlife shake & almonds",
       "shortTitle": "Fairlife workout snack",
       "kind": "snack",
       "preparation": "fresh",
       "servings": 1,
-      "prepTime": "5 min",
+      "prepTime": "Ready to eat",
       "nutrition": {
-        "calories": 291,
-        "carbsGrams": 22.0,
+        "calories": 228,
+        "carbsGrams": 6.8,
         "proteinGrams": 32.9,
         "fatGrams": 9.2
       },
-      "description": "Drink the ready-made Fairlife shake alongside the listed snack foods.",
+      "description": "Drink the ready-made Fairlife shake alongside the measured almonds.",
       "ingredients": [
-        {
-          "itemId": "vanilla",
-          "quantity": 0.25,
-          "unit": "tsp"
-        },
-        {
-          "itemId": "sweetener",
-          "quantity": null,
-          "unit": "tsp",
-          "asNeeded": true,
-          "label": "Zero-calorie sweetener, to taste",
-          "format": "{label}"
-        },
-        {
-          "itemId": "pineapple-cups",
-          "quantity": 1.0,
-          "unit": "count",
-          "label": "4 oz (113 g) pineapple-in-juice cups, one per bowl"
-        },
         {
           "itemId": "almonds",
           "quantity": 1.5,
@@ -4168,12 +4104,16 @@
         }
       ],
       "steps": [
-        "Serve the listed fruit and toppings alongside the shake; add vanilla to fruit if listed. Keep nuts crunchy until eating, and keep any cheese chilled.",
-        "Drink one Fairlife Nutrition Plan shake alongside the snack. This replaces the regular snack; keep the breakfast PBfit shake separate."
+        "Serve the listed almonds alongside one chilled Fairlife Nutrition Plan shake.",
+        "This replaces the regular snack; keep the breakfast PBfit shake separate."
       ],
-      "note": "Per person: one 30 g protein / 150 calorie Fairlife shake plus the listed foods. Workout portions are shown separately; groceries cover the regular snack.",
+      "note": "Pineapple omitted by preference; this workout day has fewer calories and carbs. Other meals are unchanged. Groceries cover the regular snack; use this guide for workout snack quantities.",
       "source": null,
-      "family": "cottage"
+      "family": "cottage",
+      "workoutMacroTolerance": {
+        "percentagePoints": 6,
+        "reason": "Pineapple omitted by preference; this workout day has fewer calories and carbs. Other meals are unchanged."
+      }
     },
     "four-day-1800-oats-1800": {
       "title": "Smaller apple & brown sugar oats + two lattes",
@@ -5096,26 +5036,20 @@
       "family": "kind-yogurt"
     },
     "four-day-1800-cottage-pineapple-small-workout": {
-      "title": "Fairlife shake, pineapple & almonds",
+      "title": "Fairlife shake & almonds",
       "shortTitle": "Fairlife workout snack",
       "kind": "snack",
       "preparation": "fresh",
       "servings": 1,
-      "prepTime": "5 min",
+      "prepTime": "Ready to eat",
       "nutrition": {
-        "calories": 223,
-        "carbsGrams": 19.5,
+        "calories": 163,
+        "carbsGrams": 4.5,
         "proteinGrams": 30.5,
         "fatGrams": 3.6
       },
-      "description": "Drink the ready-made Fairlife shake alongside the listed snack foods.",
+      "description": "Drink the ready-made Fairlife shake alongside the measured almonds.",
       "ingredients": [
-        {
-          "itemId": "pineapple-cups",
-          "quantity": 1.0,
-          "unit": "count",
-          "label": "4 oz (113 g) pineapple-in-juice cup"
-        },
         {
           "itemId": "almonds",
           "quantity": 0.25,
@@ -5130,12 +5064,16 @@
         }
       ],
       "steps": [
-        "Serve the listed fruit and toppings alongside the shake; add vanilla to fruit if listed. Keep nuts crunchy until eating, and keep any cheese chilled.",
-        "Drink one Fairlife Nutrition Plan shake alongside the snack. This replaces the regular snack; keep the breakfast PBfit shake separate."
+        "Serve the listed almonds alongside one chilled Fairlife Nutrition Plan shake.",
+        "This replaces the regular snack; keep the breakfast PBfit shake separate."
       ],
-      "note": "Per person: one 30 g protein / 150 calorie Fairlife shake plus the listed foods. Workout portions are shown separately; groceries cover the regular snack.",
+      "note": "Pineapple omitted by preference; this workout day has fewer calories and carbs. Other meals are unchanged. Groceries cover the regular snack; use this guide for workout snack quantities.",
       "source": null,
-      "family": "cottage-pineapple"
+      "family": "cottage-pineapple",
+      "workoutMacroTolerance": {
+        "percentagePoints": 6,
+        "reason": "Pineapple omitted by preference; this workout day has fewer calories and carbs. Other meals are unchanged."
+      }
     },
     "four-day-1800-yogurt-cheese-apple-workout": {
       "title": "Fairlife shake, Babybel & apple",
@@ -6029,26 +5967,20 @@
       "family": "double-yogurt-cheese"
     },
     "three-day-2400-cottage-pineapple-small-workout": {
-      "title": "Fairlife shake, pineapple & almonds",
+      "title": "Fairlife shake & almonds",
       "shortTitle": "Fairlife workout snack",
       "kind": "snack",
       "preparation": "fresh",
       "servings": 1,
-      "prepTime": "5 min",
+      "prepTime": "Ready to eat",
       "nutrition": {
-        "calories": 249,
-        "carbsGrams": 20.4,
+        "calories": 189,
+        "carbsGrams": 5.4,
         "proteinGrams": 31.4,
         "fatGrams": 5.9
       },
-      "description": "Drink the ready-made Fairlife shake alongside the listed snack foods.",
+      "description": "Drink the ready-made Fairlife shake alongside the measured almonds.",
       "ingredients": [
-        {
-          "itemId": "pineapple-cups",
-          "quantity": 1.0,
-          "unit": "count",
-          "label": "4 oz (113 g) pineapple-in-juice cup"
-        },
         {
           "itemId": "almonds",
           "quantity": 0.75,
@@ -6063,10 +5995,10 @@
         }
       ],
       "steps": [
-        "Serve the listed fruit and toppings alongside the shake; add vanilla to fruit if listed. Keep nuts crunchy until eating, and keep any cheese chilled.",
-        "Drink one Fairlife Nutrition Plan shake alongside the snack. This replaces the regular snack; keep the breakfast PBfit shake separate."
+        "Serve the listed almonds alongside one chilled Fairlife Nutrition Plan shake.",
+        "This replaces the regular snack; keep the breakfast PBfit shake separate."
       ],
-      "note": "Per person: one 30 g protein / 150 calorie Fairlife shake plus the listed foods. Workout portions are shown separately; groceries cover the regular snack.",
+      "note": "Pineapple omitted by preference; this workout day has fewer calories and carbs. Other meals are unchanged. Groceries cover the regular snack; use this guide for workout snack quantities.",
       "source": null,
       "family": "cottage-pineapple"
     },
@@ -8741,7 +8673,7 @@
   "measurementNotes": [
     "Recipe quantities describe the base number of servings. Fresh preparations keep their portion size; batch recipes scale to the selected plan. Follow the displayed ingredient amounts when adapting a linked source recipe.",
     "Macros sum each measured ingredient’s nutrition reference, divided by servings. Meat and rice/pasta weights are raw/dry unless an ingredient explicitly says cooked or drained. Canned chicken uses drained weight; microwave rice uses cooked weight. Unmeasured optional garnishes and cooking spray are excluded. Ingredient references in meal-plan.json are editable: branded labels have links; generic foods use approximate assumptions.",
-    "Daily macro percentages use 4 calories per gram carbohydrate/protein and 9 per gram fat, normalized to 100%. Listed calories are summed separately from labels; fiber, alcohol and rounding can cause differences. Targets are 35% carbs / 35% protein / 30% fat, with a 3 percentage point tolerance; daily calorie totals allow 5%. Both regular and workout versions are checked.",
+    "Daily macro percentages use 4 calories per gram carbohydrate/protein and 9 per gram fat, normalized to 100%. Listed calories are summed separately from labels; fiber, alcohol and rounding can cause differences. Targets are 35% carbs / 35% protein / 30% fat, with a 3 percentage point tolerance; daily calorie totals allow 5%. Both regular and workout versions are checked. The pineapple-free shake & almonds preference allows up to 6 percentage points of deviation for the affected workout snacks only; its lower totals are shown without adjusting other meals.",
     "Regular rice is measured dry: a cooked cup is modeled as about 60 g dry rice; cup-dry is 180 g. Ready-to-heat microwave rice is measured cooked and listed separately. Follow the package for actual water needs and yields. Meat conversion uses 454 g per pound.",
     "Breakfast includes two lattes per person daily, each with 6 fl oz plain 2% ultra-filtered milk. Fairlife 2% reference per 8 fl oz: 120 calories, 13 g protein, 6 g carbohydrate, 4.5 g fat. MooTopia labels may differ; no syrup or added sugar is included.",
     "PBfit Classic assumption per 16 g: 60 calories, 8 g protein, 4 g carbohydrate, 2 g fat. Some jars list different calories or carbohydrate; check yours. Fairlife fat-free milk per 8 fl oz: 80 calories, 13 g protein, 6 g carbohydrate, 0 g fat. This side shake is separate from latte milk.",
@@ -8754,7 +8686,8 @@
     "Shopping amounts round up to the configured increment or package size. Berries use about 150 g per cup. Garlic assumes about 10 cloves per head. Lemon juice assumes 2 tablespoons per lemon. Fraction strings keep recipe quantity calculations exact.",
     "Fatigue plans are single days with one dining-out lunch and an assembled dinner; you can swap those time slots. The dining-out purchase is listed separately from grocery ingredients. Breakfast still includes both 6 fl oz milk lattes.",
     "Chipotle order estimates sum standard ingredients from its official U.S. nutrition chart. Panda Express orders sum its current official table: Grilled Teriyaki Chicken 280 calories / 38 g protein per 6.1 oz entrée; Super Greens side 180 calories per 10 oz; white steamed rice 570 calories per 12 oz. Half-and-half sides use half each standard side. Checked 2026-10-11; portions can vary and extra sauce/drinks are excluded.",
-    "Fatigue pantry meals use Swanson fully cooked canned chicken at 80 calories / 15 g protein / 1 g carbs / 1.5 g fat per 85 g drained. Shopping rounds the required drained weight upward; check your cans’ edible yield. BEN’S ORIGINAL Ready Rice jasmine uses the official per-cup (143 g cooked) reference, 250 calories / 4 g protein / 51 g carbs / 3 g fat. Microwave rice is separate from dry rice; refrigerate unused cooked portions. Use actual labels if different."
+    "Fatigue pantry meals use Swanson fully cooked canned chicken at 80 calories / 15 g protein / 1 g carbs / 1.5 g fat per 85 g drained. Shopping rounds the required drained weight upward; check your cans’ edible yield. BEN’S ORIGINAL Ready Rice jasmine uses the official per-cup (143 g cooked) reference, 250 calories / 4 g protein / 51 g carbs / 3 g fat. Microwave rice is separate from dry rice; refrigerate unused cooked portions. Use actual labels if different.",
+    "The Fairlife shake & almonds workout snack omits pineapple and its now-unused vanilla/sweetener. It contains one 30 g protein / 150 calorie shake plus the existing measured almonds. Regular cottage cheese bowls still include their pineapple-in-juice cup; regular groceries are unchanged."
   ],
   "nutritionPolicy": {
     "macroTolerancePercentagePoints": 3,

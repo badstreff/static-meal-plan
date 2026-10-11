@@ -180,6 +180,53 @@ class MacroTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, r'day-01.*workout.*fat'):
             builder.validate_data(self.data)
 
+    def omitted_fruit_workout(self):
+        recipe = self.workout()
+        recipe['nutrition'].update(calories=440, carbsGrams=13.75)
+        recipe['workoutMacroTolerance'] = {
+            'percentagePoints': 6,
+            'reason': 'Fruit omitted by preference; other meals are unchanged.',
+        }
+        return recipe
+
+    def test_workout_preference_allows_bounded_deviation_and_shows_reason(self):
+        self.omitted_fruit_workout()
+        self.assertIs(builder.validate_data(self.data), self.data)
+        html = builder.render_page(self.data)
+        card = re.search(r'<article class="day-card">(.*?)</article>', html)[1]
+        self.assertIn('Fruit omitted by preference; other meals are unchanged.', card)
+        self.assertIn('1,940 kcal', card)
+        self.assertIn('Carbs 145 g', card)
+
+    def test_workout_preference_does_not_relax_rest_day_or_calorie_checks(self):
+        recipe = self.omitted_fruit_workout()
+        self.data['recipes']['yogurt']['nutrition']['carbsGrams'] = 0
+        with self.assertRaisesRegex(ValueError, r'day-01.*rest.*carbs'):
+            builder.validate_data(self.data)
+        self.data['recipes']['yogurt']['nutrition']['carbsGrams'] = 43.75
+        recipe['nutrition']['calories'] = 200
+        with self.assertRaisesRegex(ValueError, r'day-01.*workout.*calories'):
+            builder.validate_data(self.data)
+
+    def test_workout_preference_still_enforces_its_macro_bound(self):
+        recipe = self.omitted_fruit_workout()
+        recipe['nutrition']['carbsGrams'] = 0
+        with self.assertRaisesRegex(ValueError, r'day-01.*workout.*carbs'):
+            builder.validate_data(self.data)
+
+    def test_workout_preference_requires_valid_tolerance_and_reason(self):
+        self.omitted_fruit_workout()
+        for value in ({'percentagePoints': -1, 'reason': 'Preference'},
+                      {'percentagePoints': True, 'reason': 'Preference'},
+                      {'percentagePoints': 101, 'reason': 'Preference'},
+                      {'percentagePoints': float('nan'), 'reason': 'Preference'},
+                      {'percentagePoints': 6, 'reason': ''},
+                      {'percentagePoints': 6}):
+            with self.subTest(value=value):
+                self.data['recipes']['workout-snack']['workoutMacroTolerance'] = value
+                with self.assertRaisesRegex(ValueError, 'workoutMacroTolerance'):
+                    builder.validate_data(self.data)
+
     def test_macro_target_requires_workout_nutrition(self):
         recipe = self.workout()
         del recipe['nutrition']['carbsGrams']

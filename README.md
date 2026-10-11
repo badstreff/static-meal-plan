@@ -33,7 +33,7 @@ The catalog includes ten plans. The original four-day plan remains the default:
 | `fatigue-day-2200` | 1 | 2,200 | 2,179 | 192 g |
 | `fatigue-day-2400` | 1 | 2,400 | 2,387 | 210 g |
 
-Every day targets **35% carbohydrate / 35% protein / 30% fat by calories**. Both regular and workout snack versions stay within three percentage points per macro and 5% of the calorie target. Cards show daily grams and the estimated energy split. Percentages normalize 4/4/9 macro energy; label calories are summed separately and can differ due to fiber and rounding.
+Every day targets **35% carbohydrate / 35% protein / 30% fat by calories**. Regular days and workout snacks normally stay within three percentage points per macro and 5% of the calorie target. The pineapple-free Fairlife shake & almonds preference keeps other meals unchanged, so affected workout days have lower calories/carbs and allow up to six percentage points of macro deviation. Cards show actual estimates and the preference explanation; calories still stay within 5%. Percentages normalize 4/4/9 macro energy; label calories are summed separately and can differ due to fiber and rounding.
 
 No meal family is scheduled more than two consecutive days, including differently sized versions of the same dish. The new four-day 1,800 plan has two cook days; the three-day 2,400 plan has three. Both include whole-can slow-cooker chicken taco chili adapted from [Skinnytaste](https://www.skinnytaste.com/crock-pot-chicken-taco-chili-4-pts/). The 2,400 plan has chili for its first two dinners, then cherry-balsamic pork.
 
@@ -148,6 +148,8 @@ Recipe nutrition includes `calories`, `proteinGrams`, `carbsGrams` and `fatGrams
 ```
 
 Validation checks all plans and both snack versions, not just the default. Macro targets without a policy display without enforcing bounds. Omitting a policy preserves older catalogs. When adding content to this catalog, keep ingredient references and declared nutrition consistent and adjust portions until validation passes.
+
+A referenced workout snack may declare `workoutMacroTolerance: {"percentagePoints": 6, "reason": "Pineapple omitted by preference; other meals are unchanged."}` for an explicitly chosen dietary preference. The bound must be finite, nonnegative and at most 100, with a nonempty explanation. It applies only when that snack replaces the regular snack; regular days, other workout recipes, calorie limits and repeat limits keep their existing checks. Its explanation appears next to workout totals. The pineapple-free snacks keep their original almond portions and one Fairlife shake; regular pineapple cottage cheese bowls and grocery quantities are unchanged.
 
 ## Build, preview and test
 

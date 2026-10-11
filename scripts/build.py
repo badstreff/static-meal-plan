@@ -145,6 +145,10 @@ def validate_plan_nutrition(data, plan_id, plan, policy):
             if target is not None:
                 split = macro_split(totals)
                 tolerance = policy['macroTolerancePercentagePoints']
+                if workout:
+                    preference = data['recipes'][workout_id].get('workoutMacroTolerance')
+                    if preference:
+                        tolerance = preference['percentagePoints']
                 if any(abs(split[name] - target[name]) > tolerance + 1e-8 for name in MACROS):
                     actual = ', '.join(f'{name} {split[name]:.1f}% (target {target[name]}%)' for name in MACROS)
                     fail(context, f'macro split outside ± {tolerance} percentage points: {actual}')
@@ -243,6 +247,13 @@ def validate_data(data):
             family = recipe['family']
             if not isinstance(family, str) or not ID_PATTERN.fullmatch(family):
                 fail(f'{path}.family', 'must be a stable ID using lowercase letters, numbers and hyphens')
+        if 'workoutMacroTolerance' in recipe:
+            preference_path = f'{path}.workoutMacroTolerance'
+            preference = mapping(recipe['workoutMacroTolerance'], preference_path)
+            nonnegative_number(preference.get('percentagePoints'), f'{preference_path}.percentagePoints', maximum=100)
+            text(preference.get('reason'), f'{preference_path}.reason')
+            if recipe['kind'] != 'snack':
+                fail(preference_path, 'only workout snack recipes may declare a preference tolerance')
         for index, row in enumerate(array(recipe.get('ingredients'), f'{path}.ingredients')):
             rp = f'{path}.ingredients[{index}]'
             mapping(row, rp)
@@ -283,6 +294,10 @@ def validate_data(data):
                 fail(path, f'unknown recipe {workout_id!r}')
             if recipe['kind'] != 'snack' or collections['recipes'][workout_id]['kind'] != 'snack' or workout_id == recipe_id:
                 fail(path, 'must reference a different snack recipe from a snack recipe')
+    workout_ids = {recipe['workoutRecipe'] for recipe in collections['recipes'].values() if recipe.get('workoutRecipe')}
+    for recipe_id, recipe in collections['recipes'].items():
+        if 'workoutMacroTolerance' in recipe and recipe_id not in workout_ids:
+            fail(f'recipes.{recipe_id}.workoutMacroTolerance', 'must belong to a referenced workout snack')
     for day_id, day in collections['days'].items():
         path = f'days.{day_id}.meals'
         meals = mapping(day.get('meals'), path)
@@ -521,6 +536,9 @@ def render_page(data, plan_id=None, root_prefix='.'):
         workout_id = data['recipes'][meals['snack']].get('workoutRecipe')
         if workout_id:
             workout_totals = daily_nutrition_html(day_totals(data, day_id, workout=True), 'Workout totals')
+            preference = data['recipes'][workout_id].get('workoutMacroTolerance')
+            if preference:
+                workout_totals += f'<p class="recipe-note">{escape(preference["reason"])}</p>'
             totals += f'<details class="workout-totals"><summary>Workout day</summary>{workout_totals}<a href="#{workout_id}">{escape(data["recipes"][workout_id]["shortTitle"])} ↗</a></details>'
         cards.append(f'<article class="day-card"><div class="day-label">DAY <strong>{no}</strong></div>{rows}{totals}<a class="day-link" href="#guide-{no}">Your day {number} guide {icon("arrow")}</a></article>')
         batches = [rid for rid in meals.values() if data['recipes'][rid]['preparation'] == 'batch' and positions[rid][0] == number]
