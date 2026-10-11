@@ -1101,7 +1101,7 @@
       "workoutRecipe": "cottage-workout"
     },
     "yogurt-workout": {
-      "title": "Greek yogurt, berries & walnuts · workout snack",
+      "title": "Fairlife shake, berries & walnuts",
       "shortTitle": "Fairlife workout snack",
       "kind": "snack",
       "preparation": "fresh",
@@ -1148,7 +1148,7 @@
       "family": "yogurt"
     },
     "cottage-workout": {
-      "title": "Whipped cottage cheese, pineapple & almonds · workout snack",
+      "title": "Fairlife shake, pineapple & almonds",
       "shortTitle": "Fairlife workout snack",
       "kind": "snack",
       "preparation": "fresh",
@@ -2010,7 +2010,7 @@
       "family": "cottage-pancakes"
     },
     "three-day-1800-yogurt-1800-workout": {
-      "title": "Greek yogurt, berries & a little crunch · workout snack",
+      "title": "Fairlife shake, berries & walnuts",
       "shortTitle": "Fairlife workout snack",
       "kind": "snack",
       "preparation": "fresh",
@@ -2057,7 +2057,7 @@
       "family": "yogurt"
     },
     "three-day-1800-cottage-workout": {
-      "title": "Whipped cottage cheese, pineapple & almonds · workout snack",
+      "title": "Fairlife shake, pineapple & almonds",
       "shortTitle": "Fairlife workout snack",
       "kind": "snack",
       "preparation": "fresh",
@@ -2950,7 +2950,7 @@
       "family": "ham-egg-muffin"
     },
     "four-day-2000-yogurt-1800-workout": {
-      "title": "Greek yogurt, berries & a little crunch · workout snack",
+      "title": "Fairlife shake, berries & walnuts",
       "shortTitle": "Fairlife workout snack",
       "kind": "snack",
       "preparation": "fresh",
@@ -2997,7 +2997,7 @@
       "family": "yogurt"
     },
     "four-day-2000-cottage-workout": {
-      "title": "Whipped cottage cheese, pineapple & almonds · workout snack",
+      "title": "Fairlife shake, pineapple & almonds",
       "shortTitle": "Fairlife workout snack",
       "kind": "snack",
       "preparation": "fresh",
@@ -3921,7 +3921,7 @@
       "family": "ham-potato-taquitos"
     },
     "four-day-2200-yogurt-workout": {
-      "title": "Greek yogurt, berries & walnuts · workout snack",
+      "title": "Fairlife shake, berries & walnuts",
       "shortTitle": "Fairlife workout snack",
       "kind": "snack",
       "preparation": "fresh",
@@ -3968,7 +3968,7 @@
       "family": "yogurt"
     },
     "four-day-2200-cottage-workout": {
-      "title": "Whipped cottage cheese, pineapple & almonds · workout snack",
+      "title": "Fairlife shake, pineapple & almonds",
       "shortTitle": "Fairlife workout snack",
       "kind": "snack",
       "preparation": "fresh",
@@ -4907,7 +4907,7 @@
       "workoutRecipe": "four-day-1800-yogurt-cheese-apple-workout"
     },
     "four-day-1800-kind-yogurt-workout": {
-      "title": "KIND bar & a vanilla yogurt cup · workout snack",
+      "title": "Fairlife shake & KIND bar",
       "shortTitle": "Fairlife workout snack",
       "kind": "snack",
       "preparation": "fresh",
@@ -4943,7 +4943,7 @@
       "family": "kind-yogurt"
     },
     "four-day-1800-cottage-pineapple-small-workout": {
-      "title": "Smaller pineapple cottage cheese bowl · workout snack",
+      "title": "Fairlife shake, pineapple & almonds",
       "shortTitle": "Fairlife workout snack",
       "kind": "snack",
       "preparation": "fresh",
@@ -4985,7 +4985,7 @@
       "family": "cottage-pineapple"
     },
     "four-day-1800-yogurt-cheese-apple-workout": {
-      "title": "Vanilla yogurt, snack cheese & apple · workout snack",
+      "title": "Fairlife shake, Babybel & apple",
       "shortTitle": "Fairlife workout snack",
       "kind": "snack",
       "preparation": "fresh",
@@ -5840,7 +5840,7 @@
       "workoutRecipe": "three-day-2400-kind-yogurt-apple-workout"
     },
     "three-day-2400-double-yogurt-cheese-workout": {
-      "title": "Two vanilla yogurts & snack cheese · workout snack",
+      "title": "Fairlife shake & Babybel",
       "shortTitle": "Fairlife workout snack",
       "kind": "snack",
       "preparation": "fresh",
@@ -5876,7 +5876,7 @@
       "family": "double-yogurt-cheese"
     },
     "three-day-2400-cottage-pineapple-small-workout": {
-      "title": "Smaller pineapple cottage cheese bowl · workout snack",
+      "title": "Fairlife shake, pineapple & almonds",
       "shortTitle": "Fairlife workout snack",
       "kind": "snack",
       "preparation": "fresh",
@@ -5918,7 +5918,7 @@
       "family": "cottage-pineapple"
     },
     "three-day-2400-kind-yogurt-apple-workout": {
-      "title": "KIND bar, yogurt cup & apple · workout snack",
+      "title": "Fairlife shake, KIND bar & apple",
       "shortTitle": "Fairlife workout snack",
       "kind": "snack",
       "preparation": "fresh",
