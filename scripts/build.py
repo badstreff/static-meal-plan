@@ -15,6 +15,8 @@ from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 MEALS = ('breakfast', 'lunch', 'dinner', 'snack')
+MACROS = {'carbs': 'carbsGrams', 'protein': 'proteinGrams', 'fat': 'fatGrams'}
+POLICY_DEFAULTS = {'macroTolerancePercentagePoints': 3, 'calorieTolerancePercent': 5, 'maxConsecutiveSameMeal': 2}
 ID_PATTERN = re.compile(r'^[a-z0-9]+(?:-[a-z0-9]+)*$')
 FRACTIONS = {Fraction(1, 2): '½', Fraction(1, 3): '⅓', Fraction(2, 3): '⅔', Fraction(1, 4): '¼', Fraction(3, 4): '¾', Fraction(1, 5): '⅕', Fraction(2, 5): '⅖', Fraction(3, 5): '⅗', Fraction(4, 5): '⅘', Fraction(1, 6): '⅙', Fraction(5, 6): '⅚', Fraction(1, 8): '⅛', Fraction(3, 8): '⅜', Fraction(5, 8): '⅝', Fraction(7, 8): '⅞'}
 WORDS = ('zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten')
@@ -42,6 +44,14 @@ def text(value, path, allow_empty=False):
 def integer(value, path):
     if type(value) is not int or value < 1:
         fail(path, 'must be a positive integer')
+    return value
+
+
+def nonnegative_number(value, path, maximum=None):
+    if type(value) not in (int, float) or not math.isfinite(value) or value < 0:
+        fail(path, 'must be a finite nonnegative number')
+    if maximum is not None and value > maximum:
+        fail(path, f'must be at most {maximum}')
     return value
 
 
@@ -77,6 +87,69 @@ def format_fields(value, allowed, path):
         fail(path, f'only these placeholders are supported: {", ".join(sorted(allowed))}')
 
 
+def day_totals(data, day_id, workout=False):
+    """Sum nutrition per person; an optional workout snack replaces the rest snack."""
+    recipes = []
+    for slot in MEALS:
+        recipe = data['recipes'][data['days'][day_id]['meals'][slot]]
+        if workout and slot == 'snack' and recipe.get('workoutRecipe'):
+            recipe = data['recipes'][recipe['workoutRecipe']]
+        recipes.append(recipe)
+    fields = ['calories', 'proteinGrams']
+    if all('carbsGrams' in recipe['nutrition'] and 'fatGrams' in recipe['nutrition'] for recipe in recipes):
+        fields.extend(('carbsGrams', 'fatGrams'))
+    return {field: sum(float(Fraction(str(recipe['nutrition'][field]))) for recipe in recipes) for field in fields}
+
+
+def macro_split(nutrition):
+    """Estimate percentages from 4/4/9 macro energy, independent of label calories."""
+    energy = {name: float(nutrition[field]) * (9 if name == 'fat' else 4) for name, field in MACROS.items()}
+    total = sum(energy.values())
+    if total <= 0:
+        fail('nutrition', 'macro energy must be positive')
+    return {name: value / total * 100 for name, value in energy.items()}
+
+
+def validate_plan_nutrition(data, plan_id, plan, policy):
+    path = f'plans.{plan_id}'
+    target = plan['targets'].get('macroPercent')
+    if policy is not None:
+        maximum = policy['maxConsecutiveSameMeal']
+        for slot in MEALS:
+            previous, consecutive = None, 0
+            for number, day_id in enumerate(plan['days'], 1):
+                recipe_id = data['days'][day_id]['meals'][slot]
+                family = data['recipes'][recipe_id].get('family', recipe_id)
+                consecutive = consecutive + 1 if family == previous else 1
+                previous = family
+                if consecutive > maximum:
+                    fail(f'{path}.days[{number - 1}]', f'{slot} meal family {family!r} exceeds {maximum} consecutive days')
+    for day_id in plan['days']:
+        meals = data['days'][day_id]['meals']
+        workout_id = data['recipes'][meals['snack']].get('workoutRecipe')
+        if target is not None:
+            recipe_ids = list(meals.values()) + ([workout_id] if workout_id else [])
+            for recipe_id in recipe_ids:
+                nutrition = data['recipes'][recipe_id]['nutrition']
+                if 'carbsGrams' not in nutrition or 'fatGrams' not in nutrition:
+                    fail(f'{path}.days.{day_id}', f'{recipe_id} needs complete macro nutrition for a macroPercent target')
+        if policy is None:
+            continue
+        for workout in (False, True) if workout_id else (False,):
+            context = f'{path}.days.{day_id}.{"workout" if workout else "rest"}'
+            totals = day_totals(data, day_id, workout)
+            calories = float(quantity(plan['targets']['calories']))
+            tolerance = calories * policy['calorieTolerancePercent'] / 100
+            if abs(totals['calories'] - calories) > tolerance + 1e-8:
+                fail(context, f'calories {totals["calories"]:.1f} outside {calories:.1f} ± {policy["calorieTolerancePercent"]}%')
+            if target is not None:
+                split = macro_split(totals)
+                tolerance = policy['macroTolerancePercentagePoints']
+                if any(abs(split[name] - target[name]) > tolerance + 1e-8 for name in MACROS):
+                    actual = ', '.join(f'{name} {split[name]:.1f}% (target {target[name]}%)' for name in MACROS)
+                    fail(context, f'macro split outside ± {tolerance} percentage points: {actual}')
+
+
 def validate_data(data):
     mapping(data, 'document')
     if type(data.get('schemaVersion')) is not int or data['schemaVersion'] != 1:
@@ -104,6 +177,12 @@ def validate_data(data):
         text(group, 'groceryGroups')
     if len(groups) != len(set(groups)):
         fail('groceryGroups', 'must contain unique names')
+    policy = None
+    if 'nutritionPolicy' in data:
+        policy = dict(POLICY_DEFAULTS, **mapping(data['nutritionPolicy'], 'nutritionPolicy'))
+        for field in ('macroTolerancePercentagePoints', 'calorieTolerancePercent'):
+            nonnegative_number(policy[field], f'nutritionPolicy.{field}', maximum=100)
+        integer(policy['maxConsecutiveSameMeal'], 'nutritionPolicy.maxConsecutiveSameMeal')
     for item_id, item in collections['items'].items():
         path = f'items.{item_id}'
         text(item.get('label'), f'{path}.label')
@@ -155,6 +234,15 @@ def validate_data(data):
         nutrition = mapping(recipe.get('nutrition'), f'{path}.nutrition')
         for field in ('calories', 'proteinGrams'):
             quantity(nutrition.get(field), f'{path}.nutrition.{field}')
+        if ('carbsGrams' in nutrition) != ('fatGrams' in nutrition):
+            fail(f'{path}.nutrition', 'carbsGrams and fatGrams must be provided together')
+        for field in ('carbsGrams', 'fatGrams'):
+            if field in nutrition:
+                nonnegative_number(nutrition[field], f'{path}.nutrition.{field}')
+        if 'family' in recipe:
+            family = recipe['family']
+            if not isinstance(family, str) or not ID_PATTERN.fullmatch(family):
+                fail(f'{path}.family', 'must be a stable ID using lowercase letters, numbers and hyphens')
         for index, row in enumerate(array(recipe.get('ingredients'), f'{path}.ingredients')):
             rp = f'{path}.ingredients[{index}]'
             mapping(row, rp)
@@ -187,6 +275,14 @@ def validate_data(data):
             source = mapping(recipe['source'], f'{path}.source')
             text(source.get('label'), f'{path}.source.label')
             safe_url(source.get('url'), f'{path}.source.url')
+    for recipe_id, recipe in collections['recipes'].items():
+        if 'workoutRecipe' in recipe:
+            path = f'recipes.{recipe_id}.workoutRecipe'
+            workout_id = recipe['workoutRecipe']
+            if not isinstance(workout_id, str) or workout_id not in collections['recipes']:
+                fail(path, f'unknown recipe {workout_id!r}')
+            if recipe['kind'] != 'snack' or collections['recipes'][workout_id]['kind'] != 'snack' or workout_id == recipe_id:
+                fail(path, 'must reference a different snack recipe from a snack recipe')
     for day_id, day in collections['days'].items():
         path = f'days.{day_id}.meals'
         meals = mapping(day.get('meals'), path)
@@ -209,6 +305,14 @@ def validate_data(data):
         targets = mapping(plan.get('targets'), f'{path}.targets')
         for field in ('calories', 'proteinGrams'):
             quantity(targets.get(field), f'{path}.targets.{field}')
+        if 'macroPercent' in targets:
+            macro_target = mapping(targets['macroPercent'], f'{path}.targets.macroPercent')
+            if set(macro_target) != set(MACROS):
+                fail(f'{path}.targets.macroPercent', 'must contain carbs, protein and fat')
+            for name, value in macro_target.items():
+                nonnegative_number(value, f'{path}.targets.macroPercent.{name}', maximum=100)
+            if not math.isclose(sum(macro_target.values()), 100, rel_tol=0, abs_tol=1e-8):
+                fail(f'{path}.targets.macroPercent', 'percentages must sum to 100')
         for day_id in array(plan.get('days'), f'{path}.days'):
             if not isinstance(day_id, str) or day_id not in collections['days']:
                 fail(f'{path}.days', f'unknown day {day_id!r}')
@@ -217,6 +321,7 @@ def validate_data(data):
                 fail(f'{path}.extraItems', f'unknown item {item_id!r}')
             if not collections['items'][item_id].get('shopping', {}).get('asNeeded'):
                 fail(f'{path}.extraItems', 'extraItems must have an asNeeded shopping description')
+        validate_plan_nutrition(data, plan_id, plan, policy)
     for note in array(data.get('measurementNotes'), 'measurementNotes'):
         text(note, 'measurementNotes')
     return data
@@ -344,21 +449,50 @@ def ingredient_text(data, row, factor):
     return pattern.format(amount=amount, label=label, alternatives=choices)
 
 
-def recipe_html(data, plan, recipe_id, uses, positions):
+def nutrition_number(value, decimals=1):
+    number = float(Fraction(str(value)))
+    rendered = f'{number:,.{decimals}f}'
+    return rendered.rstrip('0').rstrip('.') if decimals else rendered
+
+
+def daily_nutrition_html(nutrition, label='Daily totals · rest day'):
+    grams = ''.join(f'<span>{name.title()} {nutrition_number(nutrition[field])} g</span>'
+                    for name, field in MACROS.items() if field in nutrition)
+    split = ''
+    if all(field in nutrition for field in MACROS.values()):
+        percentages = ' / '.join(f'{nutrition_number(value)}% {name}' for name, value in macro_split(nutrition).items())
+        split = f'<p class="daily-split"><small>Estimated energy split</small>{percentages}</p>'
+    return f'<div class="daily-nutrition"><p class="daily-total-label">{label} <small>per person</small></p><strong>~{nutrition_number(nutrition["calories"], 0)} kcal</strong><div class="daily-grams">{grams}</div>{split}</div>'
+
+
+def recipe_html(data, plan, recipe_id, uses, positions, workout=False):
     recipe = data['recipes'][recipe_id]
-    servings = uses * plan['people'] if recipe['preparation'] == 'batch' else plan['people']
+    servings = uses * plan['people'] if recipe['preparation'] == 'batch' and not workout else plan['people']
     factor = Fraction(servings, recipe['servings'])
     singular = recipe['kind'] if recipe['kind'] != 'lunch' else 'lunch'
     serving_label = singular + ('es' if singular == 'lunch' else 's') if servings != 1 else singular
     metadata = f'{recipe["prepTime"]} · {servings} {serving_label}'
-    when = positions[recipe_id]
-    calendar = (f'Cook on day {when[0]}; eat on {day_phrase(when)}.' if recipe['preparation'] == 'batch' else f'Make fresh on {day_phrase(when)}.')
+    if workout:
+        calendar = 'Make fresh on training days, in place of the rest-day snack.'
+    else:
+        when = positions[recipe_id]
+        calendar = (f'Cook on day {when[0]}; eat on {day_phrase(when)}.' if recipe['preparation'] == 'batch' else f'Make fresh on {day_phrase(when)}.')
     ingredients = ''.join('<li>' + escape(ingredient_text(data, row, factor)) + '</li>' for row in recipe['ingredients'])
     steps = ''.join('<li>' + escape(step.format(portions=servings, portionsWord=word(servings))) + '</li>' for step in recipe['steps'])
     source = recipe.get('source')
     source_html = f'<a class="source" href="{escape(source["url"], quote=True)}" target="_blank" rel="noopener noreferrer">{escape(source["label"])} ↗</a>' if source else '<span class="source">Your breakfast preference</span>'
     nutrition = recipe['nutrition']
-    return f'<details class="recipe" id="{recipe_id}"><summary><span class="recipe-kind">{escape(recipe["kind"].title())}</span><span class="recipe-title">{escape(recipe["title"])}</span><span class="recipe-meta">{escape(metadata)}</span><span class="plus" aria-hidden="true">+</span></summary><div class="recipe-body"><p>{escape(recipe["description"])}</p><div class="nutrition"><span>~{pretty(quantity(nutrition["calories"]))} kcal <small>per meal</small></span><span>~{pretty(quantity(nutrition["proteinGrams"]))} g protein</span></div><div class="recipe-columns"><div><h4>What you need</h4><ul>{ingredients}</ul></div><div><h4>How to make it</h4><ol>{steps}</ol></div></div><p class="recipe-note">{escape(calendar)} {rich_text(recipe["note"])}</p>{source_html}</div></details>'
+    badges = f'<span>~{nutrition_number(nutrition["calories"], 0)} kcal <small>per meal</small></span>'
+    badges += ''.join(f'<span>~{nutrition_number(nutrition[field])} g {name}</span>' for name, field in MACROS.items() if field in nutrition)
+    per_person = ''
+    if workout:
+        amounts = ''.join('<li>' + escape(ingredient_text(data, row, Fraction(1, recipe['servings']))) + '</li>' for row in recipe['ingredients'])
+        per_person = f'<div class="per-person-ingredients"><h4>Per person</h4><ul>{amounts}</ul></div>'
+    workout_link = ''
+    if recipe.get('workoutRecipe'):
+        variant = recipe['workoutRecipe']
+        workout_link = f'<p class="workout-recipe-link">Training today? <a href="#{variant}">Use {escape(data["recipes"][variant]["shortTitle"])} ↗</a></p>'
+    return f'<details class="recipe" id="{recipe_id}"><summary><span class="recipe-kind">{escape(recipe["kind"].title())}</span><span class="recipe-title">{escape(recipe["title"])}</span><span class="recipe-meta">{escape(metadata)}</span><span class="plus" aria-hidden="true">+</span></summary><div class="recipe-body"><p>{escape(recipe["description"])}</p><div class="nutrition">{badges}</div><div class="recipe-columns"><div><h4>What you need</h4><ul>{ingredients}</ul>{per_person}</div><div><h4>How to make it</h4><ol>{steps}</ol></div></div><p class="recipe-note">{escape(calendar)} {rich_text(recipe["note"])}</p>{workout_link}{source_html}</div></details>'
 
 
 def render_page(data, plan_id=None, root_prefix='.'):
@@ -379,7 +513,12 @@ def render_page(data, plan_id=None, root_prefix='.'):
         no = f'{number:02d}'
         meals = data['days'][day_id]['meals']
         rows = ''.join(f'<div class="meal-row"><span>{slot.title()}</span><a href="#{meals[slot]}">{escape(data["recipes"][meals[slot]]["shortTitle"])}</a></div>' for slot in MEALS)
-        cards.append(f'<article class="day-card"><div class="day-label">DAY <strong>{no}</strong></div>{rows}<a class="day-link" href="#guide-{no}">Your day {number} guide {icon("arrow")}</a></article>')
+        totals = daily_nutrition_html(day_totals(data, day_id))
+        workout_id = data['recipes'][meals['snack']].get('workoutRecipe')
+        if workout_id:
+            workout_totals = daily_nutrition_html(day_totals(data, day_id, workout=True), 'Workout totals')
+            totals += f'<details class="workout-totals"><summary>Workout day</summary>{workout_totals}<a href="#{workout_id}">{escape(data["recipes"][workout_id]["shortTitle"])} ↗</a></details>'
+        cards.append(f'<article class="day-card"><div class="day-label">DAY <strong>{no}</strong></div>{rows}{totals}<a class="day-link" href="#guide-{no}">Your day {number} guide {icon("arrow")}</a></article>')
         batches = [rid for rid in meals.values() if data['recipes'][rid]['preparation'] == 'batch' and positions[rid][0] == number]
         if batches:
             ordinal = {1:'first',2:'second',3:'third'}.get(cooking.index(number)+1, str(cooking.index(number)+1))
@@ -409,11 +548,17 @@ def render_page(data, plan_id=None, root_prefix='.'):
                 instruction = 'Prepare the batch today; serve one portion per person.'
             else:
                 instruction = 'Serve one portion per person from the prepared batch.'
-            if slot == 'snack' and 'fairlife' in plan.get('extraItems', []):
+            workout_link = ''
+            if recipe.get('workoutRecipe'):
+                variant = recipe['workoutRecipe']
+                workout_link = f'<a class="workout-guide-link" href="#{variant}">Training today? {escape(data["recipes"][variant]["shortTitle"])} ↗</a>'
+            elif slot == 'snack' and 'fairlife' in plan.get('extraItems', []):
                 instruction += ' Use the Fairlife version if you train today.'
-            guide_rows.append(f'<li><span>{slot.title()}</span><a href="#{rid}">{escape(recipe["shortTitle"])} {icon("arrow")}</a><small>{instruction}</small></li>')
+            guide_rows.append(f'<li><span>{slot.title()}</span><a href="#{rid}">{escape(recipe["shortTitle"])} {icon("arrow")}</a><small>{instruction}</small>{workout_link}</li>')
         guides.append(f'<details class="daily-guide" id="guide-{no}"><summary><span class="guide-day">DAY {no}</span><span>{escape(title)}</span><span class="plus" aria-hidden="true">+</span></summary><div class="guide-content"><p class="cook-note">{escape(note)}</p><ul>{"".join(guide_rows)}</ul></div></details>')
-    notebook = ''.join(recipe_html(data, plan, rid, counts[rid], positions) for rid in data['recipes'] if rid in counts)
+    workout_recipes = {data['recipes'][rid]['workoutRecipe'] for rid in counts if data['recipes'][rid].get('workoutRecipe')}
+    notebook = ''.join(recipe_html(data, plan, rid, counts.get(rid, 1), positions, workout=rid not in counts)
+                       for rid in data['recipes'] if rid in counts or rid in workout_recipes)
     groups = []
     for group in data['groceryGroups']:
         entries = [row for row in groceries if row['group'] == group]
@@ -450,6 +595,10 @@ def render_page(data, plan_id=None, root_prefix='.'):
         options.append(f'<option value="{escape(url, quote=True)}"{selected} data-plan-id="{other_id}">{escape(label)}</option>')
         plan_links.append(f'<a href="{escape(url, quote=True)}"{current}>{escape(label)}</a>')
     switcher = '<div class="plan-toolbar"><div class="plan-picker" data-plan-picker hidden><label for="plan-select">Meal plan</label><select id="plan-select" aria-describedby="plan-note" data-plan-select>' + ''.join(options) + '</select><span class="sr-only" id="plan-note">Switch plans to view their meals, recipes and separate grocery checklists.</span></div><nav class="plan-links" aria-label="Meal plans" data-plan-links>' + ''.join(plan_links) + '</nav></div>'
+    macro_target = ''
+    if 'macroPercent' in plan['targets']:
+        percentages = ' / '.join(f'{nutrition_number(plan["targets"]["macroPercent"][name])}% {name}' for name in MACROS)
+        macro_target = f'<div class="target-macros"><dt>Macro target</dt><dd>{percentages}</dd></div>'
     values = {
         'PAGE_TITLE': escape(site['brand'].title() + ' — ' + plan['title']),
         'DESCRIPTION': escape(f'{plan["title"]} with daily recipe guides and a grocery checklist.',quote=True),
@@ -460,6 +609,7 @@ def render_page(data, plan_id=None, root_prefix='.'):
         'HERO_DESCRIPTION':escape(site['heroDescription']),
         'EYEBROW':escape(f'{day_title.upper()} · {word(plan["people"]).upper()} {"PERSON" if plan["people"]==1 else "PEOPLE"} · {word(len(cooking)).upper()} COOKING {"SESSION" if len(cooking)==1 else "SESSIONS"}'),
         'CALORIES':f'{float(quantity(plan["targets"]["calories"])):,.0f}', 'PROTEIN':pretty(quantity(plan['targets']['proteinGrams'])),
+        'MACRO_TARGET':macro_target,
         'TARGET_NOTE':escape(site['targetNote']), 'PLAN_HEADING':escape(f'Your next {day_title.lower()}'),
         'PLAN_ASIDE':escape(site['planAside']), 'CARDS':''.join(cards), 'WORKOUT_NOTE':rich_text(site['workoutNote']),
         'GUIDE_HEADING':escape(site['guideHeading']), 'GUIDE_ASIDE':escape(f'Cook {len(cooking)} batch {"day" if len(cooking)==1 else "days"}. Breakfast each morning.'),

@@ -28,7 +28,10 @@ class MealPlanTests(unittest.TestCase):
         html = builder.render_page(data)
         plan = data['plans'][data['activePlanId']]
         self.assertEqual(html.count('class="day-card"'), len(plan['days']))
-        self.assertEqual(html.count('class="recipe"'), len(builder.selected_counts(data, plan)))
+        recipes = set(builder.selected_counts(data, plan))
+        recipes.update(data['recipes'][recipe_id]['workoutRecipe']
+                       for recipe_id in list(recipes) if data['recipes'][recipe_id].get('workoutRecipe'))
+        self.assertEqual(html.count('class="recipe"'), len(recipes))
         self.assertIn(f'data-plan-id="{data["activePlanId"]}"', html)
 
     def alternate(self, days, people=1):

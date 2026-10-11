@@ -9,6 +9,27 @@
 @media print{html{scroll-behavior:auto}body{background:white;color:#111;font-size:10pt}.site-header,footer,.primary-link,.text-button,.list-controls,.print-button,.skip{display:none!important}main{max-width:none;padding:0}.hero{padding:0 0 20px;grid-template-columns:1.3fr 1fr;gap:30px}h1{font-size:40pt}.hero-copy{font-size:10pt}.target-card{background:white;color:#111;border:1px solid #aaa;box-shadow:none;padding:18px}.target-card .eyebrow,.target-card dt,.target-card>p,.calorie-number span{color:#444}.calorie-number{font-size:36pt}.target-divider{background:#aaa}.target-card dl{display:block}.target-card dl div{display:flex}.target-card dd{margin:0}.section{padding:22px 0}.section-heading h2{font-size:24pt}.section-aside{display:none}.day-grid{grid-template-columns:repeat(var(--plan-days,4),1fr)}.day-card{padding:12px;background:white;break-inside:avoid}.meal-row a{font-size:9pt}.day-link{display:none}.fairlife-callout{padding:12px;border:1px solid #aaa;background:white}.guide-grid{grid-template-columns:1fr 1fr}.daily-guide{break-inside:avoid}.daily-guide summary{font-size:10pt;padding:12px}.plus{display:none}.recipe summary{grid-template-columns:70px 1fr 180px;min-height:0;padding:14px 0}.recipe-title{font-size:14pt}.recipe-meta{grid-column:3;grid-row:1;margin:0}.recipe-body{padding-left:0}.recipe-columns{grid-template-columns:1fr 1fr;gap:24px}.recipe-columns li{font-size:9pt}.recipe-note{background:white;border-left:2px solid #888}.recipe{break-inside:avoid}.shop-grid{grid-template-columns:repeat(4,1fr);gap:18px}.shop-group{break-inside:avoid}.shop-group strong{font-size:9pt}.shop-group small{font-size:8pt}.shop-group input:checked+span{opacity:1}.storage{grid-template-columns:1fr 1.5fr;gap:30px;background:white;border:1px solid #aaa;padding:20px;margin-bottom:0}.nutrition span{background:white;border:1px solid #aaa}a{text-decoration:none}details:not([open])>*:not(summary){display:block!important}.daily-guide .guide-content{display:block!important}.shop-group label{padding:8px 0}.small-note{font-size:8pt}.eyebrow{font-size:8pt}}
 
 /* Each day uses an original palette swatch. */
+.nutrition{flex-wrap:wrap}
+.target-card dl .target-macros{display:block;border-top:1px solid var(--target-line);padding-top:12px;margin-top:5px;grid-column:1 / -1}
+.target-macros dd{margin-top:4px;line-height:1.6}
+.daily-nutrition{border-top:1px solid var(--line);padding-top:12px;margin-top:4px;font-size:11px}
+.daily-total-label{margin:0 0 4px;font-size:9px;color:var(--muted);line-height:1.5}
+.daily-total-label small{display:block;font-size:8px}
+.daily-nutrition>strong{color:var(--olive);font-weight:600;font-size:14px}
+.daily-grams{display:flex;flex-wrap:wrap;gap:2px 10px;margin-top:5px;font-size:10px}
+.daily-split{margin:7px 0 0;color:var(--olive);font-size:9px;line-height:1.6}
+.daily-split small{display:block;color:var(--muted);font-size:8px}
+.workout-totals{margin-top:10px;font-size:10px}
+.workout-totals summary{cursor:pointer;color:var(--olive);text-decoration:underline;text-underline-offset:3px;list-style:none;padding:3px 0;min-height:28px;display:flex;align-items:center;justify-content:space-between}
+.workout-totals summary::after{content:'+';font-size:15px;text-decoration:none;margin-left:8px}
+.workout-totals[open] summary::after{content:'−'}
+.workout-totals .daily-nutrition{margin-top:4px;padding-top:8px}
+.workout-totals>a{display:inline-block;margin-top:6px;font-size:10px;line-height:1.6}
+.guide-content li .workout-guide-link{display:block;font-size:11px;margin-top:7px;color:var(--olive);text-decoration:underline}
+.workout-recipe-link{font-size:11px;color:var(--olive);margin:0 0 15px}
+.per-person-ingredients{margin-top:18px;border-top:1px solid var(--line);padding-top:15px}
+@media(max-width:640px){.daily-nutrition>strong{font-size:12px}.daily-grams{display:block;font-size:9px}.daily-grams span{display:block}.daily-split{font-size:8px}.workout-totals>a{font-size:9px}.target-card .target-macros dd{font-size:10px}}
+@media print{.daily-nutrition>strong{font-size:10pt}.daily-grams{font-size:8pt}.daily-split{font-size:7pt}.workout-totals{break-inside:avoid}.workout-totals summary{font-size:8pt;min-height:0}.workout-totals summary::after{display:none}.workout-totals>*:not(summary){display:block!important}.target-macros dd{font-size:9pt}.guide-content li .workout-guide-link{font-size:8pt}}
 .day-card:nth-child(1){border-top:3px solid var(--stripe-1)}.day-card:nth-child(2){border-top:3px solid var(--stripe-2)}.day-card:nth-child(3){border-top:3px solid var(--stripe-3)}.day-card:nth-child(4){border-top:3px solid var(--stripe-4)}
 
 /* A small, keyboard-friendly theme control. Hidden when JavaScript is unavailable. */
