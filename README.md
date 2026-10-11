@@ -18,20 +18,30 @@ All meal content lives in [`meal-plan.json`](meal-plan.json). Set its top-level 
 
 GitHub Actions validates the document, runs tests, generates the homepage and every plan page, and publishes `_site`. Invalid content stops deployment. Displaying meals and recipes does not require JavaScript or a JSON request.
 
-The catalog includes four plans. The original four-day plan remains the default:
+The catalog includes six plans. The original four-day plan remains the default:
 
 | Plan ID | Days | Calorie target | Estimated rest-day calories | Protein target |
 | --- | --- | --- | --- | --- |
-| `four-day-cut` | 4 | 2,400 | Original plan | 200 g |
-| `three-day-1800` | 3 | 1,800 | 1,773–1,796 | 160 g |
-| `four-day-2000` | 4 | 2,000 | 1,960–2,020 | 170 g |
-| `four-day-2200` | 4 | 2,200 | 2,191–2,200 | 185 g |
+| `four-day-cut` | 4 | 2,400 | 2,412–2,576 | 200 g |
+| `three-day-1800` | 3 | 1,800 | 1,776–1,793 | 160 g |
+| `four-day-2000` | 4 | 2,000 | 1,960–2,010 | 170 g |
+| `four-day-2200` | 4 | 2,200 | 2,185–2,231 | 185 g |
+| `four-day-1800` | 4 | 1,800 | 1,775–1,805 | 160 g |
+| `three-day-2400` | 3 | 2,400 | 2,412–2,424 | 200 g |
 
-The new variations add Taco Mac, teriyaki beef bowls, cilantro lime chicken bowls and sriracha lime chicken bowls from The Meal Prep Manual, plus cherry-balsamic pork adapted from Skinnytaste. Each has two batch days and its own calculated groceries. Frozen mixed vegetables replace broccoli in the chicken bowls; portions and side dishes are adjusted for the plan. Every breakfast includes two lattes, and workout snack notes account for the 30 g / 150 calorie Fairlife shake. Nutrition estimates are per serving and depend on actual brands and ingredients.
+The new four-day 1,800 and three-day 2,400 plans each have two cooking days. Both include slow-cooker chicken taco chili adapted from [Skinnytaste](https://www.skinnytaste.com/crock-pot-chicken-taco-chili-4-pts/): a smaller yogurt-topped bowl or a larger bowl with rice. The 2,400 plan uses one chili batch for all three dinners. Start the slow cooker early; recipes show cook times, safe chicken temperature, portions, and topping storage.
+
+Snacks rotate among KIND bars with yogurt, individually wrapped cheese with yogurt and fruit, and pineapple cottage-cheese bowls. Groceries identify product flavors, package sizes and counts. Recipe notes give specific workout swaps for the 30 g / 150 calorie Fairlife shake, which is conditional in the grocery list. All plans avoid fish and seafood; vegetarian mushroom sauce also replaces oyster sauce in the older honey-garlic chicken.
+
+Cottage-cheese bowls now use one whole **Dole 4 oz pineapple-in-juice cup**, including its juice, at 60 calories. The full bowl is about 320 calories / 32 g protein; the smaller bowl is about 240 / 23. Cottage-cheese estimates use [Good Culture 2%](https://goodculture.com/product/simply-cottage-cheese-24-oz-lowfat-classic/) at 90 calories / 14 g protein per 110 g. Cold toppings and almonds can stay separate until serving. [Pineapple label](https://www.dolesunshine.com/us/en/products/pineapple-paradise-in-100-pineapple-juice-16oz/).
+
+**Breakfast side shakes use PBfit Classic + Fairlife fat-free (0%) milk.** The full oat breakfast has 16 g PBfit + 8 fl oz skim milk (~140 calories / 21 g protein); the smaller oat breakfast has 8 g PBfit + 4 fl oz skim milk (~70 / 10.5). Oats, apples, brown sugar, breakfast fat and the two 2% milk lattes retain their previous portions. Milk for the shake is additional to latte milk and appears separately in groceries. [PBfit label](https://www.pbfit.com/products/pbfit-classic) · [Fairlife skim label](https://fairlife.com/ultra-filtered-milk/fat-free-skim-milk/). PBfit is estimated at 60 calories per 16 g; if your jar shows 70, add 10 per full shake or 5 per smaller shake.
+
+Packaged snack calculations use current manufacturer pages: [KIND Dark Chocolate Nuts & Sea Salt, 40 g](https://www.kindsnacks.com/products/nut-bar/dark-chocolate-nuts-sea-salt) = 190 calories / 6 g protein; [Oikos Triple Zero vanilla, 150 g](https://www.oikos.com/all-products/triple-zero/product/vanilla-multipack/) = 80 / 15; [Mini Babybel Original, 20 g](https://babybel.com/product/babybel-original-cheese/) = 70 / 4. Check the package you buy: sizes, flavors and formulations vary.
 
 ## Breakfast variety
 
-The 2,400-calorie default keeps its original oats and ham-frittata breakfasts, portions, and day order. New fresh breakfasts appear in the lower-calorie plans:
+The 2,400-calorie default keeps its original oats and ham-frittata breakfast rotation and food portions; only the oat breakfast side shake has changed to PBfit and skim milk. New fresh breakfasts appear in the lower-calorie plans:
 
 | Breakfast | Used in | Calories including two lattes | Protein including two lattes |
 | --- | --- | --- | --- |

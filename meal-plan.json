@@ -10,11 +10,11 @@
     "recipeHeading": "The recipe notebook",
     "recipeIntro": "Fresh recipes are portioned per person; batch recipes are scaled to the meals in this plan.",
     "targetNote": "Targets, not exact totals. Portions and brands matter.",
-    "workoutNote": "Include your **Fairlife shake — 30 g protein, 150 calories** in the snack. Use 170 g yogurt + berries, or half a cottage cheese snack. Keep the breakfast shake separate.",
+    "workoutNote": "Include your **Fairlife shake \u2014 30 g protein, 150 calories** in the snack. Use 170 g yogurt + berries, or half the cottage cheese and almonds plus the whole pineapple cup. Keep the breakfast shake separate.",
     "nutritionNote": "Nutrition is approximate, based on source recipe cards and typical ingredient labels. Ham, mixed vegetables, dairy and powder change the totals. Log your actual brands if precision matters.",
     "shoppingNote": "Shopping quantities are calculated from this plan. Full-size rest-day snacks are included; workout swaps may leave extras.",
     "storageNote": "Keep cold toppings and crunchy snack toppings separate.",
-    "storageSafety": "Refrigerate cooked food within 2 hours at 40°F / 4°C or below. Use leftovers within 3–4 days; reheat to 165°F / 74°C.",
+    "storageSafety": "Refrigerate cooked food within 2 hours at 40\u00b0F / 4\u00b0C or below. Use leftovers within 3\u20134 days; reheat to 165\u00b0F / 74\u00b0C.",
     "storageUrl": "https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/leftovers-and-food-safety",
     "footer": "Made manageable.",
     "repoUrl": "https://github.com/badstreff/static-meal-plan"
@@ -35,7 +35,10 @@
       ],
       "extraItems": [
         "fairlife"
-      ]
+      ],
+      "copy": {
+        "nutritionNote": "Estimated rest-day calories by day: 2,557, 2,431, 2,576, 2,412. Protein ranges from 217\u2013232 g (about 224 g daily average). Every breakfast includes two lattes with 12 fl oz total plain Fairlife 2% milk, about 180 calories / 19.5 g protein. Oat breakfasts also include the separate PBfit + Fairlife 0% shake. Pineapple bowls include an entire 4 oz cup with its juice. Estimates use adapted source recipes and the stated package labels; log your actual brands. Workout versions use the snack-specific swaps."
+      }
     },
     "three-day-1800": {
       "title": "Three-day sample",
@@ -56,8 +59,8 @@
         "heroDescription": "A three-day sample around 1,800 calories, with smaller chicken bowls, fresh breakfasts and your two morning lattes.",
         "planAside": "Smaller portions. The same simple rhythm.",
         "targetNote": "Sample targets. Includes latte milk; actual brands and portions matter.",
-        "workoutNote": "Include your **Fairlife shake — 30 g protein, 150 calories** in the snack. With yogurt, use 100 g yogurt + berries and skip the honey and walnuts; with cottage cheese, use half the snack portion. Keep the smaller breakfast powder shake separate.",
-        "nutritionNote": "Estimated rest-day calories by day: 1,773, 1,796, 1,776. Protein ranges from 157–175 g (about 167 g daily average). Every breakfast includes two lattes with 12 fl oz total plain Fairlife 2% milk (about 180 calories and 19.5 g protein). Adapted portions use approximate ingredient-label estimates; use your actual brands, including your MooTopia label if different. Any breakfast protein powder is a separate shake, never mixed into the recipes.",
+        "workoutNote": "Include your **Fairlife shake \u2014 30 g protein, 150 calories** in the snack. With yogurt, use 100 g yogurt + berries and skip the honey and walnuts; with cottage cheese, use half the cottage cheese and almonds plus the whole pineapple cup. Keep the PBfit breakfast shake separate.",
+        "nutritionNote": "Estimated rest-day calories by day: 1,793, 1,786, 1,776. Protein ranges from 158\u2013174 g (about 167 g daily average). Every breakfast includes two lattes with 12 fl oz total plain Fairlife 2% milk, about 180 calories / 19.5 g protein. Oat breakfasts also include the separate PBfit + Fairlife 0% shake. Pineapple bowls include an entire 4 oz cup with its juice. Estimates use adapted source recipes and the stated package labels; log your actual brands. Workout versions use the snack-specific swaps.",
         "shoppingNote": "Calculated for three days and one person. Full rest-day snacks are included; workout swaps may leave extras. The latte milk is included."
       }
     },
@@ -81,8 +84,8 @@
         "heroDescription": "Four days around 2,000 calories, with new chicken bowls, teriyaki beef, cherry-balsamic pork and your two morning lattes.",
         "planAside": "New flavors. Two batch days.",
         "targetNote": "Approximate daily target. Both lattes and full rest-day snacks are included.",
-        "workoutNote": "Include your **Fairlife shake — 30 g protein, 150 calories** in the snack. With yogurt, use 100 g yogurt + berries and skip the honey and walnuts; with cottage cheese, use half the snack portion. Keep the smaller breakfast powder shake separate.",
-        "nutritionNote": "Estimated rest-day calories by day: 1,990, 2,000, 1,960, 2,020. Protein ranges from 162–182 g (about 170 g daily average). Every breakfast includes two lattes with 12 fl oz total plain Fairlife 2% milk (about 180 calories and 19.5 g protein). Adapted portions use approximate ingredient-label estimates; use your actual brands, including your MooTopia label if different. Any breakfast protein powder is a separate shake, never mixed into the recipes.",
+        "workoutNote": "Include your **Fairlife shake \u2014 30 g protein, 150 calories** in the snack. With yogurt, use 100 g yogurt + berries and skip the honey and walnuts; with cottage cheese, use half the cottage cheese and almonds plus the whole pineapple cup. Keep the PBfit breakfast shake separate.",
+        "nutritionNote": "Estimated rest-day calories by day: 2,010, 1,990, 1,960, 2,010. Protein ranges from 162\u2013181 g (about 170 g daily average). Every breakfast includes two lattes with 12 fl oz total plain Fairlife 2% milk, about 180 calories / 19.5 g protein. Oat breakfasts also include the separate PBfit + Fairlife 0% shake. Pineapple bowls include an entire 4 oz cup with its juice. Estimates use adapted source recipes and the stated package labels; log your actual brands. Workout versions use the snack-specific swaps.",
         "shoppingNote": "Calculated for four days and one person. Includes 48 fl oz latte milk and full rest-day snacks; workout swaps may leave extras.",
         "storageNote": "Keep cilantro lime sauce separate. Cook pork and cilantro lime chicken on day 1; teriyaki beef and sriracha chicken on day 2. Reheat pork gently with its glaze."
       }
@@ -107,10 +110,61 @@
         "heroDescription": "A four-day variation around 2,200 calories: Taco Mac, creamy cilantro lime bowls, sriracha chicken and cherry-balsamic pork.",
         "planAside": "Comfort food. Fresh sauce. Easy repeats.",
         "targetNote": "Approximate daily target. Both lattes and full rest-day snacks are included.",
-        "workoutNote": "Include your **Fairlife shake — 30 g protein, 150 calories** in the snack. Use 170 g yogurt + berries, or half a cottage cheese snack. Keep the breakfast shake separate.",
-        "nutritionNote": "Estimated rest-day calories by day: 2,191, 2,195, 2,196, 2,200. Protein ranges from 185–196 g (about 189 g daily average). Every breakfast includes two lattes with 12 fl oz total plain Fairlife 2% milk (about 180 calories and 19.5 g protein). Adapted portions use approximate ingredient-label estimates; use your actual brands, including your MooTopia label if different. Any breakfast protein powder is a separate shake, never mixed into the recipes.",
+        "workoutNote": "Include your **Fairlife shake \u2014 30 g protein, 150 calories** in the snack. Use 170 g yogurt + berries, or half the cottage cheese and almonds plus the whole pineapple cup. Keep the breakfast shake separate.",
+        "nutritionNote": "Estimated rest-day calories by day: 2,231, 2,185, 2,196, 2,190. Protein ranges from 184\u2013196 g (about 189 g daily average). Every breakfast includes two lattes with 12 fl oz total plain Fairlife 2% milk, about 180 calories / 19.5 g protein. Oat breakfasts also include the separate PBfit + Fairlife 0% shake. Pineapple bowls include an entire 4 oz cup with its juice. Estimates use adapted source recipes and the stated package labels; log your actual brands. Workout versions use the snack-specific swaps.",
         "shoppingNote": "Calculated for four days and one person. Includes 48 fl oz latte milk; Taco Mac milk is listed separately. Full rest-day snacks are included; workout swaps may leave extras.",
         "storageNote": "Keep cilantro lime sauce separate. Cook Taco Mac and pork on day 1; cilantro lime chicken and larger sriracha bowls on day 2. Add a splash of water when reheating pasta."
+      }
+    },
+    "four-day-1800": {
+      "title": "Slow-cooker chili & easy snacks",
+      "people": 1,
+      "targets": {
+        "calories": 1800,
+        "proteinGrams": 160
+      },
+      "days": [
+        "four-day-1800-day-01",
+        "four-day-1800-day-02",
+        "four-day-1800-day-03",
+        "four-day-1800-day-04"
+      ],
+      "extraItems": [
+        "fairlife"
+      ],
+      "copy": {
+        "heroDescription": "Four days around 1,800 calories: slow-cooker taco chili, chicken bowls, cherry-balsamic pork and easy grocery-store snacks. Your two morning lattes are included.",
+        "planAside": "Two cook days. Snacks ready to go.",
+        "targetNote": "Approximate daily target. Includes both lattes and the listed rest-day snack.",
+        "workoutNote": "Include your **Fairlife shake \u2014 30 g protein, 150 calories** in the snack using its recipe\u2019s swap. Packaged snack combinations have their own swaps; don\u2019t add the shake on top. The PBfit breakfast shake stays separate.",
+        "shoppingNote": "Calculated for 4 days and one person. Includes 48 fl oz 2% latte milk, separate skim shake milk, and the listed rest-day snacks. Workout swaps may leave extras.",
+        "storageNote": "On day 1, start the slow cooker early for dinner and prepare buffalo bowls for lunch. On day 2, cook the Greek chicken and pork. Keep yogurt toppings and almonds separate; eat the second pork portion on day 4.",
+        "nutritionNote": "Estimated rest-day calories by day: 1,805, 1,775, 1,775, 1,780. Protein ranges from 153\u2013172 g (about 164 g daily average). Every breakfast includes two lattes with 12 fl oz total plain Fairlife 2% milk, about 180 calories / 19.5 g protein. Oat breakfasts also include the separate PBfit + Fairlife 0% shake. Pineapple bowls include an entire 4 oz cup with its juice. Estimates use adapted source recipes and the stated package labels; log your actual brands. Workout versions use the snack-specific swaps."
+      }
+    },
+    "three-day-2400": {
+      "title": "Slow-cooker comfort & snack variety",
+      "people": 1,
+      "targets": {
+        "calories": 2400,
+        "proteinGrams": 200
+      },
+      "days": [
+        "three-day-2400-day-01",
+        "three-day-2400-day-02",
+        "three-day-2400-day-03"
+      ],
+      "extraItems": [
+        "fairlife"
+      ],
+      "copy": {
+        "heroDescription": "Three days around 2,400 calories: one slow-cooker chili batch, Taco Mac, Greek chicken and three different snacks. Fresh breakfasts include both lattes.",
+        "planAside": "Two cook days. Snacks ready to go.",
+        "targetNote": "Approximate daily target. Includes both lattes and the listed rest-day snack.",
+        "workoutNote": "Include your **Fairlife shake \u2014 30 g protein, 150 calories** in the snack using its recipe\u2019s swap. Packaged snack combinations have their own swaps; don\u2019t add the shake on top. The PBfit breakfast shake stays separate.",
+        "shoppingNote": "Calculated for 3 days and one person. Includes 36 fl oz 2% latte milk, separate skim shake milk, and the listed rest-day snacks. Workout swaps may leave extras.",
+        "storageNote": "On day 1, start the slow cooker early for dinner and make Taco Mac for lunches on days 1 and 3. Cook Greek chicken on day 2. The chili covers all three dinners; store its rice separately and reheat individual portions.",
+        "nutritionNote": "Estimated rest-day calories by day: 2,414, 2,412, 2,424. Protein ranges from 195\u2013220 g (about 206 g daily average). Every breakfast includes two lattes with 12 fl oz total plain Fairlife 2% milk, about 180 calories / 19.5 g protein. Oat breakfasts also include the separate PBfit + Fairlife 0% shake. Pineapple bowls include an entire 4 oz cup with its juice. Estimates use adapted source recipes and the stated package labels; log your actual brands. Workout versions use the snack-specific swaps."
       }
     }
   },
@@ -240,6 +294,62 @@
         "dinner": "sriracha-lime-large",
         "snack": "cottage"
       }
+    },
+    "four-day-1800-day-01": {
+      "meals": {
+        "breakfast": "oats-1800",
+        "lunch": "buffalo-1800",
+        "dinner": "slow-chili-1800",
+        "snack": "kind-yogurt"
+      }
+    },
+    "four-day-1800-day-02": {
+      "meals": {
+        "breakfast": "ham-1800",
+        "lunch": "greek-1800",
+        "dinner": "cherry-pork-1800",
+        "snack": "cottage-pineapple-small"
+      }
+    },
+    "four-day-1800-day-03": {
+      "meals": {
+        "breakfast": "cottage-pancakes-small",
+        "lunch": "buffalo-1800",
+        "dinner": "slow-chili-1800",
+        "snack": "kind-yogurt"
+      }
+    },
+    "four-day-1800-day-04": {
+      "meals": {
+        "breakfast": "ham-egg-muffin-small",
+        "lunch": "greek-1800",
+        "dinner": "cherry-pork-1800",
+        "snack": "yogurt-cheese-apple"
+      }
+    },
+    "three-day-2400-day-01": {
+      "meals": {
+        "breakfast": "oats",
+        "lunch": "taco-mac",
+        "dinner": "slow-chili-2400",
+        "snack": "double-yogurt-cheese"
+      }
+    },
+    "three-day-2400-day-02": {
+      "meals": {
+        "breakfast": "cottage-pancakes",
+        "lunch": "greek",
+        "dinner": "slow-chili-2400",
+        "snack": "cottage-pineapple-small"
+      }
+    },
+    "three-day-2400-day-03": {
+      "meals": {
+        "breakfast": "ham",
+        "lunch": "taco-mac",
+        "dinner": "slow-chili-2400",
+        "snack": "kind-yogurt-apple"
+      }
     }
   },
   "recipes": {
@@ -251,10 +361,10 @@
       "servings": 1,
       "prepTime": "Cook to package",
       "nutrition": {
-        "calories": 710,
-        "proteinGrams": 48
+        "calories": 750,
+        "proteinGrams": 49
       },
-      "description": "Warm oats, a chopped apple, and a little richness, with your two morning lattes. Your smaller protein shake stays on the side.",
+      "description": "Warm steel-cut oats, apple and brown sugar, with two lattes and a separate peanut-butter milk shake.",
       "ingredients": [
         {
           "itemId": "oats",
@@ -280,10 +390,16 @@
           "format": "{alternatives}"
         },
         {
-          "itemId": "protein-powder",
-          "quantity": 20,
-          "unit": "g-protein",
-          "format": "Protein powder providing {amount} + water"
+          "itemId": "pbfit",
+          "quantity": 16,
+          "unit": "g",
+          "label": "PBfit Classic for the separate shake"
+        },
+        {
+          "itemId": "shake-milk",
+          "quantity": 8,
+          "unit": "fl oz",
+          "label": "Fairlife fat-free milk for the separate shake"
         },
         {
           "itemId": "spices",
@@ -311,10 +427,10 @@
       "steps": [
         "Simmer the oats in water for the time on your package, stirring occasionally.",
         "Stir in the apple near the end for softer fruit, or add it fresh. Finish with brown sugar and butter or half-and-half.",
-        "Shake the powder with water separately. Use its label to measure the listed protein amount; this is protein content, not powder weight.",
+        "Blend or shake the listed PBfit with the fat-free milk separately; add ice or water if desired. Drink alongside breakfast.",
         "Make two lattes per person, dividing the listed milk equally between them. Add your coffee or espresso; no syrup or sugar is included."
       ],
-      "note": "Measure oats dry; use your powder and dairy labels for tracking. Nutrition includes both lattes, estimated with Fairlife 2% at 120 calories and 13 g protein per 8 fl oz. Use your MooTopia carton label if it differs. The latte milk replaces about 20 g protein from the original 40 g protein shake; the remaining shake provides 20 g protein. The food portion stays at 60 g dry oats.",
+      "note": "Measure oats dry. The side shake uses 16 g PBfit (about 2 tbsp) + 8 fl oz Fairlife 0% milk: about 140 calories / 21 g protein. Estimates assume PBfit Classic at 60 calories / 8 g protein per 16 g and Fairlife skim at 80 calories / 13 g per 8 fl oz; some jars differ. Both lattes are also included: 12 fl oz total plain Fairlife 2% milk, about 180 calories / 19.5 g protein. Use your MooTopia label if different. The oats, apple, brown sugar, butter/half-and-half and latte portions are unchanged.",
       "source": null
     },
     "ham": {
@@ -398,8 +514,8 @@
         }
       ],
       "steps": [
-        "Heat the oven to 350°F / 175°C. Coat a small oven-safe skillet with cooking spray; warm the ham.",
-        "Whisk eggs, cottage cheese, Parmesan and spinach. Pour into the skillet, cook briefly to set the base, then bake until fully set (about 16–18 minutes; 160°F / 71°C in the center).",
+        "Heat the oven to 350\u00b0F / 175\u00b0C. Coat a small oven-safe skillet with cooking spray; warm the ham.",
+        "Whisk eggs, cottage cheese, Parmesan and spinach. Pour into the skillet, cook briefly to set the base, then bake until fully set (about 16\u201318 minutes; 160\u00b0F / 71\u00b0C in the center).",
         "Slice the frittata into {portionsWord} equal portions and serve with the toast. Ham and Parmesan add salt; season to taste.",
         "Make two lattes per person, dividing the listed milk equally between them. Add your coffee or espresso; no syrup or sugar is included."
       ],
@@ -494,7 +610,7 @@
       ],
       "steps": [
         "Cook the onion in the listed cooking oil until softened. Stir in beans, paprika and cumin.",
-        "In a sprayed skillet, cook chicken to 165°F / 74°C. Toss with buffalo sauce.",
+        "In a sprayed skillet, cook chicken to 165\u00b0F / 74\u00b0C. Toss with buffalo sauce.",
         "Split rice, beans, chicken and cheddar between {portionsWord} containers. Divide the oil for portions equally between the rice/bean portions; finish with scallions."
       ],
       "note": "The extra olive oil is included in the calorie estimate.",
@@ -620,7 +736,7 @@
       ],
       "steps": [
         "Flatten chicken to an even thickness. Marinate in lemon juice, vinegar, marinade oil, garlic and oregano for 30 minutes in the fridge.",
-        "Cook rice with broth according to its package. Grill or pan-cook chicken to 165°F / 74°C; rest and slice.",
+        "Cook rice with broth according to its package. Grill or pan-cook chicken to 165\u00b0F / 74\u00b0C; rest and slice.",
         "Split chicken and rice between {portionsWord} portions. Pack chopped vegetables, olives and feta separately. At serving, add the toppings, remaining oil and lemon."
       ],
       "note": "Reheat only chicken and rice; add the cold toppings afterward.",
@@ -668,7 +784,7 @@
           "variant": "sweet"
         },
         {
-          "itemId": "oyster-sauce",
+          "itemId": "mushroom-sauce",
           "quantity": 1,
           "unit": "tbsp"
         },
@@ -701,7 +817,7 @@
       ],
       "steps": [
         "Mix sauces, honey, sesame oil and garlic. Coat chicken and refrigerate for 30 minutes.",
-        "Roast at 425°F / 220°C on a lined tray; add onion and finish under the broiler for color. Check chicken reaches 165°F / 74°C; watch the broiler closely.",
+        "Roast at 425\u00b0F / 220\u00b0C on a lined tray; add onion and finish under the broiler for color. Check chicken reaches 165\u00b0F / 74\u00b0C; watch the broiler closely.",
         "Heat vegetables and rice. Divide all food equally into {portionsWord} dinner containers."
       ],
       "note": "Mixed vegetables replace broccoli, so actual nutrition varies slightly.",
@@ -817,7 +933,7 @@
         }
       ],
       "steps": [
-        "Coat thighs with yogurt, chicken spices and lemon juice. Roast at 425°F / 220°C; broil briefly for browning. Check 165°F / 74°C before slicing.",
+        "Coat thighs with yogurt, chicken spices and lemon juice. Roast at 425\u00b0F / 220\u00b0C; broil briefly for browning. Check 165\u00b0F / 74\u00b0C before slicing.",
         "Heat oil, garlic and vegetable spices in a skillet. Add diced peppers and onion; soften, then add cabbage and tomato sauce.",
         "Stir in rice, sliced chicken and remaining lemon juice. Divide evenly into {portionsWord} containers."
       ],
@@ -866,24 +982,24 @@
       "steps": [
         "Spoon yogurt into a bowl. Add berries, honey and walnuts just before eating."
       ],
-      "note": "Workout version: 170 g yogurt + ½ cup berries + one Fairlife shake (30 g protein / 150 calories). Skip honey and walnuts. About 290–310 calories total.",
+      "note": "Workout version: 170 g yogurt + \u00bd cup berries + one Fairlife shake (30 g protein / 150 calories). Skip honey and walnuts. About 290\u2013310 calories total.",
       "source": {
         "label": "Adapted from Skinnytaste",
         "url": "https://www.skinnytaste.com/greek-yogurt-with-berries-nuts-and/"
       }
     },
     "cottage": {
-      "title": "Whipped cottage cheese & berries",
+      "title": "Whipped cottage cheese, pineapple & almonds",
       "shortTitle": "Cottage cheese bowl",
       "kind": "snack",
       "preparation": "batch",
       "servings": 2,
       "prepTime": "10 min",
       "nutrition": {
-        "calories": 330,
-        "proteinGrams": 33
+        "calories": 320,
+        "proteinGrams": 32
       },
-      "description": "Smooth cottage cheese topped with berries and slivered almonds.",
+      "description": "A creamy bowl topped with one prepacked pineapple-in-juice cup and slivered almonds per serving.",
       "ingredients": [
         {
           "itemId": "cottage-cheese",
@@ -905,16 +1021,10 @@
           "format": "{label}"
         },
         {
-          "itemId": "berries",
-          "quantity": 1,
-          "unit": "cup",
-          "label": "strawberries"
-        },
-        {
-          "itemId": "berries",
-          "quantity": 1,
-          "unit": "cup",
-          "label": "other berries"
+          "itemId": "pineapple-cups",
+          "quantity": 2,
+          "unit": "count",
+          "label": "4 oz (113 g) pineapple-in-juice cups, one per bowl"
         },
         {
           "itemId": "almonds",
@@ -925,16 +1035,16 @@
       ],
       "steps": [
         "Blend cottage cheese, vanilla and sweetener until smooth.",
-        "Divide into {portionsWord} bowls; top each with an equal share of the berries and almonds."
+        "Divide into {portionsWord} bowls. Top each with one pineapple cup and its juice, plus an equal share of almonds. Keep almonds separate until eating."
       ],
-      "note": "Workout version: half of one full-size snack + one Fairlife shake (30 g protein / 150 calories), about 315 calories. The grocery list covers full-size snacks.",
+      "note": "Per bowl: 227 g low-fat cottage cheese, one entire 113 g pineapple-in-juice cup and 1\u00bd tbsp almonds. Counts the whole cup including juice at 60 calories; drain it if preferred, but keep the same conservative estimate. Cottage cheese assumes about 90 calories / 14 g protein per 110 g; use your tub label. Workout: half the cottage cheese and almonds, the whole pineapple cup, plus a 30 g / 150 calorie Fairlife shake: about 340 calories / 46 g protein. Grocery quantities cover full rest-day bowls.",
       "source": {
         "label": "Adapted from Skinnytaste",
         "url": "https://www.skinnytaste.com/high-protein-whipped-cottage-cheese-bowls/"
       }
     },
     "buffalo-1800": {
-      "title": "Buffalo chicken rice bowls — smaller portions",
+      "title": "Buffalo chicken rice bowls \u2014 smaller portions",
       "shortTitle": "Buffalo chicken",
       "kind": "lunch",
       "preparation": "batch",
@@ -1018,7 +1128,7 @@
       ],
       "steps": [
         "Cook the onion in the listed cooking oil until softened. Stir in beans, paprika and cumin.",
-        "In a sprayed skillet, cook chicken to 165°F / 74°C. Toss with buffalo sauce.",
+        "In a sprayed skillet, cook chicken to 165\u00b0F / 74\u00b0C. Toss with buffalo sauce.",
         "Split rice, beans, chicken and cheddar between {portionsWord} containers. Divide the oil for portions equally between the rice/bean portions; finish with scallions."
       ],
       "note": "Smaller portions for the 1,800-calorie sample. Estimates scale the original recipe to two-thirds of its portion size; track actual ingredients and brands.",
@@ -1028,7 +1138,7 @@
       }
     },
     "greek-1800": {
-      "title": "Greek chicken rice bowls — smaller portions",
+      "title": "Greek chicken rice bowls \u2014 smaller portions",
       "shortTitle": "Greek chicken",
       "kind": "lunch",
       "preparation": "batch",
@@ -1144,7 +1254,7 @@
       ],
       "steps": [
         "Flatten chicken to an even thickness. Marinate in lemon juice, vinegar, marinade oil, garlic and oregano for 30 minutes in the fridge.",
-        "Cook rice with broth according to its package. Grill or pan-cook chicken to 165°F / 74°C; rest and slice.",
+        "Cook rice with broth according to its package. Grill or pan-cook chicken to 165\u00b0F / 74\u00b0C; rest and slice.",
         "Split chicken and rice between {portionsWord} portions. Pack chopped vegetables, olives and feta separately. At serving, add the toppings, remaining oil and lemon."
       ],
       "note": "Smaller portions for the 1,800-calorie sample. Estimates scale the original recipe to two-thirds of its portion size; track actual ingredients and brands.",
@@ -1154,7 +1264,7 @@
       }
     },
     "honey-1800": {
-      "title": "Honey garlic chicken thighs — smaller portions",
+      "title": "Honey garlic chicken thighs \u2014 smaller portions",
       "shortTitle": "Honey garlic thighs",
       "kind": "dinner",
       "preparation": "batch",
@@ -1192,7 +1302,7 @@
           "variant": "sweet"
         },
         {
-          "itemId": "oyster-sauce",
+          "itemId": "mushroom-sauce",
           "quantity": "2/3",
           "unit": "tbsp"
         },
@@ -1225,7 +1335,7 @@
       ],
       "steps": [
         "Mix sauces, honey, sesame oil and garlic. Coat chicken and refrigerate for 30 minutes.",
-        "Roast at 425°F / 220°C on a lined tray; add onion and finish under the broiler for color. Check chicken reaches 165°F / 74°C; watch the broiler closely.",
+        "Roast at 425\u00b0F / 220\u00b0C on a lined tray; add onion and finish under the broiler for color. Check chicken reaches 165\u00b0F / 74\u00b0C; watch the broiler closely.",
         "Heat vegetables and rice. Divide all food equally into {portionsWord} dinner containers."
       ],
       "note": "Smaller portions for the 1,800-calorie sample. Estimates scale the original recipe to two-thirds of its portion size; track actual ingredients and brands.",
@@ -1235,7 +1345,7 @@
       }
     },
     "chile-1800": {
-      "title": "Chile lemon chicken rice bowls — smaller portions",
+      "title": "Chile lemon chicken rice bowls \u2014 smaller portions",
       "shortTitle": "Chile lemon chicken",
       "kind": "dinner",
       "preparation": "batch",
@@ -1341,7 +1451,7 @@
         }
       ],
       "steps": [
-        "Coat thighs with yogurt, chicken spices and lemon juice. Roast at 425°F / 220°C; broil briefly for browning. Check 165°F / 74°C before slicing.",
+        "Coat thighs with yogurt, chicken spices and lemon juice. Roast at 425\u00b0F / 220\u00b0C; broil briefly for browning. Check 165\u00b0F / 74\u00b0C before slicing.",
         "Heat oil, garlic and vegetable spices in a skillet. Add diced peppers and onion; soften, then add cabbage and tomato sauce.",
         "Stir in rice, sliced chicken and remaining lemon juice. Divide evenly into {portionsWord} containers."
       ],
@@ -1359,10 +1469,10 @@
       "servings": 1,
       "prepTime": "Cook to package",
       "nutrition": {
-        "calories": 530,
-        "proteinGrams": 35
+        "calories": 550,
+        "proteinGrams": 36
       },
-      "description": "A smaller bowl of warm oats, an apple, and a little brown sugar. Keep the 10 g protein shake separate and enjoy your two morning lattes.",
+      "description": "Warm steel-cut oats, apple and brown sugar, with two lattes and a separate peanut-butter milk shake.",
       "ingredients": [
         {
           "itemId": "oats",
@@ -1388,10 +1498,16 @@
           "format": "{alternatives}"
         },
         {
-          "itemId": "protein-powder",
-          "quantity": 10,
-          "unit": "g-protein",
-          "format": "Protein powder providing {amount} + water"
+          "itemId": "pbfit",
+          "quantity": 8,
+          "unit": "g",
+          "label": "PBfit Classic for the separate shake"
+        },
+        {
+          "itemId": "shake-milk",
+          "quantity": 4,
+          "unit": "fl oz",
+          "label": "Fairlife fat-free milk for the separate shake"
         },
         {
           "itemId": "spices",
@@ -1419,10 +1535,10 @@
       "steps": [
         "Simmer the oats in water for the time on your package, stirring occasionally.",
         "Stir in the apple near the end for softer fruit, or add it fresh. Finish with brown sugar and butter or half-and-half.",
-        "Shake the powder with water separately. Use its label to measure the listed protein amount; this is protein content, not powder weight.",
+        "Blend or shake the listed PBfit with the fat-free milk separately; add ice or water if desired. Drink alongside breakfast.",
         "Make two lattes per person, dividing the listed milk equally between them. Add your coffee or espresso; no syrup or sugar is included."
       ],
-      "note": "Sample portion: 40 g dry oats and powder providing 10 g protein. Both lattes are included, using 12 fl oz plain Fairlife 2% milk. Use your powder and dairy labels for tracking; MooTopia may differ.",
+      "note": "Measure oats dry. The side shake uses 8 g PBfit (about 1 tbsp) + 4 fl oz Fairlife 0% milk: about 70 calories / 10.5 g protein. Estimates assume PBfit Classic at 60 calories / 8 g protein per 16 g and Fairlife skim at 80 calories / 13 g per 8 fl oz; some jars differ. Both lattes are also included: 12 fl oz total plain Fairlife 2% milk, about 180 calories / 19.5 g protein. Use your MooTopia label if different. The oats, apple, brown sugar, butter/half-and-half and latte portions are unchanged.",
       "source": null
     },
     "ham-1800": {
@@ -1500,8 +1616,8 @@
         }
       ],
       "steps": [
-        "Heat the oven to 350°F / 175°C. Coat a small oven-safe skillet with cooking spray; warm the ham.",
-        "Whisk eggs, cottage cheese, Parmesan and spinach. Pour into the skillet, cook briefly to set the base, then bake until fully set (about 16–18 minutes; 160°F / 71°C in the center).",
+        "Heat the oven to 350\u00b0F / 175\u00b0C. Coat a small oven-safe skillet with cooking spray; warm the ham.",
+        "Whisk eggs, cottage cheese, Parmesan and spinach. Pour into the skillet, cook briefly to set the base, then bake until fully set (about 16\u201318 minutes; 160\u00b0F / 71\u00b0C in the center).",
         "Slice the frittata into {portionsWord} equal portions. Ham and Parmesan add salt; season to taste.",
         "Make two lattes per person, dividing the listed milk equally between them. Add your coffee or espresso; no syrup or sugar is included."
       ],
@@ -1650,7 +1766,7 @@
       ],
       "steps": [
         "Brown beef in oil, breaking it up; add peppers and green onion whites. Cook beef through, then stir in the seasonings.",
-        "Add tomatoes, broth and dry macaroni. Cover and simmer 10–12 minutes, stirring midway, until pasta is tender; add water if needed.",
+        "Add tomatoes, broth and dry macaroni. Cover and simmer 10\u201312 minutes, stirring midway, until pasta is tender; add water if needed.",
         "Stir in milk off the heat. Divide into {portionsWord} portions and top with cheddar and green onion tops."
       ],
       "note": "Source portion size retained. Estimate uses 93/7 beef and regular cheese; your milk and cheese labels may change it.",
@@ -1731,7 +1847,7 @@
       ],
       "steps": [
         "Cook the listed rice amount. Dice vegetables; slice the onion.",
-        "Brown beef with a little of the oil until cooked through; set aside. Use remaining oil to sauté vegetables and garlic until just tender.",
+        "Brown beef with a little of the oil until cooked through; set aside. Use remaining oil to saut\u00e9 vegetables and garlic until just tender.",
         "Return beef, add teriyaki sauce and heat through. Divide rice and beef mixture into {portionsWord} portions."
       ],
       "note": "Source portion size retained. Estimate uses 90/10 beef; bottled sauce brands vary.",
@@ -1837,9 +1953,9 @@
         }
       ],
       "steps": [
-        "Heat oven to 400°F. Coat thighs with paprika, chicken spices, a little lime and one-third of the oil. Roast until 165°F, about 25–35 minutes.",
+        "Heat oven to 400\u00b0F. Coat thighs with paprika, chicken spices, a little lime and one-third of the oil. Roast until 165\u00b0F, about 25\u201335 minutes.",
         "Roast diced sweet potato with another third of the oil until tender. Cook mixed vegetables per package; prepare the rice.",
-        "Blend yogurt, cilantro, green onion, jalapeño, cumin, reserved garlic, remaining lime and oil; thin with water.",
+        "Blend yogurt, cilantro, green onion, jalape\u00f1o, cumin, reserved garlic, remaining lime and oil; thin with water.",
         "Divide chicken, vegetables and rice into {portionsWord} portions; store sauce separately."
       ],
       "note": "Larger source portion with rounded amounts; mixed vegetables replace broccoli. Calories are an adapted estimate.",
@@ -1922,9 +2038,9 @@
         }
       ],
       "steps": [
-        "Heat oven to 400°F. Mix sriracha, lime, honey and seasonings. Reserve half separately; coat thighs with the rest.",
-        "Roast chicken until 165°F, about 25–35 minutes. Roast diced sweet potatoes with half the oil until tender; prepare rice.",
-        "Cook mixed vegetables per package, then sauté briefly with green onion whites and remaining oil. Add reserved sauce, diced chicken, potatoes and rice.",
+        "Heat oven to 400\u00b0F. Mix sriracha, lime, honey and seasonings. Reserve half separately; coat thighs with the rest.",
+        "Roast chicken until 165\u00b0F, about 25\u201335 minutes. Roast diced sweet potatoes with half the oil until tender; prepare rice.",
+        "Cook mixed vegetables per package, then saut\u00e9 briefly with green onion whites and remaining oil. Add reserved sauce, diced chicken, potatoes and rice.",
         "Divide into {portionsWord} portions; top with green onion greens."
       ],
       "note": "Rounded source quantities with mixed vegetables replacing broccoli. Use a mild sauce or reduce sriracha for less heat.",
@@ -1934,7 +2050,7 @@
       }
     },
     "sriracha-lime-large": {
-      "title": "Sriracha lime chicken bowls — larger portions",
+      "title": "Sriracha lime chicken bowls \u2014 larger portions",
       "shortTitle": "Sriracha lime chicken",
       "kind": "dinner",
       "preparation": "batch",
@@ -2007,9 +2123,9 @@
         }
       ],
       "steps": [
-        "Heat oven to 400°F. Mix sriracha, lime, honey and seasonings. Reserve half separately; coat thighs with the rest.",
-        "Roast chicken until 165°F, about 25–35 minutes. Roast diced sweet potatoes with half the oil until tender; prepare rice.",
-        "Cook mixed vegetables per package, then sauté briefly with green onion whites and remaining oil. Add reserved sauce, diced chicken, potatoes and rice.",
+        "Heat oven to 400\u00b0F. Mix sriracha, lime, honey and seasonings. Reserve half separately; coat thighs with the rest.",
+        "Roast chicken until 165\u00b0F, about 25\u201335 minutes. Roast diced sweet potatoes with half the oil until tender; prepare rice.",
+        "Cook mixed vegetables per package, then saut\u00e9 briefly with green onion whites and remaining oil. Add reserved sauce, diced chicken, potatoes and rice.",
         "Divide into {portionsWord} portions; top with green onion greens."
       ],
       "note": "Larger portions for the 2,200-calorie variation. Estimates include rounded quantities and the mixed vegetable swap.",
@@ -2086,12 +2202,12 @@
         }
       ],
       "steps": [
-        "Heat oven to 400°F. Simmer balsamic until reduced, then stir in preserves and thyme.",
+        "Heat oven to 400\u00b0F. Simmer balsamic until reduced, then stir in preserves and thyme.",
         "Season trimmed pork with garlic, salt and pepper. Sear in an oven-safe skillet with cooking spray; add half the glaze.",
-        "Roast until 145°F, then rest 10 minutes before slicing. Cook rice and mixed vegetables separately.",
+        "Roast until 145\u00b0F, then rest 10 minutes before slicing. Cook rice and mixed vegetables separately.",
         "Divide pork, rice, vegetables and remaining glaze into {portionsWord} portions."
       ],
-      "note": "Each meal uses 1½ source pork portions, plus rice and mixed vegetables. Side estimates assume 195 calories per cooked rice cup and 50 per 100 g vegetables.",
+      "note": "Each meal uses 1\u00bd source pork portions, plus rice and mixed vegetables. Side estimates assume 195 calories per cooked rice cup and 50 per 100 g vegetables.",
       "source": {
         "label": "Adapted from Skinnytaste",
         "url": "https://www.skinnytaste.com/pork-tenderloin-with-cherry-sauce/"
@@ -2165,9 +2281,9 @@
         }
       ],
       "steps": [
-        "Heat oven to 400°F. Simmer balsamic until reduced, then stir in preserves and thyme.",
+        "Heat oven to 400\u00b0F. Simmer balsamic until reduced, then stir in preserves and thyme.",
         "Season trimmed pork with garlic, salt and pepper. Sear in an oven-safe skillet with cooking spray; add half the glaze.",
-        "Roast until 145°F, then rest 10 minutes before slicing. Cook rice and mixed vegetables separately.",
+        "Roast until 145\u00b0F, then rest 10 minutes before slicing. Cook rice and mixed vegetables separately.",
         "Divide pork, rice, vegetables and remaining glaze into {portionsWord} portions."
       ],
       "note": "Same pork portion, smaller rice and vegetable sides to balance the larger breakfast. Nutrition includes both sides.",
@@ -2182,7 +2298,7 @@
       "kind": "breakfast",
       "preparation": "fresh",
       "servings": 1,
-      "prepTime": "About 15–20 min",
+      "prepTime": "About 15\u201320 min",
       "nutrition": {
         "calories": 715,
         "proteinGrams": 59
@@ -2272,7 +2388,7 @@
       "kind": "breakfast",
       "preparation": "fresh",
       "servings": 1,
-      "prepTime": "About 15–20 min",
+      "prepTime": "About 15\u201320 min",
       "nutrition": {
         "calories": 520,
         "proteinGrams": 45
@@ -2362,7 +2478,7 @@
       "kind": "breakfast",
       "preparation": "fresh",
       "servings": 1,
-      "prepTime": "About 10–15 min",
+      "prepTime": "About 10\u201315 min",
       "nutrition": {
         "calories": 475,
         "proteinGrams": 43
@@ -2448,7 +2564,7 @@
       "kind": "breakfast",
       "preparation": "fresh",
       "servings": 1,
-      "prepTime": "About 25–30 min",
+      "prepTime": "About 25\u201330 min",
       "nutrition": {
         "calories": 630,
         "proteinGrams": 49
@@ -2521,16 +2637,477 @@
         }
       ],
       "steps": [
-        "Heat the oven to 425°F / 220°C. Microwave the finely diced potato with a splash of water in a covered, vented bowl until tender; drain and mash roughly.",
+        "Heat the oven to 425\u00b0F / 220\u00b0C. Microwave the finely diced potato with a splash of water in a covered, vented bowl until tender; drain and mash roughly.",
         "Use part of the measured oil in a nonstick skillet. Warm the ham, then scramble in the egg until set. Stir in the potato, cottage cheese, cheddar and pepper.",
         "Warm the tortillas until flexible. Divide the filling among them, roll gently and place seam-side down on a tray. Serve any filling that will not fit alongside.",
-        "Brush with the remaining measured oil. Bake until crisp and hot, about 10–15 minutes, watching the edges.",
+        "Brush with the remaining measured oil. Bake until crisp and hot, about 10\u201315 minutes, watching the edges.",
         "Make two lattes per person, dividing the listed milk equally between them. Add your coffee or espresso; no syrup or sugar is included."
       ],
       "note": "Both lattes are included: 12 fl oz total plain Fairlife 2% milk adds about 180 calories and 19.5 g protein. Each latte uses 6 fl oz; coffee, syrup and added sugar are not counted. Use your MooTopia carton label if it differs. Adapted for one fresh breakfast with cooked ham instead of sausage. Food contributes about 449 calories and 30 g protein. Assumptions: tortillas 50/1 each, egg 72/6, ham 30/5 per oz, cottage cheese 90/12 per half cup and cheddar 112/7 per oz; potato and oil are included. This is a new estimate for the adapted portion, not the source taquito nutrition card.",
       "source": {
         "label": "Inspired by The Meal Prep Manual",
         "url": "https://mealprepmanual.com/cheesy-potato-and-sausage-breakfast-taquitos/"
+      }
+    },
+    "cottage-pineapple-small": {
+      "title": "Smaller pineapple cottage cheese bowl",
+      "shortTitle": "Pineapple cottage bowl",
+      "kind": "snack",
+      "preparation": "fresh",
+      "servings": 1,
+      "prepTime": "3 min",
+      "nutrition": {
+        "calories": 240,
+        "proteinGrams": 23
+      },
+      "description": "A creamy bowl topped with one prepacked pineapple-in-juice cup and slivered almonds per serving.",
+      "ingredients": [
+        {
+          "itemId": "cottage-cheese",
+          "quantity": 170,
+          "unit": "g",
+          "label": "low-fat cottage cheese"
+        },
+        {
+          "itemId": "pineapple-cups",
+          "quantity": 1,
+          "unit": "count",
+          "label": "4 oz (113 g) pineapple-in-juice cup"
+        },
+        {
+          "itemId": "almonds",
+          "quantity": "3/4",
+          "unit": "tbsp",
+          "label": "slivered almonds"
+        }
+      ],
+      "steps": [
+        "Spoon cottage cheese into a bowl, or blend it first if you prefer it smooth.",
+        "Add the entire pineapple cup with its juice. Add almonds just before eating."
+      ],
+      "note": "Includes the whole pineapple cup at 60 calories, cottage cheese at about 90 calories / 14 g protein per 110 g, and almonds. Workout: replace the cottage cheese with a 30 g / 150 calorie Fairlife shake; keep the pineapple and almonds. About 250 calories / 32 g protein. Keep opened dairy refrigerated; use your actual tub and cup labels.",
+      "source": {
+        "label": "Adapted from Skinnytaste",
+        "url": "https://www.skinnytaste.com/high-protein-whipped-cottage-cheese-bowls/"
+      }
+    },
+    "kind-yogurt": {
+      "title": "KIND bar & a vanilla yogurt cup",
+      "shortTitle": "KIND bar & yogurt",
+      "kind": "snack",
+      "preparation": "fresh",
+      "servings": 1,
+      "prepTime": "Ready to eat",
+      "nutrition": {
+        "calories": 270,
+        "proteinGrams": 21
+      },
+      "description": "A grocery-store snack combination with no cooking required.",
+      "ingredients": [
+        {
+          "itemId": "kind-bars",
+          "quantity": 1,
+          "unit": "count",
+          "label": "40 g KIND Dark Chocolate Nuts & Sea Salt bar"
+        },
+        {
+          "itemId": "oikos-cups",
+          "quantity": 1,
+          "unit": "count",
+          "label": "150 g Oikos Triple Zero vanilla cup"
+        }
+      ],
+      "steps": [
+        "Keep the dairy chilled until eating. Open the packages and enjoy together."
+      ],
+      "note": "Bar: 190 calories / 6 g protein; yogurt: 80 calories / 15 g. Workout: replace the KIND bar with your 30 g / 150 calorie Fairlife shake; keep the yogurt. About 230 calories / 45 g protein. Nutrition uses the named sizes and flavors; check your package, as labels vary.",
+      "source": {
+        "label": "Product label reference",
+        "url": "https://www.kindsnacks.com/products/nut-bar/dark-chocolate-nuts-sea-salt"
+      }
+    },
+    "kind-yogurt-apple": {
+      "title": "KIND bar, yogurt cup & apple",
+      "shortTitle": "KIND, yogurt & apple",
+      "kind": "snack",
+      "preparation": "fresh",
+      "servings": 1,
+      "prepTime": "Ready to eat",
+      "nutrition": {
+        "calories": 365,
+        "proteinGrams": 22
+      },
+      "description": "A grocery-store snack combination with no cooking required.",
+      "ingredients": [
+        {
+          "itemId": "kind-bars",
+          "quantity": 1,
+          "unit": "count",
+          "label": "40 g KIND Dark Chocolate Nuts & Sea Salt bar"
+        },
+        {
+          "itemId": "oikos-cups",
+          "quantity": 1,
+          "unit": "count",
+          "label": "150 g Oikos Triple Zero vanilla cup"
+        },
+        {
+          "itemId": "apples",
+          "quantity": 1,
+          "unit": "count",
+          "label": "medium apple"
+        }
+      ],
+      "steps": [
+        "Keep the dairy chilled until eating. Open the packages and enjoy together."
+      ],
+      "note": "Bar: 190 calories / 6 g protein; yogurt: 80 calories / 15 g; apple: about 95 calories. Workout: replace the KIND bar with your 30 g / 150 calorie Fairlife shake; keep the yogurt and apple. About 325 calories / 46 g protein. Nutrition uses the named sizes and flavors; check your package, as labels vary.",
+      "source": {
+        "label": "Product label reference",
+        "url": "https://www.kindsnacks.com/products/nut-bar/dark-chocolate-nuts-sea-salt"
+      }
+    },
+    "yogurt-cheese-apple": {
+      "title": "Vanilla yogurt, snack cheese & apple",
+      "shortTitle": "Yogurt, cheese & apple",
+      "kind": "snack",
+      "preparation": "fresh",
+      "servings": 1,
+      "prepTime": "Ready to eat",
+      "nutrition": {
+        "calories": 245,
+        "proteinGrams": 20
+      },
+      "description": "A grocery-store snack combination with no cooking required.",
+      "ingredients": [
+        {
+          "itemId": "oikos-cups",
+          "quantity": 1,
+          "unit": "count",
+          "label": "150 g Oikos Triple Zero vanilla cup"
+        },
+        {
+          "itemId": "babybel",
+          "quantity": 1,
+          "unit": "count",
+          "label": "20 g Mini Babybel Original cheese"
+        },
+        {
+          "itemId": "apples",
+          "quantity": 1,
+          "unit": "count",
+          "label": "medium apple"
+        }
+      ],
+      "steps": [
+        "Keep the dairy chilled until eating. Open the packages and enjoy together."
+      ],
+      "note": "Yogurt: 80 calories / 15 g protein; cheese: 70 calories / 4 g; apple: about 95 calories. Workout: replace the yogurt and cheese with your 30 g / 150 calorie Fairlife shake; keep the apple. About 245 calories / 31 g protein. Nutrition uses the named sizes and flavors; check your package, as labels vary.",
+      "source": {
+        "label": "Product label reference",
+        "url": "https://www.oikos.com/all-products/triple-zero/product/vanilla-multipack/"
+      }
+    },
+    "double-yogurt-cheese": {
+      "title": "Two vanilla yogurts & snack cheese",
+      "shortTitle": "Yogurt cups & cheese",
+      "kind": "snack",
+      "preparation": "fresh",
+      "servings": 1,
+      "prepTime": "Ready to eat",
+      "nutrition": {
+        "calories": 230,
+        "proteinGrams": 34
+      },
+      "description": "A grocery-store snack combination with no cooking required.",
+      "ingredients": [
+        {
+          "itemId": "oikos-cups",
+          "quantity": 2,
+          "unit": "count",
+          "label": "150 g Oikos Triple Zero vanilla cups"
+        },
+        {
+          "itemId": "babybel",
+          "quantity": 1,
+          "unit": "count",
+          "label": "20 g Mini Babybel Original cheese"
+        }
+      ],
+      "steps": [
+        "Keep the dairy chilled until eating. Open the packages and enjoy together."
+      ],
+      "note": "Two yogurts: 160 calories / 30 g protein; cheese: 70 calories / 4 g. Workout: replace one yogurt and the cheese with your 30 g / 150 calorie Fairlife shake; keep one yogurt. About 230 calories / 45 g protein. Nutrition uses the named sizes and flavors; check your package, as labels vary.",
+      "source": {
+        "label": "Product label reference",
+        "url": "https://www.oikos.com/all-products/triple-zero/product/vanilla-multipack/"
+      }
+    },
+    "slow-chili-1800": {
+      "title": "Slow-cooker chicken taco chili with yogurt",
+      "shortTitle": "Slow-cooker taco chili",
+      "kind": "dinner",
+      "preparation": "batch",
+      "servings": 2,
+      "prepTime": "10 min prep \u00b7 4\u20136 hr high / 8\u201310 hr low",
+      "nutrition": {
+        "calories": 500,
+        "proteinGrams": 52
+      },
+      "description": "Chicken, beans, corn and tomatoes simmer together while you get on with your day.",
+      "ingredients": [
+        {
+          "itemId": "onions",
+          "quantity": "2/5",
+          "unit": "count",
+          "label": "small yellow onion, chopped",
+          "variant": "yellow"
+        },
+        {
+          "itemId": "chili-black-beans",
+          "quantity": "2/5",
+          "unit": "can",
+          "label": "black beans from a 15.5 oz can; measure before draining"
+        },
+        {
+          "itemId": "kidney-beans",
+          "quantity": "2/5",
+          "unit": "can",
+          "label": "kidney beans from a 15.5 oz can; measure before draining"
+        },
+        {
+          "itemId": "tomato-sauce",
+          "quantity": "16/5",
+          "unit": "oz"
+        },
+        {
+          "itemId": "frozen-corn",
+          "quantity": 4,
+          "unit": "oz"
+        },
+        {
+          "itemId": "chili-tomatoes",
+          "quantity": 8,
+          "unit": "oz"
+        },
+        {
+          "itemId": "green-chiles",
+          "quantity": "8/5",
+          "unit": "oz"
+        },
+        {
+          "itemId": "taco-seasoning",
+          "quantity": "2/5",
+          "unit": "packet"
+        },
+        {
+          "itemId": "spices",
+          "quantity": "2/5",
+          "unit": "tbsp",
+          "label": "ground cumin"
+        },
+        {
+          "itemId": "chicken-spices",
+          "quantity": "2/5",
+          "unit": "tbsp",
+          "label": "chili powder"
+        },
+        {
+          "itemId": "chicken-breast",
+          "quantity": "3/5",
+          "unit": "lb",
+          "label": "raw, thawed boneless skinless chicken breasts"
+        },
+        {
+          "itemId": "yogurt",
+          "quantity": 200,
+          "unit": "g",
+          "label": "nonfat Greek yogurt topping, 100 g per meal"
+        }
+      ],
+      "steps": [
+        "Stir beans, onion, corn, tomatoes, chiles, tomato sauce and seasonings together in a slow cooker sized for the listed batch. Nestle thawed chicken into the mixture.",
+        "Cover and cook on HIGH for 4\u20136 hours or LOW for 8\u201310 hours, until chicken reaches 165\u00b0F / 74\u00b0C and shreds easily; check the smaller batch earlier.",
+        "Shred the chicken, stir it back in, and divide the entire chili batch equally into {portionsWord} containers.",
+        "Keep yogurt cold and separate. Add an equal share after reheating each bowl."
+      ],
+      "note": "Estimated from two 220-calorie / 21 g protein source chili portions per meal, plus 100 g nonfat Greek yogurt: about 500 calories / 52 g protein. Source portions are small; divide the finished batch evenly rather than relying on cup volume. Use a smaller cooker for a small batch and follow its fill guidance; if doubling, buy twice the chili ingredients and freeze the extra portions. Freeze unused beans, corn and canned vegetables for a future batch.",
+      "source": {
+        "label": "Adapted from Skinnytaste",
+        "url": "https://www.skinnytaste.com/crock-pot-chicken-taco-chili-4-pts/"
+      }
+    },
+    "slow-chili-2400": {
+      "title": "Slow-cooker chicken taco chili & rice",
+      "shortTitle": "Slow-cooker taco chili",
+      "kind": "dinner",
+      "preparation": "batch",
+      "servings": 2,
+      "prepTime": "10 min prep \u00b7 4\u20136 hr high / 8\u201310 hr low",
+      "nutrition": {
+        "calories": 760,
+        "proteinGrams": 65
+      },
+      "description": "Chicken, beans, corn and tomatoes simmer together while you get on with your day.",
+      "ingredients": [
+        {
+          "itemId": "onions",
+          "quantity": "3/5",
+          "unit": "count",
+          "label": "small yellow onion, chopped",
+          "variant": "yellow"
+        },
+        {
+          "itemId": "chili-black-beans",
+          "quantity": "3/5",
+          "unit": "can",
+          "label": "black beans from a 15.5 oz can; measure before draining"
+        },
+        {
+          "itemId": "kidney-beans",
+          "quantity": "3/5",
+          "unit": "can",
+          "label": "kidney beans from a 15.5 oz can; measure before draining"
+        },
+        {
+          "itemId": "tomato-sauce",
+          "quantity": "24/5",
+          "unit": "oz"
+        },
+        {
+          "itemId": "frozen-corn",
+          "quantity": 6,
+          "unit": "oz"
+        },
+        {
+          "itemId": "chili-tomatoes",
+          "quantity": 12,
+          "unit": "oz"
+        },
+        {
+          "itemId": "green-chiles",
+          "quantity": "12/5",
+          "unit": "oz"
+        },
+        {
+          "itemId": "taco-seasoning",
+          "quantity": "3/5",
+          "unit": "packet"
+        },
+        {
+          "itemId": "spices",
+          "quantity": "3/5",
+          "unit": "tbsp",
+          "label": "ground cumin"
+        },
+        {
+          "itemId": "chicken-spices",
+          "quantity": "3/5",
+          "unit": "tbsp",
+          "label": "chili powder"
+        },
+        {
+          "itemId": "chicken-breast",
+          "quantity": "9/10",
+          "unit": "lb",
+          "label": "raw, thawed boneless skinless chicken breasts"
+        },
+        {
+          "itemId": "white-rice",
+          "quantity": 1,
+          "unit": "cup-cooked",
+          "label": "cooked white rice, \u00bd cup per meal"
+        }
+      ],
+      "steps": [
+        "Stir beans, onion, corn, tomatoes, chiles, tomato sauce and seasonings together in a slow cooker sized for the listed batch. Nestle thawed chicken into the mixture.",
+        "Cover and cook on HIGH for 4\u20136 hours or LOW for 8\u201310 hours, until chicken reaches 165\u00b0F / 74\u00b0C and shreds easily; check the smaller batch earlier.",
+        "Shred the chicken, stir it back in, and divide the entire chili batch equally into {portionsWord} containers.",
+        "Cook the listed rice separately and divide between the meals."
+      ],
+      "note": "Estimated from three 220-calorie / 21 g protein source chili portions per meal, plus \u00bd cup rice: about 760 calories / 65 g protein. Source portions are small; divide the finished batch evenly rather than relying on cup volume. Use a smaller cooker for a small batch and follow its fill guidance; if doubling, buy twice the chili ingredients and freeze the extra portions. Freeze unused beans, corn and canned vegetables for a future batch.",
+      "source": {
+        "label": "Adapted from Skinnytaste",
+        "url": "https://www.skinnytaste.com/crock-pot-chicken-taco-chili-4-pts/"
+      }
+    },
+    "cherry-pork-1800": {
+      "title": "Cherry-balsamic pork with a moderate rice portion",
+      "shortTitle": "Cherry-balsamic pork",
+      "kind": "dinner",
+      "preparation": "batch",
+      "servings": 2,
+      "prepTime": "About 40 min",
+      "nutrition": {
+        "calories": 595,
+        "proteinGrams": 56
+      },
+      "description": "Glazed pork with \u00be cup cooked rice and mixed vegetables per meal.",
+      "ingredients": [
+        {
+          "itemId": "pork-tenderloin",
+          "quantity": 1,
+          "unit": "lb"
+        },
+        {
+          "itemId": "balsamic-vinegar",
+          "quantity": 4,
+          "unit": "tbsp"
+        },
+        {
+          "itemId": "cherry-preserves",
+          "quantity": 4,
+          "unit": "tbsp"
+        },
+        {
+          "itemId": "thyme",
+          "quantity": "3/4",
+          "unit": "tsp",
+          "label": "fresh thyme, or less dried thyme"
+        },
+        {
+          "itemId": "chicken-spices",
+          "quantity": "3/4",
+          "unit": "tsp",
+          "label": "garlic powder"
+        },
+        {
+          "itemId": "white-rice",
+          "quantity": "3/2",
+          "unit": "cup-cooked"
+        },
+        {
+          "itemId": "mixed-vegetables",
+          "quantity": 400,
+          "unit": "g"
+        },
+        {
+          "itemId": "olive-oil",
+          "quantity": null,
+          "unit": "tbsp",
+          "label": "Cooking spray",
+          "asNeeded": true,
+          "format": "{label}"
+        },
+        {
+          "itemId": "salt-pepper",
+          "quantity": null,
+          "unit": "tsp",
+          "label": "Salt and pepper",
+          "asNeeded": true,
+          "format": "{label}"
+        }
+      ],
+      "steps": [
+        "Heat oven to 400\u00b0F. Simmer balsamic until reduced, then stir in preserves and thyme.",
+        "Season trimmed pork with garlic, salt and pepper. Sear in an oven-safe skillet with cooking spray; add half the glaze.",
+        "Roast until 145\u00b0F, then rest 10 minutes before slicing. Cook rice and mixed vegetables separately.",
+        "Divide pork, rice, vegetables and remaining glaze into {portionsWord} portions."
+      ],
+      "note": "Same pork, glaze and vegetables as the larger bowl; rice is reduced to \u00be cup cooked per serving. Estimate: about 595 calories / 56 g protein.",
+      "source": {
+        "label": "Adapted from Skinnytaste",
+        "url": "https://www.skinnytaste.com/pork-tenderloin-with-cherry-sauce/"
       }
     }
   },
@@ -2658,17 +3235,6 @@
         }
       ]
     },
-    "protein-powder": {
-      "label": "Protein powder",
-      "group": "Protein & dairy",
-      "unit": "g-protein",
-      "units": {
-        "g-protein": 1
-      },
-      "shopping": {
-        "format": "Enough for {quantity} g total protein"
-      }
-    },
     "fairlife": {
       "label": "Fairlife protein shakes",
       "group": "Protein & dairy",
@@ -2677,7 +3243,7 @@
         "count": 1
       },
       "shopping": {
-        "asNeeded": "1 per workout day · 30 g / 150 cal"
+        "asNeeded": "1 per workout day \u00b7 30 g / 150 cal"
       }
     },
     "apples": {
@@ -2970,17 +3536,6 @@
       },
       "shopping": {}
     },
-    "oyster-sauce": {
-      "label": "Oyster sauce",
-      "group": "Pantry check",
-      "unit": "tbsp",
-      "units": {
-        "tbsp": 1,
-        "tsp": "1/3",
-        "cup": 16
-      },
-      "shopping": {}
-    },
     "soy-sauce": {
       "label": "Soy sauce",
       "group": "Pantry check",
@@ -3037,7 +3592,7 @@
       "shopping": {
         "roundTo": "1/3",
         "suffix": "+ cooking spray",
-        "asNeeded": "Cooking spray · check pantry"
+        "asNeeded": "Cooking spray \u00b7 check pantry"
       }
     },
     "sesame-oil": {
@@ -3295,7 +3850,7 @@
       }
     },
     "jalapeno": {
-      "label": "Jalapeño",
+      "label": "Jalape\u00f1o",
       "group": "Produce & frozen",
       "unit": "g",
       "units": {
@@ -3457,6 +4012,173 @@
       "shopping": {
         "suffix": "raw weight"
       }
+    },
+    "pbfit": {
+      "label": "PBfit Classic peanut butter powder",
+      "group": "Grains, cans & nuts",
+      "unit": "g",
+      "units": {
+        "g": 1,
+        "tbsp": 8
+      },
+      "shopping": {
+        "format": "{quantity} g total",
+        "suffix": "2 tbsp = 16 g; check your jar label"
+      }
+    },
+    "shake-milk": {
+      "label": "Fairlife fat-free (0%) milk",
+      "group": "Protein & dairy",
+      "unit": "fl oz",
+      "units": {
+        "fl oz": 1,
+        "cup": 8
+      },
+      "shopping": {
+        "format": "{quantity} fl oz total",
+        "suffix": "for PBfit shakes, additional to 2% latte milk"
+      }
+    },
+    "pineapple-cups": {
+      "label": "Dole pineapple tidbits in 100% juice",
+      "group": "Grains, cans & nuts",
+      "unit": "count",
+      "units": {
+        "count": 1
+      },
+      "shopping": {
+        "format": "{quantity} \u00d7 4 oz cups",
+        "suffix": "113 g each; includes juice, not syrup"
+      }
+    },
+    "kind-bars": {
+      "label": "KIND Dark Chocolate Nuts & Sea Salt bars",
+      "group": "Grains, cans & nuts",
+      "unit": "count",
+      "units": {
+        "count": 1
+      },
+      "shopping": {
+        "format": "{quantity} \u00d7 40 g bar",
+        "suffix": "40 g full-size bars; 190 cal / 6 g protein assumed"
+      }
+    },
+    "oikos-cups": {
+      "label": "Oikos Triple Zero vanilla yogurt",
+      "group": "Protein & dairy",
+      "unit": "count",
+      "units": {
+        "count": 1
+      },
+      "shopping": {
+        "format": "{quantity} \u00d7 5.3 oz cups",
+        "suffix": "150 g each; 80 cal / 15 g protein assumed"
+      }
+    },
+    "babybel": {
+      "label": "Mini Babybel Original cheese",
+      "group": "Protein & dairy",
+      "unit": "count",
+      "units": {
+        "count": 1
+      },
+      "shopping": {
+        "format": "{quantity} \u00d7 20 g cheese",
+        "suffix": "20 g each; 70 cal / 4 g protein assumed"
+      }
+    },
+    "chili-black-beans": {
+      "label": "Black beans for taco chili",
+      "group": "Grains, cans & nuts",
+      "unit": "can",
+      "units": {
+        "can": 1
+      },
+      "shopping": {
+        "packSize": 1,
+        "packLabel": "15.5 oz can",
+        "showRequired": true,
+        "suffix": "measure the listed fraction, then drain"
+      }
+    },
+    "kidney-beans": {
+      "label": "Kidney beans for taco chili",
+      "group": "Grains, cans & nuts",
+      "unit": "can",
+      "units": {
+        "can": 1
+      },
+      "shopping": {
+        "packSize": 1,
+        "packLabel": "15.5 oz can",
+        "showRequired": true,
+        "suffix": "measure the listed fraction, then drain"
+      }
+    },
+    "frozen-corn": {
+      "label": "Frozen corn kernels",
+      "group": "Produce & frozen",
+      "unit": "oz",
+      "units": {
+        "oz": 1,
+        "g": "20/567"
+      },
+      "shopping": {
+        "roundTo": 1,
+        "suffix": "plain, no sauce"
+      }
+    },
+    "chili-tomatoes": {
+      "label": "Diced tomatoes with green chiles",
+      "group": "Grains, cans & nuts",
+      "unit": "oz",
+      "units": {
+        "oz": 1
+      },
+      "shopping": {
+        "packSize": 10,
+        "packLabel": "10 oz can",
+        "showRequired": true
+      }
+    },
+    "green-chiles": {
+      "label": "Chopped green chiles",
+      "group": "Grains, cans & nuts",
+      "unit": "oz",
+      "units": {
+        "oz": 1
+      },
+      "shopping": {
+        "packSize": 4,
+        "packLabel": "4 oz can",
+        "showRequired": true
+      }
+    },
+    "taco-seasoning": {
+      "label": "Reduced-sodium taco seasoning",
+      "group": "Pantry check",
+      "unit": "packet",
+      "units": {
+        "packet": 1
+      },
+      "shopping": {
+        "packSize": 1,
+        "packLabel": "packet",
+        "showRequired": true
+      }
+    },
+    "mushroom-sauce": {
+      "label": "Vegetarian mushroom stir-fry sauce",
+      "group": "Pantry check",
+      "unit": "tbsp",
+      "units": {
+        "tbsp": 1,
+        "tsp": "1/3",
+        "cup": 16
+      },
+      "shopping": {
+        "suffix": "vegetarian oyster-sauce alternative; check the label"
+      }
     }
   },
   "measurementNotes": [
@@ -3466,6 +4188,12 @@
     "Shopping amounts round up to the configured increment or package size. Fraction strings such as \"2/3\" keep quantity calculations exact.",
     "Breakfast assumes two lattes per person daily, each using 6 fl oz plain 2% ultra-filtered milk. Nutrition estimates use Fairlife: 120 calories and 13 g protein per 8 fl oz. MooTopia labels may differ; no syrup or added sugar is included. Fairlife milk label: https://fairlife.com/ultra-filtered-milk/reduced-fat-2-percent-milk/",
     "New variation nutrition uses source recipe cards with rounded portions. Mixed vegetables are estimated at 50 calories per 100 g instead of broccoli at about 34. White rice shopping uses the same 180 g dry per cup and 3:1 volume yield assumption; follow your package. Meat gram conversion uses 454 g per pound.",
-    "New breakfast estimates count both lattes plus every measured food, topping and cooking fat. Rolled oats for pancakes are separate from steel-cut oats for porridge. English muffins assume about 130 calories each and corn tortillas about 50 each; check labels. New breakfasts contain no protein powder. Cooking spray is treated as negligible; count it if using a measurable amount."
+    "New breakfast estimates count both lattes plus every measured food, topping and cooking fat. Rolled oats for pancakes are separate from steel-cut oats for porridge. English muffins assume about 130 calories each and corn tortillas about 50 each; check labels. New breakfasts contain no protein powder. Cooking spray is treated as negligible; count it if using a measurable amount.",
+    "PBfit shake estimates: PBfit Classic 60 calories / 8 g protein per 2 tbsp (16 g), https://www.pbfit.com/products/pbfit-classic ; Fairlife fat-free 80 calories / 13 g per 8 fl oz, https://fairlife.com/ultra-filtered-milk/fat-free-skim-milk/ . Some PBfit jars show 70 calories: add 10 calories per 16 g serving if yours does. Skim milk for shakes is additional to 2% latte milk.",
+    "Pineapple bowls use one entire 4 oz (113 g) Dole pineapple-in-juice cup per serving, counted at 60 calories / less than 1 g protein including juice, https://www.dolesunshine.com/us/en/products/pineapple-paradise-in-100-pineapple-juice-16oz/ . Cottage cheese assumes about 90 calories / 14 g protein per 110 g. Do not substitute syrup-packed fruit without recalculating.",
+    "Packaged snack assumptions: KIND Dark Chocolate Nuts & Sea Salt 40 g bar = 190 calories / 6 g protein, https://www.kindsnacks.com/products/nut-bar/dark-chocolate-nuts-sea-salt ; Oikos Triple Zero vanilla 150 g cup = 80 calories / 15 g protein, https://www.oikos.com/all-products/triple-zero/product/vanilla-multipack/ ; Mini Babybel Original 20 g piece = 70 calories / 4 g protein, https://babybel.com/product/babybel-original-cheese/ . Labels and sizes change; use the actual package.",
+    "Slow-cooker chili scales the linked Skinnytaste recipe (220 calories / 21 g protein per small source portion): two source portions plus 100 g Greek yogurt for the smaller dinner; three source portions plus half a cup of cooked rice for the larger dinner. Bean can fractions refer to contents before draining; finished batches are divided evenly. Shopping covers selected portions, not a doubled freezer batch.",
+    "No fish or seafood dishes are included. Vegetarian mushroom stir-fry sauce replaces oyster sauce in the existing honey-garlic chicken; check its label and adjust nutrition if your sauce differs.",
+    "Cottage-cheese bowl label reference: Good Culture Simply 2% low-fat classic, 90 calories / 14 g protein per 110 g, https://goodculture.com/product/simply-cottage-cheese-24-oz-lowfat-classic/ . Other tubs may differ; bowls retain the label-based estimates stated in their notes."
   ]
 }
