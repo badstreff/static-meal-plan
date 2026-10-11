@@ -1,7 +1,7 @@
 (() => {
   const storageKey = 'daily-plate-palette-v1';
   const synopsis = 'https://digitalsynopsis.com/design/minimal-web-color-palettes-combination-hex-code/';
-  // Names describe these choices; the swatches are the exact source colors.
+  // Source palettes keep their original swatches; Midnight is made for this site.
   const palettes = [
     {id: 'ds-1', name: '1 · Peach & dusk', source: 'Digital Synopsis', url: synopsis, colors: ['#F8B195', '#F67280', '#C06C84', '#6C5B7B', '#355C7D'], paper: 0, accent: 4, shadow: 1},
     {id: 'ds-2', name: '2 · Coral & charcoal', source: 'Digital Synopsis', url: synopsis, colors: ['#99B898', '#FECEAB', '#FF847C', '#E84A5F', '#2A363B'], paper: 1, accent: 3, shadow: 0},
@@ -14,7 +14,8 @@
     {id: 'ch-sage', name: 'Sage & cream', source: 'Color Hunt', url: 'https://colorhunt.co/palette/f8f3d9ebe5c2b9b28a504b38', colors: ['#F8F3D9', '#EBE5C2', '#B9B28A', '#504B38'], paper: 0, accent: 3, shadow: 2},
     {id: 'ch-coastal', name: 'Coastal blue', source: 'Color Hunt', url: 'https://colorhunt.co/palette/89a8b2b3c8cfe5e1daf1f0e8', colors: ['#89A8B2', '#B3C8CF', '#E5E1DA', '#F1F0E8'], paper: 3, accent: 0, shadow: 1},
     {id: 'ch-lavender', name: 'Lavender & cream', source: 'Color Hunt', url: 'https://colorhunt.co/palette/fff2e0c0c9eea2aadb898ac4', colors: ['#FFF2E0', '#C0C9EE', '#A2AADB', '#898AC4'], paper: 0, accent: 3, shadow: 1},
-    {id: 'ch-terracotta', name: 'Terracotta & linen', source: 'Color Hunt', url: 'https://colorhunt.co/palette/f8ede3dfd3c3d0b8a88d493a', colors: ['#F8EDE3', '#DFD3C3', '#D0B8A8', '#8D493A'], paper: 0, accent: 3, shadow: 2}
+    {id: 'ch-terracotta', name: 'Terracotta & linen', source: 'Color Hunt', url: 'https://colorhunt.co/palette/f8ede3dfd3c3d0b8a88d493a', colors: ['#F8EDE3', '#DFD3C3', '#D0B8A8', '#8D493A'], paper: 0, accent: 3, shadow: 2},
+    {id: 'dp-midnight', name: 'Midnight · dark', source: 'The Daily Plate', url: 'https://github.com/badstreff/static-meal-plan', colors: ['#141C21', '#263C3E', '#9AC9C2', '#C7B997', '#E8EEEA'], paper: 0, accent: 2, shadow: 1, mode: 'dark'}
   ];
   function getPalette(id) {
     return palettes.find(palette => palette.id === id) || palettes[6];
@@ -74,6 +75,13 @@
       '--accent-soft': '#e5fcc2', '--shadow': '#9de0ad', '--target-line': '#83afaa',
       '--stripe-1': '#45ada8', '--stripe-2': '#547980', '--stripe-3': '#9de0ad', '--stripe-4': '#594f4f'
     });
+    if (palette.id === 'dp-midnight') Object.assign(tokens, {
+      '--paper': '#141c21', '--white': '#1c272d', '--ink': '#e8eeea',
+      '--olive': '#9ac9c2', '--muted': '#aebcbe', '--line': '#64767a',
+      '--pale': '#263c3e', '--rust': '#c7b997', '--accent-ink': '#141c21',
+      '--accent-soft': '#203238', '--shadow': '#0e1317', '--target-line': '#577f7a',
+      '--stripe-1': '#9ac9c2', '--stripe-2': '#c7b997', '--stripe-3': '#748eab', '--stripe-4': '#a78fae'
+    });
     return tokens;
   }
   if (typeof module !== 'undefined' && module.exports) {
@@ -87,6 +95,7 @@
   function paint(palette) {
     Object.entries(themeTokens(palette)).forEach(([name, color]) => document.documentElement.style.setProperty(name, color));
     document.documentElement.dataset.palette = palette.id;
+    document.documentElement.style.colorScheme = palette.mode === 'dark' ? 'dark' : 'light';
     document.querySelector('meta[name="theme-color"]')?.setAttribute('content', themeTokens(palette)['--paper']);
   }
   // Runs in the head so a saved choice is applied before the page is painted.
@@ -97,7 +106,7 @@
     const select = document.querySelector('#palette-select');
     const swatches = document.querySelector('[data-palette-swatches]');
     const source = document.querySelector('[data-palette-source]');
-    ['Digital Synopsis', 'Color Hunt'].forEach(name => {
+    [...new Set(palettes.map(palette => palette.source))].forEach(name => {
       const group = document.createElement('optgroup');
       group.label = name;
       palettes.filter(palette => palette.source === name).forEach(palette => {

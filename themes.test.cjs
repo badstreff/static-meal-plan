@@ -16,11 +16,26 @@ function contrast(a, b) {
   return (values[0] + 0.05) / (values[1] + 0.05);
 }
 
-test('includes all eight numbered palettes and four Color Hunt choices', () => {
-  assert.equal(themes.palettes?.length, 12, 'Palette catalog has not been added');
+test('includes the existing palettes plus one optional dark choice', () => {
+  assert.equal(themes.palettes?.length, 13, 'Palette catalog is missing a choice');
   assert.equal(themes.palettes.filter(p => p.source === 'Digital Synopsis').length, 8);
   assert.equal(themes.palettes.filter(p => p.source === 'Color Hunt').length, 4);
-  assert.equal(new Set(themes.palettes.map(p => p.id)).size, 12);
+  assert.equal(new Set(themes.palettes.map(p => p.id)).size, 13);
+});
+
+test('the saved dark palette uses dark surfaces and bright readable text', () => {
+  const palette = themes.readPalette({getItem: () => 'dp-midnight'});
+  assert.equal(palette.id, 'dp-midnight', 'The dark preference must survive a reload');
+  assert.equal(palette.mode, 'dark');
+  assert.equal(themes.getPalette().id, 'ds-7', 'Dark mode must remain optional');
+  const tokens = themes.themeTokens(palette);
+  for (const background of ['--paper', '--white', '--pale']) {
+    assert.ok(luminance(tokens[background]) < 0.08, `${background} must stay dark`);
+  }
+  assert.ok(luminance(tokens['--ink']) > 0.65, 'Body text must be bright on dark surfaces');
+  for (const background of ['--paper', '--white']) {
+    assert.ok(contrast(tokens['--line'], tokens[background]) >= 3, `Control borders on ${background}`);
+  }
 });
 
 test('unknown or unavailable saved preferences fall back to palette 7', () => {

@@ -1,6 +1,6 @@
 # The Daily Plate
 
-A static meal plan with daily recipe guides, a calculated grocery checklist, print styles, and 12 saved color palettes.
+A static meal plan with daily recipe guides, a calculated grocery checklist, print styles, and 13 saved color palettes.
 
 Vibe coded with chatgpt, if it turns out to be useful I will put some more work into it.
 
@@ -142,4 +142,4 @@ Regression tests use a fixed catalog in `scripts/fixtures/meal-plan.json`; leave
 
 Schema version is `1`. Validation rejects unsupported versions, duplicate JSON keys, missing slots/references, invalid units/quantities, mismatched recipe kinds, unsafe source URLs, and conflicting recipe IDs. Inactive plans are also validated.
 
-Palettes come from [Digital Synopsis](https://digitalsynopsis.com/design/minimal-web-color-palettes-combination-hex-code/) and [Color Hunt](https://colorhunt.co/). Palette 7 is the default; swatches show the original colors. Recipe source links remain beside the guides.
+Palettes come from [Digital Synopsis](https://digitalsynopsis.com/design/minimal-web-color-palettes-combination-hex-code/) and [Color Hunt](https://colorhunt.co/). Palette 7 is the default; swatches show the original colors. The optional **Midnight · dark** palette adds charcoal surfaces, soft white text and mint accents. It saves through the same switcher, carries across plans and uses dark native controls; printing stays light. Recipe source links remain beside the guides.
