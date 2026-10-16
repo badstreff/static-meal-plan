@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "activePlanId": "four-day-cut",
+  "activePlanId": "four-day-2400-variety",
   "site": {
     "brand": "THE DAILY PLATE",
     "heroHeading": "Food sorted.",
@@ -319,6 +319,39 @@
         "nutritionNote": "Estimated regular day: 2,387 calories, 207.6 g protein, 223.2 g carbs and 77.7 g fat. Workout version: 2,377 calories. Both lattes are included. Restaurant estimates sum official standard portions checked October 11, 2026; actual scoops vary. All daily totals use the same 35/35/30 tolerance as the other plans.",
         "footer": "A little less effort. Still a plan."
       }
+    },
+    "four-day-2400-variety": {
+      "title": "Meatball subs, Dijon pork & chicken pasta",
+      "people": 1,
+      "targets": {
+        "calories": 2400,
+        "proteinGrams": 210,
+        "macroPercent": {
+          "carbs": 35,
+          "protein": 35,
+          "fat": 30
+        }
+      },
+      "days": [
+        "four-day-2400-variety-day-01",
+        "four-day-2400-variety-day-02",
+        "four-day-2400-variety-day-03",
+        "four-day-2400-variety-day-04"
+      ],
+      "extraItems": [],
+      "repeatLimitOverrides": {
+        "breakfast": 4,
+        "snack": 4
+      },
+      "copy": {
+        "heroDescription": "Four days around 2,400 calories: meatball subs and lemon chicken on days 1 and 3; Dijon pork and chicken pasta on days 2 and 4. Apple oats and two lattes every morning.",
+        "planAside": "Two cook days. Four meals. Easy repeats.",
+        "recipeIntro": "Breakfast is prepared fresh. Each lunch and dinner recipe is scaled to two portions: one to eat and one to refrigerate for two days later.",
+        "workoutNote": "The daily snack already includes one Fairlife Nutrition Plan shake and 28 g almonds. Use the same snack on rest and training days; the breakfast side shake is separate.",
+        "shoppingNote": "Calculated for four days and one person, including four Fairlife shakes, 112 g almonds and 48 fl oz latte milk. Rice is listed as 250 g cooked, approximately 84 g dry; buy dry rice and follow its package yield.",
+        "storageNote": "Cook meatball subs and lemon chicken on day 1 for days 1 and 3. Cook pork and chicken pasta on day 2 for days 2 and 4. Refrigerate promptly. Keep rolls and yogurt sauce separate; reheat individual cooked portions to 165°F / 74°C.",
+        "nutritionNote": "Estimated daily calories: 2,403.0, 2,397.0, 2,403.0, 2,397.0. Both lattes, the separate breakfast shake and the Fairlife-and-almond snack are included. Ingredient-based portions are slightly smaller for rice, pasta and oil than the draft estimates to stay near 2,400 calories. All days are within three percentage points of 35% carbs / 35% protein / 30% fat. Breakfast and snack repeat every day by request. Brands and cooking yields vary."
+      }
     }
   },
   "groceryGroups": [
@@ -535,6 +568,38 @@
         "lunch": "fatigue-panda-2400",
         "dinner": "fatigue-pantry-rice-2400",
         "snack": "four-day-1800-kind-yogurt"
+      }
+    },
+    "four-day-2400-variety-day-01": {
+      "meals": {
+        "breakfast": "variety-oats",
+        "lunch": "variety-meatball-sub",
+        "dinner": "variety-lemon-chicken",
+        "snack": "variety-shake-almonds"
+      }
+    },
+    "four-day-2400-variety-day-02": {
+      "meals": {
+        "breakfast": "variety-oats",
+        "lunch": "variety-dijon-pork",
+        "dinner": "variety-chicken-pasta",
+        "snack": "variety-shake-almonds"
+      }
+    },
+    "four-day-2400-variety-day-03": {
+      "meals": {
+        "breakfast": "variety-oats",
+        "lunch": "variety-meatball-sub",
+        "dinner": "variety-lemon-chicken",
+        "snack": "variety-shake-almonds"
+      }
+    },
+    "four-day-2400-variety-day-04": {
+      "meals": {
+        "breakfast": "variety-oats",
+        "lunch": "variety-dijon-pork",
+        "dinner": "variety-chicken-pasta",
+        "snack": "variety-shake-almonds"
       }
     }
   },
@@ -6420,6 +6485,437 @@
         "label": "Canned chicken label reference",
         "url": "https://www.campbells.com/swanson/products/premium-poultry/white-premium-chunk-chicken-breast-with-rib-meat-in-water/"
       }
+    },
+    "variety-oats": {
+      "title": "Apple–brown sugar oats + two lattes",
+      "shortTitle": "Apple–brown sugar oats + two lattes",
+      "kind": "breakfast",
+      "preparation": "fresh",
+      "servings": 1,
+      "prepTime": "Cook to package",
+      "nutrition": {
+        "calories": 694,
+        "carbsGrams": 85.0,
+        "proteinGrams": 47.5,
+        "fatGrams": 20.1
+      },
+      "description": "The approved apple oats breakfast, with a separate water-based protein shake and two lattes.",
+      "ingredients": [
+        {
+          "itemId": "oats",
+          "quantity": 60,
+          "unit": "g",
+          "label": "dry steel-cut oats; cook in water"
+        },
+        {
+          "itemId": "apples",
+          "quantity": 1,
+          "unit": "count"
+        },
+        {
+          "itemId": "brown-sugar",
+          "quantity": 2,
+          "unit": "tsp"
+        },
+        {
+          "itemId": "variety-butter",
+          "quantity": 10,
+          "unit": "g"
+        },
+        {
+          "itemId": "variety-protein",
+          "quantity": 1,
+          "unit": "portion",
+          "label": "powder providing 20 g protein; mix separately with water"
+        },
+        {
+          "itemId": "latte-milk",
+          "quantity": 12,
+          "unit": "fl oz",
+          "label": "2% ultra-filtered milk; split into two 6 fl oz lattes"
+        },
+        {
+          "itemId": "coffee",
+          "quantity": null,
+          "unit": "portion",
+          "asNeeded": true,
+          "label": "Coffee or espresso",
+          "format": "{label}"
+        },
+        {
+          "itemId": "spices",
+          "quantity": null,
+          "unit": "tsp",
+          "asNeeded": true,
+          "label": "Cinnamon, optional",
+          "format": "{label}"
+        }
+      ],
+      "steps": [
+        "Cook oats in water according to the package. Add chopped apple while cooking or at the end.",
+        "Stir in the brown sugar, butter and cinnamon.",
+        "Mix the listed portion of protein powder with water and drink separately. The portion must provide 20 g protein; it is not 20 g of powder.",
+        "Make two lattes per person, each with 6 fl oz of the listed milk and coffee or espresso."
+      ],
+      "note": "Includes both lattes, 12 fl oz milk total. No added latte sugar or syrup. This plan uses the approved protein-powder side shake with water, rather than the PBfit/skim side shake used in older plans. Check the powder and MooTopia labels if different.",
+      "source": {
+        "label": "Original recipe for this plan",
+        "url": "https://github.com/badstreff/static-meal-plan"
+      },
+      "family": "variety-oats"
+    },
+    "variety-meatball-sub": {
+      "title": "Lean meatball sub & zucchini",
+      "shortTitle": "Lean meatball sub & zucchini",
+      "kind": "lunch",
+      "preparation": "batch",
+      "servings": 1,
+      "prepTime": "About 30 min",
+      "nutrition": {
+        "calories": 698,
+        "carbsGrams": 52.6,
+        "proteinGrams": 71.3,
+        "fatGrams": 22.9
+      },
+      "description": "Lean beef meatballs, marinara and melted mozzarella on an Italian roll, with zucchini.",
+      "ingredients": [
+        {
+          "itemId": "variety-beef-96",
+          "quantity": 250,
+          "unit": "g"
+        },
+        {
+          "itemId": "variety-rolls",
+          "quantity": 1,
+          "unit": "count"
+        },
+        {
+          "itemId": "variety-marinara",
+          "quantity": 100,
+          "unit": "g"
+        },
+        {
+          "itemId": "variety-mozzarella",
+          "quantity": 28,
+          "unit": "g"
+        },
+        {
+          "itemId": "zucchini",
+          "quantity": 150,
+          "unit": "g"
+        },
+        {
+          "itemId": "salt-pepper",
+          "quantity": null,
+          "unit": "tsp",
+          "asNeeded": true,
+          "label": "Salt and pepper, to taste",
+          "format": "{label}"
+        },
+        {
+          "itemId": "spices",
+          "quantity": null,
+          "unit": "tsp",
+          "asNeeded": true,
+          "label": "Garlic powder, paprika and dried herbs, to taste",
+          "format": "{label}"
+        }
+      ],
+      "steps": [
+        "Heat the oven to 425°F / 220°C. Season the beef with garlic powder and Italian herbs, then form meatballs. No egg or breadcrumbs are needed.",
+        "Bake meatballs on parchment until the centers reach 160°F / 71°C. Roast sliced zucchini alongside on parchment without added oil.",
+        "Warm the marinara, add the meatballs, then fill the split rolls. Top with mozzarella and broil briefly until melted.",
+        "For leftovers, store meatballs and sauce separately from rolls. Reheat filling to 165°F / 74°C before assembling; serve zucchini alongside."
+      ],
+      "note": "Quantities are per serving before scaling. Meat and potatoes are weighed raw; rice is explicitly weighed cooked and pasta dry. Divide batch food and sauces equally. Nutrition is calculated from ingredient estimates; use actual brand labels.",
+      "source": {
+        "label": "Original recipe for this plan",
+        "url": "https://github.com/badstreff/static-meal-plan"
+      },
+      "family": "variety-meatball-sub"
+    },
+    "variety-lemon-chicken": {
+      "title": "Lemon-garlic chicken rice bowl",
+      "shortTitle": "Lemon-garlic chicken rice bowl",
+      "kind": "dinner",
+      "preparation": "batch",
+      "servings": 1,
+      "prepTime": "About 30 min",
+      "nutrition": {
+        "calories": 697,
+        "carbsGrams": 60.4,
+        "proteinGrams": 62.1,
+        "fatGrams": 22.3
+      },
+      "description": "Chicken thighs with rice, mixed vegetables and a lemon-garlic yogurt sauce.",
+      "ingredients": [
+        {
+          "itemId": "chicken-thighs",
+          "quantity": 220,
+          "unit": "g"
+        },
+        {
+          "itemId": "variety-cooked-rice",
+          "quantity": 125,
+          "unit": "g",
+          "label": "plain cooked rice; approximately 42 g dry before cooking"
+        },
+        {
+          "itemId": "mixed-vegetables",
+          "quantity": 150,
+          "unit": "g"
+        },
+        {
+          "itemId": "yogurt",
+          "quantity": 100,
+          "unit": "g"
+        },
+        {
+          "itemId": "variety-oil",
+          "quantity": 6,
+          "unit": "g"
+        },
+        {
+          "itemId": "lemons",
+          "quantity": 1,
+          "unit": "tbsp",
+          "label": "lemon juice"
+        },
+        {
+          "itemId": "garlic",
+          "quantity": 1,
+          "unit": "clove"
+        },
+        {
+          "itemId": "salt-pepper",
+          "quantity": null,
+          "unit": "tsp",
+          "asNeeded": true,
+          "label": "Salt and pepper, to taste",
+          "format": "{label}"
+        },
+        {
+          "itemId": "spices",
+          "quantity": null,
+          "unit": "tsp",
+          "asNeeded": true,
+          "label": "Garlic powder, paprika and dried herbs, to taste",
+          "format": "{label}"
+        }
+      ],
+      "steps": [
+        "Season chicken with paprika, salt and pepper. Coat with the measured olive oil and roast or pan-cook until the thickest part reaches 165°F / 74°C.",
+        "Cook enough dry rice to yield the listed cooked weight; weigh after cooking and divide evenly. Heat the mixed vegetables.",
+        "Mix yogurt with lemon juice and finely grated garlic. Serve over chicken, rice and vegetables.",
+        "Store yogurt sauce separately. Reheat chicken, rice and vegetables to 165°F / 74°C and add cold sauce afterwards."
+      ],
+      "note": "Quantities are per serving before scaling. Meat and potatoes are weighed raw; rice is explicitly weighed cooked and pasta dry. Divide batch food and sauces equally. Nutrition is calculated from ingredient estimates; use actual brand labels.",
+      "source": {
+        "label": "Original recipe for this plan",
+        "url": "https://github.com/badstreff/static-meal-plan"
+      },
+      "family": "variety-lemon-chicken"
+    },
+    "variety-dijon-pork": {
+      "title": "Dijon pork & roasted potatoes",
+      "shortTitle": "Dijon pork & roasted potatoes",
+      "kind": "lunch",
+      "preparation": "batch",
+      "servings": 1,
+      "prepTime": "About 40 min",
+      "nutrition": {
+        "calories": 728,
+        "carbsGrams": 65.2,
+        "proteinGrams": 65.5,
+        "fatGrams": 23.0
+      },
+      "description": "Dijon and garlic pork tenderloin with roasted potatoes and mixed vegetables.",
+      "ingredients": [
+        {
+          "itemId": "pork-tenderloin",
+          "quantity": 250,
+          "unit": "g"
+        },
+        {
+          "itemId": "potatoes",
+          "quantity": 250,
+          "unit": "g"
+        },
+        {
+          "itemId": "mixed-vegetables",
+          "quantity": 150,
+          "unit": "g"
+        },
+        {
+          "itemId": "variety-oil",
+          "quantity": 14,
+          "unit": "g"
+        },
+        {
+          "itemId": "variety-dijon",
+          "quantity": 10,
+          "unit": "g"
+        },
+        {
+          "itemId": "garlic",
+          "quantity": 1,
+          "unit": "clove"
+        },
+        {
+          "itemId": "salt-pepper",
+          "quantity": null,
+          "unit": "tsp",
+          "asNeeded": true,
+          "label": "Salt and pepper, to taste",
+          "format": "{label}"
+        },
+        {
+          "itemId": "spices",
+          "quantity": null,
+          "unit": "tsp",
+          "asNeeded": true,
+          "label": "Garlic powder, paprika and dried herbs, to taste",
+          "format": "{label}"
+        }
+      ],
+      "steps": [
+        "Heat oven to 425°F / 220°C. Dice potatoes and toss with half the measured oil, salt and rosemary. Roast for about 15 minutes.",
+        "Rub pork with Dijon, minced garlic, herbs and the remaining oil. Add to the tray and cook until its center reaches 145°F / 63°C; rest at least 3 minutes before slicing. Continue potatoes until tender.",
+        "Cook the mixed vegetables and divide all food equally into the listed portions.",
+        "Refrigerate the second portion for day 4. Reheat leftovers to 165°F / 74°C, adding a splash of water to keep pork moist."
+      ],
+      "note": "Quantities are per serving before scaling. Meat and potatoes are weighed raw; rice is explicitly weighed cooked and pasta dry. Divide batch food and sauces equally. Nutrition is calculated from ingredient estimates; use actual brand labels.",
+      "source": {
+        "label": "Original recipe for this plan",
+        "url": "https://github.com/badstreff/static-meal-plan"
+      },
+      "family": "variety-dijon-pork"
+    },
+    "variety-chicken-pasta": {
+      "title": "Garlic-Parmesan chicken pasta",
+      "shortTitle": "Garlic-Parmesan chicken pasta",
+      "kind": "dinner",
+      "preparation": "batch",
+      "servings": 1,
+      "prepTime": "About 30 min",
+      "nutrition": {
+        "calories": 661,
+        "carbsGrams": 48.5,
+        "proteinGrams": 63.8,
+        "fatGrams": 23.3
+      },
+      "description": "Regular pasta with chicken breast, zucchini and a garlic-butter Parmesan sauce. No shrimp.",
+      "ingredients": [
+        {
+          "itemId": "chicken-breast",
+          "quantity": 220,
+          "unit": "g"
+        },
+        {
+          "itemId": "variety-pasta",
+          "quantity": 55,
+          "unit": "g",
+          "label": "dry regular wheat pasta"
+        },
+        {
+          "itemId": "zucchini",
+          "quantity": 150,
+          "unit": "g"
+        },
+        {
+          "itemId": "variety-butter",
+          "quantity": 10,
+          "unit": "g"
+        },
+        {
+          "itemId": "variety-oil",
+          "quantity": 4,
+          "unit": "g"
+        },
+        {
+          "itemId": "variety-parmesan",
+          "quantity": 15,
+          "unit": "g"
+        },
+        {
+          "itemId": "garlic",
+          "quantity": 1,
+          "unit": "clove"
+        },
+        {
+          "itemId": "lemons",
+          "quantity": 1,
+          "unit": "tbsp",
+          "label": "lemon juice"
+        },
+        {
+          "itemId": "salt-pepper",
+          "quantity": null,
+          "unit": "tsp",
+          "asNeeded": true,
+          "label": "Salt and pepper, to taste",
+          "format": "{label}"
+        },
+        {
+          "itemId": "spices",
+          "quantity": null,
+          "unit": "tsp",
+          "asNeeded": true,
+          "label": "Garlic powder, paprika and dried herbs, to taste",
+          "format": "{label}"
+        }
+      ],
+      "steps": [
+        "Boil the pasta according to its package; reserve a cup of cooking water before draining.",
+        "Slice and season chicken. Sauté in the measured olive oil until cooked to 165°F / 74°C, then set aside.",
+        "Cook sliced zucchini and minced garlic in the same pan, adding a splash of water if needed.",
+        "Return chicken and pasta to the pan. Add butter, Parmesan, lemon juice, parsley and enough pasta water to lightly coat everything. Divide evenly.",
+        "Refrigerate the second portion for day 4. Reheat to 165°F / 74°C with a splash of water to loosen the sauce."
+      ],
+      "note": "Quantities are per serving before scaling. Meat and potatoes are weighed raw; rice is explicitly weighed cooked and pasta dry. Divide batch food and sauces equally. Nutrition is calculated from ingredient estimates; use actual brand labels.",
+      "source": {
+        "label": "Original recipe for this plan",
+        "url": "https://github.com/badstreff/static-meal-plan"
+      },
+      "family": "variety-chicken-pasta"
+    },
+    "variety-shake-almonds": {
+      "title": "Fairlife shake & almonds",
+      "shortTitle": "Fairlife shake & almonds",
+      "kind": "snack",
+      "preparation": "assemble",
+      "servings": 1,
+      "prepTime": "Ready to eat",
+      "nutrition": {
+        "calories": 314,
+        "carbsGrams": 10.0,
+        "proteinGrams": 36.0,
+        "fatGrams": 16.5
+      },
+      "description": "One ready-to-drink protein shake with weighed almonds, without pineapple.",
+      "ingredients": [
+        {
+          "itemId": "fairlife",
+          "quantity": 1,
+          "unit": "count",
+          "label": "Fairlife Nutrition Plan shake, 30 g protein / 150 calories"
+        },
+        {
+          "itemId": "variety-almonds",
+          "quantity": 28,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        "Drink one chilled Fairlife Nutrition Plan shake and eat the measured almonds.",
+        "This is the daily snack on both rest and training days; no extra workout replacement is needed. Keep the breakfast side shake separate."
+      ],
+      "note": "Quantities are per serving before scaling. Meat and potatoes are weighed raw; rice is explicitly weighed cooked and pasta dry. Divide batch food and sauces equally. Nutrition is calculated from ingredient estimates; use actual brand labels.",
+      "source": {
+        "label": "Original recipe for this plan",
+        "url": "https://github.com/badstreff/static-meal-plan"
+      },
+      "family": "variety-shake-almonds"
     }
   },
   "items": {
@@ -8667,6 +9163,224 @@
             "fatGrams": 0
           }
         ]
+      }
+    },
+    "variety-beef-96": {
+      "label": "96% lean ground beef",
+      "group": "Protein & dairy",
+      "unit": "g",
+      "units": {
+        "g": 1
+      },
+      "shopping": {},
+      "nutrition": {
+        "quantity": 100,
+        "unit": "g",
+        "calories": 137,
+        "carbsGrams": 0,
+        "proteinGrams": 21.4,
+        "fatGrams": 5,
+        "basis": "Approximate generic ingredient reference; use actual package label."
+      }
+    },
+    "variety-rolls": {
+      "label": "Italian sub rolls (about 70 g each)",
+      "group": "Grains, cans & nuts",
+      "unit": "count",
+      "units": {
+        "count": 1
+      },
+      "shopping": {},
+      "nutrition": {
+        "quantity": 1,
+        "unit": "count",
+        "calories": 190,
+        "carbsGrams": 37,
+        "proteinGrams": 7,
+        "fatGrams": 2,
+        "basis": "Approximate generic ingredient reference; use actual package label."
+      }
+    },
+    "variety-marinara": {
+      "label": "Marinara sauce",
+      "group": "Grains, cans & nuts",
+      "unit": "g",
+      "units": {
+        "g": 1
+      },
+      "shopping": {},
+      "nutrition": {
+        "quantity": 100,
+        "unit": "g",
+        "calories": 60,
+        "carbsGrams": 10,
+        "proteinGrams": 2,
+        "fatGrams": 2,
+        "basis": "Approximate generic ingredient reference; use actual package label."
+      }
+    },
+    "variety-mozzarella": {
+      "label": "Part-skim mozzarella",
+      "group": "Protein & dairy",
+      "unit": "g",
+      "units": {
+        "g": 1
+      },
+      "shopping": {},
+      "nutrition": {
+        "quantity": 28,
+        "unit": "g",
+        "calories": 80,
+        "carbsGrams": 1,
+        "proteinGrams": 7,
+        "fatGrams": 6,
+        "basis": "Approximate generic ingredient reference; use actual package label."
+      }
+    },
+    "variety-oil": {
+      "label": "Olive oil, measured by weight",
+      "group": "Pantry check",
+      "unit": "g",
+      "units": {
+        "g": 1
+      },
+      "shopping": {},
+      "nutrition": {
+        "quantity": 14,
+        "unit": "g",
+        "calories": 124,
+        "carbsGrams": 0,
+        "proteinGrams": 0,
+        "fatGrams": 14,
+        "basis": "Approximate generic ingredient reference; use actual package label."
+      }
+    },
+    "variety-butter": {
+      "label": "Butter, measured by weight",
+      "group": "Protein & dairy",
+      "unit": "g",
+      "units": {
+        "g": 1
+      },
+      "shopping": {},
+      "nutrition": {
+        "quantity": 10,
+        "unit": "g",
+        "calories": 72,
+        "carbsGrams": 0,
+        "proteinGrams": 0,
+        "fatGrams": 8.1,
+        "basis": "Approximate generic ingredient reference; use actual package label."
+      }
+    },
+    "variety-parmesan": {
+      "label": "Parmesan, measured by weight",
+      "group": "Protein & dairy",
+      "unit": "g",
+      "units": {
+        "g": 1
+      },
+      "shopping": {},
+      "nutrition": {
+        "quantity": 15,
+        "unit": "g",
+        "calories": 60,
+        "carbsGrams": 0.6,
+        "proteinGrams": 5.4,
+        "fatGrams": 4,
+        "basis": "Approximate generic ingredient reference; use actual package label."
+      }
+    },
+    "variety-pasta": {
+      "label": "Regular wheat pasta",
+      "group": "Grains, cans & nuts",
+      "unit": "g",
+      "units": {
+        "g": 1
+      },
+      "shopping": {},
+      "nutrition": {
+        "quantity": 56,
+        "unit": "g",
+        "calories": 200,
+        "carbsGrams": 42,
+        "proteinGrams": 7,
+        "fatGrams": 1,
+        "basis": "Approximate generic ingredient reference; use actual package label."
+      }
+    },
+    "variety-almonds": {
+      "label": "Almonds, weighed",
+      "group": "Grains, cans & nuts",
+      "unit": "g",
+      "units": {
+        "g": 1
+      },
+      "shopping": {},
+      "nutrition": {
+        "quantity": 28,
+        "unit": "g",
+        "calories": 164,
+        "carbsGrams": 6,
+        "proteinGrams": 6,
+        "fatGrams": 14,
+        "basis": "Approximate generic ingredient reference; use actual package label."
+      }
+    },
+    "variety-protein": {
+      "label": "Protein powder (portion providing 20 g protein)",
+      "group": "Protein & dairy",
+      "unit": "portion",
+      "units": {
+        "portion": 1
+      },
+      "shopping": {},
+      "nutrition": {
+        "quantity": 1,
+        "unit": "portion",
+        "calories": 90,
+        "carbsGrams": 2,
+        "proteinGrams": 20,
+        "fatGrams": 0.5,
+        "basis": "Assumed powder portion providing 20 g protein: 90 calories, 2 g carbs, 0.5 g fat. Weigh the quantity specified by your label, not 20 g powder."
+      }
+    },
+    "variety-cooked-rice": {
+      "label": "Plain cooked white rice",
+      "group": "Grains, cans & nuts",
+      "unit": "g",
+      "units": {
+        "g": 1
+      },
+      "shopping": {
+        "suffix": "cooked weight; 300 g cooked is roughly 100 g dry rice"
+      },
+      "nutrition": {
+        "quantity": 100,
+        "unit": "g",
+        "calories": 130,
+        "carbsGrams": 28.2,
+        "proteinGrams": 2.7,
+        "fatGrams": 0.3,
+        "basis": "Plain cooked rice reference; grocery amounts are cooked weight. About 3 g cooked rice per 1 g dry; use package yield."
+      }
+    },
+    "variety-dijon": {
+      "label": "Dijon mustard",
+      "group": "Pantry check",
+      "unit": "g",
+      "units": {
+        "g": 1
+      },
+      "shopping": {},
+      "nutrition": {
+        "quantity": 10,
+        "unit": "g",
+        "calories": 10,
+        "carbsGrams": 1,
+        "proteinGrams": 0.5,
+        "fatGrams": 0.5,
+        "basis": "Approximate generic ingredient reference; use actual package label."
       }
     }
   },

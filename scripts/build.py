@@ -113,9 +113,13 @@ def macro_split(nutrition):
 def validate_plan_nutrition(data, plan_id, plan, policy):
     path = f'plans.{plan_id}'
     target = plan['targets'].get('macroPercent')
+    overrides = mapping(plan.get('repeatLimitOverrides', {}), f'{path}.repeatLimitOverrides')
+    for slot, limit in overrides.items():
+        if slot not in MEALS or type(limit) is not int or limit < 1:
+            fail(f'{path}.repeatLimitOverrides', 'requires known meal slots with positive integer limits')
     if policy is not None:
-        maximum = policy['maxConsecutiveSameMeal']
         for slot in MEALS:
+            maximum = overrides.get(slot, policy['maxConsecutiveSameMeal'])
             previous, consecutive = None, 0
             for number, day_id in enumerate(plan['days'], 1):
                 recipe_id = data['days'][day_id]['meals'][slot]
@@ -707,3 +711,4 @@ def main():
 
 if __name__ == '__main__':
     sys.exit(main())
+

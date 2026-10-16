@@ -18,10 +18,11 @@ All meal content lives in [`meal-plan.json`](meal-plan.json). Set its top-level 
 
 GitHub Actions validates the document, runs tests, generates the homepage and every plan page, and publishes `_site`. Invalid content stops deployment. Displaying meals and recipes does not require JavaScript or a JSON request.
 
-The catalog includes ten plans. The original four-day plan remains the default:
+The catalog includes eleven plans. The approved four-day 2,400-calorie variety plan is now the default:
 
 | Plan ID | Days | Calorie target | Estimated regular-day calories | Protein target |
 | --- | --- | --- | --- | --- |
+| `four-day-2400-variety` | 4 | 2,400 | 2,397–2,403 | 210 g |
 | `four-day-cut` | 4 | 2,400 | 2,458–2,463 | 210 g |
 | `three-day-1800` | 3 | 1,800 | 1,771–1,859 | 158 g |
 | `four-day-2000` | 4 | 2,000 | 2,020–2,054 | 175 g |
@@ -188,3 +189,10 @@ Regression tests use a fixed catalog in `scripts/fixtures/meal-plan.json`; leave
 Schema version is `1`. Validation rejects unsupported versions, duplicate JSON keys, missing slots/references, invalid units/quantities, mismatched recipe kinds, unsafe source URLs, and conflicting recipe IDs. Inactive plans are also validated.
 
 Palettes come from [Digital Synopsis](https://digitalsynopsis.com/design/minimal-web-color-palettes-combination-hex-code/) and [Color Hunt](https://colorhunt.co/). Palette 7 is the default; swatches show the original colors. The optional **Midnight · dark** palette adds charcoal surfaces, soft white text and mint accents. It saves through the same switcher, carries across plans and uses dark native controls; printing stays light. Recipe source links remain beside the guides.
+
+
+## Four-day 2,400-calorie variety plan
+
+Days 1 and 3 repeat meatball subs with zucchini and lemon-garlic chicken rice bowls. Days 2 and 4 repeat Dijon pork with potatoes and garlic-Parmesan chicken pasta. Breakfast is the approved apple oats, butter, water-based protein shake providing 20 g protein, and two 6 fl oz milk lattes. This plan uses that approved side shake rather than the PBfit/skim shake in older plans. The daily snack is one Fairlife Nutrition Plan shake plus 28 g almonds, without pineapple; it is the same on rest and training days and is included in groceries. Rice, pasta and oil portions were adjusted slightly from the draft to produce ingredient-based daily totals near 2,400 calories.
+
+The new plan explicitly declares `repeatLimitOverrides: {"breakfast": 4, "snack": 4}` to allow its requested daily repeats. Overrides accept known meal slots and positive integer limits; lunch and dinner retain the two-day guard. Existing plans retain their previous repeat limits.
