@@ -18,10 +18,11 @@ All meal content lives in [`meal-plan.json`](meal-plan.json). Set its top-level 
 
 GitHub Actions validates the document, runs tests, generates the homepage and every plan page, and publishes `_site`. Invalid content stops deployment. Displaying meals and recipes does not require JavaScript or a JSON request.
 
-The catalog includes eleven plans. The approved four-day 2,400-calorie variety plan is now the default:
+The catalog includes twelve plans. The creamy beef pasta and egg-breakfast four-day plan is now the default:
 
 | Plan ID | Days | Calorie target | Estimated regular-day calories | Protein target |
 | --- | --- | --- | --- | --- |
+| `four-day-2400-creamy-beef` | 4 | 2,400 | 2,382–2,412 | 210 g |
 | `four-day-2400-variety` | 4 | 2,400 | 2,397–2,403 | 210 g |
 | `four-day-cut` | 4 | 2,400 | 2,458–2,463 | 210 g |
 | `three-day-1800` | 3 | 1,800 | 1,771–1,859 | 158 g |
@@ -196,3 +197,9 @@ Palettes come from [Digital Synopsis](https://digitalsynopsis.com/design/minimal
 Days 1 and 3 repeat meatball subs with zucchini and lemon-garlic chicken rice bowls. Days 2 and 4 repeat Dijon pork with potatoes and garlic-Parmesan chicken pasta. Breakfast is the approved apple oats, butter, water-based protein shake providing 20 g protein, and two 6 fl oz milk lattes. This plan uses that approved side shake rather than the PBfit/skim shake in older plans. The daily snack is one Fairlife Nutrition Plan shake plus 28 g almonds, without pineapple; it is the same on rest and training days and is included in groceries. Rice, pasta and oil portions were adjusted slightly from the draft to produce ingredient-based daily totals near 2,400 calories.
 
 The new plan explicitly declares `repeatLimitOverrides: {"breakfast": 4, "snack": 4}` to allow its requested daily repeats. Overrides accept known meal slots and positive integer limits; lunch and dinner retain the two-day guard. Existing plans retain their previous repeat limits.
+
+## Creamy beef pasta and egg-breakfast plan
+
+`four-day-2400-creamy-beef` is the new default, with an A/B/A/B rotation. Days 1 and 3 pair the original apple-oat/two-latte breakfast with creamy 96/4 beef cavatappi, pork and baby potatoes, and cottage cheese/pineapple/almonds. Days 2 and 4 have three eggs, smaller oats, pineapple yogurt and two lattes, followed by chicken-and-egg fried rice, salsa chicken casserole, and a smaller yogurt/pineapple/almond snack. The snacks replace the previous Fairlife shake on both rest and training days.
+
+Groceries include **all** ingredients, including items already on hand and pantry checks; no inventory is subtracted. Totals include eight eggs, 454 g cottage cheese, 906 g Fage 0%, six pineapple cups, 48 fl oz latte milk, 454 g plain frozen baby potatoes and 284 g mixed vegetables. Rice is listed by cooked weight (700 g total), with the approximate 234 g dry equivalent clearly noted. Cavatappi is weighed dry. Use actual cottage cheese, potato and vegetable labels if different from the plain-product assumptions.

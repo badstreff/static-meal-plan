@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "activePlanId": "four-day-2400-variety",
+  "activePlanId": "four-day-2400-creamy-beef",
   "site": {
     "brand": "THE DAILY PLATE",
     "heroHeading": "Food sorted.",
@@ -352,6 +352,35 @@
         "storageNote": "Cook meatball subs and lemon chicken on day 1 for days 1 and 3. Cook pork and chicken pasta on day 2 for days 2 and 4. Refrigerate promptly. Keep rolls and yogurt sauce separate; reheat individual cooked portions to 165°F / 74°C.",
         "nutritionNote": "Estimated daily calories: 2,403.0, 2,397.0, 2,403.0, 2,397.0. Both lattes, the separate breakfast shake and the Fairlife-and-almond snack are included. Ingredient-based portions are slightly smaller for rice, pasta and oil than the draft estimates to stay near 2,400 calories. All days are within three percentage points of 35% carbs / 35% protein / 30% fat. Breakfast and snack repeat every day by request. Brands and cooking yields vary."
       }
+    },
+    "four-day-2400-creamy-beef": {
+      "title": "Creamy beef pasta, egg breakfasts & chicken casserole",
+      "people": 1,
+      "targets": {
+        "calories": 2400,
+        "proteinGrams": 210,
+        "macroPercent": {
+          "carbs": 35,
+          "protein": 35,
+          "fat": 30
+        }
+      },
+      "days": [
+        "four-day-2400-creamy-beef-day-01",
+        "four-day-2400-creamy-beef-day-02",
+        "four-day-2400-creamy-beef-day-03",
+        "four-day-2400-creamy-beef-day-04"
+      ],
+      "extraItems": [],
+      "copy": {
+        "heroDescription": "Four days around 2,400 calories: creamy cheeseburger cavatappi and pork on days 1 and 3; egg breakfasts, fried rice and salsa chicken casserole on days 2 and 4. Both morning lattes are included.",
+        "planAside": "Two cook days. Saucy beef. Eggs for breakfast.",
+        "recipeIntro": "Breakfasts are fresh. Each lunch and dinner recipe is scaled to two portions: one for today and one for two days later.",
+        "workoutNote": "The listed dairy, pineapple and almond snacks are used on both rest and training days. They replace the previous Fairlife-and-almond snack. Only days 1 and 3 include a separate breakfast protein shake.",
+        "shoppingNote": "The checklist includes every recipe ingredient for four days and one person, including pantry staples and ingredients already on hand. Nothing has been subtracted for leftovers; mark items off manually. Includes 8 eggs, 454 g cottage cheese, 906 g Fage 0%, 6 pineapple cups, 84 g almonds and 48 fl oz latte milk. Rice is listed as 700 g cooked, roughly 234 g dry; buy dry rice and follow package yield.",
+        "storageNote": "On day 1, cook beef pasta and pork for days 1 and 3. On day 2, cook fried rice and chicken casserole for days 2 and 4. Refrigerate promptly, including cooked rice. Keep yogurt sauces and crunchy toppings separate. Reheat cooked leftovers to 165°F / 74°C.",
+        "nutritionNote": "Estimates include all meals, both lattes and the listed snacks. Cottage cheese assumes 2%, frozen potatoes and vegetables assume plain products, and Fage uses its 0% label. Actual brands may differ. Days 1 and 3 use the original apple-oat breakfast; days 2 and 4 have eggs, smaller oats and pineapple yogurt without a separate shake. Ingredient-based daily calories: 2412, 2382, 2412, 2382. All days stay within three percentage points of 35% carbs / 35% protein / 30% fat."
+      }
     }
   },
   "groceryGroups": [
@@ -600,6 +629,38 @@
         "lunch": "variety-dijon-pork",
         "dinner": "variety-chicken-pasta",
         "snack": "variety-shake-almonds"
+      }
+    },
+    "four-day-2400-creamy-beef-day-01": {
+      "meals": {
+        "breakfast": "variety-oats",
+        "lunch": "leftovers-cheeseburger",
+        "dinner": "leftovers-pork-potatoes",
+        "snack": "leftovers-cottage-snack"
+      }
+    },
+    "four-day-2400-creamy-beef-day-02": {
+      "meals": {
+        "breakfast": "leftovers-egg-breakfast",
+        "lunch": "leftovers-fried-rice",
+        "dinner": "leftovers-salsa-casserole",
+        "snack": "leftovers-yogurt-snack"
+      }
+    },
+    "four-day-2400-creamy-beef-day-03": {
+      "meals": {
+        "breakfast": "variety-oats",
+        "lunch": "leftovers-cheeseburger",
+        "dinner": "leftovers-pork-potatoes",
+        "snack": "leftovers-cottage-snack"
+      }
+    },
+    "four-day-2400-creamy-beef-day-04": {
+      "meals": {
+        "breakfast": "leftovers-egg-breakfast",
+        "lunch": "leftovers-fried-rice",
+        "dinner": "leftovers-salsa-casserole",
+        "snack": "leftovers-yogurt-snack"
       }
     }
   },
@@ -6916,6 +6977,531 @@
         "url": "https://github.com/badstreff/static-meal-plan"
       },
       "family": "variety-shake-almonds"
+    },
+    "leftovers-cheeseburger": {
+      "title": "Creamy cheeseburger cavatappi",
+      "shortTitle": "Creamy cheeseburger cavatappi",
+      "kind": "lunch",
+      "preparation": "batch",
+      "servings": 2,
+      "prepTime": "About 30 min",
+      "nutrition": {
+        "calories": 746,
+        "carbsGrams": 52.3,
+        "proteinGrams": 75.2,
+        "fatGrams": 26.2
+      },
+      "description": "A saucy homemade hamburger-helper-style dish. Blended cottage cheese and cheddar keep the lean beef moist.",
+      "ingredients": [
+        {
+          "itemId": "variety-beef-96",
+          "quantity": 454,
+          "unit": "g",
+          "label": "raw 96/4 ground beef"
+        },
+        {
+          "itemId": "leftovers-cavatappi",
+          "quantity": 100,
+          "unit": "g",
+          "label": "dry cavatappi"
+        },
+        {
+          "itemId": "cottage-cheese",
+          "quantity": 200,
+          "unit": "g"
+        },
+        {
+          "itemId": "sharp-cheddar",
+          "quantity": 42,
+          "unit": "g"
+        },
+        {
+          "itemId": "crushed-tomatoes",
+          "quantity": 200,
+          "unit": "g"
+        },
+        {
+          "itemId": "onions",
+          "quantity": 0.5,
+          "unit": "count",
+          "label": "medium onion, diced",
+          "variant": "yellow"
+        },
+        {
+          "itemId": "beef-broth",
+          "quantity": 1,
+          "unit": "cup"
+        },
+        {
+          "itemId": "variety-oil",
+          "quantity": 10,
+          "unit": "g"
+        },
+        {
+          "itemId": "salt-pepper",
+          "quantity": null,
+          "unit": "tsp",
+          "asNeeded": true,
+          "label": "Salt and pepper, to taste",
+          "format": "{label}"
+        },
+        {
+          "itemId": "spices",
+          "quantity": null,
+          "unit": "tsp",
+          "asNeeded": true,
+          "label": "Garlic powder, smoked paprika, cumin, rosemary and cinnamon as listed in the steps",
+          "format": "{label}"
+        }
+      ],
+      "steps": [
+        "Soften the diced onion in the measured olive oil. Add beef and crumble it, cooking just until no pink remains and it reaches 160°F / 71°C; avoid prolonged browning.",
+        "Add crushed tomatoes, beef broth, dry cavatappi, garlic powder and smoked paprika. Simmer covered, stirring occasionally, until pasta is tender. Add water as needed to keep it saucy.",
+        "Blend the cottage cheese until smooth. Remove skillet from heat and stir in cottage cheese and cheddar. Divide evenly into the displayed portions.",
+        "Refrigerate the second portion for day 3. Reheat to 165°F / 74°C with a splash of water to loosen the creamy sauce."
+      ],
+      "note": "Nutrition is per serving, calculated from the listed ingredients. Meat is weighed raw; cavatappi is weighed dry, potatoes frozen, and rice cooked. Cottage cheese assumes 2% and frozen vegetables/potatoes assume no sauce or added oil. Check your actual labels. Divide all ingredients evenly between the displayed portions.",
+      "source": {
+        "label": "Original recipe for this plan",
+        "url": "https://github.com/badstreff/static-meal-plan"
+      },
+      "family": "leftovers-cheeseburger"
+    },
+    "leftovers-pork-potatoes": {
+      "title": "Garlic-Dijon pork & baby potatoes",
+      "shortTitle": "Garlic-Dijon pork & baby potatoes",
+      "kind": "dinner",
+      "preparation": "batch",
+      "servings": 2,
+      "prepTime": "About 40 min",
+      "nutrition": {
+        "calories": 644,
+        "carbsGrams": 55.8,
+        "proteinGrams": 65.5,
+        "fatGrams": 17.7
+      },
+      "description": "Roast pork and baby potatoes with mixed vegetables and a cool garlic-Dijon yogurt sauce.",
+      "ingredients": [
+        {
+          "itemId": "pork-tenderloin",
+          "quantity": 454,
+          "unit": "g"
+        },
+        {
+          "itemId": "leftovers-potatoes",
+          "quantity": 454,
+          "unit": "g",
+          "label": "plain frozen baby potatoes"
+        },
+        {
+          "itemId": "mixed-vegetables",
+          "quantity": 142,
+          "unit": "g",
+          "label": "frozen mixed vegetables, half of a 10 oz bag"
+        },
+        {
+          "itemId": "leftovers-fage",
+          "quantity": 150,
+          "unit": "g"
+        },
+        {
+          "itemId": "onions",
+          "quantity": 0.5,
+          "unit": "count",
+          "label": "medium onion, sliced",
+          "variant": "yellow"
+        },
+        {
+          "itemId": "variety-oil",
+          "quantity": 20,
+          "unit": "g"
+        },
+        {
+          "itemId": "variety-dijon",
+          "quantity": 10,
+          "unit": "g"
+        },
+        {
+          "itemId": "garlic",
+          "quantity": 2,
+          "unit": "clove"
+        },
+        {
+          "itemId": "lemons",
+          "quantity": 1,
+          "unit": "tbsp",
+          "label": "lemon juice"
+        },
+        {
+          "itemId": "salt-pepper",
+          "quantity": null,
+          "unit": "tsp",
+          "asNeeded": true,
+          "label": "Salt and pepper, to taste",
+          "format": "{label}"
+        },
+        {
+          "itemId": "spices",
+          "quantity": null,
+          "unit": "tsp",
+          "asNeeded": true,
+          "label": "Garlic powder, smoked paprika, cumin, rosemary and cinnamon as listed in the steps",
+          "format": "{label}"
+        }
+      ],
+      "steps": [
+        "Roast the potatoes and sliced onion with the measured olive oil, following the potato package directions. Season with salt, pepper and rosemary.",
+        "Coat pork with half the Dijon and half the garlic. Roast until the center reaches 145°F / 63°C; rest at least three minutes before slicing.",
+        "Cook mixed vegetables separately. Mix yogurt with lemon, the remaining garlic and Dijon for a cold sauce.",
+        "Divide pork, potatoes, vegetables and sauce evenly. Keep yogurt sauce separate; refrigerate the second portion for day 3 and reheat cooked food to 165°F / 74°C."
+      ],
+      "note": "Nutrition is per serving, calculated from the listed ingredients. Meat is weighed raw; cavatappi is weighed dry, potatoes frozen, and rice cooked. Cottage cheese assumes 2% and frozen vegetables/potatoes assume no sauce or added oil. Check your actual labels. Divide all ingredients evenly between the displayed portions.",
+      "source": {
+        "label": "Original recipe for this plan",
+        "url": "https://github.com/badstreff/static-meal-plan"
+      },
+      "family": "leftovers-pork-potatoes"
+    },
+    "leftovers-fried-rice": {
+      "title": "Chicken-and-egg fried rice",
+      "shortTitle": "Chicken-and-egg fried rice",
+      "kind": "lunch",
+      "preparation": "batch",
+      "servings": 2,
+      "prepTime": "About 30 min",
+      "nutrition": {
+        "calories": 679,
+        "carbsGrams": 56.1,
+        "proteinGrams": 70.2,
+        "fatGrams": 17.2
+      },
+      "description": "Chicken breast, eggs and mixed vegetables with white rice. Extra chicken balances the eggs moved to breakfast.",
+      "ingredients": [
+        {
+          "itemId": "chicken-breast",
+          "quantity": 500,
+          "unit": "g"
+        },
+        {
+          "itemId": "eggs",
+          "quantity": 2,
+          "unit": "count"
+        },
+        {
+          "itemId": "variety-cooked-rice",
+          "quantity": 300,
+          "unit": "g",
+          "label": "plain cooked white rice; approximately 100 g dry before cooking"
+        },
+        {
+          "itemId": "mixed-vegetables",
+          "quantity": 142,
+          "unit": "g",
+          "label": "frozen mixed vegetables, remaining half of a 10 oz bag"
+        },
+        {
+          "itemId": "onions",
+          "quantity": 0.5,
+          "unit": "count",
+          "label": "medium onion, diced",
+          "variant": "yellow"
+        },
+        {
+          "itemId": "variety-oil",
+          "quantity": 10,
+          "unit": "g"
+        },
+        {
+          "itemId": "soy-sauce",
+          "quantity": 4,
+          "unit": "tsp"
+        },
+        {
+          "itemId": "garlic",
+          "quantity": 2,
+          "unit": "clove"
+        },
+        {
+          "itemId": "salt-pepper",
+          "quantity": null,
+          "unit": "tsp",
+          "asNeeded": true,
+          "label": "Salt and pepper, to taste",
+          "format": "{label}"
+        }
+      ],
+      "steps": [
+        "Use freshly cooked rice or rice cooled promptly and refrigerated. Cook diced chicken in half the measured oil until it reaches 165°F / 74°C, then remove.",
+        "Scramble the eggs in the same nonstick pan and set aside.",
+        "Use the remaining oil to cook onion, garlic and mixed vegetables. Add rice and soy sauce, then return chicken and eggs. Toss until hot and divide evenly.",
+        "Refrigerate the second portion promptly for day 4. Reheat to 165°F / 74°C."
+      ],
+      "note": "Nutrition is per serving, calculated from the listed ingredients. Meat is weighed raw; cavatappi is weighed dry, potatoes frozen, and rice cooked. Cottage cheese assumes 2% and frozen vegetables/potatoes assume no sauce or added oil. Check your actual labels. Divide all ingredients evenly between the displayed portions.",
+      "source": {
+        "label": "Original recipe for this plan",
+        "url": "https://github.com/badstreff/static-meal-plan"
+      },
+      "family": "leftovers-fried-rice"
+    },
+    "leftovers-salsa-casserole": {
+      "title": "Creamy salsa chicken & rice casserole",
+      "shortTitle": "Creamy salsa chicken & rice casserole",
+      "kind": "dinner",
+      "preparation": "batch",
+      "servings": 2,
+      "prepTime": "About 35 min",
+      "nutrition": {
+        "calories": 880,
+        "carbsGrams": 76.4,
+        "proteinGrams": 78.5,
+        "fatGrams": 27.9
+      },
+      "description": "A substantial, creamy chicken-thigh rice casserole with salsa and cheddar; half the yogurt is added cold to keep it creamy.",
+      "ingredients": [
+        {
+          "itemId": "chicken-thighs",
+          "quantity": 454,
+          "unit": "g"
+        },
+        {
+          "itemId": "variety-cooked-rice",
+          "quantity": 400,
+          "unit": "g",
+          "label": "plain cooked white rice; approximately 134 g dry before cooking"
+        },
+        {
+          "itemId": "leftovers-fage",
+          "quantity": 400,
+          "unit": "g"
+        },
+        {
+          "itemId": "crushed-tomatoes",
+          "quantity": 200,
+          "unit": "g"
+        },
+        {
+          "itemId": "sharp-cheddar",
+          "quantity": 42,
+          "unit": "g"
+        },
+        {
+          "itemId": "onions",
+          "quantity": 0.5,
+          "unit": "count",
+          "label": "medium onion, diced",
+          "variant": "yellow"
+        },
+        {
+          "itemId": "variety-oil",
+          "quantity": 10,
+          "unit": "g"
+        },
+        {
+          "itemId": "jar-salsa",
+          "quantity": 6,
+          "unit": "tbsp"
+        },
+        {
+          "itemId": "garlic",
+          "quantity": 1,
+          "unit": "clove"
+        },
+        {
+          "itemId": "salt-pepper",
+          "quantity": null,
+          "unit": "tsp",
+          "asNeeded": true,
+          "label": "Salt and pepper, to taste",
+          "format": "{label}"
+        },
+        {
+          "itemId": "spices",
+          "quantity": null,
+          "unit": "tsp",
+          "asNeeded": true,
+          "label": "Garlic powder, smoked paprika, cumin, rosemary and cinnamon as listed in the steps",
+          "format": "{label}"
+        }
+      ],
+      "steps": [
+        "Cook diced onion and garlic in the measured olive oil. Add chicken seasoned with cumin, smoked paprika, salt and pepper; cook to 165°F / 74°C.",
+        "Stir in crushed tomatoes, salsa and cooked rice. Heat through, then remove from heat.",
+        "Stir in half the yogurt. Transfer to a baking dish, top with cheddar and broil briefly until melted. Divide into the displayed portions.",
+        "Divide the remaining yogurt equally as a cold topping. Store separately from the casserole. Refrigerate the second portion for day 4; reheat casserole to 165°F / 74°C before adding cold yogurt."
+      ],
+      "note": "Nutrition is per serving, calculated from the listed ingredients. Meat is weighed raw; cavatappi is weighed dry, potatoes frozen, and rice cooked. Cottage cheese assumes 2% and frozen vegetables/potatoes assume no sauce or added oil. Check your actual labels. Divide all ingredients evenly between the displayed portions.",
+      "source": {
+        "label": "Original recipe for this plan",
+        "url": "https://github.com/badstreff/static-meal-plan"
+      },
+      "family": "leftovers-salsa-casserole"
+    },
+    "leftovers-egg-breakfast": {
+      "title": "Scrambled eggs, oats & pineapple yogurt + two lattes",
+      "shortTitle": "Scrambled eggs, oats & pineapple yogurt + two lattes",
+      "kind": "breakfast",
+      "preparation": "fresh",
+      "servings": 1,
+      "prepTime": "Cook oats to package",
+      "nutrition": {
+        "calories": 640,
+        "carbsGrams": 51.8,
+        "proteinGrams": 53.4,
+        "fatGrams": 23.8
+      },
+      "description": "Egg breakfast for days 2 and 4, with a smaller bowl of oats, pineapple yogurt and both lattes.",
+      "ingredients": [
+        {
+          "itemId": "eggs",
+          "quantity": 3,
+          "unit": "count"
+        },
+        {
+          "itemId": "oats",
+          "quantity": 35,
+          "unit": "g",
+          "label": "dry steel-cut oats; cook in water"
+        },
+        {
+          "itemId": "leftovers-fage",
+          "quantity": 100,
+          "unit": "g"
+        },
+        {
+          "itemId": "pineapple-cups",
+          "quantity": 1,
+          "unit": "count",
+          "label": "one 4 oz pineapple-in-juice cup, including juice"
+        },
+        {
+          "itemId": "latte-milk",
+          "quantity": 12,
+          "unit": "fl oz",
+          "label": "plain 2% ultra-filtered milk; two 6 fl oz lattes"
+        },
+        {
+          "itemId": "coffee",
+          "quantity": null,
+          "unit": "portion",
+          "asNeeded": true,
+          "label": "Coffee or espresso",
+          "format": "{label}"
+        },
+        {
+          "itemId": "spices",
+          "quantity": null,
+          "unit": "tsp",
+          "asNeeded": true,
+          "label": "Cinnamon, optional",
+          "format": "{label}"
+        },
+        {
+          "itemId": "salt-pepper",
+          "quantity": null,
+          "unit": "tsp",
+          "asNeeded": true,
+          "label": "Salt and pepper, to taste",
+          "format": "{label}"
+        }
+      ],
+      "steps": [
+        "Cook steel-cut oats in water according to the package; season with cinnamon.",
+        "Scramble the eggs in a nonstick pan without added butter or oil.",
+        "Top the yogurt with the pineapple cup, including juice, and serve alongside the oats and eggs.",
+        "Prepare two lattes per person, each with 6 fl oz of the listed milk. No extra breakfast protein shake, apple, brown sugar or butter is included on these days."
+      ],
+      "note": "Includes two 6 fl oz milk lattes. Fage Total 0% is included in both this breakfast and the separate snack. Use a nonstick pan for eggs; added butter or oil changes the estimate.",
+      "source": {
+        "label": "Original recipe for this plan",
+        "url": "https://github.com/badstreff/static-meal-plan"
+      },
+      "family": "leftovers-egg-breakfast"
+    },
+    "leftovers-cottage-snack": {
+      "title": "Cottage cheese, pineapple & almonds",
+      "shortTitle": "Cottage cheese, pineapple & almonds",
+      "kind": "snack",
+      "preparation": "assemble",
+      "servings": 1,
+      "prepTime": "Ready to eat",
+      "nutrition": {
+        "calories": 328,
+        "carbsGrams": 25.6,
+        "proteinGrams": 22.2,
+        "fatGrams": 16.3
+      },
+      "description": "A cottage cheese and pineapple bowl with almonds for days 1 and 3.",
+      "ingredients": [
+        {
+          "itemId": "cottage-cheese",
+          "quantity": 127,
+          "unit": "g"
+        },
+        {
+          "itemId": "pineapple-cups",
+          "quantity": 1,
+          "unit": "count",
+          "label": "one 4 oz pineapple-in-juice cup, including juice"
+        },
+        {
+          "itemId": "variety-almonds",
+          "quantity": 28,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        "Top cottage cheese with pineapple and its juice. Serve the weighed almonds alongside or add just before eating.",
+        "Use this snack on both rest and training days. It replaces the previous Fairlife-and-almond snack; do not add another shake."
+      ],
+      "note": "Nutrition is per serving, calculated from the listed ingredients. Meat is weighed raw; cavatappi is weighed dry, potatoes frozen, and rice cooked. Cottage cheese assumes 2% and frozen vegetables/potatoes assume no sauce or added oil. Check your actual labels. Divide all ingredients evenly between the displayed portions.",
+      "source": {
+        "label": "Original recipe for this plan",
+        "url": "https://github.com/badstreff/static-meal-plan"
+      },
+      "family": "leftovers-cottage-snack"
+    },
+    "leftovers-yogurt-snack": {
+      "title": "Fage yogurt, pineapple & almonds",
+      "shortTitle": "Fage yogurt, pineapple & almonds",
+      "kind": "snack",
+      "preparation": "assemble",
+      "servings": 1,
+      "prepTime": "Ready to eat",
+      "nutrition": {
+        "calories": 183,
+        "carbsGrams": 20.3,
+        "proteinGrams": 11.3,
+        "fatGrams": 7.0
+      },
+      "description": "A smaller yogurt and pineapple bowl with almonds for days 2 and 4.",
+      "ingredients": [
+        {
+          "itemId": "leftovers-fage",
+          "quantity": 78,
+          "unit": "g"
+        },
+        {
+          "itemId": "pineapple-cups",
+          "quantity": 1,
+          "unit": "count",
+          "label": "one 4 oz pineapple-in-juice cup, including juice"
+        },
+        {
+          "itemId": "variety-almonds",
+          "quantity": 14,
+          "unit": "g"
+        }
+      ],
+      "steps": [
+        "Top the measured yogurt with pineapple and its juice. Serve almonds alongside or add just before eating.",
+        "Use this snack on both rest and training days. The yogurt in breakfast is separate; no Fairlife replacement shake is needed."
+      ],
+      "note": "Nutrition is per serving, calculated from the listed ingredients. Meat is weighed raw; cavatappi is weighed dry, potatoes frozen, and rice cooked. Cottage cheese assumes 2% and frozen vegetables/potatoes assume no sauce or added oil. Check your actual labels. Divide all ingredients evenly between the displayed portions.",
+      "source": {
+        "label": "Original recipe for this plan",
+        "url": "https://github.com/badstreff/static-meal-plan"
+      },
+      "family": "leftovers-yogurt-snack"
     }
   },
   "items": {
@@ -9381,6 +9967,70 @@
         "proteinGrams": 0.5,
         "fatGrams": 0.5,
         "basis": "Approximate generic ingredient reference; use actual package label."
+      }
+    },
+    "leftovers-cavatappi": {
+      "label": "Cavatappi pasta",
+      "group": "Grains, cans & nuts",
+      "unit": "g",
+      "units": {
+        "g": 1
+      },
+      "shopping": {},
+      "nutrition": {
+        "quantity": 56,
+        "unit": "g",
+        "calories": 200,
+        "carbsGrams": 42,
+        "proteinGrams": 7,
+        "fatGrams": 1,
+        "basis": "Approximate generic ingredient reference; use actual package label."
+      }
+    },
+    "leftovers-potatoes": {
+      "label": "Plain frozen baby potatoes",
+      "group": "Produce & frozen",
+      "unit": "g",
+      "units": {
+        "g": 1
+      },
+      "shopping": {
+        "suffix": "plain, without added oil; weigh frozen"
+      },
+      "nutrition": {
+        "quantity": 100,
+        "unit": "g",
+        "calories": 77,
+        "carbsGrams": 17.5,
+        "proteinGrams": 2,
+        "fatGrams": 0.1,
+        "basis": "Approximate ingredient reference; use actual brand label."
+      }
+    },
+    "leftovers-fage": {
+      "label": "Fage Total 0% plain Greek yogurt",
+      "group": "Protein & dairy",
+      "unit": "g",
+      "units": {
+        "g": 1
+      },
+      "shopping": {
+        "packSize": 907,
+        "packLabel": "32 oz tub",
+        "showRequired": true
+      },
+      "nutrition": {
+        "quantity": 170,
+        "unit": "g",
+        "calories": 90,
+        "proteinGrams": 18,
+        "carbsGrams": 5,
+        "fatGrams": 0,
+        "basis": "Fage Total 0% label per 170 g; check your package.",
+        "source": {
+          "label": "Fage Total 0% manufacturer label",
+          "url": "https://usa.fage/products/yogurt/fage-total-0"
+        }
       }
     }
   },
