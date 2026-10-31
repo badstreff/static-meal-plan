@@ -413,7 +413,7 @@
         "shoppingNote": "Three days for one person. Includes all ingredients, including pantry items. Rice is 60 g dry per day and pasta is 60 g dry per day; groceries include 180 g dry rice and 180 g dry pasta.",
         "storageNote": "Cool quickly and refrigerate cooked food promptly at 40°F / 4°C or below. Refrigerate rice immediately after cooking. Eat refrigerated portions within three days and reheat to 165°F / 74°C. Add pineapple just before eating.",
         "workoutNote": "The same pineapple protein bowl is included on workout and rest days. No additional workout shake is included.",
-        "nutritionNote": "All estimates are ingredient-based. Chicken thighs and beef are measured raw; rice, pasta and oats are measured dry. Actual product labels and cooking yields may vary. Estimated per day: 2,465 calories, 217 g protein, 201 g carbohydrates and 83 g fat."
+        "nutritionNote": "Estimates use ingredient reference data, including two lattes daily. Chicken thighs and beef are weighed raw; rice, pasta and oats are weighed dry. Approximately 2,484 calories, 221 g protein, 208 g carbohydrate and 85 g fat per day. Check your product labels."
       }
     }
   },
@@ -7581,7 +7581,7 @@
         },
         {
           "itemId": "prep-egg-whites",
-          "quantity": 240,
+          "quantity": 360,
           "unit": "g"
         },
         {
@@ -7631,17 +7631,17 @@
       ],
       "steps": [
         "Preheat oven to 375°F / 190°C. Dice 300 g potatoes and par-cook until nearly tender.",
-        "Whisk 6 eggs and 240 g egg whites with the diced ham, potatoes and 60 g reduced-fat cheddar. Bake in a greased or lined dish until set and the center reaches 160°F / 71°C.",
+        "Whisk 6 eggs and 360 g egg whites with the diced ham, potatoes and 60 g reduced-fat cheddar. Bake in a greased or lined dish until set and the center reaches 160°F / 71°C.",
         "Cool and divide casserole into three portions; refrigerate promptly.",
         "Each morning, reheat one portion to 165°F / 74°C. Cook 30 g dry steel-cut oats with water and make two lattes using 6 fl oz 2% milk each."
       ],
       "note": "Ingredient amounts are for three days. Oats are dry weight; 36 fl oz of milk covers six 6 fl oz lattes. No added oil in the casserole; use a nonstick or lined dish.",
       "family": "prep-ham-eggs",
       "nutrition": {
-        "calories": 681.6,
-        "carbsGrams": 51,
-        "proteinGrams": 63.2,
-        "fatGrams": 24.2
+        "calories": 701.6,
+        "carbsGrams": 51.3,
+        "proteinGrams": 67.4,
+        "fatGrams": 24.3
       }
     },
     "prep-garlic-chicken": {
