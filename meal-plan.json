@@ -410,10 +410,10 @@
         "heroDescription": "Three identical days near 2,400 calories, with one batch-cook day. Ham and egg bake, chicken thigh rice bowls, cheeseburger pasta, and pineapple protein bowls. Two lattes daily.",
         "planAside": "Cook once. Reheat for three days.",
         "recipeIntro": "Batch-cook breakfast, lunch and dinner into three portions. Assemble the cold snack daily. Oats and lattes are prepared fresh.",
-        "shoppingNote": "Three days for one person. Includes all ingredients, including pantry items. Rice is 60 g dry per day and pasta is 70 g dry per day; groceries include 180 g dry rice and 210 g dry pasta.",
+        "shoppingNote": "Three days for one person. Includes all ingredients, including pantry items. Rice is 60 g dry per day and pasta is 60 g dry per day; groceries include 180 g dry rice and 180 g dry pasta.",
         "storageNote": "Cool quickly and refrigerate cooked food promptly at 40°F / 4°C or below. Refrigerate rice immediately after cooking. Eat refrigerated portions within three days and reheat to 165°F / 74°C. Add pineapple just before eating.",
         "workoutNote": "The same pineapple protein bowl is included on workout and rest days. No additional workout shake is included.",
-        "nutritionNote": "All estimates are ingredient-based. Chicken thighs and beef are measured raw; rice, pasta and oats are measured dry. Actual product labels and cooking yields may vary."
+        "nutritionNote": "All estimates are ingredient-based. Chicken thighs and beef are measured raw; rice, pasta and oats are measured dry. Actual product labels and cooking yields may vary. Estimated per day: 2,465 calories, 217 g protein, 201 g carbohydrates and 83 g fat."
       }
     }
   },
@@ -7602,9 +7602,9 @@
         },
         {
           "itemId": "oats",
-          "quantity": 120,
+          "quantity": 90,
           "unit": "g",
-          "label": "dry steel-cut oats; 40 g each day"
+          "label": "dry steel-cut oats; 30 g each day"
         },
         {
           "itemId": "latte-milk",
@@ -7633,15 +7633,15 @@
         "Preheat oven to 375°F / 190°C. Dice 300 g potatoes and par-cook until nearly tender.",
         "Whisk 6 eggs and 240 g egg whites with the diced ham, potatoes and 60 g reduced-fat cheddar. Bake in a greased or lined dish until set and the center reaches 160°F / 71°C.",
         "Cool and divide casserole into three portions; refrigerate promptly.",
-        "Each morning, reheat one portion to 165°F / 74°C. Cook 40 g dry steel-cut oats with water and make two lattes using 6 fl oz 2% milk each."
+        "Each morning, reheat one portion to 165°F / 74°C. Cook 30 g dry steel-cut oats with water and make two lattes using 6 fl oz 2% milk each."
       ],
       "note": "Ingredient amounts are for three days. Oats are dry weight; 36 fl oz of milk covers six 6 fl oz lattes. No added oil in the casserole; use a nonstick or lined dish.",
       "family": "prep-ham-eggs",
       "nutrition": {
-        "calories": 719.1,
-        "proteinGrams": 64.5,
-        "carbsGrams": 57.8,
-        "fatGrams": 24.9
+        "calories": 681.6,
+        "carbsGrams": 51,
+        "proteinGrams": 63.2,
+        "fatGrams": 24.2
       }
     },
     "prep-garlic-chicken": {
@@ -7676,7 +7676,7 @@
         },
         {
           "itemId": "variety-oil",
-          "quantity": 15,
+          "quantity": 45,
           "unit": "g"
         },
         {
@@ -7713,7 +7713,7 @@
         }
       ],
       "steps": [
-        "Season 600 g raw chicken thighs with garlic, paprika, herbs and the measured 15 g olive oil. Roast at 425°F / 220°C until 165°F / 74°C internally.",
+        "Season 600 g raw chicken thighs with garlic, paprika, herbs and the measured 45 g olive oil. Roast at 425°F / 220°C until 165°F / 74°C internally.",
         "Cook 180 g DRY white rice according to package directions; divide the cooked result into three equal servings.",
         "Steam 450 g vegetables. Divide chicken, rice and vegetables between three containers; finish with soy sauce and lemon.",
         "Refrigerate promptly, especially the rice. Reheat each bowl to 165°F / 74°C. Add a splash of water before reheating if needed."
@@ -7721,10 +7721,10 @@
       "note": "Rice is 60 g DRY per day, 180 g dry for the whole batch. Chicken thighs are weighed raw (200 g each serving), not cooked weight.",
       "family": "prep-garlic-chicken",
       "nutrition": {
-        "calories": 659.8,
-        "proteinGrams": 49.1,
+        "calories": 748.4,
         "carbsGrams": 69.9,
-        "fatGrams": 19.6
+        "proteinGrams": 49.1,
+        "fatGrams": 29.6
       }
     },
     "prep-cheeseburger-pasta": {
@@ -7748,9 +7748,9 @@
         },
         {
           "itemId": "leftovers-cavatappi",
-          "quantity": 210,
+          "quantity": 180,
           "unit": "g",
-          "label": "DRY cavatappi (70 g per day)"
+          "label": "DRY cavatappi (60 g per day)"
         },
         {
           "itemId": "prep-reduced-cheddar",
@@ -7771,7 +7771,7 @@
         },
         {
           "itemId": "variety-oil",
-          "quantity": 15,
+          "quantity": 39,
           "unit": "g"
         },
         {
@@ -7792,18 +7792,18 @@
         }
       ],
       "steps": [
-        "Cook 210 g dry cavatappi to just shy of al dente. Reserve some pasta water.",
-        "Sauté diced onion in 15 g olive oil; add 540 g raw 96/4 ground beef, break it up and cook to 160°F / 71°C.",
+        "Cook 180 g dry cavatappi to just shy of al dente. Reserve some pasta water.",
+        "Sauté diced onion in 39 g olive oil; add 540 g raw 96/4 ground beef, break it up and cook to 160°F / 71°C.",
         "Mix in tomato sauce, mustard, paprika, garlic and pasta with some reserved water. Stir in 75 g reduced-fat cheddar.",
         "Divide into three containers. Refrigerate promptly and reheat to 165°F / 74°C with a little water to restore the sauce."
       ],
-      "note": "Pasta is 70 g DRY per day. Beef is weighed raw. No additional oil beyond the measured 15 g for the entire batch.",
+      "note": "Pasta is 60 g DRY per day. Beef is weighed raw. Olive oil is measured at 13 g per serving for the batch.",
       "family": "prep-cheeseburger-pasta",
       "nutrition": {
-        "calories": 658.6,
-        "proteinGrams": 57.3,
-        "carbsGrams": 65.4,
-        "fatGrams": 19
+        "calories": 693.7,
+        "carbsGrams": 57.9,
+        "proteinGrams": 56,
+        "fatGrams": 26.8
       }
     },
     "prep-pineapple-bowl": {
@@ -7846,8 +7846,8 @@
       "family": "prep-pineapple-bowl",
       "nutrition": {
         "calories": 339.9,
-        "proteinGrams": 48.1,
         "carbsGrams": 29.1,
+        "proteinGrams": 48.1,
         "fatGrams": 4.7
       }
     }
