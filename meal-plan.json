@@ -7586,8 +7586,8 @@
         },
         {
           "itemId": "ham",
-          "quantity": 6.349206349206349,
-          "unit": "oz",
+          "quantity": 180,
+          "unit": "g",
           "label": "diced ham"
         },
         {
@@ -7759,8 +7759,8 @@
         },
         {
           "itemId": "tomato-sauce",
-          "quantity": 10.582010582010582,
-          "unit": "oz",
+          "quantity": 300,
+          "unit": "g",
           "label": "tomato sauce, about 300 g"
         },
         {
@@ -7908,7 +7908,8 @@
       "group": "Protein & dairy",
       "unit": "oz",
       "units": {
-        "oz": 1
+        "oz": 1,
+        "g": "20/567"
       },
       "shopping": {},
       "nutrition": {
@@ -8472,7 +8473,8 @@
       "group": "Grains, cans & nuts",
       "unit": "oz",
       "units": {
-        "oz": 1
+        "oz": 1,
+        "g": "20/567"
       },
       "shopping": {
         "packSize": 8,
