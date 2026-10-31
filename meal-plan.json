@@ -7638,7 +7638,7 @@
       "note": "Ingredient amounts are for three days. Oats are dry weight; 36 fl oz of milk covers six 6 fl oz lattes. No added oil in the casserole; use a nonstick or lined dish.",
       "family": "prep-ham-eggs",
       "nutrition": {
-        "calories": 701.6,
+        "calories": 702,
         "carbsGrams": 51.3,
         "proteinGrams": 67.4,
         "fatGrams": 24.3
@@ -7721,8 +7721,8 @@
       "note": "Rice is 60 g DRY per day, 180 g dry for the whole batch. Chicken thighs are weighed raw (200 g each serving), not cooked weight.",
       "family": "prep-garlic-chicken",
       "nutrition": {
-        "calories": 748.4,
-        "carbsGrams": 69.9,
+        "calories": 748,
+        "carbsGrams": 69.8,
         "proteinGrams": 49.1,
         "fatGrams": 29.6
       }
@@ -7767,7 +7767,8 @@
           "itemId": "onions",
           "quantity": 1.5,
           "unit": "count",
-          "label": "medium onions, about 150 g diced"
+          "label": "medium onions, about 150 g diced",
+          "variant": "yellow"
         },
         {
           "itemId": "variety-oil",
@@ -7800,7 +7801,7 @@
       "note": "Pasta is 60 g DRY per day. Beef is weighed raw. Olive oil is measured at 13 g per serving for the batch.",
       "family": "prep-cheeseburger-pasta",
       "nutrition": {
-        "calories": 693.7,
+        "calories": 694,
         "carbsGrams": 57.9,
         "proteinGrams": 56,
         "fatGrams": 26.8
@@ -7845,7 +7846,7 @@
       "note": "Pineapple is drained weight; separate from juice. Use this snack on both rest and training days.",
       "family": "prep-pineapple-bowl",
       "nutrition": {
-        "calories": 339.9,
+        "calories": 340,
         "carbsGrams": 29.1,
         "proteinGrams": 48.1,
         "fatGrams": 4.7
