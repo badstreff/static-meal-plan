@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "activePlanId": "three-day-2400-batch",
+  "activePlanId": "three-day-2000-simple",
   "site": {
     "brand": "THE DAILY PLATE",
     "heroHeading": "Food sorted.",
@@ -415,6 +415,41 @@
         "workoutNote": "The same pineapple protein bowl is included on workout and rest days. No additional workout shake is included.",
         "nutritionNote": "Estimates use ingredient reference data, including two lattes daily. Chicken thighs and beef are weighed raw; rice, pasta and oats are weighed dry. Approximately 2,484 calories, 221 g protein, 208 g carbohydrate and 85 g fat per day. Check your product labels."
       }
+    },
+    "three-day-2000-simple": {
+      "title": "Simple & filling · 2,000 calories · 40/40/20",
+      "people": 1,
+      "targets": {
+        "calories": 2000,
+        "proteinGrams": 200,
+        "macroPercent": {
+          "carbs": 40,
+          "protein": 40,
+          "fat": 20
+        }
+      },
+      "days": [
+        "three-day-2000-simple-day-01",
+        "three-day-2000-simple-day-02",
+        "three-day-2000-simple-day-03"
+      ],
+      "extraItems": [],
+      "repeatLimitOverrides": {
+        "breakfast": 3,
+        "lunch": 3,
+        "dinner": 3,
+        "snack": 3
+      },
+      "copy": {
+        "heroDescription": "Three days around 2,000 calories, with the same filling meals each day: apple oats and two cappuccinos, chicken with potatoes and green beans, creamy beef pasta, and cottage cheese with pineapple.",
+        "planAside": "One prep session. Three easy days.",
+        "recipeIntro": "Lunch and dinner recipes are scaled to three portions. Breakfast and snack guides show one serving; the grocery checklist covers all three days.",
+        "targetNote": "Approximate daily targets: 2,000 calories, 200 g carbs, 200 g protein and 44 g fat. Both cappuccinos are included. C/P/F percentages use estimated macro energy (4/4/9).",
+        "workoutNote": "Use the listed cottage cheese and pineapple snack on both rest and training days. No replacement workout snack, extra protein shake or almonds is included.",
+        "shoppingNote": "The grocery checklist includes all ingredients for three days and one person, including pantry items. Nothing is subtracted for ingredients already on hand. Includes 36 fl oz cappuccino milk, 900 g Fage 0%, 750 g cottage cheese, 720 g raw chicken, 600 g raw 96/4 beef, 180 g dry cavatappi, 90 g dry oats and 3 pineapple cups.",
+        "storageNote": "Cook all three lunch and dinner portions in one prep session. Apple oats can also be batch-cooked; keep yogurt and cottage cheese chilled. Refrigerate cooked food within two hours, keep yogurt sauce separate and use the portions over three days. Reheat cooked leftovers to 165°F / 74°C.",
+        "nutritionNote": "Nutrition includes three meals, the snack and two cappuccinos daily. Baselines are Fairlife 2%, Fage 0%, 2% cottage cheese, plain vegetables and the specified 96/4 beef reference. Brands, produce sizes and yields vary. All three days intentionally repeat the same meals. Ingredient-based daily estimates: 1,996 calories, 203.9 g carbs, 203.9 g protein and 43.2 g fat; approximately 40% carbs / 40% protein / 19% fat."
+      }
     }
   },
   "groceryGroups": [
@@ -719,6 +754,30 @@
         "lunch": "prep-garlic-chicken",
         "dinner": "prep-cheeseburger-pasta",
         "snack": "prep-pineapple-bowl"
+      }
+    },
+    "three-day-2000-simple-day-01": {
+      "meals": {
+        "breakfast": "simple-2000-breakfast",
+        "lunch": "simple-2000-chicken",
+        "dinner": "simple-2000-beef-pasta",
+        "snack": "simple-2000-snack"
+      }
+    },
+    "three-day-2000-simple-day-02": {
+      "meals": {
+        "breakfast": "simple-2000-breakfast",
+        "lunch": "simple-2000-chicken",
+        "dinner": "simple-2000-beef-pasta",
+        "snack": "simple-2000-snack"
+      }
+    },
+    "three-day-2000-simple-day-03": {
+      "meals": {
+        "breakfast": "simple-2000-breakfast",
+        "lunch": "simple-2000-chicken",
+        "dinner": "simple-2000-beef-pasta",
+        "snack": "simple-2000-snack"
       }
     }
   },
@@ -7851,6 +7910,278 @@
         "proteinGrams": 48.1,
         "fatGrams": 4.7
       }
+    },
+    "simple-2000-breakfast": {
+      "title": "Apple-cinnamon oats, yogurt & two cappuccinos",
+      "shortTitle": "Apple-cinnamon oats, yogurt & two cappuccinos",
+      "kind": "breakfast",
+      "preparation": "fresh",
+      "servings": 1,
+      "prepTime": "Cook oats to package",
+      "nutrition": {
+        "calories": 493,
+        "carbsGrams": 60.2,
+        "proteinGrams": 44.9,
+        "fatGrams": 9.3
+      },
+      "description": "Warm apple-cinnamon steel-cut oats, plain Greek yogurt and both morning cappuccinos.",
+      "ingredients": [
+        {
+          "itemId": "oats",
+          "quantity": 30,
+          "unit": "g",
+          "label": "dry steel-cut oats; cook in water"
+        },
+        {
+          "itemId": "apples",
+          "quantity": 1,
+          "unit": "count",
+          "label": "medium apple, chopped"
+        },
+        {
+          "itemId": "leftovers-fage",
+          "quantity": 200,
+          "unit": "g"
+        },
+        {
+          "itemId": "latte-milk",
+          "quantity": 12,
+          "unit": "fl oz",
+          "label": "2% ultra-filtered milk for two cappuccinos; 6 fl oz in each"
+        },
+        {
+          "itemId": "coffee",
+          "quantity": null,
+          "unit": "portion",
+          "asNeeded": true,
+          "label": "Coffee or espresso",
+          "format": "{label}"
+        },
+        {
+          "itemId": "spices",
+          "quantity": null,
+          "unit": "tsp",
+          "asNeeded": true,
+          "label": "Cinnamon, to taste",
+          "format": "{label}"
+        },
+        {
+          "itemId": "sweetener",
+          "quantity": null,
+          "unit": "tsp",
+          "asNeeded": true,
+          "label": "Zero-calorie sweetener, optional",
+          "format": "{label}"
+        }
+      ],
+      "steps": [
+        "Cook the oats in water according to the package, adding chopped apple and cinnamon. Add zero-calorie sweetener if desired.",
+        "Serve the yogurt alongside, or stir it into the oats after they cool slightly. The oat-and-apple portions can be batch-cooked for all three mornings and refrigerated promptly.",
+        "Make two cappuccinos per person with espresso and the listed milk: 6 fl oz milk in each, measured before frothing. No syrup, sugar, butter or separate protein shake is included."
+      ],
+      "note": "Nutrition includes both cappuccinos and 12 fl oz milk total. Fage Total 0% and Fairlife 2% labels are the baseline; use your MooTopia label if different. Oats are weighed dry. The grocery list includes all three breakfasts.",
+      "source": {
+        "label": "Original recipe for this plan",
+        "url": "https://github.com/badstreff/static-meal-plan"
+      },
+      "family": "simple-2000-breakfast"
+    },
+    "simple-2000-chicken": {
+      "title": "Lemon-garlic chicken, potatoes & green beans",
+      "shortTitle": "Lemon-garlic chicken, potatoes & green beans",
+      "kind": "lunch",
+      "preparation": "batch",
+      "servings": 1,
+      "prepTime": "About 40 min",
+      "nutrition": {
+        "calories": 658,
+        "carbsGrams": 54.9,
+        "proteinGrams": 72.0,
+        "fatGrams": 16.8
+      },
+      "description": "A large portion of chicken, skin-on potatoes and green beans with a generous lemon-garlic yogurt sauce.",
+      "ingredients": [
+        {
+          "itemId": "chicken-breast",
+          "quantity": 240,
+          "unit": "g",
+          "label": "raw boneless, skinless chicken breast"
+        },
+        {
+          "itemId": "potatoes",
+          "quantity": 225,
+          "unit": "g",
+          "label": "raw potatoes, skin on"
+        },
+        {
+          "itemId": "simple-green-beans",
+          "quantity": 150,
+          "unit": "g"
+        },
+        {
+          "itemId": "leftovers-fage",
+          "quantity": 100,
+          "unit": "g"
+        },
+        {
+          "itemId": "variety-oil",
+          "quantity": 10,
+          "unit": "g"
+        },
+        {
+          "itemId": "lemons",
+          "quantity": 1,
+          "unit": "tbsp",
+          "label": "lemon juice for yogurt sauce"
+        },
+        {
+          "itemId": "garlic",
+          "quantity": 1,
+          "unit": "clove"
+        },
+        {
+          "itemId": "spices",
+          "quantity": null,
+          "unit": "tsp",
+          "asNeeded": true,
+          "label": "Paprika, to taste",
+          "format": "{label}"
+        },
+        {
+          "itemId": "salt-pepper",
+          "quantity": null,
+          "unit": "tsp",
+          "asNeeded": true,
+          "label": "Salt and pepper, to taste",
+          "format": "{label}"
+        }
+      ],
+      "steps": [
+        "Heat the oven to 425°F / 220°C. Dice potatoes and toss with the measured olive oil, paprika, salt and pepper. Roast until tender.",
+        "Season chicken and roast on a separate parchment-lined tray or in a baking dish until the thickest part reaches 165°F / 74°C. Slice and divide evenly with potatoes.",
+        "Microwave or steam green beans without added butter or oil. Mix yogurt with lemon and finely grated garlic for the sauce. Divide all food and sauce into the displayed portions.",
+        "Refrigerate promptly. Keep the yogurt sauce separate and add after reheating chicken, potatoes and beans to 165°F / 74°C."
+      ],
+      "note": "Meat and potatoes are weighed raw. The guide scales to three lunches: 720 g chicken, 675 g potatoes, 450 g green beans, 300 g yogurt and 30 g oil, plus sauce seasonings. Divide each component evenly. No additional cooking oil is included.",
+      "source": {
+        "label": "Original recipe for this plan",
+        "url": "https://github.com/badstreff/static-meal-plan"
+      },
+      "family": "simple-2000-chicken"
+    },
+    "simple-2000-beef-pasta": {
+      "title": "Creamy cheeseburger cavatappi",
+      "shortTitle": "Creamy cheeseburger cavatappi",
+      "kind": "dinner",
+      "preparation": "batch",
+      "servings": 1,
+      "prepTime": "About 30 min",
+      "nutrition": {
+        "calories": 662,
+        "carbsGrams": 68.3,
+        "proteinGrams": 67.9,
+        "fatGrams": 14.4
+      },
+      "description": "Saucy lean beef and cavatappi with zucchini and blended cottage cheese. Each serving includes 60 g dry pasta.",
+      "ingredients": [
+        {
+          "itemId": "simple-beef-96",
+          "quantity": 200,
+          "unit": "g",
+          "label": "raw 96/4 ground beef"
+        },
+        {
+          "itemId": "leftovers-cavatappi",
+          "quantity": 60,
+          "unit": "g",
+          "label": "dry cavatappi"
+        },
+        {
+          "itemId": "cottage-cheese",
+          "quantity": 100,
+          "unit": "g",
+          "label": "2% cottage cheese, blended smooth"
+        },
+        {
+          "itemId": "variety-marinara",
+          "quantity": 150,
+          "unit": "g"
+        },
+        {
+          "itemId": "zucchini",
+          "quantity": 150,
+          "unit": "g",
+          "label": "diced zucchini"
+        },
+        {
+          "itemId": "spices",
+          "quantity": null,
+          "unit": "tsp",
+          "asNeeded": true,
+          "label": "Garlic powder and smoked paprika, to taste",
+          "format": "{label}"
+        },
+        {
+          "itemId": "salt-pepper",
+          "quantity": null,
+          "unit": "tsp",
+          "asNeeded": true,
+          "label": "Salt and pepper, to taste",
+          "format": "{label}"
+        }
+      ],
+      "steps": [
+        "Boil pasta according to the package. Reserve cooking water before draining.",
+        "In a nonstick skillet, crumble beef and cook just until done, reaching 160°F / 71°C. Avoid prolonged browning; no added cooking oil is included.",
+        "Add zucchini, marinara, garlic powder and smoked paprika. Simmer until zucchini softens, adding a splash of pasta water as needed.",
+        "Blend cottage cheese until smooth. Remove skillet from heat and stir in cottage cheese and pasta. Add pasta water until generously saucy; divide into the displayed portions.",
+        "Refrigerate promptly. Reheat each portion to 165°F / 74°C with a splash of water to restore the sauce."
+      ],
+      "note": "Beef is weighed raw and pasta dry. The guide scales to three dinners: 600 g beef, 180 g dry pasta, 300 g cottage cheese, 450 g marinara and 450 g zucchini. Cottage cheese assumes 2%; use your actual labels. Divide evenly into three portions.",
+      "source": {
+        "label": "Original recipe for this plan",
+        "url": "https://github.com/badstreff/static-meal-plan"
+      },
+      "family": "simple-2000-beef-pasta"
+    },
+    "simple-2000-snack": {
+      "title": "Cottage cheese & pineapple",
+      "shortTitle": "Cottage cheese & pineapple",
+      "kind": "snack",
+      "preparation": "assemble",
+      "servings": 1,
+      "prepTime": "Ready to eat",
+      "nutrition": {
+        "calories": 183,
+        "carbsGrams": 20.5,
+        "proteinGrams": 19.1,
+        "fatGrams": 2.7
+      },
+      "description": "A ready-to-eat cottage cheese and pineapple bowl.",
+      "ingredients": [
+        {
+          "itemId": "cottage-cheese",
+          "quantity": 150,
+          "unit": "g",
+          "label": "2% cottage cheese"
+        },
+        {
+          "itemId": "pineapple-cups",
+          "quantity": 1,
+          "unit": "count",
+          "label": "one 4 oz pineapple-in-juice cup, including juice"
+        }
+      ],
+      "steps": [
+        "Top the cottage cheese with one whole pineapple-in-juice cup, including its juice. Keep chilled until eating.",
+        "Use the same snack on rest and training days. No extra Fairlife shake or workout replacement snack is included."
+      ],
+      "note": "Per person: 150 g 2% cottage cheese plus one whole pineapple-in-juice cup. Includes the juice. Grocery amounts cover all three snacks.",
+      "source": {
+        "label": "Original recipe for this plan",
+        "url": "https://github.com/badstreff/static-meal-plan"
+      },
+      "family": "simple-2000-snack"
     }
   },
   "items": {
@@ -10438,6 +10769,46 @@
         "proteinGrams": 0.3,
         "fatGrams": 0.1,
         "basis": "Approximate ingredient reference; verify product label."
+      }
+    },
+    "simple-beef-96": {
+      "label": "96/4 ground beef",
+      "group": "Protein & dairy",
+      "unit": "g",
+      "units": {
+        "g": 1
+      },
+      "shopping": {
+        "showRequired": true
+      },
+      "nutrition": {
+        "quantity": 112,
+        "unit": "g",
+        "calories": 140,
+        "proteinGrams": 24,
+        "carbsGrams": 0,
+        "fatGrams": 4.5,
+        "basis": "Assumed raw 96/4 package values per 112 g: 140 calories, 24 g protein, 4.5 g fat. Use the actual package label; kept separate from older beef references."
+      }
+    },
+    "simple-green-beans": {
+      "label": "Plain frozen green beans",
+      "group": "Produce & frozen",
+      "unit": "g",
+      "units": {
+        "g": 1
+      },
+      "shopping": {
+        "showRequired": true
+      },
+      "nutrition": {
+        "quantity": 150,
+        "unit": "g",
+        "calories": 47,
+        "proteinGrams": 2.7,
+        "carbsGrams": 10.5,
+        "fatGrams": 0.3,
+        "basis": "Approximate plain green bean reference per 150 g; no butter or sauce included."
       }
     }
   },

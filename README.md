@@ -18,10 +18,11 @@ All meal content lives in [`meal-plan.json`](meal-plan.json). Set its top-level 
 
 GitHub Actions validates the document, runs tests, generates the homepage and every plan page, and publishes `_site`. Invalid content stops deployment. Displaying meals and recipes does not require JavaScript or a JSON request.
 
-The catalog includes twelve plans. The creamy beef pasta and egg-breakfast four-day plan is now the default:
+The catalog includes 14 plans. The three-day 2,000-calorie simple plan (40/40/20 carbs/protein/fat) is now the default:
 
 | Plan ID | Days | Calorie target | Estimated regular-day calories | Protein target |
 | --- | --- | --- | --- | --- |
+| `three-day-2000-simple` | 3 | 2,000 | 1,996 | 200 g |
 | `four-day-2400-creamy-beef` | 4 | 2,400 | 2,382–2,412 | 210 g |
 | `four-day-2400-variety` | 4 | 2,400 | 2,397–2,403 | 210 g |
 | `four-day-cut` | 4 | 2,400 | 2,458–2,463 | 210 g |
@@ -35,7 +36,7 @@ The catalog includes twelve plans. The creamy beef pasta and egg-breakfast four-
 | `fatigue-day-2200` | 1 | 2,200 | 2,179 | 192 g |
 | `fatigue-day-2400` | 1 | 2,400 | 2,387 | 210 g |
 
-Every day targets **35% carbohydrate / 35% protein / 30% fat by calories**. Regular days and workout snacks normally stay within three percentage points per macro and 5% of the calorie target. The pineapple-free Fairlife shake & almonds preference keeps other meals unchanged, so affected workout days have lower calories/carbs and allow up to six percentage points of macro deviation. Cards show actual estimates and the preference explanation; calories still stay within 5%. Percentages normalize 4/4/9 macro energy; label calories are summed separately and can differ due to fiber and rounding.
+The new default targets **40% carbohydrate / 40% protein / 20% fat by calories**. Older plans retain their declared 35/35/30 targets. Regular days and workout snacks normally stay within three percentage points per macro and 5% of the calorie target. The pineapple-free Fairlife shake & almonds preference keeps other meals unchanged, so affected workout days have lower calories/carbs and allow up to six percentage points of macro deviation. Cards show actual estimates and the preference explanation; calories still stay within 5%. Percentages normalize 4/4/9 macro energy; label calories are summed separately and can differ due to fiber and rounding.
 
 No meal family is scheduled more than two consecutive days, including differently sized versions of the same dish. The new four-day 1,800 plan has two cook days; the three-day 2,400 plan has three. Both include whole-can slow-cooker chicken taco chili adapted from [Skinnytaste](https://www.skinnytaste.com/crock-pot-chicken-taco-chili-4-pts/). The 2,400 plan has chili for its first two dinners, then cherry-balsamic pork.
 
@@ -203,3 +204,7 @@ The new plan explicitly declares `repeatLimitOverrides: {"breakfast": 4, "snack"
 `four-day-2400-creamy-beef` is the new default, with an A/B/A/B rotation. Days 1 and 3 pair the original apple-oat/two-latte breakfast with creamy 96/4 beef cavatappi, pork and baby potatoes, and cottage cheese/pineapple/almonds. Days 2 and 4 have three eggs, smaller oats, pineapple yogurt and two lattes, followed by chicken-and-egg fried rice, salsa chicken casserole, and a smaller yogurt/pineapple/almond snack. The snacks replace the previous Fairlife shake on both rest and training days.
 
 Groceries include **all** ingredients, including items already on hand and pantry checks; no inventory is subtracted. Totals include eight eggs, 454 g cottage cheese, 906 g Fage 0%, six pineapple cups, 48 fl oz latte milk, 454 g plain frozen baby potatoes and 284 g mixed vegetables. Rice is listed by cooked weight (700 g total), with the approximate 234 g dry equivalent clearly noted. Cavatappi is weighed dry. Use actual cottage cheese, potato and vegetable labels if different from the plain-product assumptions.
+
+## Three-day 2,000-calorie simple plan
+
+`three-day-2000-simple` is the default. The same meals repeat for three days by request, using per-slot repeat overrides. Breakfast includes 30 g dry steel-cut oats, one apple, 200 g Fage 0% and two cappuccinos, each with 6 fl oz 2% ultra-filtered milk measured before frothing. Lunch is lemon-garlic chicken breast with skin-on potatoes, green beans and yogurt sauce. Dinner is creamy 96/4 beef cavatappi with 60 g dry pasta per serving. The snack is 150 g 2% cottage cheese and one pineapple-in-juice cup, with no workout replacement. Lunch and dinner guides scale to three portions; breakfast and snack guides show one portion. Groceries include all ingredients without subtracting household inventory. Existing plans remain available.
